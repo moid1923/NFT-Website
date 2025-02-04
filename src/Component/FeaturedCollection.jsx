@@ -15,7 +15,7 @@ const cards = [
 
 export default function FeaturedCollection() {
   return (
-     <div className="bg-gradient-to-b from-pink-100 to-white py-10">
+     <div className="py-10">
           <div className="max-w-7xl mx-auto px-4">
             {/* Header */}
             <h2 className="text-3xl font-bold heading-font">Featured Collection</h2>

@@ -1,5 +1,6 @@
 
 import './App.css'
+import DigitalAsset from './Component/DigitalAsset'
 import FeaturedCollection from './Component/FeaturedCollection'
 import HeroImages from './Component/HeroImages'
 import HeroSection from './Component/HeroSection'
@@ -9,11 +10,12 @@ import RecentlySold from './Component/RecentlySold'
 import TopCollection from './Component/TopCollection'
 import TopSellers from './Component/TopSellers'
 import TrendingNFTs from './Component/TrendingNFTs'
+import Visibility from './Component/Visibility'
 
 function App() {
 
   return (
-    <>
+    <div className='bg-gradient-to-b from-white to-pink-200 py-10'>
     <Navbar/>
     <HeroSection/>
     <HeroImages/>
@@ -23,7 +25,9 @@ function App() {
     <Oction/>
     <TopCollection/>
     <RecentlySold/>
-    </>
+    <DigitalAsset/>
+    <Visibility/>
+    </div>
     
   )
 }

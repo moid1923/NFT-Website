@@ -22,7 +22,7 @@ const nfts = [
 
 export default function TrendingNFTs() {
   return (
-    <div className="bg-gradient-to-b from-pink-100 to-white py-10">
+    <div className=" py-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
