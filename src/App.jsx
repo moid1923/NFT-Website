@@ -1,7 +1,9 @@
 
 import './App.css'
 import DigitalAsset from './Component/DigitalAsset'
+import FAQSection from './Component/FAQSection'
 import FeaturedCollection from './Component/FeaturedCollection'
+import Footer from './Component/Footer'
 import HeroImages from './Component/HeroImages'
 import HeroSection from './Component/HeroSection'
 import Navbar from './Component/Navbar'
@@ -15,7 +17,7 @@ import Visibility from './Component/Visibility'
 function App() {
 
   return (
-    <div className='bg-gradient-to-b from-white to-pink-200 py-10'>
+    <div >
     <Navbar/>
     <HeroSection/>
     <HeroImages/>
@@ -27,6 +29,8 @@ function App() {
     <RecentlySold/>
     <DigitalAsset/>
     <Visibility/>
+    <FAQSection/>
+    <Footer/>
     </div>
     
   )

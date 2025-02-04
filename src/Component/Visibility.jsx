@@ -24,6 +24,98 @@ function Visibility() {
             Boost <span className="ml-2">🚀</span>
           </button>
         </div>
+        <div className="image-section lg:w-1/2 relative h-[611px]">
+            <div  className="absolute top-1 left-10  w-full max-w-[242px] h-[322px] bg-white rounded-2xl s"
+            >
+               <div className="p-3 flex items-center space-x-3">
+                                  <img
+                                    src={vlogo}
+                                    className="w-10 h-10 rounded-full"
+                                  />
+                                  <div>
+                                    <h3 className="text-sm font-semibold">STELLA NOVA</h3>
+                                    <p className="text-xs text-gray-500">@Stella Nova</p>
+                                  </div>
+                                </div>
+                  
+                  
+                              <div className=" relative w-full h-[84%]">
+                              <img
+                                  src={topv}
+                                  alt="NFT"
+                                  className="w-full h-[100%] object-cover absolute"
+                                />
+                  
+                                <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
+                                  <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm">
+                                    Buy
+                                  </button>
+                                  <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">Price: 142.2 ETH</span>
+                                </div>
+                              </div>
+
+            </div>
+            <div  className="absolute bottom-3 left-4  w-full max-w-[220px] h-[245px] bg-white rounded-2xl opacity-0.6 "
+            >
+               <div className="p-3 flex items-center space-x-3">
+                                  <img
+                                    src={vlogo}
+                                    className="w-10 h-10 rounded-full"
+                                  />
+                                  <div>
+                                    <h3 className="text-[12px] font-semibold">STELLA NOVA</h3>
+                                    <p className="text-[10px] text-gray-500">@Stella Nova</p>
+                                  </div>
+                                </div>
+                  
+                  
+                              <div className=" relative w-full h-[84%]">
+                              <img
+                                  src={topv}
+                                  alt="NFT"
+                                  className="w-full h-[100%] object-cover absolute"
+                                />
+                  
+                                <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
+                                  <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm">
+                                    Buy
+                                  </button>
+                                  <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">Price: 142.2 ETH</span>
+                                </div>
+                              </div>
+
+            </div>
+            <div  className="absolute right-0 bottom-20 w-full max-w-[201px] h-[175px] bg-white rounded-2xl opacity-0.6"
+            >
+               <div className="p-3 flex items-center space-x-3">
+                                  <img
+                                    src={vlogo}
+                                    className="w-10 h-10 rounded-full"
+                                  />
+                                  <div>
+                                    <h3 className="text-[12px] font-semibold">STELLA NOVA</h3>
+                                    <p className="text-[10px] text-gray-500">@Stella Nova</p>
+                                  </div>
+                                </div>
+                  
+                  
+                              <div className=" relative w-full h-[84%]">
+                              <img
+                                  src={topv}
+                                  alt="NFT"
+                                  className="w-full h-[100%] object-cover absolute"
+                                />
+                  
+                                <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
+                                  <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm">
+                                    Buy
+                                  </button>
+                                  <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">Price: 142.2 ETH</span>
+                                </div>
+                              </div>
+
+            </div>
+        </div>
 
         {/* Image Section */}
         
