@@ -26,7 +26,7 @@ export default function RecentlySold() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-3xl font-bold">Recently Sold</h2>
+          <h2 className="text-[64px]  font-apex">Recently Sold</h2>
           
         </div>
 

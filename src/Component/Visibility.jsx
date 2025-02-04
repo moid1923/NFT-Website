@@ -6,14 +6,14 @@ import vlogo from "../assets/vlogo.jfif";
 
 function Visibility() {
   return (
-    <div className="bg-gradient-to-br from-white to-red-50 py-16 px-4 sm:px-8 md:px-16">
+    <div className=" py-16 px-4 sm:px-8 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Text Section */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+          <h1 className="text-[64px]  text-gray-900 sm:text-5xl font-apex">
             BOOST YOUR NFTs: ENHANCE VISIBILITY AND VALUE
           </h1>
-          <p className="mt-4 text-gray-700 text-lg sm:text-xl">
+          <p className="mt-4 text-gray-700 text-lg sm:text-xl font-triodion">
             The Boost feature is a premium service that allows NFT creators and
             collectors to elevate their listings on our marketplace. By boosting
             an NFT, you can ensure it appears prominently in search results,

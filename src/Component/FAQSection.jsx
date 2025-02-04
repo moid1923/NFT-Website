@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+  AccordionItemState,
+} from 'react-accessible-accordion';
+// Optionally, you can import the default styles and then override them
+// import 'react-accessible-accordion/dist/fancy-example.css';
 
 function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   const faqs = [
     {
       question: 'What is an NFT?',
@@ -31,44 +35,52 @@ function FAQSection() {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-white to-red-50 py-16 px-6 sm:px-12">
+    <div className=" py-16 px-6 sm:px-12">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-center text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+        <h2 className="text-center text-[64px] sm:text-4xl  text-gray-900 mb-8 font-apex">
           FREQUENTLY ASKED QUESTIONS
         </h2>
-        <div className="bg-white rounded-lg shadow-lg ">
+        <Accordion allowZeroExpanded preExpanded={[0]}>
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-500 last:border-b-0 px-2 py-2">
-              <button
-                onClick={() => toggleFAQ(index)}
-                className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3  items-center ${
-                  activeIndex === index ? 'bg-red-50 border border-gray-50 rounded-2xl' : 'hover:bg-gray-50'
-                }`}
-              >
-                
-                <span
-                  className={`transition-transform duration-300 ${
-                    activeIndex === index ? 'rotate-180 text-red-500' : ''
-                  }`}
-                >
-                  {activeIndex === index ? '−' : '+'}
-                </span>
-                <span
-                  className={`font-semibold text-gray-900 ${
-                    activeIndex === index ? 'text-red-500 ' : ''
-                  }`}
-                >
-                  {faq.question}
-                </span>
-              </button>
-              {activeIndex === index && (
-                <div className="px-6 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg">
-                  {faq.answer}
-                </div>
-              )}
-            </div>
+            <AccordionItem
+              key={index}
+              uuid={index}
+              className="border-b border-gray-500 last:border-b-0 px-2 py-2"
+            >
+              <AccordionItemHeading>
+                <AccordionItemState>
+                  {({ expanded }) => (
+                    <AccordionItemButton
+                      className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3 items-center ${
+                        expanded
+                          ? 'bg-red-50 border border-gray-50 rounded-2xl'
+                          : 'hover:bg-gray-50'
+                      }`}
+                    >
+                      <span
+                        className={`transition-transform duration-300 ${
+                          expanded ? 'rotate-180 text-red-500' : ''
+                        }`}
+                      >
+                        {expanded ? '−' : '+'}
+                      </span>
+                      <span
+                        className={`font-semibold text-gray-900 ${
+                          expanded ? 'text-red-500' : ''
+                        }`}
+                      >
+                        {faq.question}
+                      </span>
+                    </AccordionItemButton>
+                  )}
+                </AccordionItemState>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="px-6 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg">
+                {faq.answer}
+              </AccordionItemPanel>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
       </div>
     </div>
   );

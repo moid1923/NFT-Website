@@ -10,9 +10,9 @@ import rand8 from "../assets/rand8.png";
 
 const DigitalAsset = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center w-full min-h-screen bg-gradient-to-r from-white via-red-100 to-white p-5 overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center w-full min-h-screen  p-5 overflow-hidden">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-black mb-8">
+      <h1 className="text-[64px] sm:text-4xl md:text-5xl text-center text-black mb-8 font-apex" >
         TURN YOUR IMAGINATION <br /> INTO DIGITAL ASSET
       </h1>
 
