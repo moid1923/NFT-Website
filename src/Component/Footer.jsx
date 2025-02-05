@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="relative w-full">
       {/* Subscribe Section */}
-      <div className="text-center py-10 bg-white">
+      <div className="text-center py-10">
         <h2 className="text-[64px] font-bold text-black font-apex">Ready for Next NFT Drop?</h2> 
         <div className="mt-4 flex justify-center items-center gap-2 relative w-[680px] h-[96px] mx-auto">
           <input

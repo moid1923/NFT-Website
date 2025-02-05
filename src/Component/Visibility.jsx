@@ -27,7 +27,7 @@ function Visibility() {
         <div className="image-section lg:w-1/2 relative h-[611px]">
             <div  className="absolute top-1 left-10  w-full max-w-[242px] h-[322px] bg-white rounded-2xl s"
             >
-               <div className="p-3 flex items-center space-x-3">
+               <div className="p-3 flex items-center space-x-3 overflow-hidden ">
                                   <img
                                     src={vlogo}
                                     className="w-10 h-10 rounded-full"
@@ -39,7 +39,7 @@ function Visibility() {
                                 </div>
                   
                   
-                              <div className=" relative w-full h-[84%]">
+                              <div className=" relative w-full h-[84%] ">
                               <img
                                   src={topv}
                                   alt="NFT"

@@ -6,7 +6,7 @@ import fcfour from "../assets/fc-4.jfif";
 import fclogo from "../assets/fc-logo.jfif";
 import lefti from "../assets/fbtn.png";
 import righti from "../assets/fbtn2.png";
-
+import cardimg from '../assets/cardstyle.png';
 const cards = [
   { id: 1, img: fcone, price: "$20.00" },
   { id: 2, img: fctwo, price: "$25.00" },
@@ -63,11 +63,11 @@ export default function FeaturedCollection() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-3 " >
           {rotatedCards.map((card) => (
             <div
               key={card.id}
-              className="w-full max-w-[308px] h-[410px] bg-white rounded-2xl shadow-lg overflow-hidden mx-auto"
+              className="w-full max-w-[308px] h-[410px] bg-white rounded-2xl shadow-lg overflow-hidden mx-auto "
             >
               <div className="p-3 flex items-center space-x-3">
                 <img src={fclogo} alt="Logo" className="w-10 h-10 rounded-full" />
