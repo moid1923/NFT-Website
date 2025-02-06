@@ -73,7 +73,7 @@ export default function FeaturedCollection() {
         <Slider {...settings} className="relative">
           {cards.map((card) => (
             <div key={card.id} className="px-3">
-              <div className="w-full max-w-[308px] h-[411px]  p-4 rounded-2xl shadow-lg overflow-hidden mx-auto relative"
+              <div className="w-full max-w-[308px] h-[411px] p-2  rounded-2xl shadow-lg  mx-auto relative"
               style={{ backgroundImage: `url(${bg})` }}
               >
                 <div className="absolute w-[30px] h-[30px] rounded-full"></div>
@@ -85,8 +85,8 @@ export default function FeaturedCollection() {
                   </div>
                 </div>
 
-                <div className="relative w-[282px] h-[314px] ">
-                  <img src={card.img} alt="NFT" className="w-full h-full object-cover  rounded-2xl absolute bottom-4 right-1" />
+                <div className=" relative w-full h-[76%] ">
+                  <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
                     <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm">
                       Buy
