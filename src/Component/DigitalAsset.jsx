@@ -12,7 +12,7 @@ const DigitalAsset = () => {
   return (
     <div className="relative flex flex-col items-center justify-center w-full min-h-screen  p-5 overflow-hidden">
       {/* Title */}
-      <h1 className="text-[64px] sm:text-4xl md:text-5xl text-center text-black mb-8 font-apex" >
+      <h1 className="md:text-[64px] text-[45px] sm:text-4xl md:text-5xl text-center text-black mb-8 font-apex" >
         TURN YOUR IMAGINATION <br /> INTO DIGITAL ASSET
       </h1>
 

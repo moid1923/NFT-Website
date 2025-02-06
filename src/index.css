@@ -3,27 +3,11 @@
 @import url('https://fonts.cdnfonts.com/css/apex-mk2');
 @theme {
   /* font-family */
-   
-    /* Colors */
-    --color-bg-color: #E6E6E6;
-    --color-main-color: #333333;
-    --color-light-gray: #B3B3B3;
-    --color-light-gray2: #A4A4A4;
-    --color-dark-gray: #373737;
-    --color-btn: #fe5c5c;
-    --color-dark-gray2: #808080;
-    --color-black: #000000;
-    --color-white: #FFFFFF;
-    --color-gold: #D2AC6C;
-    --color-light-gold: #E0C598;
-    --color-shade-gold: #A88A56;
-    --color-orange: #E58835;
-    --color-sky-blue: #61CAE6;
-    --color-mpt-blue: #179AD3;
-    --color-pale-blue: #E8F5FB;
-    --color-moss-blue: #0C4D6A;
+   --breakpoint-xs: 370px;
   } 
   .font-apex{
    font-family:'Apex Mk2', sans-serif;
   }
- 
+ .font-roboto{
+  font-family: "Roboto", serif;
+ }

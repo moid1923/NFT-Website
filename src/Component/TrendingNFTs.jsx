@@ -8,7 +8,7 @@ import nft6 from "../assets/nft6.png";
 import nft7 from "../assets/nft7.jfif";
 import nft8 from "../assets/nft8.png";
 import hero from '../assets/fc-logo.jfif'
-
+import bg from '../assets/bgfeature.png'
 const nfts = [
   { id: 1, img: nft1, price: "142.02" },
   { id: 2, img: nft2, price: "142.02" },
@@ -25,8 +25,8 @@ export default function TrendingNFTs() {
     <div className=" py-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-[64px]  font-apex">TRENDING NFT'S</h2>
+        <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
+          <h2 className="md:text-[64px] text-[45px]  font-apex">TRENDING NFT'S</h2>
           <button className="bg-red-500 text-white px-4 py-2 rounded-lg flex items-center">
             Last 30 Minutes <span className="ml-2">▼</span>
           </button>
@@ -37,7 +37,9 @@ export default function TrendingNFTs() {
           {nfts.map((nft) => (
             <div
               key={nft.id}
-              className="w-full max-w-[308px] h-[410px] bg-white rounded-2xl shadow-lg overflow-hidden mx-auto"
+              className="w-full max-w-[308px] h-[410px] rounded-2xl p-2 shadow-lg overflow-hidden mx-auto"
+              style={{ backgroundImage: `url(${bg})` }}
+              
             >
               <div className="p-3 flex items-center space-x-3">
                 <img
@@ -56,7 +58,7 @@ export default function TrendingNFTs() {
             <img
                 src={nft.img}
                 alt="NFT"
-                className="w-full h-[100%] object-cover absolute"
+                className="w-full h-[100%] object-cover absolute rounded-2xl"
               />
 
               <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">

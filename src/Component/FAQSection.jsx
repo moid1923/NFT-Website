@@ -35,9 +35,9 @@ function FAQSection() {
   ];
 
   return (
-    <div className=" py-16 px-6 sm:px-12">
+    <div className=" py-16 px-6 sm:px-12 ">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-center text-[64px] sm:text-4xl  text-gray-900 mb-8 font-apex">
+        <h2 className="text-center md:text-[64px] text-[45px]  text-gray-900 mb-8 font-apex ">
           FREQUENTLY ASKED QUESTIONS
         </h2>
         <Accordion allowZeroExpanded preExpanded={[0]}>
@@ -45,16 +45,16 @@ function FAQSection() {
             <AccordionItem
               key={index}
               uuid={index}
-              className="border-b border-gray-500 last:border-b-0 px-2 py-2"
+              className="border border-gray-500 rounded-2xl  my-3"
             >
               <AccordionItemHeading>
                 <AccordionItemState>
                   {({ expanded }) => (
                     <AccordionItemButton
-                      className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3 items-center ${
+                      className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3 items-center relative ${
                         expanded
-                          ? 'bg-red-50 border border-gray-50 rounded-2xl'
-                          : 'hover:bg-gray-50'
+                          ? 'bg-[#ffe0e0] border border-gray-50 rounded-2xl my-2 w-[96%] absolute'
+                          : 'hover:bg-gray-50 bg-[#fff9f9] rounded-2xl'
                       }`}
                     >
                       <span

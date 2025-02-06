@@ -1,0 +1,75 @@
+@keyframes center {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-65px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .main-card {
+    animation: center 5s ease-in-out infinite;
+  }
+  @keyframes fleft {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translatex(-45px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  
+  .f-left {
+    animation: fleft 5s ease-in-out infinite;
+  }
+  @keyframes fright {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translatex(45px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  
+  .f-right {
+    animation: fright 5s ease-in-out infinite;
+  }
+  @keyframes sleft {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateX(45px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  
+  .s-left {
+    animation: sleft 5s ease-in-out infinite;
+  }
+  @keyframes sright {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateX(-45px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  
+  .s-right {
+    animation: sright 5s ease-in-out infinite;
+  }

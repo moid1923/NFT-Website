@@ -9,7 +9,7 @@ import oction7 from "../assets/oction7.jfif";
 import oction8 from "../assets/oction8.png";
 import hero from '../assets/fc-logo.jfif'
 import MainBtn from './MainBtn';
-
+import bg from '../assets/bgfeature.png'
 const oction = [
   { id: 1, img: oction1, price: "142.02" },
   { id: 2, img: oction2, price: "142.02" },
@@ -27,7 +27,7 @@ function Oction() {
             <div className="max-w-7xl mx-auto px-4">
               {/* Header */}
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-[64px]  font-apex">Auction</h2>
+                <h2 className="md:text-[64px] text-[45px]  font-apex">Auction</h2>
                 
               </div>
       
@@ -36,7 +36,8 @@ function Oction() {
                 {oction.map((nft) => (
                   <div
                     key={nft.id}
-                    className="w-full max-w-[308px] h-[410px] bg-white rounded-2xl shadow-lg overflow-hidden mx-auto"
+                    className="w-full max-w-[308px] h-[410px] p-2  rounded-2xl shadow-lg overflow-hidden mx-auto"
+                    style={{ backgroundImage: `url(${bg})` }}
                   >
                     <div className="p-3 flex items-center space-x-3">
                       <img
@@ -54,7 +55,7 @@ function Oction() {
                   <img
                       src={nft.img}
                       alt="NFT"
-                      className="w-full h-[100%] object-cover absolute"
+                      className="w-full h-[100%] object-cover absolute rounded-2xl "
                     />
                     <div className=''>
                         <p className='bg-white rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider '>3:06:59:18</p>

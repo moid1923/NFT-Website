@@ -8,7 +8,7 @@ import nft6 from "../assets/sold6.jfif";
 import nft7 from "../assets/sold7.png";
 import nft8 from "../assets/sold8.png";
 import hero from '../assets/fc-logo.jfif'
-
+import bg from '../assets/bgfeature.png'
 const nfts = [
   { id: 1, img: nft1, price: "142.02" },
   { id: 2, img: nft2, price: "142.02" },
@@ -26,7 +26,7 @@ export default function RecentlySold() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-[64px]  font-apex">Recently Sold</h2>
+          <h2 className="md:text-[64px] text-[45px]  font-apex">Recently Sold</h2>
           
         </div>
 
@@ -35,7 +35,8 @@ export default function RecentlySold() {
           {nfts.map((nft) => (
             <div
               key={nft.id}
-              className="w-full max-w-[308px] h-[410px] bg-white rounded-2xl shadow-lg overflow-hidden mx-auto"
+              className="w-full max-w-[308px] h-[410px] p-2 rounded-2xl shadow-lg overflow-hidden mx-auto"
+              style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
                 <img
@@ -54,7 +55,7 @@ export default function RecentlySold() {
             <img
                 src={nft.img}
                 alt="NFT"
-                className="w-full h-[100%] object-cover absolute opacity-[0.7]"
+                className="w-full h-[100%] object-cover absolute opacity-[0.7] rounded-2xl"
               />
 
               <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
