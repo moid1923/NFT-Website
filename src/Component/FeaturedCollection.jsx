@@ -10,7 +10,6 @@ import fcfour from "../assets/fc-4.jfif";
 import fclogo from "../assets/fc-logo.jfif";
 import lefti from "../assets/fbtn.png";
 import righti from "../assets/fbtn2.png";
- import subtract from '../assets/subtract.png'
 const cards = [
   { id: 1, img: fcone, price: "$20.00" },
   { id: 2, img: fctwo, price: "$25.00" },
