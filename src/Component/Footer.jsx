@@ -10,11 +10,11 @@ const Footer = () => {
       {/* Subscribe Section */}
       <div className="text-center py-10">
         <h2 className="md:text-[64px] text-[45px] font-bold text-black font-apex">Ready for Next NFT Drop?</h2> 
-        <div className="mt-4 flex justify-center items-center gap-2 relative max-w-[680px] h-[96px] mx-auto">
+        <div className="mt-4 flex justify-center items-center gap-2 relative max-w-[680px] h-[96px] mx-auto ">
           <input
             type="email"
             placeholder="info@gmail.com"
-            className="px-6 py-3 text-red-500 border border-red-300  focus:outline-none w-full  shadow-sm"
+            className="px-6 py-3 text-red-500 border border-red-300  focus:outline-none w-full  shadow-sm xs:w-[96%]"
           />
           <button className="bg-red-500 p-[10px] rounded-lg text-white shadow-md absolute right-4">
             <FaTelegramPlane size={20} />
