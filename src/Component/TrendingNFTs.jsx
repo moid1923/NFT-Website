@@ -27,7 +27,7 @@ export default function TrendingNFTs() {
         {/* Header */}
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
           <h2 className="md:text-[64px] text-[45px]  font-apex">TRENDING NFT'S</h2>
-          <button className="bg-red-500 text-white px-4 py-2 rounded-lg flex items-center">
+          <button className="border border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center">
             Last 30 Minutes <span className="ml-2">▼</span>
           </button>
         </div>
@@ -47,8 +47,8 @@ export default function TrendingNFTs() {
 
                   className="w-10 h-10 rounded-full"
                 />
-                <div>
-                  <h3 className="text-sm font-semibold">STELLA NOVA</h3>
+                <div className="">
+                  <h3 className="text-sm  font-apex">STELLA NOVA</h3>
                   <p className="text-xs text-gray-500">@Stella Nova</p>
                 </div>
               </div>

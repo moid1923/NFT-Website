@@ -80,7 +80,7 @@ export default function FeaturedCollection() {
                 <div className="p-3 flex items-center space-x-3 my-3">
                   <img src={fclogo} alt="Logo" className="w-10 h-10 rounded-full" />
                   <div className="mt-2">
-                    <h3 className="text-sm font-semibold">STELLA NOVA</h3>
+                    <h3 className="text-sm font-apex">STELLA NOVA</h3>
                     <p className="text-xs text-gray-500">@Stella Nova</p>
                   </div>
                 </div>
