@@ -19,13 +19,13 @@ const cards = [
 
 // Custom Previous and Next Buttons
 const NextArrow = ({ onClick }) => (
-  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-3 -top-10" onClick={onClick}>
+  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-3 md:-top-10 -top-4" onClick={onClick}>
     <img src={righti} alt="Next" className="w-10 h-10" />
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
-  <div className="absolute  transform -translate-y-1/2 z-10 cursor-pointer right-20 -top-10" onClick={onClick}>
+  <div className="absolute  transform -translate-y-1/2 z-10 cursor-pointer right-20 md:-top-10 -top-4" onClick={onClick}>
     <img src={lefti} alt="Previous" className="w-10 h-10" />
   </div>
 );
@@ -56,14 +56,14 @@ export default function FeaturedCollection() {
   };
 
   return (
-    <div className="py-10">
+    <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <h2 className="text-3xl font-apex md:text-[64px] xs:text-center sm:text-start">
+        <h2 className="text-3xl font-apex md:text-[64px] xs:text-center text-bold sm:text-start leading-[76px] tracking-[4%]">
           Featured Collection
         </h2>
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
-          <p className="text-[18px] opacity-70">
+          <p className="text-[18px] opacity-70 mb-5 text-center md:text-left">
             Explore our exclusive featured collection, showcasing innovative campaigns and creative
             <br /> storytelling from top brands around the world.
           </p>
@@ -73,7 +73,7 @@ export default function FeaturedCollection() {
         <Slider {...settings} className="relative">
           {cards.map((card) => (
             <div key={card.id} className="px-3">
-              <div className="w-full max-w-[308px] h-[411px] p-2  rounded-2xl shadow-lg  mx-auto relative transform hover:scale-104 transition-transform duration-300"
+              <div className="w-full max-w-[308px] h-[411px] p-2  rounded-2xl shadow-lg  mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
               style={{ backgroundImage: `url(${bg})` }}
               >
                 <div className="absolute w-[30px] h-[30px] rounded-full"></div>

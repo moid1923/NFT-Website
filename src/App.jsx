@@ -17,8 +17,8 @@ import Visibility from './Component/Visibility'
 function App() {
 
   return (
-    <div className='bg-gradient-to-b from-white to-[#fff0f0] max-w-[100%] overflow-x-hidden'>
-    <Navbar/>
+    <div className='bg-gradient-to-b from-[#fff0f0] to-white max-w-[100%] overflow-x-hidden'>
+    <Navbar/> 
     <HeroSection/>
     <HeroImages/>
     <FeaturedCollection/>

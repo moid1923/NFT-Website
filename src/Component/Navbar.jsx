@@ -12,8 +12,8 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full relative">
-      <nav className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6 max-w-[1320px] mx-auto ">
+    <div className="relative w-full">
+      <nav className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6 max-w-[1320px] mx-auto sticky left-0 top-0">
         {/* Logo */}
         <div className="flex items-center">
           <img
@@ -37,7 +37,7 @@ function Navbar() {
 
         {/* Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <MainBtn/>
+          <MainBtn />
           <button className="border border-red-500 text-red-500 px-6 py-2 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
             Create NFT
           </button>
@@ -49,7 +49,8 @@ function Navbar() {
           className="md:hidden flex items-center p-2 text-gray-700 z-50"
           title="Menu"
         >
-          {sideMenu ? <IoClose size={28} /> : <HiMenu size={28} />}
+          <HiMenu size={28} />
+          
         </button>
       </nav>
 
@@ -57,10 +58,25 @@ function Navbar() {
       {sideMenu && (
         <div className="fixed inset-0 bg-black/50 z-40" onClick={toggleMenu}>
           <div
-            className="absolute top-0 right-0 w-64 h-full bg-white shadow-md z-50"
+            className="absolute top-0 left-0 w-64 h-full bg-white shadow-md z-50"
             onClick={(e) => e.stopPropagation()}
           >
-            <ul className="flex flex-col items-start p-6 space-y-4 text-sm font-medium text-gray-800">
+            <div className="flex items-center justify-between px-5 py-4">
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-[100px] h-[100px] object-cover"
+              />
+              <button
+          onClick={toggleMenu}
+          className="md:hidden flex items-center p-2 text-gray-700 z-50"
+          title="Menu"
+        >
+          {sideMenu ? <IoClose size={28} /> : <HiMenu size={28} />}
+        </button>
+            </div>
+
+            <ul className="flex flex-col items-start p-6 space-y-4 text-sm font-medium text-gray-800 mt-[20px]">
               <li
                 onClick={toggleMenu}
                 className="cursor-pointer hover:text-red-500 transition duration-200"

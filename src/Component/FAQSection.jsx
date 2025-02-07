@@ -35,7 +35,7 @@ function FAQSection() {
   ];
 
   return (
-    <div className=" py-16 px-6 sm:px-12 ">
+    <div className=" py-16 px-6 sm:px-12 lg:my-10">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-center md:text-[64px] text-[45px]  text-gray-900 mb-8 font-apex ">
           FREQUENTLY ASKED QUESTIONS

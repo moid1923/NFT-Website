@@ -6,7 +6,7 @@ import vlogo from "../assets/vlogo.jfif";
 import bg from '../assets/bgfeature.png'
 function Visibility() {
   return (
-    <div className=" py-16 px-4 sm:px-8 md:px-16">
+    <div className=" py-8 px-4 sm:px-8 md:px-16 lg:my-10">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Text Section */}
         <div className="lg:w-1/2 text-center lg:text-left">

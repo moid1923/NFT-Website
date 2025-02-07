@@ -21,11 +21,11 @@ const sellers = [
 
 export default function TopSellers() {
   return (
-    <div className=" py-10">
+    <div className=" py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
-          <h2 className="md:text-[64px] text-[45px]  font-apex">TOP SELLER</h2>
+          <h2 className="md:text-[64px] text-[45px]   font-apex">TOP SELLER</h2>
           <button className="text-red-500 text-lg font-semibold hover:underline">
             View All
           </button>
