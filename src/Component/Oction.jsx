@@ -36,7 +36,7 @@ function Oction() {
                 {oction.map((nft) => (
                   <div
                     key={nft.id}
-                    className="w-full max-w-[308px] h-[410px] p-2  rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90"
+                    className="w-full max-w-[308px] h-[410px] p-4  rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90"
                     style={{ backgroundImage: `url(${bg})` }}
                   >
                     <div className="p-3 flex items-center space-x-3">

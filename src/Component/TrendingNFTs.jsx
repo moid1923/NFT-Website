@@ -37,7 +37,7 @@ export default function TrendingNFTs() {
           {nfts.map((nft) => (
             <div
               key={nft.id}
-              className="w-full max-w-[308px] h-[410px] rounded-2xl p-2 shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300 "
+              className="w-full max-w-[308px] h-[410px] rounded-2xl p-4 shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300 "
               style={{ backgroundImage: `url(${bg})` }}
               
             >
