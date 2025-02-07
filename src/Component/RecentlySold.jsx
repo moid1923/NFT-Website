@@ -25,10 +25,10 @@ export default function RecentlySold() {
     <div className=" py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="flex justify-between items-center mb-6">
+        
           <h2 className="md:text-[64px] text-[45px] xs:text-center md:text-left  font-apex">Recently Sold</h2>
           
-        </div>
+       
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-3">
