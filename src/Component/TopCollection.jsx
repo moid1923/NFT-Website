@@ -30,10 +30,10 @@ const collections = [
 
 const TopCollection = () => {
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 max-w-[1320px] w-full">
       {/* Header Section */}
       <div className="header flex items-center justify-between flex-col md:flex-row">
-        <h2 className="md:text-[64px] text-[45px]  mb-6 font-apex">TOP COLLECTIONS</h2>
+        <h2 className="md:text-[64px] text-[45px]  mb-6 font-apex font-bold">TOP COLLECTIONS</h2>
         <div className="text-right md:mt-6 my-3 ">
           <a href="#" className="text-red-500 font-semibold text-sm ">
             View More Collection

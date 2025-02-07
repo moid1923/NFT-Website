@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="w-full relative">
-      <nav className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6 max-w-[1320px] mx-auto">
+      <nav className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6 max-w-[1320px] mx-auto ">
         {/* Logo */}
         <div className="flex items-center">
           <img

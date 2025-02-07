@@ -1,16 +1,18 @@
 @media (min-width: 360px) and (max-width: 640px) {
     .c-3{
-        left: 100px;
-        bottom: 60px;
+        left: 30px;
+        bottom: 140px;
     }
     .c-2{
+        width: 80px;
         top:95px;
+        left: 30px;
     }
     .c-4{
         left: 40px;
     }
     .c-6{
-        top:95px;
+        top:9
     }
     .c-7{
         right: 100px;
@@ -18,6 +20,23 @@
     }
     .c-8{
         right: 40px;
+    }
+    .c-5{
+        right: 20px;
+    }
+    .cd{
+        width: 90px;height: 90px;
+
+    }
+    .cdimg{
+        width: 80px;height: 80px;
+    }
+    
+  }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .c-2{
+        left: 150px;
+        top: 15%;
     }
   }
   
