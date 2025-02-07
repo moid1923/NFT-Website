@@ -73,7 +73,7 @@ export default function FeaturedCollection() {
         <Slider {...settings} className="relative">
           {cards.map((card) => (
             <div key={card.id} className="px-3">
-              <div className="w-full max-w-[308px] h-[411px] p-2  rounded-2xl shadow-lg  mx-auto relative"
+              <div className="w-full max-w-[308px] h-[411px] p-2  rounded-2xl shadow-lg  mx-auto relative transform hover:scale-104 transition-transform duration-300"
               style={{ backgroundImage: `url(${bg})` }}
               >
                 <div className="absolute w-[30px] h-[30px] rounded-full"></div>

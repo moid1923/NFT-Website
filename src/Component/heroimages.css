@@ -73,3 +73,20 @@
   .s-right {
     animation: sright 5s ease-in-out infinite;
   }
+
+  @media (max-width: 640px) {
+    .main-card {
+        animation: none;
+        width: 300px;
+        left: 150px;
+       
+    }
+}
+@media (max-width: 450px) {
+  .main-card {
+      animation: none;
+      width: 300px;
+      left: 70px;
+     
+  }
+}

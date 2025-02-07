@@ -1,0 +1,23 @@
+@media (min-width: 360px) and (max-width: 640px) {
+    .c-3{
+        left: 100px;
+        bottom: 60px;
+    }
+    .c-2{
+        top:95px;
+    }
+    .c-4{
+        left: 40px;
+    }
+    .c-6{
+        top:95px;
+    }
+    .c-7{
+        right: 100px;
+        bottom: 60px;
+    }
+    .c-8{
+        right: 40px;
+    }
+  }
+  
