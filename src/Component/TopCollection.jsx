@@ -46,7 +46,7 @@ const TopCollection = () => {
         {collections.map((collection) => (
           <div
             key={collection.id}
-            className="p-4 rounded-2xl shadow-lg bg-white transform hover:scale-105 transition-transform duration-300"
+            className="p-4 rounded-2xl shadow-lg bg-white transform hover:scale-105 transition-transform duration-300 m-4 md:m-0"
           >
             {/* Image Grid */}
             <div className="grid grid-cols-4 grid-rows-2 gap-2 ">

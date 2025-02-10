@@ -21,7 +21,7 @@ function Visibility() {
             featured sections, and on the homepage, maximizing exposure to
             potential buyers.
           </p>
-          <button className="mt-6 bg-red-500 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 focus:ring focus:ring-red-300">
+          <button className="mt-6 cursor-pointer bg-red-500 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 focus:ring focus:ring-red-300">
             Boost <span className="ml-2">🚀</span>
           </button>
         </div>

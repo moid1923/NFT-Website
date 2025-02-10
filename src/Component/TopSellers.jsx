@@ -26,7 +26,7 @@ export default function TopSellers() {
         {/* Header Section */}
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
           <h2 className="md:text-[64px] text-[45px]   font-apex">TOP SELLER</h2>
-          <button className="text-red-500 text-lg font-semibold hover:underline">
+          <button className="text-red-500 text-lg font-semibold hover:underline cursor-pointer">
             View All
           </button>
         </div>

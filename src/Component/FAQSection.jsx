@@ -50,13 +50,14 @@ function FAQSection() {
               <AccordionItemHeading>
                 <AccordionItemState>
                   {({ expanded }) => (
-                    <AccordionItemButton
-                      className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3 items-center relative ${
-                        expanded
-                          ? 'bg-[#ffe0e0] border border-gray-50 rounded-2xl my-2 w-[96%] absolute'
-                          : 'hover:bg-gray-50 bg-[#fff9f9] rounded-2xl'
-                      }`}
-                    >
+                   <AccordionItemButton
+                   className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3 items-center relative ${
+                     expanded
+                       ? 'bg-[#ffe0e0] border border-gray-300 rounded-2xl m-0'
+                       : 'hover:bg-gray-50 bg-[#fff9f9] rounded-2xl'
+                   }`}
+                 >
+                 
                       <span
                         className={`transition-transform duration-300 ${
                           expanded ? 'rotate-180 text-red-500' : ''

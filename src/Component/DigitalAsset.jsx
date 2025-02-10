@@ -54,7 +54,7 @@ const DigitalAsset = () => {
             placeholder="Fantasy Creature holding a sword..."
             className="w-full sm:py-3 sm:px-5 border-none focus:outline-none text-[12px] px-2 py-3 sm:text-[14px] font-roboto "
           />
-          <button className="absolute right-2 bg-red-500 text-white px-2  sm:px-6 py-2 rounded-full font-medium shadow-md hover:bg-red-600 transition text-[14px] sm:text-[18px]">
+          <button className="absolute right-2 bg-red-500 text-white px-2  sm:px-6 py-2 rounded-lg font-medium  hover:bg-red-600 shadow-lg transition text-[14px] sm:text-[18px]">
             Generate 🚀
           </button>
         </div>

@@ -30,15 +30,16 @@ export default function TrendingNFTs() {
             TRENDING NFT'S
           </h2>
           <select className="border border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center text-md sm:text-base">
-            <option value=""> Last 30 Minutes </option>
-            <option value="">Last One Hour</option>
-            <option value=""> Last 7 hour</option>
-            <option value="">Last hours</option>
+            <option value="" className="text-black border border-red-500"> Last 30 Minutes </option>
+            <option value="" className="text-black border border-red-500">Last One Hour</option>
+            
+            <option value="" className="text-black border border-red-500"> Last 7 hour</option>
+            <option value="" className="text-black border border-red-500">Last hours</option>
           </select>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-6 md:gap-3 lg:gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 md:gap-3 lg:gap-6 ">
           {nfts.map((nft) => (
             <div
               key={nft.id}
