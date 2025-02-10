@@ -29,7 +29,7 @@ export default function TrendingNFTs() {
           <h2 className="md:text-[64px] sm:text-[45px] text-[30px]  font-apex">
             TRENDING NFT'S
           </h2>
-          <select className="border border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center text-md sm:text-base">
+          <select className="border border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center text-md sm:text-base cursor-pointer">
             <option value="" className="text-black border border-red-500"> Last 30 Minutes </option>
             <option value="" className="text-black border border-red-500">Last One Hour</option>
             

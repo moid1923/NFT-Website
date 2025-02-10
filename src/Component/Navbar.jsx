@@ -33,7 +33,7 @@ function Navbar() {
         <div className="hidden md:flex items-center space-x-8">
           <ul className="flex items-center space-x-6 text-sm font-medium text-gray-800">
             <li
-              className={`cursor-pointer hover:text-red-500 transition duration-200 ${
+              className={`cursor-pointer hover:text-red-500 transition py-3 duration-200 ${
                 active === "Home" ? "border-b-3 border-red-500 text-red-500" : ""
               }`}
               onClick={() => handleMenuClick("Home")}
@@ -41,7 +41,7 @@ function Navbar() {
               Home
             </li>
             <li
-              className={`cursor-pointer hover:text-red-500 transition duration-200 ${
+              className={`cursor-pointer hover:text-red-500 py-3 transition duration-200 ${
                 active === "AI NFT GENERATION" ? "border-b-3 border-red-500 text-red-500" : ""
               }`}
               onClick={() => handleMenuClick("AI NFT GENERATION")}

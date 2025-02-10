@@ -44,7 +44,7 @@ const Footer = () => {
         className="relative bg-cover  bg-center max-w-[1320px] w-full mx-auto rounded-t-3xl p-8 my-2"
         style={{ backgroundImage: `url(${mask})` }}
       >
-        <div className=" mx-auto  flex  flex-col md:flex-row items-center justify-evenly ">
+        <div className=" mx-auto  flex  flex-col md:flex-row items-start justify-evenly ">
           {/* Left Section */}
           <div className="flex">
             <img
@@ -56,7 +56,7 @@ const Footer = () => {
           {/* middle Section */}
           <div className="flex items-center justify-center">
             <div>
-              <p className="mt-4 max-w-xs text-[20px] text-white text-center md:text-left mb-12">
+              <p className="mt-4 max-w-xs text-[20px] text-white text-center md:text-left ">
                 NFT ALGO is the world’s leading NFTs marketplace where you can
                 discover, sell and bid NFTs and get rich
               </p>
