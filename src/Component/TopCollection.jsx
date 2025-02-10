@@ -30,7 +30,7 @@ const collections = [
 
 const TopCollection = () => {
   return (
-    <div className="container mx-auto p-3 lg:p-6 max-w-[1320px] w-full lg:my-10">
+    <div className="container mx-auto  lg:p-6 max-w-[1320px] w-full lg:my-10">
       {/* Header Section */}
       <div className="header flex items-center justify-between flex-col md:flex-row">
         <h2 className="md:text-[64px] text-[45px] text-center md:text-left mb-3 font-apex ">TOP COLLECTIONS</h2>
