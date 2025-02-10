@@ -41,6 +41,12 @@ export default function FeaturedCollection() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
@@ -48,6 +54,12 @@ export default function FeaturedCollection() {
       },
       {
         breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
         },
@@ -73,7 +85,7 @@ export default function FeaturedCollection() {
         <Slider {...settings} className="relative">
           {cards.map((card) => (
             <div key={card.id} className="px-3">
-              <div className="w-full max-w-[308px] h-[411px] p-4  rounded-2xl shadow-lg  mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
+              <div className="w-full max-w-[308px] h-[411px] p-4  rounded-2xl shadow-lg  mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3 "
               style={{ backgroundImage: `url(${bg})` }}
               >
                 <div className="absolute w-[30px] h-[30px] rounded-full"></div>
@@ -88,7 +100,7 @@ export default function FeaturedCollection() {
                 <div className=" relative w-full h-[76%] ">
                   <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                    <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm">
+                    <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm cursor-pointer">
                       Buy
                     </button>
                     <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">

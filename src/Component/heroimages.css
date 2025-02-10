@@ -33,7 +33,7 @@
         transform: translateY(0);
       }
       50% {
-        transform: translatex(45px);
+        transform: translatex(-45px);
       }
       100% {
         transform: translateY(0);
@@ -63,7 +63,7 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateX(-45px);
+        transform: translateX(45px);
       }
       100% {
         transform: translateY(0);

@@ -19,7 +19,7 @@ function Navbar() {
           <img
             src={logo}
             alt="Logo"
-            className="w-[100px] h-[100px] object-cover"
+            className="md:w-[100px] md:h-[100px] object-cover cursor-pointer w-[75px] h-[75px]"
           />
         </div>
 
@@ -38,7 +38,7 @@ function Navbar() {
         {/* Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <MainBtn />
-          <button className="border border-red-500 text-red-500 px-6 py-2 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
+          <button className="border border-red-500 cursor-pointer text-red-500 px-6 py-2 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
             Create NFT
           </button>
         </div>

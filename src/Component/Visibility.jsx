@@ -4,6 +4,7 @@ import botv from "../assets/botv.png";
 import sidev from "../assets/sidev.png";
 import vlogo from "../assets/vlogo.jfif";
 import bg from '../assets/bgfeature.png'
+import visibility from '../assets/visibility.png'
 function Visibility() {
   return (
     <div className=" py-8 px-4 sm:px-8 md:px-16 lg:my-10">
@@ -25,7 +26,10 @@ function Visibility() {
           </button>
         </div>
         <div className="image-section lg:w-1/2 relative ">
-          <div className="images relative w-[498px] h-[611px]">
+        <div>
+          <img src={visibility} alt="" />
+        </div>
+          {/* <div className="images relative w-[498px] h-[611px]">
             <div className="image-1 w-[242px] h-[322px]  bg-cover absolute top-7 left-[80px] sm:top-7 sm:left-1 md:top-3 md:left-3 " style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3 my-3">
@@ -79,7 +83,7 @@ function Visibility() {
               </div>
               
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Image Section */}

@@ -7,8 +7,8 @@ import nft5 from "../assets/nft5.jfif";
 import nft6 from "../assets/nft6.png";
 import nft7 from "../assets/nft7.jfif";
 import nft8 from "../assets/nft8.png";
-import hero from '../assets/fc-logo.jfif'
-import bg from '../assets/bgfeature.png'
+import hero from "../assets/fc-logo.jfif";
+import bg from "../assets/bgfeature.png";
 const nfts = [
   { id: 1, img: nft1, price: "142.02" },
   { id: 2, img: nft2, price: "142.02" },
@@ -25,50 +25,50 @@ export default function TrendingNFTs() {
     <div className=" py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
-          <h2 className="md:text-[64px] text-[45px]  font-apex">TRENDING NFT'S</h2>
-          <button className="border border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center">
-            Last 30 Minutes <span className="ml-2">▼</span>
-          </button>
+        <div className="flex justify-between items-center mb-6 flex-row">
+          <h2 className="md:text-[64px] sm:text-[45px] text-[30px]  font-apex">
+            TRENDING NFT'S
+          </h2>
+          <select className="border border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center text-md sm:text-base">
+            <option value=""> Last 30 Minutes </option>
+            <option value="">Last One Hour</option>
+            <option value=""> Last 7 hour</option>
+            <option value="">Last hours</option>
+          </select>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-6 md:gap-3 lg:gap-6 p-3">
           {nfts.map((nft) => (
             <div
               key={nft.id}
               className="w-full max-w-[308px] h-[410px] rounded-2xl p-4 shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300 "
               style={{ backgroundImage: `url(${bg})` }}
-              
             >
               <div className="p-3 flex items-center space-x-3">
-                <img
-                  src={hero}
-
-                  className="w-10 h-10 rounded-full"
-                />
+                <img src={hero} className="w-10 h-10 rounded-full" />
                 <div className="">
                   <h3 className="text-sm  font-apex">STELLA NOVA</h3>
                   <p className="text-xs text-gray-500">@Stella Nova</p>
                 </div>
               </div>
 
+              <div className=" relative w-full h-[84%]">
+                <img
+                  src={nft.img}
+                  alt="NFT"
+                  className="w-full h-[100%] object-cover absolute rounded-2xl"
+                />
 
-            <div className=" relative w-full h-[84%]">
-            <img
-                src={nft.img}
-                alt="NFT"
-                className="w-full h-[100%] object-cover absolute rounded-2xl"
-              />
-
-              <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
-                <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm">
-                  Buy
-                </button>
-                <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">Price: {nft.price} ETH</span>
+                <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
+                  <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm cursor-pointer">
+                    Buy
+                  </button>
+                  <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">
+                    Price: {nft.price} ETH
+                  </span>
+                </div>
               </div>
-            </div>
-              
             </div>
           ))}
         </div>

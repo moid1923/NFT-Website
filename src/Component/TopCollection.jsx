@@ -42,18 +42,18 @@ const TopCollection = () => {
       </div>
 
       {/* Collection Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {collections.map((collection) => (
           <div
             key={collection.id}
             className="p-4 rounded-2xl shadow-lg bg-white transform hover:scale-105 transition-transform duration-300"
           >
             {/* Image Grid */}
-            <div className="grid grid-cols-4 grid-rows-2 gap-2 h-[200px] l">
-              <div className="col-span-2 row-span-2">
+            <div className="grid grid-cols-4 grid-rows-2 gap-2 ">
+              <div className="col-span-2 row-span-2 ">
                 <img src={collection.images[0]} alt="" className="w-full h-full object-cover rounded-md" />
               </div>
-              <div className="col-span-2 row-span-2">
+              <div className="col-span-2 row-span-2 ">
                 <img src={collection.images[1]} alt="" className="w-full h-full object-cover rounded-md" />
               </div>
               <img src={collection.images[2]} alt="" className="w-full h-full object-cover rounded-md" />
