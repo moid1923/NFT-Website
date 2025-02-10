@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="relative w-full">
       {/* Subscribe Section */}
       <div className="text-center py-10">
-        <h2 className="md:text-[64px] text-[45px]  text-black font-apex">Ready for Next NFT Drop?</h2> 
+        <h2 className="md:text-[64px] sm:text-[45px] text-[25px] text-black font-apex mb-[10px]">Ready for Next NFT Drop?</h2> 
         <div className=' max-w-[680px]  sm:mx-auto md:px-10 border border-red-400 rounded-lg mx-5 px-8'>
         <div className=" bg-transparent  flex justify-center items-center gap-2 relative max-w-[586px] h-[76px] mx-auto 
          rounded-lg">
