@@ -66,7 +66,7 @@ function FAQSection() {
                       </span>
                       <span
                         className={`font-semibold text-gray-900 ${
-                          expanded ? 'text-red-500' : ''
+                          expanded ? 'text-black' : ''
                         }`}
                       >
                         {faq.question}
