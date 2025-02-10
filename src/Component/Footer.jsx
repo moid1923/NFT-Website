@@ -18,7 +18,7 @@ const Footer = () => {
             placeholder="info@gmail.com"
             className=" py-3 bg-transparent text-red-500 borde  focus:outline-none focus:border-red-300 focus:ring-2 focus:ring-red-300 w-full  xs:w-[96%]"
           />
-          <button className="bg-red-500 p-[10px] rounded-lg text-white shadow-md absolute right-0">
+          <button className="bg-red-500 p-[10px] rounded-lg text-white shadow-md absolute right-0 md:right-3">
             <FaTelegramPlane size={20} />
           </button>
         </div>
