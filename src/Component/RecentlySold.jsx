@@ -35,7 +35,7 @@ export default function RecentlySold() {
           {nfts.map((nft) => (
             <div
               key={nft.id}
-              className="w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-50"
+              className="w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:mix-blend-hard-light"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
