@@ -32,8 +32,8 @@ export default function TrendingNFTs() {
     <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="flex justify-between items-center mb-6 flex-row">
-          <h2 className="md:text-[64px] sm:text-[45px] text-[30px] font-apex font-normal md:leading-[76px] tracking-[4%]">
+        <div className="flex justify-between items-center mb-6 flex-row md:mb-[50px]">
+          <h2 className="md:text-[64px] sm:text-[45px] text-[30px] font-apex font-normal md:leading-[76px] tracking-[4%] ">
             TRENDING NFT'S
           </h2>
           {/* Dropdown Button */}
@@ -75,8 +75,8 @@ export default function TrendingNFTs() {
               <div className="p-3 flex items-center space-x-3">
                 <img src={hero} className="w-10 h-10 rounded-full" alt="Profile" />
                 <div>
-                  <h3 className="text-sm font-apex">STELLA NOVA</h3>
-                  <p className="text-xs text-gray-500">@Stella Nova</p>
+                  <h3 className="text-[18px] font-apex">STELLA NOVA</h3>
+                  <p className="text-[11px] text-gray-500">@Stella Nova</p>
                 </div>
               </div>
 

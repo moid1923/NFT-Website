@@ -27,7 +27,7 @@ function Oction() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Header */}
 
-          <h2 className="md:text-[64px] text-[45px] text-center  md:text-left  font-apex font-normal leading-[76px] tracking-[4%]">
+          <h2 className="md:text-[64px] text-[45px] text-center  md:text-left  font-apex font-normal leading-[76px] tracking-[4%] md:mb-[50px]">
             Auction
           </h2>
 
@@ -42,8 +42,8 @@ function Oction() {
                 <div className="p-3 flex items-center space-x-3">
                   <img src={hero} className="w-10 h-10 rounded-full" />
                   <div className="">
-                    <h3 className="text-sm font-apex">STELLA NOVA</h3>
-                    <p className="text-xs text-gray-500">@Stella Nova</p>
+                    <h3 className="text-[18px] font-apex">STELLA NOVA</h3>
+                    <p className="text-[11px] text-gray-500">@Stella Nova</p>
                   </div>
                 </div>
 

@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Middle Section */}
           <div className="flex items-center justify-center">
             <div className="mx-auto">
-              <p className="mt-4 max-w-xs text-[20px] tracking-wider text-white  xs:text-[16px] xs:mx-auto sx:mx-auto md:mx-0">
+              <p className="mt-4 max-w-xs text-[20px] tracking-wider text-white  xs:text-[16px] xs:mx-auto sx:mx-auto md:mx-[0px] ">
                 NFT ALGO is the world's leading NFTs marketplace where you can
                 discover, sell and bid NFTs and get rich
               </p>

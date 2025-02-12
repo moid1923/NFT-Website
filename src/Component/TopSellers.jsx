@@ -24,7 +24,7 @@ export default function TopSellers() {
     <div className=" py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
-        <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
+        <div className="flex justify-between items-center mb-6 flex-col md:flex-row md:mb-[50px]">
           <h2 className="md:text-[64px] text-[45px]   font-apex font-normal leading-[76px] tracking-[4%]">TOP SELLER</h2>
           <button className="text-red-500 text-lg font-semibold hover:underline cursor-pointer">
             View All
@@ -53,8 +53,8 @@ export default function TopSellers() {
                 
               </div>
               <div className="flex flex-col ">
-                <h3 className="text-sm font-semibold">{seller.name}</h3>
-                <p className="text-xs text-gray-500">{seller.price}</p>
+                <h3 className="text-[22px] font-semibold leading-tight">{seller.name}</h3>
+                <p className="text-[14px] text-gray-500">{seller.price}</p>
               </div>
             </div>
           ))}

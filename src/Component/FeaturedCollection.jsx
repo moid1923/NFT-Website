@@ -20,13 +20,13 @@ const cards = [
 
 // Custom Previous and Next Buttons
 const NextArrow = ({ onClick }) => (
-  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-3 md:-top-18 -top-4" onClick={onClick}>
+  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-3 md:-top-19 -top-4" onClick={onClick}>
     <img src={righti} alt="Next" className="w-10 h-10" />
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
-  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-20 md:-top-18 -top-4" onClick={onClick}>
+  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-20 md:-top-19 -top-4" onClick={onClick}>
     <img src={lefti} alt="Previous" className="w-10 h-10" />
   </div>
 );
@@ -72,11 +72,12 @@ export default function FeaturedCollection() {
     <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start font-normal leading-[76px] tracking-[4%]">
+        
+        <div className="md:mb-[50px] ">
+        <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start font-normal leading-[76px] tracking-[4%] ">
           Featured Collection
         </h2>
-        <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
-          <p className="text-[18px] sm:text-[22px] md:text-[18px] opacity-70 mb-5 text-center md:text-left">
+          <p className="text-[18px] sm:text-[22px] md:text-[18px] text-[#6B6B6B] opacity-70 mb-5 text-center md:text-left">
             Explore our exclusive featured collection, showcasing innovative campaigns and creative
             <br /> storytelling from top brands around the world.
           </p>
@@ -94,8 +95,8 @@ export default function FeaturedCollection() {
                 <div className="p-3 flex items-center space-x-3 my-3">
                   <img src={fclogo} alt="Logo" className="w-10 h-10 rounded-full" />
                   <div className="mt-2">
-                    <h3 className="text-sm font-apex">STELLA NOVA</h3>
-                    <p className="text-xs text-gray-500">@Stella Nova</p>
+                    <h3 className="text-[18px] font-light font-apex">STELLA NOVA</h3>
+                    <p className="text-[11px] text-gray-500">@Stella Nova</p>
                   </div>
                 </div>
 

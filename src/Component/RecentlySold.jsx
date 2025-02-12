@@ -23,10 +23,10 @@ const nfts = [
 export default function RecentlySold() {
   return (
     <div className=" py-10 lg:my-10">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 ">
         {/* Header */}
         
-          <h2 className="md:text-[64px] text-[45px] xs:text-center md:text-left  font-apex font-normal leading-[76px] tracking-[4%]">Recently Sold</h2>
+          <h2 className="md:text-[64px] text-[45px] xs:text-center md:text-left  font-apex font-normal leading-[76px] tracking-[4%] md:mb-[50px]">Recently Sold</h2>
           
        
 
@@ -45,8 +45,8 @@ export default function RecentlySold() {
                   className="w-10 h-10 rounded-full"
                 />
                 <div>
-                  <h3 className="text-sm font-semibold">STELLA NOVA</h3>
-                  <p className="text-xs text-gray-500">@Stella Nova</p>
+                  <h3 className="text-[18px] font-semibold">STELLA NOVA</h3>
+                  <p className="text-[11px] text-gray-500">@Stella Nova</p>
                 </div>
               </div>
 
@@ -55,11 +55,11 @@ export default function RecentlySold() {
             <img
                 src={nft.img}
                 alt="NFT"
-                className="w-full h-[100%] object-cover absolute opacity-[0.7] rounded-2xl mix-blend-multiply"
+                className="w-full h-[100%] object-cover absolute opacity-[330] rounded-2xl mix-blend-multiply"
               />
 
               <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
-                <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm opacity-[0.7] cursor-pointer">
+                <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm ] cursor-pointer">
                   Buy
                 </button>
                 <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg opacity-70">Price: {nft.price} ETH</span>
