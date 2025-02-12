@@ -72,7 +72,7 @@ export default function FeaturedCollection() {
     <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <h2 className="text-3xl font-apex md:text-[64px] xs:text-center text-bold md:text-start leading-[76px] tracking-[4%]">
+        <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start leading-[76px] tracking-[4%]">
           Featured Collection
         </h2>
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
