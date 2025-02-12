@@ -17,18 +17,18 @@ const DigitalAsset = () => {
       </h1>
 
       {/* Floating Images & Input Container */}
-      <div className="relative w-full max-w-[1320px]  h-[631px] flex items-center justify-center mx-auto">
+      <div className="relative w-full max-w-[1320px]  h-[831px] flex items-center justify-center mx-auto">
         {/* Left Images */}
-        <div className="w-[120px] h-[120px] c-1 bg-white absolute p-1 top-0 left-10 rounded-lg shadow-lg cd">
+        <div className="w-[120px] h-[120px] c-1 bg-white absolute p-1 top-30 left-10 rounded-lg shadow-lg cd">
           <img src={rand1} alt="" className="c1-i w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[170px] h-[170px]  bg-white p-1 c-2 absolute top-1/3 left-24 rounded-lg shadow-lg cd">
+         <div className="w-[170px] h-[170px]  bg-white p-1 c-2 absolute top-[40%] left-10 rounded-lg shadow-lg cd">
           <img src={rand2} alt="" className="c2-i  w-[160px] h-[160px] object-cover rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[120px] h-[120px]  bg-white p-1 c-3 absolute bottom-16 left-0 rounded-lg shadow-lg cd">
+         <div className="w-[120px] h-[120px]  bg-white p-1 c-3 absolute bottom-36 left-0 rounded-lg shadow-lg cd">
           <img src={rand3} alt="" className="c3-i  w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[120px] h-[120px]  bg-white p-1 c-4 absolute bottom-8 left-1/4 rounded-lg shadow-lg cd">
+         <div className="w-[120px] h-[120px]  bg-white p-1 c-4 absolute bottom-12 left-1/6 rounded-lg shadow-lg cd">
           <img src={rand4} alt="" className="c4-i  w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
            
@@ -41,10 +41,10 @@ const DigitalAsset = () => {
           <img src={rand6} alt="" className="c6-1  w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
          
-         <div className="w-[170px] h-[170px] p-1  bg-whitec-7 absolute bottom-32 right-0 rounded-lg shadow-lg cd">
+         <div className="w-[170px] h-[170px] p-1  bg-whitec-7 absolute bottom-56 right-0 rounded-lg shadow-lg cd">
           <img src={rand7} alt="" className="c7-i  w-[160px] h-[160px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[170px] h-[170px] p-1  bg-white c-8 absolute bottom-8 right-1/4 rounded-lg shadow-lg cd">
+         <div className="w-[170px] h-[170px] p-1  bg-white c-8 absolute bottom-4 right-1/6 rounded-lg shadow-lg cd">
           <img src={rand8} alt="" className="c8-i  w-[160px] h-[160px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
         {/* Input Box - Centered */}

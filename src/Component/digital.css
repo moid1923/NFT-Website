@@ -5,7 +5,7 @@
     }
     .c-2{
         width: 80px;
-        top:95px;
+        top:245px;
         left: 30px;
     }
     .c-4{
@@ -33,10 +33,10 @@
     }
     
   }
-  @media (min-width: 640px) and (max-width: 1024px) {
+  @media (min-width: 600px) and (max-width: 1024px) {
     .c-2{
-        left: 150px;
-        top: 15%;
+        left: 250px;
+        top: 25%;
     }
   }
   

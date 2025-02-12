@@ -45,7 +45,7 @@ function FAQSection() {
             <AccordionItem
               key={index}
               uuid={index}
-              className="border border-gray-500 rounded-2xl  my-3"
+              className="border  border-gray-500 rounded-2xl p-2  my-3 "
             >
               <AccordionItemHeading>
                 <AccordionItemState>
@@ -53,7 +53,7 @@ function FAQSection() {
                    <AccordionItemButton
                    className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3 items-center relative ${
                      expanded
-                       ? 'bg-[#ffe0e0] border border-gray-300 rounded-2xl m-0'
+                       ? 'bg-[#ffe0e0] border border-gray-300 rounded-2xl '
                        : 'hover:bg-gray-50 bg-[#fff9f9] rounded-2xl'
                    }`}
                  >

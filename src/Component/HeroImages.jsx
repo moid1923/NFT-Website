@@ -26,7 +26,7 @@ function HeroImages() {
                <img src={herofl} alt="" className='w-[248px] h-[380px]  absolute top-[30px] left-[260px] z-20 f-left hidden lg:block' />
                <img src={herofr} alt="" className='w-[248px] h-[380px]   absolute top-[30px] right-[260px] z-20 f-right hidden lg:block' />
                <img src={herosl} alt="" className='w-[208px] h-[350px]   absolute top-[50px] left-[130px] z-10 s-left hidden lg:block' />
-               <img src={herosr} alt="" className='w-[208px] h-[350px]   absolute top-[50px] right-[130px] z-10 s-left hidden lg:block' />
+               <img src={herosr} alt="" className='w-[208px] h-[350px]   absolute top-[50px] right-[130px] z-10 s-right hidden lg:block' />
           </div>
         </div>
         <div className="card"></div>
