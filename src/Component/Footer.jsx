@@ -29,7 +29,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="info@gmail.com"
-              className="py-3 bg-transparent text-red-500  w-full xs:max-w-[230px] focus:outline-none"
+              className="py-3 bg-transparent text-red-500  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
             />
             <button className="bg-red-500 py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5">
               <FaTelegramPlane size={36} />
@@ -71,9 +71,9 @@ const Footer = () => {
           </div>
 
           {/* Right Section */}
-          <div className="mt-6 md:mt-0 text-white me-5">
+          <div className="mt-8 md:mt-0 text-white me-5">
             <h3 className="text-lg font-semibold">About</h3>
-            <ul className="mt-2 space-y-1 text-sm flex md:flex-col items-center md:items-start gap-4 md:gap-y-5">
+            <ul className="mt-2  text-sm flex md:flex-col items-center md:items-start xs:gap-x-4 md:gap-y-5 xs:gap-2 xs:flex-wrap">
               {['About NFT', 'Live Auctions', 'Collection', 'Activity'].map((item, index) => (
                 <li key={index} className="cursor-pointer hover:underline text-[20px]">{item}</li>
               ))}

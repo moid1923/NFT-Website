@@ -11,7 +11,7 @@ function Visibility() {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Text Section */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="md:text-[64px] text-[45px]  text-gray-800 sm:text-5xl font-apex  font-normal leading-[76px] tracking-[3%]">
+          <h1 className="md:text-[64px] text-[32px]  text-gray-800 sm:text-5xl font-apex  font-normal md:leading-[76px] tracking-[3%]">
             BOOST YOUR NFTs: ENHANCE VISIBILITY AND VALUE
           </h1>
           <p className="mt-4 text-gray-700 text-[18px] sm:text-xl font-triodion opacity-70">

@@ -45,21 +45,21 @@ function FAQSection() {
             <AccordionItem
               key={index}
               uuid={index}
-              className="border  border-gray-500 rounded-2xl p-2  my-3 "
+              className="border  border-gray-300 rounded-2xl p-2  my-3 "
             >
               <AccordionItemHeading>
                 <AccordionItemState>
                   {({ expanded }) => (
                    <AccordionItemButton
-                   className={`w-full text-left px-6 py-4 focus:outline-none flex gap-x-3 items-center relative ${
+                   className={`w-full text-left px-6 py-4 text-[22px] focus:outline-none flex gap-x-3 items-center relative ${
                      expanded
                        ? 'bg-[#ffe0e0] border border-gray-300 rounded-2xl '
-                       : 'hover:bg-gray-50  rounded-2xl'
+                       : ' '
                    }`}
                  >
                  
                       <span
-                        className={`transition-transform duration-300 text-[32px] font-bold ${
+                        className={`transition-transform duration-300 text-[32px] font-bold mr-10 ${
                           expanded ? 'rotate-180 text-red-500' : ''
                         }`}
                       >
@@ -76,7 +76,7 @@ function FAQSection() {
                   )}
                 </AccordionItemState>
               </AccordionItemHeading>
-              <AccordionItemPanel className="px-6 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[18px]">
+              <AccordionItemPanel className="px-24 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[18px]">
                 {faq.answer}
               </AccordionItemPanel>
             </AccordionItem>
