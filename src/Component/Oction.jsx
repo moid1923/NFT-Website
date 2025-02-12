@@ -66,7 +66,7 @@ function Oction() {
                 ))}
               </div>
               
-              <button className=' block mx-auto cursor-pointer bg-gradient-to-r from-[#FF9292] to-[#FD0000] text-white px-8 py-4 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]'>
+              <button className='text-[22px] block mx-auto cursor-pointer bg-gradient-to-r from-[#FF9292] to-[#FD0000] text-white px-8 py-4 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]'>
                 Explore More 
               </button>
               

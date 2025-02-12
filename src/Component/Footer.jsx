@@ -75,7 +75,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">About</h3>
             <ul className="mt-2 space-y-1 text-sm flex md:flex-col items-center md:items-start gap-4 md:gap-y-5">
               {['About NFT', 'Live Auctions', 'Collection', 'Activity'].map((item, index) => (
-                <li key={index} className="cursor-pointer hover:underline">{item}</li>
+                <li key={index} className="cursor-pointer hover:underline text-[20px]">{item}</li>
               ))}
             </ul>
           </div>

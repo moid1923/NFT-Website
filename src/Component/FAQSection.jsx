@@ -36,8 +36,8 @@ function FAQSection() {
 
   return (
     <div className=" py-16 px-6 sm:px-12 lg:my-10">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-center md:text-[56px] sm:text-[45px] text-[20px]   text-gray-900 mb-8 font-apex font-normal leading-[76px] tracking-[3%] ">
+      <div className="max-w-[1320px] w-full mx-auto">
+        <h2 className="text-center md:text-[64px] sm:text-[45px] text-[20px]  font-bold text-gray-900 mb-8 font-apex  leading-[76px] tracking-[3%] ">
           FREQUENTLY ASKED QUESTIONS
         </h2>
         <Accordion allowZeroExpanded preExpanded={[0]}>
@@ -59,14 +59,14 @@ function FAQSection() {
                  >
                  
                       <span
-                        className={`transition-transform duration-300 ${
+                        className={`transition-transform duration-300 text-[32px] font-bold ${
                           expanded ? 'rotate-180 text-red-500' : ''
                         }`}
                       >
-                        {expanded ? '−' : '+'}
+                        {expanded ? '− ' : '+'}
                       </span>
                       <span
-                        className={`font-semibold text-gray-900 ${
+                        className={`font-semibold text-gray-900  ${
                           expanded ? 'text-black' : ''
                         }`}
                       >
@@ -76,7 +76,7 @@ function FAQSection() {
                   )}
                 </AccordionItemState>
               </AccordionItemHeading>
-              <AccordionItemPanel className="px-6 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg">
+              <AccordionItemPanel className="px-6 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[18px]">
                 {faq.answer}
               </AccordionItemPanel>
             </AccordionItem>
