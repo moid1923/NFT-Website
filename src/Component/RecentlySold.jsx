@@ -59,7 +59,7 @@ export default function RecentlySold() {
               />
 
               <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
-                <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm opacity-[0.7]">
+                <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm opacity-[0.7] cursor-pointer">
                   Buy
                 </button>
                 <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg opacity-70">Price: {nft.price} ETH</span>

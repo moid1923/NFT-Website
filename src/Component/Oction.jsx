@@ -55,18 +55,18 @@ function Oction() {
                   />
                   <div className="">
                     <p
-                      className="btn-auc bg-white text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+                      className="btn-auc  bg-white text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
             transition-all duration-300 
             group-hover:hidden"
                     >
                       3:06:59:18
                     </p>
                     <p
-                      className="btn-auc hidden bg-white text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
-            transition-all duration-300 
-            group-hover:bg-red-500 group-hover:text-white group-hover:top-20 group-hover:block"
+                      className="btn-auc  bg-white text-black rounded-xl absolute -top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+            transition-all duration-300 cursor-pointer
+            group-hover:bg-red-500 group-hover:text-white group-hover:top-2/3 group-hover:block"
                     >
-                     place a bid 
+                     Place a bid 
                     </p>
                   </div>
                 </div>

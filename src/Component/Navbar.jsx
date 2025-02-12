@@ -111,10 +111,10 @@ function Navbar() {
             </ul>
 
             <div className="mt-6 flex flex-col space-y-4 px-6">
-              <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition duration-200">
+              <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition duration-200 font-apex">
                 Connect Wallet
               </button>
-              <button className="border border-red-500 text-red-500 px-6 py-2 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
+              <button className="border border-red-500 text-red-500 px-6 py-2 rounded-lg hover:bg-red-500 hover:text-white transition duration-200 fobt-apex">
                 Create NFT
               </button>
             </div>

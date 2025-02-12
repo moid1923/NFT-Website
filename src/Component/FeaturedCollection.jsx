@@ -102,7 +102,7 @@ export default function FeaturedCollection() {
                 <div className="relative w-full h-[76%]">
                   <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                    <button className="bg-red-500 text-white px-[17px] py-[11px] text-[12px] rounded-md  cursor-pointer">
+                    <button className="bg-red-500 text-white px-[17px] py-[11px] text-[12px] rounded-md  cursor-pointer font-roboto">
                       Buy
                     </button>
                     <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">

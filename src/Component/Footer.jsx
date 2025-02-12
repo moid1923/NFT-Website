@@ -55,12 +55,12 @@ const Footer = () => {
 
           {/* Middle Section */}
           <div className="flex items-center justify-center">
-            <div>
-              <p className="mt-4 max-w-xs text-[20px] tracking-wider text-white xs:mx-auto xs:text-[16px] ">
-                NFT ALGO is the world’s leading NFTs marketplace where you can
+            <div className="mx-auto">
+              <p className="mt-4 max-w-xs text-[20px] tracking-wider text-white  xs:text-[16px] xs:mx-auto sx:mx-auto md:mx-0">
+                NFT ALGO is the world's leading NFTs marketplace where you can
                 discover, sell and bid NFTs and get rich
               </p>
-              <div className="flex flex-wrap gap-3 sm:gap-2 justify-center md:justify-start mt-4 text-white">
+              <div className="flex flex-wrap gap-3 sm:gap-2 justify-center md:justify-start mt-4 text-white ">
                 {[Facebook, Twitter, Linkedin, Youtube, Instagram, Github, FaTiktok, FaTelegramPlane].map((Icon, index) => (
                   <div key={index} className="bg-white text-orange-600 w-[40px] h-[40px] flex items-center justify-center rounded-lg">
                     <Icon className="cursor-pointer" />
@@ -72,8 +72,8 @@ const Footer = () => {
 
           {/* Right Section */}
           <div className="mt-8 md:mt-0 text-white me-5">
-            <h3 className="text-lg font-semibold">About</h3>
-            <ul className="mt-2  text-sm flex md:flex-col items-center md:items-start xs:gap-x-4 md:gap-y-5 xs:gap-2 xs:flex-wrap">
+            <h3 className="text-lg font-semibold text-[24px]">About</h3>
+            <ul className="mt-2  text-sm flex md:flex-col items-center md:items-start xs:gap-x-4 md:gap-y-5 xs:gap-x-10 xs:flex-wrap">
               {['About NFT', 'Live Auctions', 'Collection', 'Activity'].map((item, index) => (
                 <li key={index} className="cursor-pointer hover:underline text-[20px]">{item}</li>
               ))}
