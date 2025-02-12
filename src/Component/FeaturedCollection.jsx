@@ -20,13 +20,13 @@ const cards = [
 
 // Custom Previous and Next Buttons
 const NextArrow = ({ onClick }) => (
-  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-3 md:-top-10 -top-4" onClick={onClick}>
+  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-3 md:-top-18 -top-4" onClick={onClick}>
     <img src={righti} alt="Next" className="w-10 h-10" />
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
-  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-20 md:-top-10 -top-4" onClick={onClick}>
+  <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-20 md:-top-18 -top-4" onClick={onClick}>
     <img src={lefti} alt="Previous" className="w-10 h-10" />
   </div>
 );
@@ -72,7 +72,7 @@ export default function FeaturedCollection() {
     <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start leading-[76px] tracking-[4%]">
+        <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start font-normal leading-[76px] tracking-[4%]">
           Featured Collection
         </h2>
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
@@ -102,10 +102,10 @@ export default function FeaturedCollection() {
                 <div className="relative w-full h-[76%]">
                   <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                    <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm cursor-pointer">
+                    <button className="bg-red-500 text-white px-[17px] py-[11px] text-[12px] rounded-md  cursor-pointer">
                       Buy
                     </button>
-                    <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">
+                    <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">
                       Price: {card.price} ETH
                     </span>
                   </div>

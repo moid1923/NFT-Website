@@ -12,7 +12,7 @@ const DigitalAsset = () => {
   return (
     <div className="relative   flex flex-col items-center justify-center w-full p-5 overflow-hidden lg:my-10">
       {/* Title */}
-      <h1 className="text-center text-black font-apex text-[35px] sm:text-4xl md:text-5xl lg:text-[64px] mb-8">
+      <h1 className="text-center text-black font-apex text-[35px] sm:text-4xl md:text-5xl lg:text-[64px] mb-8 font-normal leading-[76px] tracking-[4%]">
         TURN YOUR IMAGINATION <br /> INTO DIGITAL ASSET
       </h1>
 
@@ -48,11 +48,11 @@ const DigitalAsset = () => {
           <img src={rand8} alt="" className="c8-i  w-[160px] h-[160px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
         {/* Input Box - Centered */}
-        <div className="relative w-full max-w-[737px] bg-white rounded-md flex items-center shadow-lg px-4 py-2">
+        <div className="relative w-full max-w-[737px] h-[70px] bg-white rounded-md flex items-center shadow-lg px-4 py-2">
           <input
             type="text"
             placeholder="Fantasy Creature holding a sword..."
-            className="w-full sm:py-3 sm:px-5 border-none focus:outline-none text-[12px] px-2 py-3 sm:text-[14px] font-roboto "
+            className="xs:w-[300px] md:w-[500px] absolute left-5 top-2 sm:py-3 sm:px-5 border-none focus:outline-none text-[12px] px-2 py-3 sm:text-[14px] font-roboto "
           />
           <button className="absolute right-2 bg-red-500 text-white px-2  sm:px-6 py-2 rounded-lg font-medium  hover:bg-red-600 shadow-lg transition text-[14px] sm:text-[18px]">
             Generate 🚀

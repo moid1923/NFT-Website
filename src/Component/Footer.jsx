@@ -19,19 +19,19 @@ const Footer = () => {
     <div className="relative w-full">
       {/* Subscribe Section */}
       <div className="text-center py-10">
-        <h2 className="md:text-[64px] sm:text-[45px] text-[25px] text-black font-apex mb-[10px]">
+        <h2 className="md:text-[64px] sm:text-[45px] text-[25px] text-black font-apex mb-[10px] font-bold leading-[76px] tracking-[3%]">
           Ready for Next NFT Drop?
         </h2>
-        <div className="max-w-[680px] sm:mx-auto md:px-10 border border-red-400 rounded-lg mx-5 px-8">
+        <div className="max-w-[680px] sm:mx-auto relative md:px-10 border border-red-400 rounded-lg mx-5 px-8 xs:mx-1">
           <div
-            className="bg-transparent flex justify-center items-center gap-2 relative max-w-[586px] h-[76px] mx-auto rounded-lg"
+            className="bg-transparent flex justify-between md:justify-center items-center gap-2   max-w-[500px] h-[76px]  rounded-lg"
           >
             <input
               type="email"
               placeholder="info@gmail.com"
-              className="py-3 bg-transparent text-red-500  w-full xs:w-[96%] focus:outline-none"
+              className="py-3 bg-transparent text-red-500  w-full xs:max-w-[400px] focus:outline-none"
             />
-            <button className="bg-red-500 py-3 px-4 rounded-lg text-white shadow-md absolute -right-2 md:-right-3">
+            <button className="bg-red-500 py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5">
               <FaTelegramPlane size={36} />
             </button>
           </div>
@@ -40,23 +40,23 @@ const Footer = () => {
 
       {/* Footer Content */}
       <div
-        className="relative bg-cover bg-center max-w-[1320px] w-full mx-auto rounded-t-3xl p-8 my-2"
+        className="relative bg-cover bg-center max-w-[1320px] w-full mx-auto rounded-t-3xl md:ps-[172px] px-16 md:pe-[84px]  py-[47px] my-2"
         style={{ backgroundImage: `url(${mask})` }}
       >
-        <div className="mx-auto flex flex-col md:flex-row items-center md:items-start justify-center md:justify-evenly text-center md:text-left">
+        <div className="mx-auto flex flex-col items-center justify-center text-center md:flex-row md:flex-wrap  md:items-start max-w-[1064px]   md:justify-between  md:text-left py-4">
           {/* Left Section */}
           <div className="flex">
             <img
               src={logo}
               alt="Fry Networks"
-              className="h-24 mx-auto md:mx-0 md:mb-20 mb-6"
+              className="h-[135px] w-[195px] mx-auto md:mx-0 md:mb-20 mb-6 xs:w-[135px] xs:h-[90px]"
             />
           </div>
 
           {/* Middle Section */}
           <div className="flex items-center justify-center">
             <div>
-              <p className="mt-4 max-w-xs text-[20px] tracking-wider text-white">
+              <p className="mt-4 max-w-xs text-[20px] tracking-wider text-white xs:mx-auto xs:text-[16px] ">
                 NFT ALGO is the world’s leading NFTs marketplace where you can
                 discover, sell and bid NFTs and get rich
               </p>
@@ -71,9 +71,9 @@ const Footer = () => {
           </div>
 
           {/* Right Section */}
-          <div className="mt-6 md:mt-0 text-white">
+          <div className="mt-6 md:mt-0 text-white me-5">
             <h3 className="text-lg font-semibold">About</h3>
-            <ul className="mt-2 space-y-1 text-sm flex flex-col items-center md:items-start gap-4 md:gap-y-5">
+            <ul className="mt-2 space-y-1 text-sm flex md:flex-col items-center md:items-start gap-4 md:gap-y-5">
               {['About NFT', 'Live Auctions', 'Collection', 'Activity'].map((item, index) => (
                 <li key={index} className="cursor-pointer hover:underline">{item}</li>
               ))}

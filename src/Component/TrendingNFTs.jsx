@@ -26,7 +26,7 @@ export default function TrendingNFTs() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-6 flex-row">
-          <h2 className="md:text-[64px] sm:text-[45px] text-[30px]  font-apex">
+          <h2 className="md:text-[64px] sm:text-[45px] text-[30px]  font-apex font-normal leading-[76px] tracking-[4%]">
             TRENDING NFT'S
           </h2>
           <select className="border w-[213px] h-[52px] border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center text-md sm:text-base cursor-pointer">
@@ -62,10 +62,10 @@ export default function TrendingNFTs() {
                 />
 
                 <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
-                  <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm cursor-pointer">
+                  <button className="bg-red-500 text-white text-[12px]  px-[17px] py-[11px] rounded-md text-sm cursor-pointer">
                     Buy
                   </button>
-                  <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg">
+                  <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">
                     Price: {nft.price} ETH
                   </span>
                 </div>
