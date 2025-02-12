@@ -9,6 +9,8 @@ import nft7 from "../assets/nft7.jfif";
 import nft8 from "../assets/nft8.png";
 import hero from "../assets/fc-logo.jfif";
 import bg from "../assets/bgfeature.png";
+import tran from '../assets/tradnft.png'
+
 const nfts = [
   { id: 1, img: nft1, price: "142.02" },
   { id: 2, img: nft2, price: "142.02" },
@@ -29,13 +31,13 @@ export default function TrendingNFTs() {
           <h2 className="md:text-[64px] sm:text-[45px] text-[30px]  font-apex font-normal leading-[76px] tracking-[4%]">
             TRENDING NFT'S
           </h2>
-          <select className="border w-[213px] h-[52px] border-red-500 text-red-500 px-4 py-2 rounded-lg flex items-center text-md sm:text-base cursor-pointer">
-            <option value="" className="text-black border border-red-500"> Last 30 Minutes </option>
-            <option value="" className="text-black border border-red-500">Last One Hour</option>
-            
-            <option value="" className="text-black border border-red-500"> Last 7 hour</option>
-            <option value="" className="text-black border border-red-500">Last hours</option>
-          </select>
+          <select className="border w-[213px] h-[52px] border-red-500 text-red-500 px-4 pr-6 py-2 rounded-lg flex items-center text-md sm:text-base cursor-pointer">
+  <option value="" className="text-black"> Last 30 Minutes  </option>
+  <option value="" className="text-black"> Last One Hour </option>
+  <option value="" className="text-black"> Last 7 Hours </option>
+  <option value="" className="text-black"> Last Hours </option>
+</select>
+
         </div>
 
         {/* Cards Grid */}
