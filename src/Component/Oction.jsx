@@ -23,8 +23,8 @@ const oction = [
 function Oction() {
   return (
     <div>
-      <div className="py-10 lg:my-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="py-10 lg:my-10 ">
+        <div className="max-w-7xl mx-auto px-4 z-10">
           {/* Header */}
 
           <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center  md:text-left  font-apex font-normal leading-[76px] tracking-[4%] md:mb-[50px]">
@@ -32,12 +32,12 @@ function Oction() {
           </h2>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 z-10">
             {oction.map((nft) => (
               <div
                 key={nft.id}
-                className="group w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90"
-                style={{ backgroundImage: `url(${bg})` }}
+                className="group w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+                style={{ backgroundImage: `url(${bg})`   }}
               >
                 <div className="p-3 flex items-center space-x-3">
                   <img src={hero} className="w-10 h-10 rounded-full" />

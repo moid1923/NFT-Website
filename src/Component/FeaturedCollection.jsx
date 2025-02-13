@@ -70,7 +70,7 @@ export default function FeaturedCollection() {
 
   return (
     <div className="py-10 lg:my-10">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 relative">
         {/* Header */}
         
         <div className="md:mb-[50px] ">
