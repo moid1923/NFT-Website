@@ -12,7 +12,7 @@ const DigitalAsset = () => {
   return (
     <div className="relative  w-full max-w-[1320px] mx-auto   flex flex-col items-center justify-center  p-5 overflow-hidden lg:my-10">
       {/* Title */}
-      <h1 className="text-center text-black font-apex text-[32px] sm:text-4xl md:text-5xl lg:text-[64px] mb-8 font-normal leading-[76px] tracking-[4%]">
+      <h1 className="text-center text-black font-apex text-[30px] sm:text-4xl md:text-5xl lg:text-[64px] mb-4 md:mb-8 font-normal leading-tight md:leading-[76px] tracking-[4%]">
         TURN YOUR IMAGINATION <br /> INTO DIGITAL ASSET
       </h1>
 

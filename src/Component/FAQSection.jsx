@@ -37,7 +37,7 @@ function FAQSection() {
   return (
     <div className=" py-16 px-6 sm:px-12 lg:my-10">
       <div className="max-w-[1320px] w-full mx-auto">
-        <h2 className="text-center md:text-[64px] sm:text-[45px] text-[20px]  font-bold text-gray-900 mb-8 font-apex  leading-[76px] tracking-[3%] ">
+        <h2 className="text-center md:text-[64px] sm:text-[45px] text-[20px]  font-bold text-gray-900 mb-4 md:mb-8 font-apex  leading-[76px] tracking-[3%] ">
           FREQUENTLY ASKED QUESTIONS
         </h2>
         <Accordion allowZeroExpanded preExpanded={[0]}>
@@ -51,7 +51,7 @@ function FAQSection() {
                 <AccordionItemState>
                   {({ expanded }) => (
                    <AccordionItemButton
-                   className={`w-full text-left px-6 py-4 text-[22px] focus:outline-none flex gap-x-3 items-center relative ${
+                   className={`w-full text-left px-6 py-4 text-[16px] md:text-[22px] focus:outline-none flex gap-x-3 items-center relative ${
                      expanded
                        ? 'bg-[#ffe0e0] border border-gray-300 rounded-2xl '
                        : ' '
@@ -59,7 +59,7 @@ function FAQSection() {
                  >
                  
                       <span
-                        className={`transition-transform duration-300 text-[32px] font-bold mr-10 ${
+                        className={`transition-transform duration-300 text-[32px] font-bold md:mr-10 ${
                           expanded ? 'rotate-180 text-red-500' : ''
                         }`}
                       >
@@ -76,7 +76,7 @@ function FAQSection() {
                   )}
                 </AccordionItemState>
               </AccordionItemHeading>
-              <AccordionItemPanel className=" px-6 md:px-24 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[18px]">
+              <AccordionItemPanel className=" px-6 md:px-24 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[14px] md:text-[18px]">
                 {faq.answer}
               </AccordionItemPanel>
             </AccordionItem>

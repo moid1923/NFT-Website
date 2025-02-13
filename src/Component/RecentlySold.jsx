@@ -26,7 +26,7 @@ export default function RecentlySold() {
       <div className="max-w-7xl mx-auto px-4 ">
         {/* Header */}
         
-          <h2 className="md:text-[64px] text-[45px] xs:text-center md:text-left  font-apex font-normal leading-[76px] tracking-[4%] md:mb-[50px]">Recently Sold</h2>
+          <h2 className="md:text-[64px] text-[30px] sm:text-[45px] xs:text-center md:text-left  font-apex font-normal leading-[76px] tracking-[4%] md:mb-[50px]">Recently Sold</h2>
           
        
 

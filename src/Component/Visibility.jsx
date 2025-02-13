@@ -6,10 +6,10 @@ function Visibility() {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Text Section */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="md:text-[64px] text-[32px]  text-gray-800 sm:text-5xl font-apex  font-normal md:leading-[76px] tracking-[3%]">
+          <h1 className="md:text-[64px] text-[30px] leading-tight text-gray-800 sm:text-5xl font-apex  font-normal md:leading-[76px] tracking-[3%]">
             BOOST YOUR NFTs: ENHANCE VISIBILITY AND VALUE
           </h1>
-          <p className="mt-4 text-gray-700 text-[18px] sm:text-xl font-triodion opacity-70">
+          <p className="mt-4 text-gray-700 text-[18px] sm:text-xl font-triodion opacity-70 text-left">
             The Boost feature is a premium service that allows NFT creators and
             collectors to elevate their listings on our marketplace. By boosting
             an NFT, you can ensure it appears prominently in search results,
@@ -17,7 +17,7 @@ function Visibility() {
             potential buyers.
           </p>
           <button className="mt-6 text-[22px] w-[217px] h-[58px] cursor-pointer bg-red-500 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 focus:ring focus:ring-red-300">
-            Boost <span className="ml-2">🚀</span>
+            Boost <span className="ml-2 cursor-pointer">🚀</span>
           </button>
         </div>
         <div className="image-section lg:w-1/2 relative ">

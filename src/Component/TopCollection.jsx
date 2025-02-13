@@ -33,7 +33,7 @@ const TopCollection = () => {
     <div className="container mx-auto  lg:p-6 max-w-[1320px] w-full lg:my-10">
       {/* Header Section */}
       <div className="header flex items-center justify-between flex-col md:flex-row md:mb-[50px]">
-        <h2 className="md:text-[64px] text-[45px] text-center md:text-left mb-3 font-apex font-normal leading-[76px] tracking-[4%] ">TOP COLLECTIONS</h2>
+        <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left mb-3 font-apex font-normal leading-[76px] tracking-[4%] ">TOP COLLECTIONS</h2>
         <div className="text-right md:mt-6 my-3 ">
           <a href="#" className="text-red-500 font-semibold md:text-[22px] leading-[25.78px]">
             View More Collection
@@ -66,8 +66,8 @@ const TopCollection = () => {
             <div className="text-left mt-4 flex items-center gap-3">
               <img src={tclogo} alt="" className="w-10 h-10 object-cover rounded-full" />
               <div>
-                <p className="text-lg font-semibold">{collection.title}</p>
-                <span className="text-sm text-gray-500">Created by {collection.creator}</span>
+                <p className="lg:text-[18px] md:text-[16px]text-[14px] leading-[21px] font-semibold">{collection.title}</p>
+                <span className="md:text-[14px] text-[12px] leading-[16px] text-gray-500">Created by {collection.creator}</span>
               </div>
             </div>
           </div>

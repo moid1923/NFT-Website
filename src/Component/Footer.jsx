@@ -24,15 +24,15 @@ const Footer = () => {
         </h2>
         <div className="max-w-[680px] sm:mx-auto relative md:px-10 border border-red-400 rounded-lg mx-5 px-8 xs:mx-1">
           <div
-            className="bg-transparent flex justify-between md:justify-center items-center gap-2   max-w-[500px] h-[76px]  rounded-lg"
+            className="bg-transparent flex justify-between md:justify-center items-center gap-2   max-w-[500px] md:h-[76px]  rounded-lg"
           >
             <input
               type="email"
               placeholder="info@gmail.com"
               className="py-3 bg-transparent text-red-500  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
             />
-            <button className="bg-red-500 py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5">
-              <FaTelegramPlane size={36} />
+            <button className="bg-red-500 py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5 w-[10] h-[10]">
+              <FaTelegramPlane size={20} md:size={36}/>
             </button>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-[24px]">About</h3>
             <ul className="mt-2  text-sm flex md:flex-col items-center md:items-start xs:gap-x-4 md:gap-y-5 xs:gap-x-10 xs:flex-wrap">
               {['About NFT', 'Live Auctions', 'Collection', 'Activity'].map((item, index) => (
-                <li key={index} className="cursor-pointer hover:underline text-[20px]">{item}</li>
+                <li key={index} className="cursor-pointer hover:underline text-[20px] font-normal">{item}</li>
               ))}
             </ul>
           </div>

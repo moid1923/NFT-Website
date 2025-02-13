@@ -40,10 +40,10 @@ export default function TrendingNFTs() {
           <div className="relative inline-block text-left">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="border w-[213px] h-[52px] border-red-500 text-red-500 px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[18px] font-normal"
+              className="border w-[140px] h-[42px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal"
             >
               {selectedOption}
-              <img src={tran} alt="Dropdown Icon" className="w-4 h-4 " />
+              <img src={tran} alt="Dropdown Icon" className="w-4 h-4 ml-1" />
             </button>
             {isOpen && (
               <div className="absolute w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
