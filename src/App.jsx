@@ -17,6 +17,7 @@ import featbg from './assets/featbg.png'
 import bgauc from './assets/bgauc.png'
 import bgtsell from './assets/bgtsell.png'
 import assetbg from './assets/assetbg.png'
+import shadow from './assets/Ellipse.png'
 function App() {
 
   return (
@@ -28,7 +29,10 @@ function App() {
       <img src={bgtsell} alt="" className='hidden xl:block absolute top-[5000px] -right-[271px] max-w-[883px] max-h-[715px] opacity-70 z-0' />
       <img src={bgtsell} alt="" className='hidden xl:block absolute top-[7100px] -right-[71px] max-w-[883px] max-h-[715px] opacity-70 z-0' />
       <img src={bgauc} alt="" className='hidden xl:block absolute top-[9200px] -right-[0%] max-w-[839px] max-h-[420px] opacity-70 z-0' />
-      <img src={assetbg} alt="" className='hidden xl:block absolute top-[6900px] left-[500px] max-w-[839px] max-h-[420px] opacity-70 z-0  ' />
+      <img src={assetbg} alt="" className='hidden xl:block absolute top-[6900px] left-[40%] max-w-[839px] max-h-[420px] opacity-70 z-0  ' />
+      <img src={shadow} alt="" className='hidden xl:block absolute top-[6900px] left-[40%] max-w-[839px] max-h-[420px] opacity-70 z-0  ' />
+      <img src={shadow} alt="" className='hidden xl:block absolute top-[8000px] -left-[200px] max-w-[839px] max-h-[420px] opacity-70 z-0  ' />
+      <img src={shadow} alt="" className='hidden xl:block absolute top-[9000px] -right-[200px] max-w-[1009px] max-h-[420px] opacity-70 z-0  ' />
     <Navbar/> 
     <HeroSection/>
     <HeroImages/>
