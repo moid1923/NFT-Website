@@ -37,7 +37,7 @@ function Oction() {
               <div
                 key={nft.id}
                 className="group w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
-                style={{ backgroundImage: `url(${bg})`   }}
+                style={{ backgroundImage: `url(${bg})` }}
               >
                 <div className="p-3 flex items-center space-x-3">
                   <img src={hero} className="w-10 h-10 rounded-full" />
@@ -57,16 +57,16 @@ function Oction() {
                     <p
                       className="btn-auc  bg-white text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
             transition-all duration-300 
-            group-hover:hidden"
+            group-hover:top-[220px]"
                     >
                       3:06:59:18
                     </p>
                     <p
-                      className="btn-auc  bg-white text-black rounded-xl absolute -top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+                      className="btn-auc hidden bg-white text-black rounded-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
             transition-all duration-300 cursor-pointer
-            group-hover:bg-red-500 group-hover:text-white group-hover:top-2/3 group-hover:block"
+            group-hover:bg-red-500 group-hover:text-white group-hover:bottom-32 group-hover:block"
                     >
-                     Place a bid 
+                      Place a bid
                     </p>
                   </div>
                 </div>
