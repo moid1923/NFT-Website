@@ -18,6 +18,8 @@ import bgauc from './assets/bgauc.png'
 import bgtsell from './assets/bgtsell.png'
 import assetbg from './assets/assetbg.png'
 import shadow from './assets/Ellipse.png'
+import Auction from './Pages/Auction'
+import LandingAuc from './Component/LandingAuc'
 function App() {
 
   return (
@@ -39,13 +41,14 @@ function App() {
     <FeaturedCollection/>
     <TrendingNFTs/>
     <TopSellers/>
-    <Oction/>
+    <LandingAuc/>
     <TopCollection/>
     <RecentlySold/>
     <DigitalAsset/>
     <Visibility/>
     <FAQSection/>
     <Footer/>
+    <Auction/>
     </div>
     
   )
