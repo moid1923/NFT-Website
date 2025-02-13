@@ -40,7 +40,7 @@ const Footer = () => {
 
       {/* Footer Content */}
       <div
-        className="relative bg-cover bg-center max-w-[1320px] w-full mx-auto rounded-t-3xl md:ps-[172px] px-16 md:pe-[84px]  py-[47px] my-2"
+        className="relative bg-cover bg-center max-w-[1320px] w-full mx-auto rounded-t-3xl lg:ps-[172px] px-16 md:pe-[84px]  py-[47px] my-2"
         style={{ backgroundImage: `url(${mask})` }}
       >
         <div className="mx-auto flex flex-col items-center justify-center text-center md:flex-row md:flex-wrap  md:items-start max-w-[1064px]   md:justify-between  md:text-left py-4">
@@ -49,7 +49,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="Fry Networks"
-              className="h-[135px] w-[195px] mx-auto md:mx-0 md:mb-20 mb-6 xs:w-[135px] xs:h-[90px]"
+              className="lg:h-[135px] lg:w-[195px] mx-auto md:mx-0 md:mb-20 mb-6 xs:w-[135px] xs:h-[90px]"
             />
           </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
               </p>
               <div className="flex flex-wrap gap-3 sm:gap-2 justify-center md:justify-start mt-4 text-white ">
                 {[Facebook, Twitter, Linkedin, Youtube, Instagram, Github, FaTiktok, FaTelegramPlane].map((Icon, index) => (
-                  <div key={index} className="bg-white text-orange-600 w-[40px] h-[40px] flex items-center justify-center rounded-lg">
+                  <div key={index} className="bg-white text-orange-600 md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center rounded-lg">
                     <Icon className="cursor-pointer" />
                   </div>
                 ))}
@@ -73,9 +73,9 @@ const Footer = () => {
           {/* Right Section */}
           <div className="mt-8 md:mt-0 text-white me-5">
             <h3 className="text-lg font-semibold text-[24px]">About</h3>
-            <ul className="mt-2  text-sm flex md:flex-col items-center md:items-start xs:gap-x-4 md:gap-y-5 xs:gap-x-10 xs:flex-wrap">
+            <ul className="mt-2  text-sm flex md:flex-col items-center md:items-start xs:gap-x-4 md:gap-y-5 xs:gap-x-3 ">
               {['About NFT', 'Live Auctions', 'Collection', 'Activity'].map((item, index) => (
-                <li key={index} className="cursor-pointer hover:underline text-[20px] font-normal">{item}</li>
+                <li key={index} className="cursor-pointer hover:underline md:text-[20px] text-[12px]  font-normal">{item}</li>
               ))}
             </ul>
           </div>

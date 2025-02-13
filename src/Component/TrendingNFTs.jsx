@@ -33,7 +33,7 @@ export default function TrendingNFTs() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-6 flex-row md:mb-[50px]">
-          <h2 className="md:text-[64px] sm:text-[45px] text-[30px] font-apex font-normal md:leading-[76px] tracking-[4%] ">
+          <h2 className="md:text-[64px] sm:text-[45px] text-[25px] font-apex font-normal md:leading-[76px] tracking-[4%] ">
             TRENDING NFT'S
           </h2>
           {/* Dropdown Button */}

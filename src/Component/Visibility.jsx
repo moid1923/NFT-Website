@@ -9,7 +9,7 @@ function Visibility() {
           <h1 className="md:text-[64px] text-[30px] leading-tight text-gray-800 sm:text-5xl font-apex  font-normal md:leading-[76px] tracking-[3%]">
             BOOST YOUR NFTs: ENHANCE VISIBILITY AND VALUE
           </h1>
-          <p className="mt-4 text-gray-700 text-[18px] sm:text-xl font-triodion opacity-70 text-left">
+          <p className="mt-4 text-gray-700 text-[18px] sm:text-xl font-triodion opacity-70 ">
             The Boost feature is a premium service that allows NFT creators and
             collectors to elevate their listings on our marketplace. By boosting
             an NFT, you can ensure it appears prominently in search results,
