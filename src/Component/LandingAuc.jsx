@@ -4,7 +4,7 @@ import Oction from './Oction'
 function LandingAuc() {
   return (
     <div>
-      <Oction maxImages={8}/>
+      <Oction maxImages={8} explore='Explore More' showButtons = {false}/>
     </div>
   )
 }

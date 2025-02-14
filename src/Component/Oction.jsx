@@ -9,7 +9,7 @@ import oction7 from "../assets/oction7.jfif";
 import oction8 from "../assets/oction8.png";
 import hero from "../assets/fc-logo.jfif";
 import bg from "../assets/bgfeature.png";
-
+import { useNavigate } from "react-router-dom";
 const oction = [
   { id: 1, img: oction1, price: "142.02" },
   { id: 2, img: oction2, price: "142.02" },
@@ -19,13 +19,23 @@ const oction = [
   { id: 6, img: oction6, price: "142.02" },
   { id: 7, img: oction7, price: "142.02" },
   { id: 8, img: oction8, price: "142.02" },
-  { id: 3, img: oction3, price: "142.02" },
-  { id: 4, img: oction4, price: "142.02" },
-  { id: 5, img: oction5, price: "142.02" },
-  { id: 6, img: oction6, price: "142.02" },
+  { id: 9, img: oction3, price: "142.02" },
+  { id: 10, img: oction4, price: "142.02" },
+  { id: 11, img: oction5, price: "142.02" },
+  { id: 12, img: oction6, price: "142.02" },
 ];
+function Oction({
+  maxImages = 12,
+  title = "Auction",
+  bid = "Place a bid",
+  explore = "",
+  showButtons = false
+}) {
+  const navigate = useNavigate(); // Initialize navigate function
 
-function Oction({ maxImages = 12, title = "Auction" }) {
+  const handleExploreClick = () => {
+    navigate("/auction"); // Navigate to Auction page
+  };
   return (
     <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4 z-10">
@@ -39,11 +49,15 @@ function Oction({ maxImages = 12, title = "Auction" }) {
           {oction.slice(0, maxImages).map((nft) => (
             <div
               key={nft.id}
-              className="group w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+              className="group relative w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
-                <img src={hero} className="w-10 h-10 rounded-full" alt="Owner" />
+                <img
+                  src={hero}
+                  className="w-10 h-10 rounded-full"
+                  alt="Owner"
+                />
                 <div>
                   <h3 className="text-[18px] font-apex">STELLA NOVA</h3>
                   <p className="text-[11px] text-gray-500">@Stella Nova</p>
@@ -56,6 +70,17 @@ function Oction({ maxImages = 12, title = "Auction" }) {
                   alt="NFT"
                   className="w-full h-[100%] object-cover absolute rounded-2xl"
                 />
+                {showButtons &&(
+                  <div className="p-3 w-full flex justify-between items-center absolute bottom-0 z-40">
+                  <button className=" bg-white text-[12px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
+                    In Stock  7
+                  </button>
+                  <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">
+                    Price: {nft.price} ETH
+                  </span>
+                </div>
+                )}
+                
                 <div>
                   <p
                     className="btn-auc bg-white text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
@@ -67,17 +92,26 @@ function Oction({ maxImages = 12, title = "Auction" }) {
                     className="btn-auc hidden bg-white text-black rounded-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
                     transition-all duration-300 cursor-pointer group-hover:bg-red-500 group-hover:text-white group-hover:bottom-32 group-hover:block"
                   >
-                    Place a bid
+                    {bid}
                   </p>
                 </div>
               </div>
+
+              {/* Conditionally Render Buy Button & Price */}
+              
+                
+              
             </div>
           ))}
         </div>
 
-        <button className="text-[22px] block mx-auto cursor-pointer bg-gradient-to-r from-[#FF9292] to-[#FD0000] text-white px-8 py-4 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]">
-          Explore More
-        </button>
+        {/* Conditionally Render Explore Button */}
+        {explore && (
+          <button  onClick={handleExploreClick}
+           className="text-[22px] block mx-auto cursor-pointer bg-gradient-to-r from-[#FF9292] to-[#FD0000] text-white px-8 py-4 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]">
+            {explore}
+          </button>
+        )}
       </div>
     </div>
   );

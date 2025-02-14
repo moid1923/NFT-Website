@@ -3,7 +3,7 @@ import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import logo from "../assets/Group.svg";
 import MainBtn from "./MainBtn";
-
+import { useNavigate } from "react-router-dom";
 function Navbar() {
   const [sideMenu, setSideMenu] = useState(false);
   const [active, setActive] = useState("Home"); 
@@ -16,7 +16,11 @@ function Navbar() {
     setActive(menuItem);
     setSideMenu(false); 
   };
-
+   const navigate = useNavigate(); // Initialize navigate function
+   
+     const handleHomeClick = () => {
+       navigate("/home"); // Navigate to Auction page
+     };
   return (
     <div className="relative w-full">
       <nav className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6 max-w-[1320px] mx-auto sticky left-0 top-0">
@@ -36,6 +40,7 @@ function Navbar() {
               className={`cursor-pointer hover:text-red-500 text-[18px] transition py-3 duration-200 font-apex ${
                 active === "Home" ? "border-b-3 border-red-500 text-red-500" : ""
               }`}
+              onClickCapture={handleHomeClick}
               onClick={() => handleMenuClick("Home")}
             >
               Home

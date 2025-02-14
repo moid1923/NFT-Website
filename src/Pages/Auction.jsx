@@ -1,20 +1,25 @@
-import React from 'react'
-import Navbar from '../Component/Navbar'
-import Actionhero from '../Component/Actionhero'
-import Oction from '../Component/Oction'
-import Footer from '../Component/Footer'
+import React from "react";
+import Navbar from "../Component/Navbar";
+import Actionhero from "../Component/Actionhero";
+import Oction from "../Component/Oction";
+import Footer from "../Component/Footer";
+import TopListed from "../Component/TopListed";
+
 
 
 function Auction() {
+ 
   return (
     <div>
-      <Navbar/>
-      <Actionhero/>
-      <Oction maxImages={12} title='Top Listed'/>
-      <Oction maxImages={12} title='Mueed'/>
-      <Footer/>
+      <Navbar />
+      <Actionhero />
+      <TopListed/>
+     
+      
+      <Oction maxImages={12} title="Live Auction" showButtons={true} />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Auction
+export default Auction;
