@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import logo from "../assets/Group.svg";
 import MainBtn from "./MainBtn";
 import { useNavigate } from "react-router-dom";
+
 function Navbar() {
   const [sideMenu, setSideMenu] = useState(false);
   const [active, setActive] = useState("Home"); 
@@ -12,15 +13,21 @@ function Navbar() {
     setSideMenu((prev) => !prev);
   };
 
+  const navigate = useNavigate(); // Initialize navigate function
+
   const handleMenuClick = (menuItem) => {
     setActive(menuItem);
     setSideMenu(false); 
+
+    if (menuItem === "Home") {
+      navigate("/"); // Navigate to home page when "Home" is clicked
+    }
   };
-   const navigate = useNavigate(); // Initialize navigate function
-   
-     const handleHomeClick = () => {
-       navigate("/home"); // Navigate to Auction page
-     };
+
+  const handleHomeClick = () => {
+    navigate("/"); // Navigate to home page for desktop menu "Home" click
+  };
+
   return (
     <div className="relative w-full">
       <nav className="flex items-center justify-between px-6 py-4 md:px-12 md:py-6 max-w-[1320px] mx-auto sticky left-0 top-0">
@@ -34,14 +41,13 @@ function Navbar() {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           <ul className="flex items-center space-x-6 text-sm font-medium text-gray-800">
             <li
               className={`cursor-pointer hover:text-red-500 text-[18px] transition py-3 duration-200 font-apex ${
                 active === "Home" ? "border-b-3 border-red-500 text-red-500" : ""
               }`}
-              onClickCapture={handleHomeClick}
-              onClick={() => handleMenuClick("Home")}
+              onClick={handleHomeClick}
             >
               Home
             </li>
@@ -57,7 +63,7 @@ function Navbar() {
         </div>
 
         {/* Buttons */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           <MainBtn />
           <button className="border border-red-500 cursor-pointer text-[22px] text-red-500 px-8 py-4 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
             Create NFT
@@ -67,7 +73,7 @@ function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden flex items-center p-2 text-gray-700 z-50"
+          className="lg:hidden flex items-center p-2 text-gray-700 z-50"
           title="Menu"
         >
           <HiMenu size={28} />
@@ -98,7 +104,7 @@ function Navbar() {
 
             <ul className="flex flex-col items-start p-6 space-y-4 text-sm font-medium text-gray-800 mt-[20px]">
               <li
-                onClick={() => handleMenuClick("Home")}
+                onClick={() => handleMenuClick("Home")} // Ensure it navigates to Home
                 className={`cursor-pointer hover:text-red-500 transition duration-200 ${
                   active === "Home" ? "border-b-2 border-red-500" : ""
                 }`}
@@ -119,7 +125,7 @@ function Navbar() {
               <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition duration-200 font-apex">
                 Connect Wallet
               </button>
-              <button className="border border-red-500 text-red-500 px-6 py-2 rounded-lg hover:bg-red-500 hover:text-white transition duration-200 fobt-apex">
+              <button className="border border-red-500 text-red-500 px-6 py-2 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
                 Create NFT
               </button>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { ChevronDown, Filter, Search } from "lucide-react";
 import oction1 from "../assets/oction1.png";
 import oction2 from "../assets/oction2.png";
@@ -73,7 +73,7 @@ const filterOptions = [
           ].map((item, index) => (
             <label
               key={index}
-              className="w-full flex items-center justify-between px-2 py-3 gap-6 border-none rounded-md cursor-pointer hover:bg-gray-100"
+              className=" flex items-center justify-between px-2 py-3 gap-6 border-none rounded-md cursor-pointer hover:bg-gray-100"
             >
               <div className="flex items-center gap-2">
                 <input type="checkbox" className="w-6 h-6" />
@@ -100,7 +100,19 @@ function TopList({
 }) {
     const [isOpen, setIsOpen] = useState(true);
       const [activeDropdown, setActiveDropdown] = useState(null);
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth >= 768) {
+            setIsOpen(true);
+          } else {
+            setIsOpen(false);
+          }
+        };
     
+        handleResize(); // Check on mount
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
       const toggleFilter = (label, hasDropdown) => {
         if (hasDropdown) {
           setActiveDropdown((prev) => (prev === label ? null : label));
@@ -109,17 +121,17 @@ function TopList({
   
   return (
     <div className="py-10 lg:my-10">
-      <div className="max-w-7xl mx-auto px-4 z-10">
+      <div className="max-w-[1920px] mx-auto px-4 z-10">
         {/* Header */}
         <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] md:mb-[50px]">
           {title}
         </h2>
 
         {/* Cards Grid */}
-        <div className="flex">
-        <div className="w-[292px]  bg-white p-4 rounded-lg shadow-lg border">
+        <div className="flex flex-col items-center gap-4 md:flex-row ">
+        <div className="w-[292px]  sm:block bg-white p-4 rounded-lg shadow-lg border self-start mx-auto ">
                 <div
-                  className="flex items-center justify-between cursor-pointer"
+                  className="flex  max-w-[292px] items-center justify-between cursor-pointer"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   <Filter className="w-5 h-5 text-gray-700" />
@@ -157,7 +169,7 @@ function TopList({
           {oction.slice(0, maxImages).map((nft) => (
             <div
               key={nft.id}
-              className="group relative max-w-[250px] w-full sm:max-w-[308px] h-[410px] sm:p-4 xl:ms-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+              className="group relative  w-full max-w-[308px] h-[410px] sm:p-4 xl:ms-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">

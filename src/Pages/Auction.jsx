@@ -3,7 +3,6 @@ import Navbar from "../Component/Navbar";
 import Actionhero from "../Component/Actionhero";
 import Oction from "../Component/Oction";
 import Footer from "../Component/Footer";
-import TopListed from "../Component/TopListed";
 import TopList from "../Component/TopList";
 
 
@@ -14,12 +13,10 @@ function Auction() {
     <div>
       <Navbar />
       <Actionhero />
-      <TopListed/>
-     
-      
+      <TopList title="Top Listed"/>
       <Oction maxImages={12} title="Live Auction" showButtons={true} />
       <Footer />
-      <TopList/>
+      
     </div>
   );
 }

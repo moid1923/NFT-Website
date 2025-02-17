@@ -13,7 +13,7 @@ function Actionhero() {
       </h2>
 
       {/* Image Row - Adjusted Heights */}
-      <div className="max-w-[1320px] w-full px-10 flex justify-center gap-6 items-end">
+      <div className="max-w-[1320px] w-full px-10 flex justify-center gap-6 items-end flex-wrap">
         {/* Full-height images */} 
         <div className="flex items-end justify-center p-[10px] bg-white rounded-xl w-[292px] h-[293px]">
           <img
