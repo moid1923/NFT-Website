@@ -40,7 +40,7 @@ function Oction({
     <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4 z-10">
         {/* Header */}
-        <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] md:mb-[50px]">
+        <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] mb-[50px]">
           {title}
         </h2>
 

@@ -6,6 +6,7 @@ import tc4 from "../assets/tc4.jfif";
 import tc5 from "../assets/tc5.jfif";
 import tc6 from "../assets/tc6.jfif";
 import tclogo from "../assets/tclogo.png";
+import { useNavigate } from "react-router-dom";
 
 const collections = [
   {
@@ -29,15 +30,26 @@ const collections = [
 ];
 
 const TopCollection = () => {
+  const navigate = useNavigate(); // Initialize navigate function
+  
+  // Navigate to the collection page
+  const handleCollectionClick = () => {
+    navigate("/collection"); // Navigate to the Collection page
+  };
+
   return (
     <div className="container mx-auto  lg:p-6 max-w-[1320px] w-full lg:my-10">
       {/* Header Section */}
       <div className="header flex items-center justify-between flex-col md:flex-row md:mb-[50px]">
         <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left md:mb-3 font-apex font-normal md:leading-[76px] tracking-[4%] ">TOP COLLECTIONS</h2>
         <div className="text-right md:mt-6 my-3 ">
-          <a href="#" className="text-red-500 font-semibold md:text-[22px] leading-[25.78px]">
+          {/* Use button or div instead of <a> for navigation */}
+          <button
+            className="text-red-500 font-semibold md:text-[22px] leading-[25.78px]"
+            onClick={handleCollectionClick} // Trigger navigation on button click
+          >
             View More Collection
-          </a>
+          </button>
         </div>
       </div>
 

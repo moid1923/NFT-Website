@@ -44,6 +44,7 @@ function LnadingPage() {
     <Visibility/>
     <FAQSection/>
     <Footer/>
+    
     </div>
   )
 }

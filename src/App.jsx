@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Auction from './Pages/Auction'
 import LnadingPage from './Pages/LnadingPage'
+import Collection from './Pages/Collection'
 function App() {
 
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LnadingPage />} />  {/* Default Route */}
         <Route path="/auction" element={<Auction />} />
+       <Route path='/collection' element={<Collection />} />
       </Routes>
     </Router>
     </div>
