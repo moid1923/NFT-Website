@@ -4,6 +4,7 @@ import Actionhero from "../Component/Actionhero";
 import Oction from "../Component/Oction";
 import Footer from "../Component/Footer";
 import TopListed from "../Component/TopListed";
+import TopList from "../Component/TopList";
 
 
 
@@ -18,6 +19,7 @@ function Auction() {
       
       <Oction maxImages={12} title="Live Auction" showButtons={true} />
       <Footer />
+      <TopList/>
     </div>
   );
 }

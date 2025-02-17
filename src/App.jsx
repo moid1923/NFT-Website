@@ -9,7 +9,7 @@ function App() {
     <div className='bg-gradient-to-b from-[#fff0f0] to-white max-w-[100%] overflow-x-hidden overflow-y-hidden relative'>
       <Router>
       <Routes>
-        <Route path="/home" element={<LnadingPage />} />  {/* Default Route */}
+        <Route path="/" element={<LnadingPage />} />  {/* Default Route */}
         <Route path="/auction" element={<Auction />} />
       </Routes>
     </Router>
