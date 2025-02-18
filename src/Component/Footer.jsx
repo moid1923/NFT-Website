@@ -19,12 +19,12 @@ const Footer = () => {
     <div className="relative w-full">
       {/* Subscribe Section */}
       <div className="text-center py-10">
-        <h2 className="md:text-[64px] sm:text-[45px] text-[25px]  mb-[10px] font-bold leading-[76px] tracking-[3%] ">
+        <h2 className="md:text-[64px] sm:text-[45px] text-[25px]  mb-[10px] font-bold leading-[130px] font-oxanion ">
           Ready For Next Drop?
         </h2>
-        <div className="max-w-[680px] sm:mx-auto relative md:px-10 border border-red-400 rounded-lg mx-5 px-8 xs:mx-1">
+        <div className="max-w-[586px] sm:mx-auto relative md:px-10 border border-red-400 rounded-lg mx-5 px-8 xs:mx-1">
           <div
-            className="bg-transparent flex justify-between md:justify-center items-center gap-2   max-w-[500px] md:h-[76px]  rounded-lg"
+            className="bg-transparent flex justify-between md:justify-center items-center gap-2   max-w-[430px] md:h-[76px]  rounded-lg"
           >
             <input
               type="email"
