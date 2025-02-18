@@ -59,13 +59,13 @@ export default function RecentlySold() {
               />
 
               <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
-                <button className="bg-red-500 text-white px-3 py-1 rounded-md text-sm ] cursor-pointer">
+                <button className="bg-red-700 text-white px-3 py-1 rounded-md text-sm ] cursor-pointer opacity-80">
                   Buy
                 </button>
-                <span className="text-sm font-bold bg-white px-3 py-2 rounded-lg opacity-70">Price: {nft.price} ETH</span>
+                <span className="text-sm font-bold bg-gray-300 px-3 py-2 rounded-lg opacity-90">Price:  {nft.price} ETH</span>
               </div>
               <div className=''>
-                        <p className='bg-red-500  w-[96px] h-[37px] text-white text-[12px] text-center tracking-wider px-5 py-2 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  '>Sold</p>
+                        <button className='bg-red-500  w-[96px] h-[37px] text-white text-[12px] leading-[14px] tracking-[4%] text-center  px-5 py-2 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 uppercase '>Sold</button>
                     </div>
             </div>
               

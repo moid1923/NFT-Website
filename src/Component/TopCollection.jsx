@@ -45,7 +45,7 @@ const TopCollection = () => {
         <div className="text-right md:mt-6 my-3 ">
           {/* Use button or div instead of <a> for navigation */}
           <button
-            className="text-red-500 font-semibold md:text-[22px] leading-[25.78px]"
+            className="text-red-500 font-semibold md:text-[22px] leading-[25.78px] cursor-pointer font-roboto"
             onClick={handleCollectionClick} // Trigger navigation on button click
           >
             View More Collection

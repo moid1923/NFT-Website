@@ -19,8 +19,8 @@ const Footer = () => {
     <div className="relative w-full">
       {/* Subscribe Section */}
       <div className="text-center py-10">
-        <h2 className="md:text-[64px] sm:text-[45px] text-[25px] text-black font-apex mb-[10px] font-bold leading-[76px] tracking-[3%]">
-          Ready for Next NFT Drop?
+        <h2 className="md:text-[64px] sm:text-[45px] text-[25px]  mb-[10px] font-bold leading-[76px] tracking-[3%] ">
+          Ready For Next Drop?
         </h2>
         <div className="max-w-[680px] sm:mx-auto relative md:px-10 border border-red-400 rounded-lg mx-5 px-8 xs:mx-1">
           <div
@@ -29,7 +29,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="info@gmail.com"
-              className="py-3 bg-transparent text-red-500  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
+              className="py-3 bg-transparent text-red-500 placeholder-[#FE0101]  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
             />
             <button className="bg-red-500 py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5 w-[10] h-[10]">
               <FaTelegramPlane size={20} md:size={36}/>
@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Middle Section */}
           <div className="flex items-center justify-center">
             <div className="mx-auto">
-              <p className="mt-4 max-w-xs text-[20px] tracking-wider text-white  xs:text-[16px] xs:mx-auto sx:mx-auto md:mx-[0px] ">
+              <p className="mt-4 max-w-xs md:text-[20px] sm:text-[16px] text-[14px] tracking-wider text-white  xs:text-[16px] xs:mx-auto sx:mx-auto md:mx-[0px] ">
                 NFT ALGO is the world's leading NFTs marketplace where you can
                 discover, sell and bid NFTs and get rich
               </p>
@@ -73,9 +73,9 @@ const Footer = () => {
           {/* Right Section */}
           <div className="mt-8 md:mt-0 text-white me-5">
             <h3 className="text-lg font-semibold text-[24px]">About</h3>
-            <ul className="mt-2  text-sm flex md:flex-col items-center md:items-start xs:gap-x-4 md:gap-y-5 xs:gap-x-3 ">
+            <ul className="mt-2  text-sm flex flex-wrap justify-between md:flex-col items-center md:items-start : md:gap-y-5  ">
               {['About NFT', 'Live Auctions', 'Collection', 'Activity'].map((item, index) => (
-                <li key={index} className="cursor-pointer hover:underline md:text-[20px] text-[12px]  font-normal">{item}</li>
+                <li key={index} className="cursor-pointer hover:underline md:text-[20px] text-[12px]  font-normal mr-3">{item}</li>
               ))}
             </ul>
           </div>

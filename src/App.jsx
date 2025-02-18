@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Auction from './Pages/Auction'
 import LnadingPage from './Pages/LnadingPage'
 import Collection from './Pages/Collection'
+import Pixacio from './Pages/Pixacio';
 function App() {
 
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/" element={<LnadingPage />} />  {/* Default Route */}
         <Route path="/auction" element={<Auction />} />
        <Route path='/collection' element={<Collection />} />
+       <Route path='/pixacio' element={<Pixacio />} />
+
       </Routes>
     </Router>
     </div>

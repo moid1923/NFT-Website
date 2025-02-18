@@ -1,12 +1,12 @@
 import React from "react";
-import seller1 from "../assets/seller1.png";
-import seller2 from "../assets/seller2.png";
-import seller3 from "../assets/seller3.png";
-import seller4 from "../assets/seller4.png";
-import seller5 from "../assets/seller5.png";
-import seller6 from "../assets/seller6.png";
-import seller7 from "../assets/seller7.png";
-import seller8 from "../assets/seller8.png";
+import seller1 from "../assets/sell1.png";
+import seller2 from "../assets/sell2.png";
+import seller3 from "../assets/sell3.png";
+import seller4 from "../assets/sell4.png";
+import seller5 from "../assets/sell5.png";
+import seller6 from "../assets/sell6.png";
+import seller7 from "../assets/sell7.png";
+import seller8 from "../assets/sell8.png";
 
 const sellers = [
   { id: 1, img: seller1, name: "Jacob Jones", price: "245.5 FRY" },
@@ -26,7 +26,7 @@ export default function TopSellers() {
         {/* Header Section */}
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row md:mb-[50px]">
           <h2 className="md:text-[64px] text-[30px] sm:text-[45px]   font-apex font-normal leading-[76px] tracking-[4%]">TOP SELLER</h2>
-          <button className="text-red-500 text-lg font-semibold hover:underline cursor-pointer">
+          <button className="text-red-500 text-[22px] text-roboto font-semibold hover:underline cursor-pointer">
             View All
           </button>
         </div>
@@ -42,19 +42,19 @@ export default function TopSellers() {
                 <img
                   src={seller.img}
                   alt={seller.name}
-                  className="w-[80px] h-[80px] rounded-xl object-cover rounded-tr-4xl "
+                  className="w-[80px] h-[80px] lg:w-[116px] lg:h-[116px] rounded-xl object-cover rounded-tr-4xl "
                 />
 
-               <div className="absolute top-0 right-0 bg-white p-1 m-1 rounded-full " >
-               <span className=" bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+               <div className="absolute top-0 right-0 bg-white  rounded-full " >
+               <span className=" bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full w-[30px] h-[30px] -top-1 -right-1">
                   ✓
                 </span>
                </div>
                 
               </div>
               <div className="flex flex-col ">
-                <h3 className="text-[22px] font-semibold leading-tight">{seller.name}</h3>
-                <p className="text-[14px] text-gray-500">{seller.price}</p>
+                <h3 className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[15px] font-semibold leading-tight">{seller.name}</h3>
+                <p className="lg:text-[14px] text-[12px] text-gray-500">{seller.price}</p>
               </div>
             </div>
           ))}

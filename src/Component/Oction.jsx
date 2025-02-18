@@ -8,6 +8,7 @@ import oction6 from "../assets/oction6.png";
 import oction7 from "../assets/oction7.jfif";
 import oction8 from "../assets/oction8.png";
 import hero from "../assets/fc-logo.jfif";
+import exbt from '../assets/ebi.png'
 import bg from "../assets/bgfeature.png";
 import { useNavigate } from "react-router-dom";
 const oction = [
@@ -49,13 +50,13 @@ function Oction({
           {oction.slice(0, maxImages).map((nft) => (
             <div
               key={nft.id}
-              className="group relative w-full max-w-[308px] h-[410px] p-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+              className="group relative w-full max-w-[308px] h-[410px] p-[7px] rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
                 <img
                   src={hero}
-                  className="w-10 h-10 rounded-full"
+                  className="w-[53px] h-[53px] rounded-full"
                   alt="Owner"
                 />
                 <div>
@@ -64,7 +65,7 @@ function Oction({
                 </div>
               </div>
 
-              <div className="relative w-full h-[84%]">
+              <div className="relative w-[280px] h-[314px]">
                 <img
                   src={nft.img}
                   alt="NFT"
@@ -72,10 +73,10 @@ function Oction({
                 />
                 {showButtons &&(
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-0 z-40">
-                  <button className=" bg-white text-[12px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
+                  <button className=" bg-white text-[12px] px-2 py-1 lg:px-[7px] lg:py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
                     In Stock  7
                   </button>
-                  <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">
+                  <span className="text-sm font-bold bg-white px-1 py-1 lg:px-[7px] lg:py-[11px] text-[12px] rounded-lg">
                     Price: {nft.price} ETH
                   </span>
                 </div>
@@ -83,7 +84,7 @@ function Oction({
                 
                 <div>
                   <p
-                    className="btn-auc bg-white text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+                    className="btn-auc bg-white opacity-70 text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
                     transition-all duration-300 group-hover:top-[220px]"
                   >
                     3:06:59:18
@@ -108,8 +109,8 @@ function Oction({
         {/* Conditionally Render Explore Button */}
         {explore && (
           <button  onClick={handleExploreClick}
-           className="text-[22px] block mx-auto cursor-pointer bg-gradient-to-r from-[#FF9292] to-[#FD0000] text-white px-8 py-4 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]">
-            {explore}
+           className="text-[22px] lg:w-[228px] lg:h-[58px] block mx-auto cursor-pointer bg-gradient-to-r from-red-400 to-[#FD0000] text-white px-8 py-3 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]">
+            {explore }
           </button>
         )}
       </div>

@@ -21,13 +21,13 @@ const cards = [
 // Custom Previous and Next Buttons
 const NextArrow = ({ onClick }) => (
   <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-3 md:-top-19 -top-4" onClick={onClick}>
-    <img src={righti} alt="Next" className="w-10 h-10" />
+    <img src={righti} alt="Next" className="w-10 h-10 lg:w-[67px] lg:h-[67px]" />
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
   <div className="absolute transform -translate-y-1/2 z-10 cursor-pointer right-20 md:-top-19 -top-4" onClick={onClick}>
-    <img src={lefti} alt="Previous" className="w-10 h-10" />
+    <img src={lefti} alt="Previous" className="w-10 h-10 lg:w-[67px] lg:h-[67px]" />
   </div>
 );
 

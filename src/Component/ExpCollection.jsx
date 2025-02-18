@@ -10,6 +10,7 @@ import ex8 from "../assets/EC8.png";
 import ex9 from "../assets/EC9.png";
 import ex10 from "../assets/EC10.png";
 import ex11 from "../assets/C11.png";
+import { useNavigate } from "react-router-dom";
 
 const collections = [
   { image: ex1, title: "Wonderful ARTWORK", creator: "Jacob Jones", logo: ex1 },
@@ -26,13 +27,20 @@ const collections = [
 ];
 
 function ExpCollection() {
+  const navigate = useNavigate(); // 🔹 Define navigate function
+
+  const handlePixacioClick = () => {
+    navigate("/pixacio"); // 🔹 Navigate to /pixacio when clicked
+  };
   return (
     <div>
-      <div className="max-w-[1320px] w-full mx-auto md:mt-24">
+      <div className="max-w-[1320px] w-full mx-auto md:mt-10">
         <div className="md:text-[64px] font-apex sm:text-[45px] text-[30px] text-center md:text-left">EXPLORE COLLECTIONS</div>
         <div className="grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
           {collections.map((item, index) => (
-            <div key={index} className="max-w-[417px] w-full h-[276px]  bg-white shadow-lg rounded-xl overflow-hidden p-[10px]">
+            <div key={index} className="max-w-[417px] w-full h-[276px]  bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
+            onClick={handlePixacioClick}
+            >
               <div className=" flex items-center gap-4 mb-2">
                 <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-3xl object-cover" />
                 <div>

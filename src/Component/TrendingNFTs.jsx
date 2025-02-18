@@ -69,18 +69,18 @@ export default function TrendingNFTs() {
           {nfts.map((nft) => (
             <div
               key={nft.id}
-              className="w-full max-w-[308px] h-[410px] rounded-2xl p-4 shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300"
+              className="w-full max-w-[308px] h-[411px] rounded-2xl p-[7px] shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
-                <img src={hero} className="w-10 h-10 rounded-full" alt="Profile" />
+                <img src={hero} className="w-[53px] h-[53px] rounded-full" alt="Profile" />
                 <div>
                   <h3 className="text-[18px] font-apex">STELLA NOVA</h3>
                   <p className="text-[11px] text-gray-500">@Stella Nova</p>
                 </div>
               </div>
 
-              <div className="relative w-full h-[84%]">
+              <div className="relative w-[280px] h-[314px] ">
                 <img
                   src={nft.img}
                   alt="NFT"

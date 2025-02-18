@@ -16,11 +16,11 @@ function Visibility() {
             featured sections, and on the homepage, maximizing exposure to
             potential buyers.
           </p>
-          <button className="mt-6 text-[22px] w-[217px] h-[58px] cursor-pointer bg-red-500 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 focus:ring focus:ring-red-300">
+          <button className="mt-6 text-[22px] w-[217px] h-[58px] cursor-pointer bg-gradient-to-r from-[#FD0000] to-[#FF9292] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 focus:ring focus:ring-red-300">
             Boost <span className="ml-2 cursor-pointer">🚀</span>
           </button>
         </div>
-        <div className="image-section lg:w-1/2 relative ">
+        <div className="image-section lg:w-1/2 relative  ">
         <div>
           <img src={visibility} alt="" />
         </div>

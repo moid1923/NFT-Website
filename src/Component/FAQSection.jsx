@@ -51,7 +51,7 @@ function FAQSection() {
                 <AccordionItemState>
                   {({ expanded }) => (
                    <AccordionItemButton
-                   className={`w-full text-left px-6 py-4 text-[16px] md:text-[22px] focus:outline-none flex gap-x-3 items-center relative ${
+                   className={`w-full text-left px-6 py-4 text-[16px] md:text-[22px] focus:outline-none flex gap-x-3 items-center relative font-roboto ${
                      expanded
                        ? 'bg-[#ffe0e0] border border-gray-300 rounded-2xl '
                        : ' '
@@ -59,7 +59,7 @@ function FAQSection() {
                  >
                  
                       <span
-                        className={`transition-transform duration-300 text-[32px] font-bold md:mr-10 ${
+                        className={`transition-transform duration-300 text-[32px] font-bold md:mr-10  ${
                           expanded ? 'rotate-180 text-red-500' : ''
                         }`}
                       >
@@ -76,7 +76,7 @@ function FAQSection() {
                   )}
                 </AccordionItemState>
               </AccordionItemHeading>
-              <AccordionItemPanel className=" px-6 md:px-24 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[14px] md:text-[18px]">
+              <AccordionItemPanel className="font-roboto px-6 md:px-24 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[14px] md:text-[18px]">
                 {faq.answer}
               </AccordionItemPanel>
             </AccordionItem>

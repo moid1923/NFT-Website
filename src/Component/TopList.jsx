@@ -102,7 +102,7 @@ function TopList({
       const [activeDropdown, setActiveDropdown] = useState(null);
       useEffect(() => {
         const handleResize = () => {
-          if (window.innerWidth >= 768) {
+          if (window.innerWidth >= 800) {
             setIsOpen(true);
           } else {
             setIsOpen(false);
@@ -142,11 +142,11 @@ function TopList({
                   />
                 </div>
                 {isOpen && (
-                  <div className="mt-4 space-y-2">
+                  <div className="mt-4 space-y-2 lg:w-[242px] ">
                     {filterOptions.map((option, index) => (
                       <div key={index} className="bg-gray-100 rounded-lg">
                         <div
-                          className="flex items-center justify-between px-3 py-2 cursor-pointer hover:bg-gray-200 rounded-lg"
+                          className="flex items-center justify-between px-3 py-2 cursor-pointer hover:bg-gray-200 rounded-lg "
                           onClick={() => toggleFilter(option.label, option.hasDropdown)}
                         >
                           <span className="text-sm">{option.label}</span>
@@ -165,11 +165,11 @@ function TopList({
                   </div>
                 )}
               </div>
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-2">
           {oction.slice(0, maxImages).map((nft) => (
             <div
               key={nft.id}
-              className="group relative  w-full max-w-[308px] h-[410px] sm:p-4 xl:ms-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+              className="group relative  w-full max-w-[308px] h-[410px] md:max-w-[280px] lg:max-w-[308px] sm:p-4 xl:ms-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
