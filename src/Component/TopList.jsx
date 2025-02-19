@@ -223,8 +223,8 @@ function TopList({
                   />
                   {showButtons && (
                     <div className="p-3 w-full flex justify-between items-center absolute bottom-0 z-40">
-                      <button className=" bg-white text-[12px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
-                        In Stock 7
+                      <button className=" bg-white text-[12px] h-[36px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
+                        In Stock <span className="ms-1">7 </span>
                       </button>
                       <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                         Price:
