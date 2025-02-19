@@ -10,19 +10,20 @@ import oction7 from "../assets/oction7.jfif";
 import oction8 from "../assets/oction8.png";
 import hero from "../assets/fc-logo.jfif";
 import bg from "../assets/bgfeature.png";
+import flogo from '../assets/felogo.png'
 const oction = [
-  { id: 1, img: oction1, price: "142.02" },
-  { id: 2, img: oction2, price: "142.02" },
-  { id: 3, img: oction3, price: "142.02" },
-  { id: 4, img: oction4, price: "142.02" },
-  { id: 5, img: oction5, price: "142.02" },
-  { id: 6, img: oction6, price: "142.02" },
-  { id: 7, img: oction7, price: "142.02" },
-  { id: 8, img: oction8, price: "142.02" },
-  { id: 9, img: oction3, price: "142.02" },
-  { id: 10, img: oction4, price: "142.02" },
-  { id: 11, img: oction5, price: "142.02" },
-  { id: 12, img: oction6, price: "142.02" },
+  { id: 1, img: oction1, logo:flogo },
+  { id: 2, img: oction2, logo:flogo },
+  { id: 3, img: oction3, logo:flogo },
+  { id: 4, img: oction4, logo:flogo },
+  { id: 5, img: oction5, logo:flogo },
+  { id: 6, img: oction6, logo:flogo },
+  { id: 7, img: oction7, logo:flogo },
+  { id: 8, img: oction8, logo:flogo},
+  { id: 9, img: oction3, logo:flogo},
+  { id: 10, img: oction4, logo:flogo },
+  { id: 11, img: oction5, logo:flogo },
+  { id: 12, img: oction6, logo:flogo},
 ];
 const filterOptions = [
   { label: "Popular", count: 15 },
@@ -195,9 +196,11 @@ function TopList({
                   <button className=" bg-white text-[12px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
                     In Stock  7
                   </button>
-                  <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">
-                    Price: {nft.price} ETH
-                  </span>
+                  <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
+                      Price:
+                      <img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
+                         141.02ETH
+                    </span>
                 </div>
                 )}
                 

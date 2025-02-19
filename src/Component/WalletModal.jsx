@@ -1,6 +1,6 @@
 import React from "react";
 import { IoClose } from "react-icons/io5";
-import fryLogo from "../assets/EC1.png"; // Your Fry Networks logo
+import fryLogo from "../assets/EC1.png"; 
 import peraLogo from "../assets/EC2.png";
 import deflyLogo from "../assets/EC3.png";
 import daffiLogo from "../assets/EC4.png";
