@@ -12,18 +12,18 @@ import hero from "../assets/fc-logo.jfif";
 import bg from "../assets/bgfeature.png";
 import flogo from '../assets/felogo.png'
 const oction = [
-  { id: 1, img: oction1, logo:flogo },
-  { id: 2, img: oction2, logo:flogo },
-  { id: 3, img: oction3, logo:flogo },
-  { id: 4, img: oction4, logo:flogo },
-  { id: 5, img: oction5, logo:flogo },
-  { id: 6, img: oction6, logo:flogo },
-  { id: 7, img: oction7, logo:flogo },
-  { id: 8, img: oction8, logo:flogo},
-  { id: 9, img: oction3, logo:flogo},
-  { id: 10, img: oction4, logo:flogo },
-  { id: 11, img: oction5, logo:flogo },
-  { id: 12, img: oction6, logo:flogo},
+  { id: 1, img: oction1, price: "142.02" },
+  { id: 2, img: oction2, price: "142.02" },
+  { id: 3, img: oction3, price: "142.02" },
+  { id: 4, img: oction4, price: "142.02" },
+  { id: 5, img: oction5, price: "142.02" },
+  { id: 6, img: oction6, price: "142.02" },
+  { id: 7, img: oction7, price: "142.02" },
+  { id: 8, img: oction8, price: "142.02" },
+  { id: 9, img: oction3, price: "142.02" },
+  { id: 10, img: oction4, price: "142.02" },
+  { id: 11, img: oction5, price: "142.02" },
+  { id: 12, img: oction6, price: "142.02" },
 ];
 const filterOptions = [
   { label: "Popular", count: 15 },
@@ -122,7 +122,7 @@ function TopList({
   
   return (
     <div className="py-10 lg:my-10">
-      <div className="max-w-[1920px] mx-auto px-4 z-10">
+      <div className="max-w-[1920px]  px-4 z-10">
         {/* Header */}
         <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] mb-[50px]">
           {title}
@@ -227,6 +227,7 @@ function TopList({
             </div>
           ))}
         </div>
+        <div className="extra w-[292px] hidden 2xl:block"></div>
         </div>
        
 
