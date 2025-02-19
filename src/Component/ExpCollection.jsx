@@ -10,6 +10,8 @@ import ex8 from "../assets/EC8.png";
 import ex9 from "../assets/EC9.png";
 import ex10 from "../assets/EC10.png";
 import ex11 from "../assets/C11.png";
+import tick from '../assets/tick.png'
+import './expcoll.css'
 import pix1 from '../assets/pix1.jfif'
 import { useNavigate } from "react-router-dom";
 
@@ -64,21 +66,27 @@ function ExpCollection() {
         ))}
       </ul>
     </nav>
-        <div className="grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
+        <div className=" grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
           {collections.map((item, index) => (
-            <div key={index} className="max-w-[417px] w-full h-[276px] cursor-pointers bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
+            <div key={index} className="card max-w-[417px] w-full h-[276px] cursor-pointers bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
             onClick={handlePixacioClick}
             >
               <div className=" flex items-center gap-4 mb-2">
                 <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-3xl object-cover" />
                 <div>
                   <p className="font-semibold text-lg">{item.title}</p>
+                  <div className="flex items-center justify-center ">
                   <p className="text-gray-500 text-sm">Created by {item.creator}</p>
+                  <span className="w-5 h-5 bg-blue-600 flex items-center justify-center rounded-full ms-2">
+                    <img src={tick} alt="" className="w-4 h-4 rounded-full" />
+                    </span> 
+                  </div>
+                  
                 </div>
               </div>
               <div className="relative h-[178px]">
               <img src={item.image} alt={item.title} className="w-full h-[178px] object-cover rounded-xl" />
-              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-white p-1 rounded-2xl">Items 1.5k</button>
+              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 rounded-md w-[93px] h-[30px]">Items 1.5k</button>
               </div>
             </div>
           ))}
