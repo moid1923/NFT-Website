@@ -52,7 +52,7 @@ function Oction({
           {oction.slice(0, maxImages).map((nft) => (
             <div
               key={nft.id}
-              className="group relative w-full max-w-[308px] h-[410px] p-[7px] rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+              className="group relative w-full max-w-[308px] h-[410px] p-2   rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
@@ -67,14 +67,14 @@ function Oction({
                 </div>
               </div>
 
-              <div className="relative w-[280px] h-[314px]">
+              <div className="relative w-[100%] h-[80%] flex justify-center items-center ">
                 <img
                   src={nft.img}
                   alt="NFT"
-                  className="w-full h-[100%] object-cover absolute rounded-2xl"
+                  className="w-[100%] h-[100%] object-cover absolute rounded-2xl"
                 />
                 {showButtons &&(
-                  <div className="p-3 w-full flex justify-between items-center absolute bottom-0 z-40">
+                  <div className="p-3 w-full flex justify-between items-center absolute bottom-1.5 z-40">
                   <button className=" bg-white text-[12px] px-2 py-1 lg:px-[7px] lg:py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
                     In Stock  7
                   </button>
