@@ -19,32 +19,32 @@ const DigitalAsset = () => {
       {/* Floating Images & Input Container */}
       <div className="relative w-full max-w-[1320px]  h-[831px] flex items-center justify-center mx-auto">
         {/* Left Images */}
-        <div className="w-[120px] h-[120px] c-1 bg-white absolute p-1 top-30 left-10 rounded-lg shadow-lg cd">
+        <div className="w-[120px] h-[120px] c-1 bg-white absolute p-1 top-30 left-16   rounded-lg shadow-lg cd">
           <img src={rand1} alt="" className="c1-i w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[170px] h-[170px]  bg-white p-1 c-2 absolute top-[40%] left-10 rounded-lg shadow-lg cd">
+         <div className="w-[170px] h-[170px]  bg-white p-1 c-2 absolute top-[33%] left-10   rounded-lg shadow-lg cd">
           <img src={rand2} alt="" className="c2-i  w-[160px] h-[160px] object-cover rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[120px] h-[120px]  bg-white p-1 c-3 absolute bottom-36 left-0 rounded-lg shadow-lg cd">
+         <div className="w-[120px] h-[120px]  bg-white p-1 c-3 absolute bottom-44 left-2 rounded-lg shadow-lg cd">
           <img src={rand3} alt="" className="c3-i  w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[120px] h-[120px]  bg-white p-1 c-4 absolute bottom-12 left-1/6 rounded-lg shadow-lg cd">
+         <div className="w-[120px] h-[120px]  bg-white p-1 c-4 absolute bottom-28 left-1/5 rounded-lg shadow-lg cd">
           <img src={rand4} alt="" className="c4-i  w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
            
         {/* Right Images */}
-        <div className="w-[170px] h-[170px] p-1 c-5 bg-white absolute top-5 right-56 rounded-lg shadow-lg cd">
+        <div className="w-[170px] h-[170px] p-1 c-5 bg-white absolute top-20  right-68  rounded-lg shadow-lg cd">
           <img src={rand5} alt="" className="c5-1  w-[160px] h-[160px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
         
-         <div className="w-[120px] h-[120px] p-1  bg-white c-6 absolute top-32 right-10 rounded-lg shadow-lg cd">
+         <div className="w-[120px] h-[120px] p-1  bg-white c-6 absolute top-40 right-13 rounded-lg shadow-lg cd">
           <img src={rand6} alt="" className="c6-1  w-[110px] h-[110px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
          
-         <div className="w-[170px] h-[170px] p-1  bg-whitec-7 absolute bottom-56 right-0 rounded-lg shadow-lg cd">
+         <div className="w-[170px] h-[170px] p-1  bg-whitec-7 absolute bottom-56 right-8  rounded-lg shadow-lg cd">
           <img src={rand7} alt="" className="c7-i  w-[160px] h-[160px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
-         <div className="w-[170px] h-[170px] p-1  bg-white c-8 absolute bottom-4 right-1/6 rounded-lg shadow-lg cd">
+         <div className="w-[170px] h-[170px] p-1  bg-white c-8 absolute bottom-16 right-1/6 rounded-lg shadow-lg cd">
           <img src={rand8} alt="" className="c8-i  w-[160px] h-[160px] object-cover  rounded-lg shadow-lg cdimg"/>
          </div>
         {/* Input Box - Centered */}
