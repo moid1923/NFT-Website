@@ -14,7 +14,7 @@ import Visibility from '../Component/Visibility'
 import featbg from '../assets/featbg.png'
 import bgauc from '../assets/bgauc.png'
 import bgtsell from '../assets/bgtsell.png'
-import assetbg from '../assets/assetbg.png'
+
 import shadow from '../assets/Ellipse.png'
 import LandingAuc from '../Component/LandingAuc'
 import randbg from '../assets/randbg.png'

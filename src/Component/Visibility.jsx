@@ -1,5 +1,6 @@
 import React from "react";
 import visibility from '../assets/visibility.png'
+import bim from '../assets/bim.png'
 function Visibility() {
   return (
     <div className=" py-8 px-4 sm:px-8 md:px-16 lg:my-10">
@@ -16,8 +17,10 @@ function Visibility() {
             featured sections, and on the homepage, maximizing exposure to
             potential buyers.
           </p>
-          <button className="mt-6 text-[22px] w-[217px] h-[58px] cursor-pointer bg-gradient-to-r from-[#FD0000] to-[#FF9292] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 focus:ring focus:ring-red-300">
-            Boost <span className="ml-2 cursor-pointer">🚀</span>
+          <button className="mt-6 flex gap-2 items-center justify-center text-[22px] w-[217px] h-[58px] cursor-pointer bg-gradient-to-r from-[#FD0000] to-[#FF9292] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 focus:ring focus:ring-red-300">
+            Boost <span className="ml-2 cursor-pointer">
+              <img src={bim} alt="" className="w-4 h-[18px]" />
+            </span>
           </button>
         </div>
         <div className="image-section lg:w-1/2 relative  ">
