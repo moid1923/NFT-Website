@@ -25,8 +25,17 @@ const collections = [
   { image: ex10, title: "Futuristic Glow", creator: "Grace Miller", logo: ex10 },
   { image: ex11, title: "Galactic Art", creator: "Lucas Hill", logo: ex11 },
 ];
-
+const navLinks = [
+  { name:"Home"},
+  { name: "About",  },
+  { name: "Services",  },
+  { name: "Portfolio", },
+  { name: "Blog", },
+  { name: "Contact"},
+  { name: "FAQ",},
+];
 function ExpCollection() {
+  
   const navigate = useNavigate(); // 🔹 Define navigate function
 
   const handlePixacioClick = () => {
@@ -36,9 +45,27 @@ function ExpCollection() {
     <div>
       <div className="max-w-[1320px] w-full mx-auto md:mt-10">
         <div className="md:text-[64px] font-apex sm:text-[45px] text-[30px] text-center md:text-left">EXPLORE COLLECTIONS</div>
+        <nav className=" p-4">
+      <ul className="flex  space-x-6">
+        {navLinks.map((link) => (
+          <li >
+            <div
+              
+              className={({ isActive }) =>
+                `text-white px-4 py-2 rounded-lg transition-all  ${
+                  isActive ? "bg-red-500 border-2 border-red-500" : "hover:bg-gray-700"
+                }`
+              }
+            >
+              {link.name}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </nav>
         <div className="grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
           {collections.map((item, index) => (
-            <div key={index} className="max-w-[417px] w-full h-[276px]  bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
+            <div key={index} className="max-w-[417px] w-full h-[276px] cursor-pointers bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
             onClick={handlePixacioClick}
             >
               <div className=" flex items-center gap-4 mb-2">
