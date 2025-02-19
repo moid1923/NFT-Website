@@ -10,16 +10,17 @@ import nft8 from "../assets/nft8.png";
 import hero from "../assets/fc-logo.jfif";
 import bg from "../assets/bgfeature.png";
 import tran from "../assets/tradnft.png";
+import flogo from '../assets/felogo.png'
 
 const nfts = [
-  { id: 1, img: nft1, price: "142.02" },
-  { id: 2, img: nft2, price: "142.02" },
-  { id: 3, img: nft3, price: "142.02" },
-  { id: 4, img: nft4, price: "142.02" },
-  { id: 5, img: nft5, price: "142.02" },
-  { id: 6, img: nft6, price: "142.02" },
-  { id: 7, img: nft7, price: "142.02" },
-  { id: 8, img: nft8, price: "142.02" },
+  { id: 1, img: nft1, logo: flogo },
+  { id: 2, img: nft2, logo: flogo },
+  { id: 3, img: nft3, logo: flogo },
+  { id: 4, img: nft4, logo: flogo },
+  { id: 5, img: nft5, logo: flogo },
+  { id: 6, img: nft6, logo: flogo },
+  { id: 7, img: nft7, logo: flogo },
+  { id: 8, img: nft8, logo: flogo },
 ];
 
 const options = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours"];
@@ -91,9 +92,11 @@ export default function TrendingNFTs() {
                   <button className="bg-red-500 text-white text-[12px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
                     Buy
                   </button>
-                  <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">
-                    Price: {nft.price} ETH
-                  </span>
+                  <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
+                      Price:
+                      <img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
+                         141.02ETH
+                    </span>
                 </div>
               </div>
             </div>

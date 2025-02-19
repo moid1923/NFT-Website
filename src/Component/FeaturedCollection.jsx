@@ -10,12 +10,12 @@ import fcfour from "../assets/fc-4.jfif";
 import fclogo from "../assets/fc-logo.jfif";
 import lefti from "../assets/fbtn.png";
 import righti from "../assets/fbtn2.png";
-
+import flogo from '../assets/felogo.png'
 const cards = [
-  { id: 1, img: fcone, price: "$20.00" },
-  { id: 2, img: fctwo, price: "$25.00" },
-  { id: 3, img: fcthree, price: "$30.00" },
-  { id: 4, img: fcfour, price: "$22.00" },
+  { id: 1, img: fcone, logo: flogo },
+  { id: 2, img: fctwo, logo: flogo },
+  { id: 3, img: fcthree, logo: flogo },
+  { id: 4, img: fcfour, logo: flogo },
 ];
 
 // Custom Previous and Next Buttons
@@ -106,8 +106,11 @@ export default function FeaturedCollection() {
                     <button className="bg-red-500 text-white px-[17px] py-[11px] text-[12px] rounded-md  cursor-pointer font-roboto">
                       Buy
                     </button>
-                    <span className="text-sm font-bold bg-white px-3 py-[11px] text-[12px] rounded-lg">
-                      Price: {card.price} ETH
+                    <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
+                      Price:
+                      <img src={card.logo
+                      } alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
+                         142.02ETH
                     </span>
                   </div>
                 </div>

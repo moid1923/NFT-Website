@@ -45,8 +45,8 @@ function Navbar() {
         <div className="hidden lg:flex items-center space-x-8">
           <ul className="flex items-center space-x-6 text-sm font-medium text-gray-800">
             <li
-              className={`cursor-pointer hover:text-red-500 text-[18px] transition py-3 px-2 duration-200 font-apex ${
-                active === "Home" ? "border-b-3 border-red-500 text-red-500" : ""
+              className={`cursor-pointer hover:text-red-500 font-bold text-[18px] transition py-3 px-2 duration-200 font-apex ${
+                active === "Home" ? "border-b-3 border-[#DE0308] text-[#DE0308]" : ""
               }`}
               onClick={handleHomeClick}
             >
@@ -54,7 +54,7 @@ function Navbar() {
             </li>
             <li
               className={`cursor-pointer hover:text-red-500 text-[18px] py-3 px-2 transition duration-200 font-apex ${
-                active === "AI NFT GENERATION" ? "border-b-3 border-red-500 text-red-500" : ""
+                active === "AI NFT GENERATION" ? "border-b-3 border-[#DE0308] text-[#DE0308]" : ""
               }`}
               onClick={() => handleMenuClick("AI NFT GENERATION")}
             >
@@ -66,7 +66,7 @@ function Navbar() {
         {/* Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
           <MainBtn />
-          <button className="border border-red-500 cursor-pointer font-roboto text-[22px] text-red-500 px-8 py-4 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
+          <button className="leading-[25px] border border-red-500 cursor-pointer font-roboto text-[22px] text-red-500 px-8 py-4 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
             Create NFT
           </button>
         </div>
