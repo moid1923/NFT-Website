@@ -129,7 +129,7 @@ function TopList({
         </h2>
 
         {/* Cards Grid */}
-        <div className="flex flex-col items-center gap-4 md:flex-row ">
+        <div className="max-w-[1920px] flex flex-col gap-6 items-center  md:flex-row ">
         <div className="w-[292px]  sm:block bg-white p-4 rounded-lg shadow-lg border self-start mx-auto ">
                 <div
                   className="flex  max-w-[292px] items-center justify-between cursor-pointer"
@@ -166,11 +166,11 @@ function TopList({
                   </div>
                 )}
               </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 max-w-[1280]">
           {oction.slice(0, maxImages).map((nft) => (
             <div
               key={nft.id}
-              className="group relative  w-full max-w-[308px] h-[410px] md:max-w-[280px] lg:max-w-[308px] sm:p-4 xl:ms-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+              className="group relative  w-full max-w-[308px] h-[410px] md:max-w-[280px] lg:max-w-[308px] p-4 sm:p-4 xl:ms-4 rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
@@ -227,7 +227,9 @@ function TopList({
             </div>
           ))}
         </div>
-        <div className="extra w-[292px] hidden 2xl:block"></div>
+        <div className="extra w-[302px] h-[320px] hidden 2xl:block">
+
+        </div>
         </div>
        
 
