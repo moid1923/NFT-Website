@@ -13,7 +13,7 @@ function Auction() {
     <div>
       <Navbar />
       <Actionhero />
-      <TopList title="Top Listed" showButtons={true}/>
+      <TopList title="Top Listed" start={0} maxImages={12} showButtons={true}/>
       <Oction maxImages={12} title="Live Auction" showButtons={true} />
       <Footer />
       

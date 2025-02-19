@@ -8,7 +8,7 @@ function Actionhero() {
   return (
     <div className="flex flex-col items-center py-10 xl:mt-[158px]">
       {/* Auction Heading */}
-      <h2 className="text-red-600 text-4xl md:text-[150px] font-bold mb-[50px] xl:mb-[25px] font-apex leading-[70px] tracking-[4%]">
+      <h2 className="text-[#fe0101] text-4xl md:text-[150px] font-bold mb-[50px] xl:mb-[25px] font-apex leading-[70px] tracking-[4%]">
         AUCTION
       </h2>
 

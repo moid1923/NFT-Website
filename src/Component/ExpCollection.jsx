@@ -10,6 +10,7 @@ import ex8 from "../assets/EC8.png";
 import ex9 from "../assets/EC9.png";
 import ex10 from "../assets/EC10.png";
 import ex11 from "../assets/C11.png";
+import pix1 from '../assets/pix1.jfif'
 import { useNavigate } from "react-router-dom";
 
 const collections = [
