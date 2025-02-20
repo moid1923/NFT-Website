@@ -28,15 +28,7 @@ const collections = [
   { image: ex10, title: "WONDERFUL ARTWORK", creator: "Grace Miller", logo: ex10 },
   { image: ex11, title: "WONDERFUL ARTWORK", creator: "Lucas Hill", logo: ex11 },
 ];
-const navLinks = [
-  { name:"Home"},
-  { name: "About",  },
-  { name: "Services",  },
-  { name: "Portfolio", },
-  { name: "Blog", },
-  { name: "Contact"},
-  { name: "FAQ",},
-];
+const navLinks = ["Home", "About", "Services", "Portfolio", "Blog", "Contact", "FAQ"];
 function ExpCollection() {
   
   const navigate = useNavigate(); // 🔹 Define navigate function
@@ -48,31 +40,28 @@ function ExpCollection() {
     <div>
       <div className="max-w-[1320px] w-full mx-auto md:mt-10">
         <div className="md:text-[64px] font-apex sm:text-[45px] text-[30px] text-center md:text-left">EXPLORE COLLECTIONS</div>
-        <nav className=" p-4">
-      <ul className="flex  space-x-6">
-        {navLinks.map((link) => (
-          <li >
-            <div
-              
-              className={({ isActive }) =>
-                `text-white px-4 py-2 rounded-lg transition-all  ${
-                  isActive ? "bg-red-500 border-2 border-red-500" : "hover:bg-gray-700"
-                }`
-              }
-            >
-              {link.name}
-            </div>
-          </li>
-        ))}
-      </ul>
-    </nav>
+        <nav className="p-4">
+          <ul className="flex space-x-6">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <div
+                  className={`text-black px-4 py-2 rounded-lg transition-all ${
+                    link === "Home" ? " border-2 border-red-500" : "hover:bg-red-700 hover:text-white"
+                  }`}
+                >
+                  {link}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <div className=" grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
           {collections.map((item, index) => (
-            <div key={index} className="card max-w-[417px] w-full h-[276px] cursor-pointers bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
+            <div key={index} className="card max-w-[417px] w-full h-[276px] cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
             onClick={handlePixacioClick}
             >
-              <div className=" flex items-center gap-4 mb-2">
-                <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-3xl object-cover" />
+              <div className=" flex items-center gap-4 mb-2 cursor-pointer">
+                <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-3xl object-cover cursor-pointer" />
                 <div>
                   <p className="font-semibold text-lg">{item.title}</p>
                   <div className="flex items-center justify-center ">
@@ -86,7 +75,7 @@ function ExpCollection() {
               </div>
               <div className="relative h-[178px]">
               <img src={item.image} alt={item.title} className="w-full h-[178px] object-cover rounded-xl" />
-              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 rounded-md w-[93px] h-[30px]">Items 1.5k</button>
+              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 cursor-pointer rounded-md w-[93px] h-[30px]">Items 1.5k</button>
               </div>
             </div>
           ))}

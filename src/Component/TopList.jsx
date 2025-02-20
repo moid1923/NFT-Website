@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Filter, Search } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import oction1 from "../assets/oction1.png";
 import oction2 from "../assets/oction2.png";
 import oction3 from "../assets/oction3.png";
@@ -116,7 +117,9 @@ const filterOptions = [
   { label: "Body Color", count: 11 },
   { label: "Head", count: 33 },
 ];
-function TopList({
+function TopList(
+  
+  {
   maxImages,
   start,
   title = "Auction",
@@ -144,7 +147,11 @@ function TopList({
       setActiveDropdown((prev) => (prev === label ? null : label));
     }
   };
+  const navigate = useNavigate(); // 🔹 Define navigate function
 
+  const handlePixacioClick = () => {
+    navigate("/pixaciNFT"); // 🔹 Navigate to /pixacio when clicked
+  };
   return (
     <div className="py-10 lg:my-10">
       <div className="max-w-[1920px]  px-4 z-10">
@@ -248,6 +255,7 @@ function TopList({
                     <p
                       className="btn-auc hidden bg-white text-black rounded-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
                     transition-all duration-300 cursor-pointer group-hover:bg-red-500 group-hover:text-white group-hover:bottom-32 group-hover:block"
+                    onClick={handlePixacioClick}
                     >
                       {bid}
                     </p>
