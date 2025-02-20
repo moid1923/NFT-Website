@@ -20,7 +20,7 @@ const Footer = () => {
       {/* Subscribe Section */}
       <div className="text-center py-10">
         <h2 className="md:text-[64px] sm:text-[45px] text-[25px]  mb-[10px] font-bold leading-[130px] font-oxanion ">
-          Ready For Next Drop?
+          Ready For Next NFT Drop?
         </h2>
         <div className="max-w-[586px] sm:mx-auto relative md:px-10 border border-red-400 rounded-lg mx-5 px-8 xs:mx-1">
           <div
@@ -29,10 +29,10 @@ const Footer = () => {
             <input
               type="email"
               placeholder="info@gmail.com"
-              className="py-3 bg-transparent text-red-500 placeholder-[#FE0101]  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
+              className="py-3 text-[24px] bg-transparent text-red-500 placeholder-[#FE0101]  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
             />
-            <button className="bg-red-500 py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5 w-[10] h-[10]">
-              <FaTelegramPlane size={20} md:size={36}/>
+            <button className="bg-red-500  py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5 w-[10] h-[10]">
+              <FaTelegramPlane size={20} md:size={40}/>
             </button>
           </div>
         </div>

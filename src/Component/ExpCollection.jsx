@@ -16,17 +16,17 @@ import pix1 from '../assets/pix1.jfif'
 import { useNavigate } from "react-router-dom";
 
 const collections = [
-  { image: ex1, title: "Wonderful ARTWORK", creator: "Jacob Jones", logo: ex1 },
-  { image: ex2, title: "Amazing Digital Art", creator: "Sophia Lee", logo: ex2 },
-  { image: ex3, title: "Fantasy World", creator: "Liam Carter", logo: ex3 },
-  { image: ex4, title: "Dreamy Scenery", creator: "Emily White", logo: ex4 },
-  { image: ex5, title: "Abstract Magic", creator: "Oliver Stone", logo: ex5 },
-  { image: ex6, title: "Cyberpunk Vision", creator: "Mia Davis", logo: ex6 },
-  { image: ex7, title: "Surreal Wonders", creator: "Noah Green", logo: ex7 },
-  { image: ex8, title: "Vibrant Cityscape", creator: "Ella Brown", logo: ex8 },
-  { image: ex9, title: "Colorful Portrait", creator: "James Scott", logo: ex9 },
-  { image: ex10, title: "Futuristic Glow", creator: "Grace Miller", logo: ex10 },
-  { image: ex11, title: "Galactic Art", creator: "Lucas Hill", logo: ex11 },
+  { image: ex1, title: "WONDERFUL ARTWORK", creator: "Jacob Jones", logo: ex1 },
+  { image: ex2, title: "WONDERFUL ARTWORK", creator: "Sophia Lee", logo: ex2 },
+  { image: ex3, title: "WONDERFUL ARTWORK", creator: "Liam Carter", logo: ex3 },
+  { image: ex4, title: "WONDERFUL ARTWORK", creator: "Emily White", logo: ex4 },
+  { image: ex5, title: "WONDERFUL ARTWORK", creator: "Oliver Stone", logo: ex5 },
+  { image: ex6, title: "WONDERFUL ARTWORK", creator: "Mia Davis", logo: ex6 },
+  { image: ex7, title: "WONDERFUL ARTWORK", creator: "Noah Green", logo: ex7 },
+  { image: ex8, title: "WONDERFUL ARTWORK", creator: "Ella Brown", logo: ex8 },
+  { image: ex9, title: "WONDERFUL ARTWORK", creator: "James Scott", logo: ex9 },
+  { image: ex10, title: "WONDERFUL ARTWORK", creator: "Grace Miller", logo: ex10 },
+  { image: ex11, title: "WONDERFUL ARTWORK", creator: "Lucas Hill", logo: ex11 },
 ];
 const navLinks = [
   { name:"Home"},
@@ -76,7 +76,7 @@ function ExpCollection() {
                 <div>
                   <p className="font-semibold text-lg">{item.title}</p>
                   <div className="flex items-center justify-center ">
-                  <p className="text-gray-500 text-sm">Created by {item.creator}</p>
+                  <p className="text-gray-500 text-sm">Created by <span className="text-sm text-gray-500 font-semibold">{item.creator}</span> </p>
                   <span className="w-5 h-5 bg-blue-600 flex items-center justify-center rounded-full ms-2">
                     <img src={tick} alt="" className="w-4 h-4 rounded-full" />
                     </span> 
