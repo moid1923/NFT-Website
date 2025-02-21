@@ -5,6 +5,9 @@ import Auction from './Pages/Auction'
 import LnadingPage from './Pages/LnadingPage'
 import Collection from './Pages/Collection'
 import Pixacio from './Pages/Pixacio';
+import PixNFT from './Pages/PixNFT';
+
+
 function App() {
 
   return (
@@ -15,7 +18,7 @@ function App() {
         <Route path="/auction" element={<Auction />} />
        <Route path='/collection' element={<Collection />} />
        <Route path='/pixacio' element={<Pixacio />} />
-
+       <Route path='/pixNFT' element={<PixNFT />} />
       </Routes>
     </Router>
     </div>

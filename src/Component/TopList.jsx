@@ -117,15 +117,15 @@ const filterOptions = [
   { label: "Body Color", count: 11 },
   { label: "Head", count: 33 },
 ];
-function TopList(
-  
-  {
+function TopList({
   maxImages,
   start,
   title = "Auction",
   bid = "Place a bid",
   explore = "",
   showButtons = false,
+  showBuyButton = false,
+  showAnimatedButton = true,
 }) {
   const [isOpen, setIsOpen] = useState(true);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -149,16 +149,14 @@ function TopList(
   };
   const navigate = useNavigate(); // 🔹 Define navigate function
 
-  const handlePixacioClick = () => {
-    navigate("/pixaciNFT"); // 🔹 Navigate to /pixacio when clicked
+  const handlePixClick = () => {
+    navigate("/pixNFT"); // 🔹 Navigate to /pixacio when clicked
   };
   return (
-    <div className="py-10 lg:my-10">
+    <div className="py-10 mt-10 lg:mt-20 lg-mb-10">
       <div className="max-w-[1920px]  px-4 z-10">
         {/* Header */}
-        <h2 className="md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] mb-[50px]">
-          {title}
-        </h2>
+       
 
         {/* Cards Grid */}
         <div className="max-w-[1920px] flex flex-col gap-6 items-center justify-between md:flex-row ">
@@ -186,10 +184,9 @@ function TopList(
                     >
                       <span className="text-sm">{option.label}</span>
                       <span className="text-sm font-semibold flex gap-4 justify-center items-center">
-                          {option.count}
-                          <ChevronDown className="w-4 h-4 text-gray-500" />
-                        </span>
-                      
+                        {option.count}
+                        <ChevronDown className="w-4 h-4 text-gray-500" />
+                      </span>
                     </div>
                     {activeDropdown === option.label && option.hasDropdown && (
                       <div className="bg-gray-100 rounded-lg shadow-md p-3">
@@ -201,7 +198,10 @@ function TopList(
               </div>
             )}
           </div>
-          <div className="flex flex-wrap gap-6 max-w-[1280] justify-center items-center xl:justify-start">
+          <div className="relative flex flex-wrap gap-6 max-w-[1280] justify-center items-center xl:justify-start mt-20   ">
+          <h2 className="absolute -top-20 md:-top-20 md:left-0 md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] mb-[50px]">
+          {title}
+        </h2>
             {oction.slice(start, start + maxImages).map((nft) => (
               <div
                 key={nft.id}
@@ -230,9 +230,16 @@ function TopList(
                   />
                   {showButtons && (
                     <div className="p-3 w-full flex justify-between items-center absolute bottom-0 z-40">
-                      <button className=" bg-white text-[12px] w-[91px] h-[36px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
-                        In Stock <span className="ms-1">7 </span>
-                      </button>
+                      {showBuyButton ? (
+                        <button className="bg-red-500 text-white text-[12px] w-[56px] h-[36px]  rounded-md text-sm cursor-pointer hover:bg-red-700 transition duration-200"
+                        onClick={handlePixClick}>
+                          Buy 
+                        </button>
+                      ) : (
+                        <button className="bg-white text-[12px] w-[91px] h-[36px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
+                          In Stock <span className="ms-1">7</span>
+                        </button>
+                      )}
                       <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                         Price:
                         <img
@@ -245,21 +252,23 @@ function TopList(
                     </div>
                   )}
 
-                  <div>
-                    <p
-                      className="btn-auc bg-white text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
-                    transition-all duration-300 group-hover:top-[220px]"
-                    >
-                      3:06:59:18
-                    </p>
-                    <p
-                      className="btn-auc hidden bg-white text-black rounded-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
-                    transition-all duration-300 cursor-pointer group-hover:bg-red-500 group-hover:text-white group-hover:bottom-32 group-hover:block"
-                    onClick={handlePixacioClick}
-                    >
-                      {bid}
-                    </p>
-                  </div>
+                  {showAnimatedButton && ( // Conditionally show the animated button
+                    <div className="animated-btn">
+                      <p
+                        className="btn-auc bg-white opacity-70 text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+                      transition-all duration-300 group-hover:top-[220px]"
+                      >
+                        3:06:59:18
+                      </p>
+                      <p
+                        className="btn-auc hidden bg-white text-black rounded-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+                      transition-all duration-300 cursor-pointer group-hover:bg-red-500 group-hover:text-white group-hover:bottom-32 group-hover:block"
+                      
+                      >
+                        {bid}
+                      </p>
+                    </div>
+                  )}
                 </div>
 
                 {/* Conditionally Render Buy Button & Price */}
