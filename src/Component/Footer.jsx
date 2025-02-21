@@ -29,7 +29,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="info@gmail.com"
-              className="py-3 text-[24px] bg-transparent text-red-500 placeholder-[#FE0101]  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
+              className="py-3 text-[24px] bg-transparent text-red-500 placeholder-[#fe4b4b]  w-full xs:max-w-[230px] sm:max-w-[500px] focus:outline-none"
             />
             <button className="bg-red-500  py-3 px-4 rounded-lg text-white shadow-md absolute right-2 md:right-5 w-[10] h-[10]">
               <FaTelegramPlane size={20} md:size={40}/>

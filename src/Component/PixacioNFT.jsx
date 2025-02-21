@@ -1,6 +1,6 @@
 import React from "react";
 import { FaClock, FaTag } from "react-icons/fa";
-import pixacio from "../assets/pixaciohero.jfif"; // Your image file
+import pixacio from "../assets/pixNFT.jfif"; // Your image file
 
 export default function PixacioNFT() {
   return (
@@ -8,31 +8,31 @@ export default function PixacioNFT() {
       {/* Grid Layout */}
       <div className="flex flex-col lg:flex-row gap-x-4 gap-y-10">
         {/* Left - NFT Image */}
-        <div className="flex justify-center max-w-[546px] w-full ">
-          <img src={pixacio} alt="Pixacio NFT" className="w-full max-w-sm rounded-xl shadow-lg" />
+        <div className="flex justify-center max-w-[546px] max-h-[610px] py-5 bg-white w-full items-center rounded-xl ">
+          <img src={pixacio} alt="Pixacio NFT" className=" rounded-xl shadow-lg w-[514px] max-h-[572px]" />
         </div>
 
         {/* Right - NFT Details */}
-        <div className="space-y-4 max-w-[754px] w-full">
+        <div className="space-y-4 max-w-[754px] w-full py-5">
           {/* Title */}
-          <h1 className="text-5xl font-bold tracking-wide relative">
+          <h1 className="text-5xl font-bold tracking-wide relative font-apex">
             PIXACIO
-            <span className="block w-16 h-1 bg-black mt-1"></span>
+            
           </h1>
           <p className="text-gray-500 text-lg">
-            Owned by <span className="font-semibold text-black">Stella Nova</span>
+            Owned by <span className="font-semibold text-black font-roboto">Stella Nova</span>
           </p>
 
           {/* Sale Info */}
           
           {/* Price & Buy Section */}
-          <div className="bg-white rounded-lg shadow flex flex-col">
+          <div className="bg-white rounded-lg shadow flex flex-col font-roboto">
           <div className="flex items-center space-x-2 text-gray-500 p-6">
             <FaClock />
             <p>Sale ends 18 November 2023 at 8:47 am</p>
           </div>
 <hr className="bg-gray-100" />
-               <div className="p-6">
+               <div className="p-6 font-roboto">
                <p className="text-gray-500 text-sm">Current Price</p>
             <p className="text-3xl font-bold">5.001 FRY</p>
             <div className="flex gap-4 mt-4">
@@ -48,7 +48,7 @@ export default function PixacioNFT() {
           </div>
 
           {/* Listings */}
-          <div className="bg-white rounded-lg shadow">
+          <div className="bg-white rounded-lg shadow font-roboto">
             <div className="flex justify-between p-4 items-center">
               <h3 className="text-xl font-semibold">Listings</h3>
               <button className="text-gray-500">▼</button>

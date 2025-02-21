@@ -66,7 +66,7 @@ function ExpCollection() {
                   <p className="font-semibold text-lg">{item.title}</p>
                   <div className="flex items-center justify-center ">
                   <p className="text-gray-500 text-sm">Created by <span className="text-sm text-gray-500 font-semibold">{item.creator}</span> </p>
-                  <span className="w-5 h-5 bg-blue-600 flex items-center justify-center rounded-full ms-2">
+                  <span className="w-5 h-5 bg-[#7872ff] flex items-center justify-center rounded-full ms-2">
                     <img src={tick} alt="" className="w-4 h-4 rounded-full" />
                     </span> 
                   </div>
@@ -75,7 +75,7 @@ function ExpCollection() {
               </div>
               <div className="relative h-[178px]">
               <img src={item.image} alt={item.title} className="w-full h-[178px] object-cover rounded-xl" />
-              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 cursor-pointer rounded-md w-[93px] h-[30px]">Items 1.5k</button>
+              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 cursor-pointer rounded-md w-[93px] h-[30px] text-gray-500">Items <span className="text-black font-semibold">1.5k</span> </button>
               </div>
             </div>
           ))}

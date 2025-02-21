@@ -76,7 +76,7 @@ function FAQSection() {
                   )}
                 </AccordionItemState>
               </AccordionItemHeading>
-              <AccordionItemPanel className="font-roboto px-6 md:px-24 py-4 text-gray-700 text-sm sm:text-base bg-white-50 rounded-b-lg text-[14px] md:text-[18px]">
+              <AccordionItemPanel className="font-roboto px-6 md:px-24 py-4 text-[#808080] text-sm sm:text-base bg-white-50 rounded-b-lg text-[14px] md:text-[18px]">
                 {faq.answer}
               </AccordionItemPanel>
             </AccordionItem>

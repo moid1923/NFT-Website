@@ -113,7 +113,7 @@ function Oction({
         {/* Conditionally Render Explore Button */}
         {explore && (
           <button  onClick={handleExploreClick}
-           className="flex text-[22px] lg:w-[228px] lg:h-[58px] gap-2 mx-auto cursor-pointer bg-gradient-to-r from-red-400 to-[#FD0000] text-white px-8 py-3 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]">
+           className="flex text-[22px] lg:w-[228px] lg:h-[58px] gap-2 mx-auto cursor-pointer bg-[#fe3f3f] text-white px-8 py-3 rounded-lg shadow-md hover:opacity-70 transition duration-200 text-center items-center mt-[70px]">
             {explore } <img src={exbt} alt="" className="w-6 h-6"/>
           </button>
         )}

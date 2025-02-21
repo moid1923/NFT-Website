@@ -26,7 +26,7 @@ export default function TopSellers() {
         {/* Header Section */}
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row md:mb-[50px]">
           <h2 className="md:text-[64px] text-[30px] sm:text-[45px]   font-apex font-normal leading-[76px] tracking-[4%]">TOP SELLER</h2>
-          <button className="text-red-500 text-[22px] text-roboto font-semibold hover:underline cursor-pointer">
+          <button className="text-[#fe0101] text-[22px] font-roboto font-semibold hover:underline cursor-pointer">
             View All
           </button>
         </div>
@@ -46,7 +46,7 @@ export default function TopSellers() {
                 />
 
                <div className="absolute top-0 right-0 bg-white  rounded-full " >
-               <span className=" bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full w-[30px] h-[30px] -top-1 -right-1">
+               <span className=" bg-[#7872ff] text-white text-xs font-bold px-2 py-1 rounded-full w-[30px] h-[30px] -top-1 -right-1">
                   ✓
                 </span>
                </div>
