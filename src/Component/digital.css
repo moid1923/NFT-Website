@@ -1,7 +1,7 @@
 @media (min-width: 360px) and (max-width: 640px) {
     .c-3{
         left: 30px;
-        bottom: 140px;
+        bottom: 240px;
     }
     .c-2{
         width: 80px;
@@ -12,7 +12,7 @@
         left: 40px;
     }
     .c-6{
-        top:9
+        top:200px;
     }
     .c-7{
         right: 100px;
@@ -33,10 +33,14 @@
     }
     
   }
-  @media (min-width: 600px) and (max-width: 1024px) {
+  @media (min-width: 640px) and (max-width: 1024px) {
     .c-2{
         left: 250px;
         top: 25%;
     }
+    .c-5{
+        right: 14rem;
+    }
+
   }
   

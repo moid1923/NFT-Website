@@ -32,7 +32,7 @@ export default function TopSellers() {
         </div>
 
         {/* Sellers Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mx-auto">
           {sellers.map((seller) => (
             <div
               key={seller.id}
@@ -45,16 +45,16 @@ export default function TopSellers() {
                   className="w-[80px] h-[80px] lg:w-[116px] lg:h-[116px] rounded-xl object-cover rounded-tr-4xl "
                 />
 
-               <div className="absolute top-0 right-0 bg-white  rounded-full " >
-               <span className=" bg-[#7872ff] text-white text-xs font-bold px-2 py-1 rounded-full w-[30px] h-[30px] -top-1 -right-1">
+               <div className="md:w-[25px] md:h-[25px] h-[20px] w-[20px] flex items-center justify-center lg:w-[30px] lg:h-[30px] absolute -right-1 -top-1 md:-right-2 md:-top-2 lg:-top-1 lg:-right-1  rounded-full " >
+               <span className=" bg-[#7872ff] text-white text-xs font-bold px-2 py-1 rounded-full  w-full h-full flex justify-center items-center text-center  ">
                   ✓
                 </span>
                </div>
                 
               </div>
               <div className="flex flex-col ">
-                <h3 className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[15px] font-semibold leading-tight">{seller.name}</h3>
-                <p className="lg:text-[14px] text-[12px] text-gray-500">{seller.price}</p>
+                <h3 className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[12px] font-semibold leading-tight">{seller.name}</h3>
+                <p className="lg:text-[14px] text-[10px] text-gray-500">{seller.price}</p>
               </div>
             </div>
           ))}
