@@ -11,7 +11,7 @@ import PixNFT from './Pages/PixNFT';
 function App() {
 
   return (
-    <div className='bg-gradient-to-b from-[#fff0f0] to-white max-w-[100%] overflow-x-hidden overflow-y-hidden relative'>
+    <div className='bg-[#fff9f9] max-w-[100%] overflow-x-hidden overflow-y-hidden relative'>
       <Router>
       <Routes>
         <Route path="/" element={<LnadingPage />} />  {/* Default Route */}

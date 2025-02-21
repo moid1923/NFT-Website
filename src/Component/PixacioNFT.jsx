@@ -36,7 +36,7 @@ export default function PixacioNFT() {
                <p className="text-gray-500 text-sm">Current Price</p>
             <p className="text-3xl font-bold">5.001 FRY</p>
             <div className="flex gap-4 mt-4">
-              <button className="w-1/2 py-3 bg-white text-black rounded-lg font-semibold border border-gray-100 cursor-pointer">
+              <button className="w-1/2 py-3 bg-white text-black rounded-lg font-semibold border border-gray-300 cursor-pointer">
                 Buy now
               </button>
               <button className="w-1/2 py-3 bg-gradient-to-r from-red-500 to-red-400 text-white rounded-lg font-semibold cursor-pointer">
@@ -57,12 +57,14 @@ export default function PixacioNFT() {
             <div className="mt-4 ">
               <div className="flex justify-between text-gray-600 text-sm  p-4">
                 <span>Price</span> <span>USD Price</span> <span>Quantity</span> <span>From</span>
+                <button className="px-4 py-1"></button>
               </div>
               <hr />
               <div className="mt-2 flex justify-between items-center p-4">
                 <span className="font-bold">0.008 FRY</span>
                 <span>$4.25</span>
                 <span>2</span>
+                <span>16DD55</span>
                 <button className="px-4 py-1 bg-red-500 text-white rounded-md">Buy</button>
               </div>
             </div>
