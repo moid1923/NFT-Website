@@ -55,7 +55,7 @@ export default function TrendingNFTs() {
                       setSelectedOption(option);
                       setIsOpen(false);
                     }}
-                    className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 xs:text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-normal font-roboto"
+                    className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 xs:text-[12] sm:text-[14px] md:text-[16px] lg:text-[18px] font-normal font-roboto"
                   >
                     {option}
                   </div>
@@ -70,10 +70,10 @@ export default function TrendingNFTs() {
           {nfts.map((nft) => (
             <div
               key={nft.id}
-              className="w-full max-w-[308px] h-[411px] rounded-2xl p-2 shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300"
+              className=" w-[308px] h-[411px] rounded-2xl p-2  gap-6 shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300"
               style={{ backgroundImage: `url(${bg})` }}
             >
-              <div className="p-3 flex items-center space-x-3">
+              <div className="p-[12px] flex items-center space-x-3">
                 <img src={hero} className="w-[53px] h-[53px] rounded-full" alt="Profile" />
                 <div>
                   <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
@@ -81,7 +81,7 @@ export default function TrendingNFTs() {
                 </div>
               </div>
 
-              <div className="relative w-[100%] h-[80%] ">
+              <div className="relative max-w-[292px] h-[314px] ">
                 <img
                   src={nft.img}
                   alt="NFT"

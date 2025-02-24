@@ -36,14 +36,14 @@ export default function RecentlySold() {
           {nfts.map((nft) => (
             <div
               key={nft.id}
-              className="w-full max-w-[308px] h-[410px] p-2 rounded-2xl shadow-lg overflow-hidden mx-auto z-10  "
+              className="w-full max-w-[308px] h-[410px] p-2 gap-6 rounded-2xl shadow-lg overflow-hidden mx-auto z-10  "
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
                 <img
                   src={hero}
 
-                  className="w-10 h-10 rounded-full"
+                  className="w-[53px] h-[53px] rounded-full"
                 />
                 <div>
                 <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
@@ -52,7 +52,7 @@ export default function RecentlySold() {
               </div>
 
 
-            <div className=" relative w-full h-[82%]">
+            <div className=" relative max-w-[292px] h-[314px]">
             <img
                 src={nft.img}
                 alt="NFT"

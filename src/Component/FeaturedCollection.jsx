@@ -88,11 +88,11 @@ export default function FeaturedCollection() {
           {cards.map((card) => (
             <div key={card.id} className="pr-4"> 
               <div 
-                className="w-full max-w-[308px] h-[411px] p-4 gap-6 rounded-2xl shadow-lg mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
+                className="w-[308px] h-[411px] p-2 gap-6 rounded-2xl shadow-lg mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
                 style={{ backgroundImage: `url(${bg})` }}
               >
                 <div className="absolute w-[30px] h-[30px] rounded-full"></div>
-                <div className="p-[8px] flex items-center space-x-3 ">
+                <div className="p-[12px] flex items-center space-x-3 ">
                   <img src={fclogo} alt="Logo" className="w-[53px] h-[53px] rounded-full" />
                   <div className="mt-2">
                   <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
@@ -100,7 +100,7 @@ export default function FeaturedCollection() {
                   </div>
                 </div>
 
-                <div className="relative w-full h-[314px]">
+                <div className="relative max-w-[292px] h-[314px]">
                   <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
                     <button className="bg-red-500 text-white px-[17px]  text-[12px] rounded-md  cursor-pointer font-roboto w-[50px] h-[36px]">

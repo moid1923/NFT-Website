@@ -52,7 +52,7 @@ function Oction({
           {oction.slice(0, maxImages).map((nft) => (
             <div
               key={nft.id}
-              className="group relative w-full max-w-[308px] h-[410px] p-2   rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
+              className="group relative w-full max-w-[308px] h-[410px] p-2 gap-6  rounded-2xl shadow-lg overflow-hidden mx-auto hover:opacity-90 z-10"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <div className="p-3 flex items-center space-x-3">
@@ -67,7 +67,7 @@ function Oction({
                 </div>
               </div>
 
-              <div className="relative w-[100%] h-[80%] flex justify-center items-center ">
+              <div className="relative max-w-[292px] h-[314px] flex justify-center items-center ">
                 <img
                   src={nft.img}
                   alt="NFT"
