@@ -48,7 +48,7 @@ function PixacioHero() {
       </div>
 
       {/* Description Text */}
-      <p className="mt-6 text-gray-600 text-sm leading-relaxed">
+      <p className="mt-6 text-[#908f8f] text-sm leading-relaxed font-roboto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod
         vulputate ipsum, non molestie magna facilisis a. Cras tincidunt sem sed
         lorem dapibus laoreet.

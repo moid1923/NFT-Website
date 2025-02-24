@@ -17,7 +17,6 @@ import pix5 from "../assets/pix5.jfif";
 import pix6 from "../assets/pix6.jfif";
 import pix7 from "../assets/pix7.jfif";
 import pix8 from "../assets/pix8.jfif";
-
 import hero from "../assets/fc-logo.jfif";
 import bg from "../assets/bgfeature.png";
 import flogo from "../assets/felogo.png";
@@ -213,7 +212,7 @@ function TopList({
                 <div className="p-3 flex items-center space-x-3">
                   <img
                     src={hero}
-                    className="w-10 h-10 rounded-full"
+                    className="w-13 h-13 rounded-full"
                     alt="Owner"
                   />
                   <div>
@@ -224,7 +223,7 @@ function TopList({
                   </div>
                 </div>
 
-                <div className="relative w-full h-[84%]">
+                <div className="relative w-full h-[80%]">
                   <img
                     src={nft.img}
                     alt="NFT"
@@ -245,14 +244,10 @@ function TopList({
                         </button>
                       )}
                       <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
-                        Price:
-                        <img
-                          src={nft.logo}
-                          alt=""
-                          className="w-[10px] h-[10px] bg-black rounded-full"
-                        />
-                        141.02ETH
-                      </span>
+                      Price:
+                      <img src={flogo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
+                         142.02ETH
+                    </span>
                     </div>
                   )}
 
