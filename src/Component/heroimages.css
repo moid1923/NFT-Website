@@ -1,102 +1,102 @@
 @keyframes center {
-    
-    0% {
+  0% {
       transform: translateY(-15px);
-    }
-    50% {
+  }
+  50% {
       transform: translateY(15px);
-    }
-    100%{
-      transform:translateY(-15px)
   }
+  100% {
+      transform: translateY(-15px);
   }
-  
-  .main-card {
-    animation: center 5s ease-in-out infinite;
-  }
-  @keyframes fleft {
-    0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(55px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-  }
-  
-  .f-left {
-    animation: fleft 5s ease-in-out infinite;
-  }
-  @keyframes fright {
-    0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(-55px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-  }
-  
-  .f-right {
-    animation: fright 5s ease-in-out infinite;
-  }
-  @keyframes sleft {
-    0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateX(85px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-  }
-  
-  .s-left {
-    animation: sleft 5s ease-in-out infinite;
-  }
-  @keyframes sright {
-    0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateX(-85px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-  }
-  
-  .s-right {
-    animation: sright 5s ease-in-out infinite;
-  }
+}
 
-  @media (max-width: 1024px) {
-    .main-card {
-        animation: none;
-        width: 300px;
-        top: 225px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-       z-index: 0;
-    }
+.main-card {
+  animation: center 5s ease-in-out infinite;
 }
-@media (max-width: 450px) {
-  .main-card {
-      animation: none;
-      width: 300px;
-      top: 225px;
-      left: 50%;
-      transform: translate(-50%, -50%);
-     
+
+/* Animations for Floating Cards */
+@keyframes fleft {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(55px);
+  }
+  100% {
+      transform: translateX(0);
   }
 }
+
+.f-left {
+  animation: fleft 5s ease-in-out infinite;
+}
+
+@keyframes fright {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(-55px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.f-right {
+  animation: fright 5s ease-in-out infinite;
+}
+
+@keyframes sleft {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(85px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.s-left {
+  animation: sleft 5s ease-in-out infinite;
+}
+
+@keyframes sright {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(-85px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.s-right {
+  animation: sright 5s ease-in-out infinite;
+}
+
+/* Responsive Fixes */
 @media (max-width: 1024px) {
   .main-card {
       animation: none;
+      width: 250px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-card {
+      animation: none;
+      width: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 }

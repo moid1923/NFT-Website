@@ -77,7 +77,7 @@ export default function FeaturedCollection() {
         <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start font-normal leading-[76px] tracking-[4%] ">
           Featured Collection
         </h2>
-          <p className="text-[18px] sm:text-[22px] md:text-[18px] text-[#6B6B6B] opacity-70 mb-10  text-center md:text-left">
+          <p className="text-[18px] sm:text-[22px] md:text-[18px] text-[#6B6B6B] opacity-70 mb-10  text-center md:text-left font-roboto font-[300]">
             Explore our exclusive featured collection, showcasing innovative campaigns and creative
             <br /> storytelling from top brands around the world.
           </p>

@@ -53,7 +53,7 @@ function Navbar() {
               Home
             </li>
             <li
-              className={`cursor-pointer hover:text-red-500 text-[18px] py-3 px-2 transition duration-200 font-apex ${
+              className={`cursor-pointer hover:text-red-500 text-[18px] py-3 px-2 transition duration-200 font-apex font-normal ${
                 active === "AI NFT GENERATION" ? "border-b-3 border-[#DE0308] text-[#DE0308]" : ""
               }`}
               onClick={() => handleMenuClick("AI NFT GENERATION")}
@@ -66,7 +66,7 @@ function Navbar() {
         {/* Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
           <MainBtn />
-          <button className="leading-[25px] border border-red-500 cursor-pointer font-roboto text-[22px] text-red-500 px-8 py-4 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
+          <button className="leading-[25px] font-[500] border border-red-500 cursor-pointer font-roboto text-[22px] text-red-500 px-8 py-4 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
             Create NFT
           </button>
         </div>

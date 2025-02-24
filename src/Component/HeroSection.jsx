@@ -7,7 +7,7 @@ const HeroSection = () => {
       <h1 className="text-3xl lg:text-[96px] md:text-[64px] md:leading-[102px] font-normal   text-gray-900 mb-4 font-apex tracking-[4%] ">
         DISCOVER, CREATE & <br /> SELL ARTWORKS.
       </h1>
-      <p className="text-sm sm:text-[18px] lg:text-lg text-[#808080] max-w-3xl font-roboto tracking-[3%] leading-[21.09px] ">
+      <p className="text-sm sm:text-[18px] lg:text-lg text-[#808080] max-w-3xl font-roboto tracking-[3%] leading-[21.09px] font-[300] ">
         Discover and trade unique digital art pieces on our NFT website,<br></br> where
         creativity meets blockchain technology.
       </p>
