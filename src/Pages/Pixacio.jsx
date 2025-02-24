@@ -17,7 +17,7 @@ function Pixacio() {
     <div>
       <Navbar />
       <PixacioHero />
-      <TopList title="" start={12} maxImages={14} onCardClick={handleCardClick} showButtons= {true} showBuyButton = {true} showAnimatedButton = {false}/>
+      <TopList title="" start={12} maxImages={14} onCardClick={handleCardClick} showButtons= {true} showBuyButton = {true} showAnimatedButton = {false} showSearchBar = {true}/>
       <Footer />
     </div>
   );

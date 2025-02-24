@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Filter, Search } from "lucide-react";
+import { FiRefreshCcw } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import oction1 from "../assets/oction1.png";
 import oction2 from "../assets/oction2.png";
@@ -125,6 +126,7 @@ function TopList({
   showButtons = false,
   showBuyButton = false,
   showAnimatedButton = true,
+  showSearchBar = false,
 }) {
   const [isOpen, setIsOpen] = useState(true);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -157,7 +159,7 @@ function TopList({
         {/* Header */}
 
         {/* Cards Grid */}
-        <div className="max-w-[1920px] flex flex-col gap-1 items-center justify-between md:flex-row ">
+        <div className="max-w-[1920px] flex flex-col gap-1 items-center justify-between md:flex-row relative ">
           <div className="w-[320px]  sm:block bg-white p-4 rounded-lg shadow-lg border self-start mx-auto ">
             <div
               className="flex  max-w-[292px] items-center justify-between cursor-pointer"
@@ -196,13 +198,34 @@ function TopList({
               </div>
             )}
           </div>
-          <div className={`card-section relative flex flex-wrap gap-6 max-w-[1280] justify-center items-center xl:justify-start ${title ? "mt-20" : "mt-0"}`}>
-
+          <div
+            className={`card-section relative flex flex-wrap gap-6 max-w-[1280] justify-center items-center xl:justify-start mt-20
+            }`}
+          >
             {title && (
               <h2 className="absolute -top-20 md:-top-20 xl:left-2 md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] mb-[50px]">
                 {title}
               </h2>
             )}
+           { showSearchBar ? (
+            <div className="absolute -top-20 right-[120px] max-w-[613px] w-full p-3 h-[55px] hidden lg:block">
+              <Search className="absolute top-8 left-10 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="text"
+                placeholder="Search by name"
+                className="w-full pl-16 pr-4 py-2 text-[18px] border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+              />
+            </div>
+          ) : (
+            <div className="flex items-center space-x-2 absolute -top-20 right-[280px] ">
+              <button className="p-2 border rounded-lg bg-white shadow-sm hover:bg-gray-100 transition hidden xl:block">
+                <FiRefreshCcw className="text-gray-600" />
+              </button>
+              <p className="text-gray-500 hidden xl:block">Refreshed A While Ago</p>
+            </div>
+          )}
+
+
             {oction.slice(start, start + maxImages).map((nft) => (
               <div
                 key={nft.id}
@@ -244,10 +267,14 @@ function TopList({
                         </button>
                       )}
                       <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
-                      Price:
-                      <img src={flogo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
-                         142.02ETH
-                    </span>
+                        Price:
+                        <img
+                          src={flogo}
+                          alt=""
+                          className="w-[10px] h-[10px] bg-black rounded-full"
+                        />
+                        142.02ETH
+                      </span>
                     </div>
                   )}
 
