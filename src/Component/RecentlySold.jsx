@@ -60,7 +60,7 @@ export default function RecentlySold() {
               />
 
               <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
-                <button className="bg-red-700 text-white px-3 py-1 rounded-md text-sm ] cursor-pointer opacity-80">
+                <button className="bg-red-700 font-[500] text-white px-3 py-1 rounded-md text-[12px] w-[56px] h-[36px] cursor-pointer opacity-80">
                   Buy
                 </button>
                 <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
