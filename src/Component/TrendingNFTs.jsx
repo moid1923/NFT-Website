@@ -41,13 +41,13 @@ export default function TrendingNFTs() {
           <div className="relative inline-block text-left">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="border w-[140px] h-[42px] sm:w-[170px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal"
+              className="border w-[140px] h-[42px] sm:w-[170px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal font-roboto"
             >
               {selectedOption}
               <img src={tran} alt="Dropdown Icon" className="w-4 h-4 ml-1" />
             </button>
             {isOpen && (
-              <div className="absolute w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+              <div className="absolute w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-10 font-roboto">
                 {options.map((option) => (
                   <div
                     key={option}
@@ -55,7 +55,7 @@ export default function TrendingNFTs() {
                       setSelectedOption(option);
                       setIsOpen(false);
                     }}
-                    className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 text-[18px] font-normal"
+                    className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 text-[18px] font-normal font-roboto"
                   >
                     {option}
                   </div>
@@ -76,8 +76,8 @@ export default function TrendingNFTs() {
               <div className="p-3 flex items-center space-x-3">
                 <img src={hero} className="w-[53px] h-[53px] rounded-full" alt="Profile" />
                 <div>
-                  <h3 className="text-[18px] font-apex">STELLA NOVA</h3>
-                  <p className="text-[11px] text-gray-500">@Stella Nova</p>
+                  <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
+                  <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5">@Stella Nova</p>
                 </div>
               </div>
 
@@ -95,7 +95,7 @@ export default function TrendingNFTs() {
                   <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:
                       <img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
-                         141.02ETH
+                      <span className="text-[#808080]">  142.02</span> 
                     </span>
                 </div>
               </div>

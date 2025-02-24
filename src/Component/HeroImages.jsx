@@ -1,5 +1,4 @@
 import React from "react";
-import bg from "../assets/nft-back.png";
 import hero from "../assets/hero-card.png";
 import herofr from "../assets/herofr.png";
 import herofl from "../assets/herofl.png";

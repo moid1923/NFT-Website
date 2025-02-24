@@ -62,8 +62,8 @@ function Oction({
                   alt="Owner"
                 />
                 <div>
-                  <h3 className="text-[18px] font-apex">STELLA NOVA</h3>
-                  <p className="text-[11px] text-gray-500">@Stella Nova</p>
+                <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
+                <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5">@Stella Nova</p>
                 </div>
               </div>
 
@@ -88,8 +88,8 @@ function Oction({
                 
                 <div>
                   <p
-                    className="btn-auc bg-white opacity-70 text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
-                    transition-all duration-300 group-hover:top-[220px]"
+                    className="btn-auc text-[19px] font-[500] bg-white opacity-80 text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+                    transition-all duration-300 group-hover:top-[220px] w-[143px] h-[44px] text-center"
                   >
                     3:06:59:18
                   </p>

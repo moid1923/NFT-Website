@@ -239,10 +239,8 @@ function TopList({
                     alt="Owner"
                   />
                   <div>
-                    <h3 className="md:text-[18px] sm:text-[16px] xl:text-[14px] font-apex ">
-                      STELLA NOVA
-                    </h3>
-                    <p className="text-[11px] text-gray-500">@Stella Nova</p>
+                  <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
+                  <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5">@Stella Nova</p>
                   </div>
                 </div>
 

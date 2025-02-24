@@ -92,25 +92,25 @@ export default function FeaturedCollection() {
                 style={{ backgroundImage: `url(${bg})` }}
               >
                 <div className="absolute w-[30px] h-[30px] rounded-full"></div>
-                <div className="p-3 flex items-center space-x-3 my-3">
+                <div className="p-[8px] flex items-center space-x-3 ">
                   <img src={fclogo} alt="Logo" className="w-[53px] h-[53px] rounded-full" />
                   <div className="mt-2">
-                    <h3 className="text-[18px] font-light font-apex">STELLA NOVA</h3>
-                    <p className="text-[11px] text-gray-500">@Stella Nova</p>
+                  <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
+                  <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5">@Stella Nova</p>
                   </div>
                 </div>
 
-                <div className="relative w-full h-[76%]">
+                <div className="relative w-full h-[314px]">
                   <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                    <button className="bg-red-500 text-white px-[17px] py-[11px] text-[12px] rounded-md  cursor-pointer font-roboto">
+                    <button className="bg-red-500 text-white px-[17px]  text-[12px] rounded-md  cursor-pointer font-roboto w-[50px] h-[36px]">
                       Buy
                     </button>
                     <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:
                       <img src={card.logo
                       } alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
-                         142.02ETH
+                      <span className="text-[#808080]">  142.02</span> 
                     </span>
                   </div>
                 </div>
