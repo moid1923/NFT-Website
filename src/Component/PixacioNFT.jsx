@@ -4,9 +4,14 @@ import pixacio from "../assets/pixNFT.jfif"; // Your image file
 import { FaBars } from "react-icons/fa";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 export default function PixacioNFT() {
-  const [isOpen, setIsOpen] = useState(true)
+  const listingsData = [
+    { price: "0.008 FRY", usdPrice: "$4.25", quantity: 2, floorDiff: "44% below", from: "16DD55" },
+    { price: "0.005 FRY", usdPrice: "$4.25", quantity: 2, floorDiff: "44% below", from: "16DD55" },
+    { price: "0.005 FRY", usdPrice: "$4.25", quantity: 2, floorDiff: "44% below", from: "16DD55" },
+  ];
+  const firstListing = listingsData[0];
   return (
-    <div className="max-w-[1320px] w-full mx-auto p-6 ">
+    <div className="max-w-[1320px] w-full mx-auto p-6  ">
       {/* Grid Layout */}
       <div className="flex flex-col lg:flex-row gap-x-4 gap-y-10">
         {/* Left - NFT Image */}
@@ -56,118 +61,153 @@ export default function PixacioNFT() {
 
           {/* Listings */}
           <div className="bg-white rounded-lg shadow font-roboto">
-            <div className="flex justify-between p-4 items-center">
-              <h3 className="text-xl font-semibold">Listings</h3>
-              <button className="text-gray-500">▼</button>
+      {/* Header */}
+      <div className="flex justify-between p-4 items-center">
+        <h3 className="text-xl font-semibold">Listings</h3>
+        <IoIosArrowDown className="text-gray-600 text-xl" />
+      </div>
+
+      <hr className="bg-gray-100 text-gray-100" />
+
+      {/* Table Header */}
+      <div className="mt-4">
+        <div className="flex justify-between text-gray-600 text-sm p-4">
+          <span>Price</span>
+          <span>USD Price</span>
+          <span>Quantity</span>
+          <span>From</span>
+          <span></span> {/* Placeholder for Buy button */}
+        </div>
+        <hr />
+
+        {/* Dynamic Listings */}
+        <div className="mt-2 flex justify-between items-center p-4">
+  <span className="font-bold">{firstListing.price}</span>
+  <span>{firstListing.usdPrice}</span>
+  <span>{firstListing.quantity}</span>
+  <span>{firstListing.from}</span>
+  <button className="px-4 py-1 bg-red-500 text-white rounded-md">Buy</button>
+</div>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div className="w-full min-h-screen bg-[#f9f5f3] mt-6 ">
+      <div className="grid grid-cols-2 gap-6 max-w-[1320px] w-full">
+        {/* Left Column */}
+        <div className="flex flex-col gap-6 max-w-[546px] w-full">
+          {/* Description Box */}
+          <div className="border border-gray-300 rounded-lg shadow-sm bg-white">
+            <div className="flex justify-between items-center p-4">
+              <div className="flex items-center gap-2">
+                <FaBars className="text-gray-600 text-lg" />
+                <span className="font-semibold text-gray-800 text-base">Description</span>
+              </div>
+              <IoIosArrowUp className="text-gray-600 text-xl" />
             </div>
-            <hr className="bg-gray-100 text-gray-100" />
-            <div className="mt-4 ">
-              <div className="flex justify-between text-gray-600 text-sm  p-4">
-                <span>Price</span> <span>USD Price</span> <span>Quantity</span>{" "}
-                <span>From</span>
-                <button className="px-4 py-1"></button>
+            <hr />
+            <div className="p-4">
+              <p>By <span className="font-bold text-gray-900">Stella Nova</span></p>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu feugiat felis, 
+                in maximus neque. Morbi rutrum est interdum, suscipit erat et, mattis ante.
+              </p>
+            </div>
+          </div>
+
+          {/* Traits Box */}
+          <div className="border border-gray-300 rounded-lg shadow-sm bg-white">
+            <div className="flex justify-between items-center p-4">
+              <div className="flex items-center gap-2">
+                <FaBars className="text-gray-600 text-lg" />
+                <span className="font-semibold text-gray-800 text-base">Traits</span>
               </div>
-              <hr />
-              <div className="mt-2 flex justify-between items-center p-4">
-                <span className="font-bold">0.008 FRY</span>
-                <span>$4.25</span>
-                <span>2</span>
-                <span>16DD55</span>
-                <button className="px-4 py-1 bg-red-500 text-white rounded-md">
-                  Buy
-                </button>
+              <IoIosArrowDown className="text-gray-600 text-xl" />
+            </div>
+            <hr />
+            <div className="p-4 grid grid-cols-3 gap-2">
+              {Array(9).fill("").map((_, index) => (
+                <div key={index} className="w-[165px] h-[74px] p-2 rounded-md bg-gray-100 text-center text-sm">
+                  <p className="text-xs text-gray-500">EDITION</p>
+                  <p className="font-semibold">Founders edition 52%</p>
+                  <p className="text-xs">Floor: 12.75 ALGO</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column */}
+        <div className="flex flex-col gap-6 max-w-[754px] w-full">
+          {/* Offers Box */}
+          <div className="bg-white rounded-lg shadow font-roboto p-4">
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">Offers</h3>
+              <IoIosArrowDown className="text-gray-600 text-xl" />
+            </div>
+            <hr className="my-2" />
+            <div className="w-full ">
+              <table className="w-full text-sm text-gray-600">
+                <thead>
+                  <tr className="border-b">
+                    <th className="p-2 text-left">Price</th>
+                    <th className="p-2 text-left">USD Price</th>
+                    <th className="p-2 text-left">Quantity</th>
+                    <th className="p-2 text-left">Floor Difference</th>
+                    <th className="p-2 text-left">From</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {listingsData.map((listing, index) => (
+                    <tr key={index} className="border-b">
+                      <td className="p-2 font-bold">{listing.price}</td>
+                      <td className="p-2">{listing.usdPrice}</td>
+                      <td className="p-2">{listing.quantity}</td>
+                      <td className="p-2">{listing.floorDiff}</td>
+                      <td className="p-2">{listing.from}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Details Box */}
+          <div className="border border-gray-300 rounded-lg shadow-sm bg-white">
+            <div className="flex justify-between items-center p-4">
+              <div className="flex items-center gap-2">
+                <FaBars className="text-gray-600 text-lg" />
+                <span className="font-semibold text-gray-800 text-base">Details</span>
               </div>
+              <IoIosArrowDown className="text-gray-600 text-xl" />
+            </div>
+            <hr />
+            <div className="p-4 text-sm text-gray-700">
+              <p className="flex justify-between py-1">
+                <span>Contract Address</span>
+                <span className="text-gray-500">0x5848...1713</span>
+              </p>
+              <p className="flex justify-between py-1">
+                <span>Token ID</span>
+                <span className="text-gray-500">7926</span>
+              </p>
+              <p className="flex justify-between py-1">
+                <span>Token Standard</span>
+                <span className="text-gray-500">ERC-721</span>
+              </p>
+              <p className="flex justify-between py-1">
+                <span>Chain</span>
+                <span className="text-gray-500">Algorand</span>
+              </p>
+              <p className="flex justify-between py-1">
+                <span>Creator Earnings</span>
+                <span className="text-gray-500">6.5%</span>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full flex gap-4  bg-red-600 h-[600px] mt-3">
-        <div className="col-1 max-w-[546px] max-h-[610px] bg-blue">
-          <div className="row-1">
-            <div className="border border-gray-300   w-full max-w-[546px] shadow-sm bg-white">
-              <div
-                className="flex justify-between items-center p-4 cursor-pointer "
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                <div className="flex items-center gap-2 p-2">
-                  <FaBars className="text-gray-600 text-lg" />
-                  <span className="font-semibold text-gray-800 text-base">
-                    Description
-                  </span>
-                </div>
-                {isOpen ? (
-                  <IoIosArrowUp className="text-gray-600 text-xl" />
-                ) : (
-                  <IoIosArrowDown className="text-gray-600 text-xl" />
-                )}
-              </div>
-               
-              {/* Content Section (Hidden by Default) */}
-              {isOpen && (
-                
-                <div className="">
-                  <hr className="pb-3"/>
-                  <p className=" px-4">By <span className="font-bold text-gray-900">Stella Nova</span> </p>
-                  <p className="text-gray-600 text-sm mt-1 px-4 pb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris eu feugiat felis, in maximus neque. Morbi rutrum est
-                    interdum, suscipit erat et, mattis ante. Donec at diam
-                    pulvinar, pulvinar orci vitae, luctus mauris.
-                  </p>
-                </div>
-              )}
-            </div>
-          </div>
-          <div className="row-2"></div>
-        </div>
-        <div className="col-2 max-w-[754px] w-full bg-black">
-          <div className="row-1 w-full ">
-          <div className="bg-white rounded-lg shadow font-roboto">
-            <div className="flex justify-between p-4 items-center">
-              <h3 className="text-xl font-semibold">Listings</h3>
-              <button className="text-gray-500">▼</button>
-            </div>
-            <hr className="bg-gray-100 text-gray-100" />
-            <div className="mt-4 ">
-              <div className="flex justify-between text-gray-600 text-sm  p-4">
-                <span>Price</span> <span>USD Price</span> <span>Quantity</span>{" "}
-                <span>From</span>
-                <button className="px-4 py-1"></button>
-              </div>
-              <hr />
-              <div className="mt-2 flex justify-between items-center p-4">
-                <span className="font-bold">0.008 FRY</span>
-                <span>$4.25</span>
-                <span>2</span>
-                <span>16DD55</span>
-                <button className="px-4 py-1 bg-red-500 text-white rounded-md">
-                  Buy
-                </button>
-              </div>
-              <div className="mt-2 flex justify-between items-center p-4">
-                <span className="font-bold">0.008 FRY</span>
-                <span>$4.25</span>
-                <span>2</span>
-                <span>16DD55</span>
-                <button className="px-4 py-1 bg-red-500 text-white rounded-md">
-                  Buy
-                </button>
-              </div>
-              <div className="mt-2 flex justify-between items-center p-4">
-                <span className="font-bold">0.008 FRY</span>
-                <span>$4.25</span>
-                <span>2</span>
-                <span>16DD55</span>
-                <button className="px-4 py-1 bg-red-500 text-white rounded-md">
-                  Buy
-                </button>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div className="row-2"></div>
-        </div>
-      </div>
+    </div>
     </div>
   );
 }
