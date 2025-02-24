@@ -10,15 +10,15 @@ import "./heroimages.css";
 
 function HeroImages() {
   return (
-    <div className="relative max-w-[1920px] w-full mx-auto h-[600px] ">
+    <div className="relative max-w-[1920px] w-full mx-auto xl:h-[630px] lg:h-[550px] md:h-[500px] h-[450px]">
       {/* Background Hands */}
       <div className="absolute hidden xl:block w-full h-full">
-        <img src={left1} alt="" className="absolute left-0 top-1/2 transform -translate-y-1/2" />
-        <img src={right1} alt="" className="absolute right-0 top-1/2 transform -translate-y-1/2" />
+        <img src={left1} alt="" className="absolute -left-40 top-1/2 transform -translate-y-1/2 left1" />
+        <img src={right1} alt="" className="absolute -right-40 top-1/2 transform -translate-y-1/2 right1" />
       </div>
 
       {/* Cards Section */}
-      <div className="relative mx-auto flex justify-center items-center h-full w-full">
+      <div className="relative mx-auto flex justify-center items-center h-[411px] w-full ">
         <div className="relative w-full max-w-[1120px] flex justify-center items-center">
           {/* Main Center Card */}
           <img

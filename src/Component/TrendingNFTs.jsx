@@ -55,7 +55,7 @@ export default function TrendingNFTs() {
                       setSelectedOption(option);
                       setIsOpen(false);
                     }}
-                    className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 text-[18px] font-normal font-roboto"
+                    className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 xs:text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-normal font-roboto"
                   >
                     {option}
                   </div>
