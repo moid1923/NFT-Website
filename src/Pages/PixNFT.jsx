@@ -8,7 +8,7 @@ function PixNFT() {
     <div>
       <Navbar />
       <PixacioNFT />
-     <TrendingNFTs/>
+     <TrendingNFTs title="More from this collection" showDropdown={false}/>
       <Footer />
     </div>
   );

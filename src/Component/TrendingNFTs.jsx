@@ -27,6 +27,8 @@ const options = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours
 
 export default function TrendingNFTs({
   title = "TRENDING NFT'S",
+  dropdownOptions = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours"],
+  showDropdown = true,
 }) {
   
   const [isOpen, setIsOpen] = useState(false);
@@ -41,31 +43,34 @@ export default function TrendingNFTs({
             {title}
           </h2>
           {/* Dropdown Button */}
-          <div className="relative inline-block text-left">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="border w-[140px] h-[42px] sm:w-[170px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal font-roboto"
-            >
-              {selectedOption}
-              <img src={tran} alt="Dropdown Icon" className="w-4 h-4 ml-1" />
-            </button>
-            {isOpen && (
-              <div className="absolute w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-10 font-roboto">
-                {options.map((option) => (
-                  <div
-                    key={option}
-                    onClick={() => {
-                      setSelectedOption(option);
-                      setIsOpen(false);
-                    }}
-                    className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 xs:text-[12] sm:text-[14px] md:text-[16px] lg:text-[18px] font-normal font-roboto"
-                  >
-                    {option}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+          {showDropdown && (
+              <div className="relative inline-block text-left">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="border w-[140px] h-[42px] sm:w-[170px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal font-roboto"
+              >
+                {selectedOption}
+                <img src={tran} alt="Dropdown Icon" className="w-4 h-4 ml-1" />
+              </button>
+              {isOpen && (
+                <div className="absolute w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-10 font-roboto">
+                  {dropdownOptions.map((option) => (
+                    <div
+                      key={option}
+                      onClick={() => {
+                        setSelectedOption(option);
+                        setIsOpen(false);
+                      }}
+                      className="px-[25px] py-[14px] text-black cursor-pointer hover:bg-red-100 xs:text-[12] sm:text-[14px] md:text-[16px] lg:text-[18px] font-normal font-roboto"
+                    >
+                      {option}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        
         </div>
 
         {/* Cards Grid */}

@@ -7,7 +7,7 @@ import seller5 from "../assets/sell5.png";
 import seller6 from "../assets/sell6.png";
 import seller7 from "../assets/sell7.png";
 import seller8 from "../assets/sell8.png";
-
+import { useNavigate } from "react-router-dom";
 const sellers = [
   { id: 1, img: seller1, name: "Jacob Jones", price: "245.5 FRY" },
   { id: 2, img: seller2, name: "Jacob Jones", price: "245.5 FRY" },
@@ -20,13 +20,20 @@ const sellers = [
 ];
 
 export default function TopSellers() {
+  const navigate = useNavigate(); // 🔹 Define navigate function
+
+  const handleSellerClick = () => {
+    navigate("/tseller"); // 🔹 Navigate to /tseller when clicked
+  };
   return (
     <div className=" py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-6 flex-col md:flex-row md:mb-[50px]">
           <h2 className="md:text-[64px] text-[30px] sm:text-[45px]   font-apex font-normal leading-[76px] tracking-[4%]">TOP SELLER</h2>
-          <button className="text-[#fe0101] text-[22px] font-roboto font-semibold hover:underline cursor-pointer">
+          <button className="text-[#fe0101] text-[22px] font-roboto font-semibold hover:underline cursor-pointer"
+           onClick={handleSellerClick}
+          >
             View All
           </button>
         </div>
