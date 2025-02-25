@@ -1,7 +1,7 @@
 import React from "react";
 import seller1 from "../assets/sell1.png";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-
+import { IoIosArrowDown } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 const sellers = [
   { id: 1, name: "Jacob Jones", volume: "50.150", followers: "75",percen: "237.13", price: "6.01",item:"9.7k" },
   { id: 2, name: "Jacob Jones", volume: "50.150", followers: "50",percen: "237.13", price: "6.01",item:"9.7k" },
@@ -20,7 +20,12 @@ const sellers = [
   { id: 15, name: "Jacob Jones", volume: "50.150", followers: "110",percen: "237.13", price: "6.01",item:"9.7k" },
 ];
 
-export default function SellerTable() {
+export default function Seller() {
+  const navigate = useNavigate(); // 🔹 Define navigate function
+  
+    const handleSellerClick = () => {
+      navigate("/jcollection"); // 🔹 Navigate to /pixacio when clicked
+    };
   return (
     <div className="max-w-[1320px] mx-auto p-4">
       {/* Table Header */}
@@ -52,7 +57,9 @@ export default function SellerTable() {
               <div className="flex items-center space-x-3">
               <span className="items-center font-roboto"> {index + 1}</span>
                 <img src={seller1} alt="seller" className="w-10 h-10 rounded-full hidden sm:block" />
-                <span className="font-bold font-roboto text-[12px] sm:text-[14px] md:text-[16.24px]">{seller.name}</span>
+                <span className="font-bold font-roboto text-[12px] sm:text-[14px] md:text-[16.24px]"
+                onClick = {handleSellerClick}
+                >{seller.name}</span>
               </div>
               <span className="text-right sm:text-center md:text-left font-roboto text-[12px] sm:text-[14px] md:text-[16.24px]">{seller.volume}</span>
               <span className="text-right sm:text-center md:text-left font-roboto text-[12px] sm:text-[14px] md:text-[16.24px]">{seller.followers}</span>
