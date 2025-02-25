@@ -6,6 +6,7 @@ import herosr from "../assets/herosr.png";
 import herosl from "../assets/herosl.png";
 import right1 from "../assets/right1.png";
 import left1 from "../assets/left1.png";
+import mainc from '../assets/mainc.png'
 import "./heroimages.css";
 
 function HeroImages() {
@@ -22,9 +23,9 @@ function HeroImages() {
         <div className="relative w-full max-w-[1120px] flex justify-center items-center">
           {/* Main Center Card */}
           <img
-            src={hero}
+            src={mainc}
             alt="Main Card"
-            className="main-card w-[308px] h-[410px] z-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg"
+            className="main-card w-[308px] h-[410px] z-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           />
           {/* Front Left Card */}
           <img

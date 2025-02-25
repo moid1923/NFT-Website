@@ -10,7 +10,7 @@ function Pixacio() {
 
   // Function to handle card click
   const handleCardClick = (id) => {
-    navigate(`/pixaciNFT`); // Navigating to details page with dynamic ID
+    navigate(`/pixNFT`); // Navigating to details page with dynamic ID
   };
 
   return (

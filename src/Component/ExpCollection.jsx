@@ -41,7 +41,7 @@ function ExpCollection() {
       <div className="max-w-[1320px] w-full mx-auto md:mt-10">
         <div className="md:text-[64px] font-apex sm:text-[45px] text-[30px] text-center md:text-left">EXPLORE COLLECTIONS</div>
         <nav className="p-4">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-6 flex-wrap">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <div

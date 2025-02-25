@@ -25,7 +25,10 @@ const nfts = [
 
 const options = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours"];
 
-export default function TrendingNFTs() {
+export default function TrendingNFTs({
+  title = "TRENDING NFT'S",
+}) {
+  
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(options[0]);
 
@@ -35,7 +38,7 @@ export default function TrendingNFTs() {
         {/* Header */}
         <div className="flex justify-between items-center mb-6 flex-row md:mb-[50px]">
           <h2 className="md:text-[64px] sm:text-[45px] text-[25px] font-apex font-normal md:leading-[76px] tracking-[4%] ">
-            TRENDING NFT'S
+            {title}
           </h2>
           {/* Dropdown Button */}
           <div className="relative inline-block text-left">
