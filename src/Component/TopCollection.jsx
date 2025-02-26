@@ -5,9 +5,21 @@ import tc3 from "../assets/tc3.jfif";
 import tc4 from "../assets/tc4.jfif";
 import tc5 from "../assets/tc5.jfif";
 import tc6 from "../assets/tc6.jfif";
+import tc21 from '../assets/tcc21.jfif'
+import tc22 from '../assets/tcc22.jfif'
+import tc23 from '../assets/tcc23.jfif'
+import tc24 from '../assets/tcc24.jfif'
+import tc25 from '../assets/tcc25.jfif'
+import tc26 from '../assets/tcc26.jfif'
+import tc31 from '../assets/tcc31.jfif'
+import tc32 from '../assets/tcc32.jfif'
+import tc33 from '../assets/tcc33.jfif'
+import tc34 from '../assets/tcc34.jfif'
+import tc35 from '../assets/tcc35.jfif'
+import tc36 from '../assets/tcc36.jfif'
 import seller1 from "../assets/sell1.png";
 import seller2 from "../assets/sell2.png";
-import seller3 from "../assets/sell3.png";
+import seller3 from "../assets/sell3.png"
 import tclogo from "../assets/tclogo.png";
 import { useNavigate } from "react-router-dom";
 
@@ -21,14 +33,14 @@ const collections = [
   },
   {
     id: 2,
-    images: [tc1, tc2, tc3, tc4, tc5, tc6],
+    images: [tc21, tc22, tc23, tc24, tc25, tc26],
     logo:seller2,
     title: "WONDERFUL ARTWORK",
     creator: "Jacob Jones",
   },
   {
     id: 3,
-    images: [tc1, tc2, tc3, tc4, tc5, tc6],
+    images: [tc31, tc32, tc33, tc34, tc35, tc36],
     logo : seller3,
     title: "WONDERFUL ARTWORK",
     creator: "Jacob Jones",
@@ -67,17 +79,17 @@ const TopCollection = () => {
             className="p-4 rounded-2xl shadow-lg bg-white transform hover:scale-105 transition-transform duration-300 m-4 md:m-0"
           >
             {/* Image Grid */}
-            <div className="grid grid-cols-4 grid-rows-2 gap-2 md:max-w-[397px] md:h-[198px]   w-full">
+            <div className="grid grid-cols-4 grid-rows-2 gap-2 md:max-w-[397px]  bg-[#E7E7E7] p-[10px]  w-full h-[198px]">
               <div className="col-span-2 row-span-2 ">
                 <img src={collection.images[0]} alt="" className="w-full h-full object-cover rounded-xl" />
               </div>
               <div className="col-span-2 row-span-2 ">
                 <img src={collection.images[1]} alt="" className="w-full h-full object-cover rounded-xl" />
               </div>
-              <img src={collection.images[2]} alt="" className="w-full h-full object-cover rounded-xl " />
-              <img src={collection.images[3]} alt="" className="w-full h-full object-cover rounded-xl" />
-              <img src={collection.images[4]} alt="" className="w-full h-full object-cover rounded-xl" />
-              <img src={collection.images[5]} alt="" className="w-full h-full object-cover rounded-xl" />
+              <img src={collection.images[2]} alt="" className=" h-[73px]  w-[83px] object-cover rounded-xl " />
+              <img src={collection.images[3]} alt="" className="h-[73px]  w-[83px] object-cover rounded-xl" />
+              <img src={collection.images[4]} alt="" className="h-[73px]  w-[83px] object-cover rounded-xl" />
+              <img src={collection.images[5]} alt="" className="h-[73px]  w-[83px] object-cover rounded-xl" />
             </div>
 
             {/* Collection Info */}
