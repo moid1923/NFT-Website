@@ -1,32 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import logo from "../assets/Group.svg";
 import MainBtn from "./MainBtn";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [sideMenu, setSideMenu] = useState(false);
-  const [active, setActive] = useState("Home"); 
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Determine active state based on the current path
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setActive("Home");
+    } else if (location.pathname.startsWith("/tseller")) {
+      setActive("AI NFT GENERATION");
+    }
+  }, [location.pathname]);
 
   const toggleMenu = () => {
     setSideMenu((prev) => !prev);
-  };
-
-  const navigate = useNavigate(); // Initialize navigate function
-
-  const handleMenuClick = (menuItem) => {
-    setActive(menuItem);
-    setSideMenu(false); 
-
-    if (menuItem === "Home") {
-      setActive("Home");
-      navigate("/"); // Navigate to home page when "Home" is clicked
-    }
-  };
-
-  const handleHomeClick = () => {
-    navigate("/"); // Navigate to home page for desktop menu "Home" click
   };
 
   return (
@@ -48,7 +44,7 @@ function Navbar() {
               className={`cursor-pointer hover:text-red-500 font-bold text-[18px] transition py-3 px-2 duration-200 font-apex ${
                 active === "Home" ? "border-b-3 border-[#DE0308] text-[#DE0308]" : ""
               }`}
-              onClick={handleHomeClick}
+              onClick={() => navigate("/")}
             >
               Home
             </li>
@@ -56,7 +52,7 @@ function Navbar() {
               className={`cursor-pointer hover:text-red-500 text-[18px] py-3 px-2 transition duration-200 font-apex font-normal ${
                 active === "AI NFT GENERATION" ? "border-b-3 border-[#DE0308] text-[#DE0308]" : ""
               }`}
-              onClick={() => handleMenuClick("AI NFT GENERATION")}
+              onClick={() => navigate("/tseller")}
             >
               AI NFT GENERATION
             </li>
@@ -105,7 +101,7 @@ function Navbar() {
 
             <ul className="flex flex-col items-start p-6 space-y-4 text-sm font-medium text-gray-800 mt-[20px]">
               <li
-                onClick={() => handleMenuClick("Home")} // Ensure it navigates to Home
+                onClick={() => navigate("/")}
                 className={`cursor-pointer hover:text-red-500 transition duration-200 ${
                   active === "Home" ? "border-b-2 border-red-500" : ""
                 }`}
@@ -113,7 +109,7 @@ function Navbar() {
                 Home
               </li>
               <li
-                onClick={() => handleMenuClick("AI NFT GENERATION")}
+                onClick={() => navigate("/tseller")}
                 className={`cursor-pointer hover:text-red-500 transition duration-200 ${
                   active === "AI NFT GENERATION" ? "border-b-2 border-red-500" : ""
                 }`}
