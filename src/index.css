@@ -24,3 +24,6 @@
  .bg-gradient-custom {
   background: linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%);
 }
+.drop-shadow-custom {
+  filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.20));
+}

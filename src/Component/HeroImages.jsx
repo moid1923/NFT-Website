@@ -25,31 +25,36 @@ function HeroImages() {
           <img
             src={mainc}
             alt="Main Card"
-            className="main-card w-[308px] h-[410px] z-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-lg shadow-black"
+            // style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+            className="main-card w-[308px] h-[410px] z-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-custom"
           />
           {/* Front Left Card */}
           <img
             src={herofl}
             alt="Front Left Card"
-            className="f-left w-[248px] h-[380px] absolute top-1/2 left-[25%] transform -translate-y-1/2 z-20 hidden lg:block drop-shadow-lg shadow-black"
+            // style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+            className="f-left w-[248px] h-[380px] absolute top-1/2 left-[25%] transform -translate-y-1/2 z-20 hidden lg:block drop-shadow-custom"
           />
           {/* Front Right Card */}
           <img
             src={herofr}
             alt="Front Right Card"
-            className="f-right w-[248px] h-[380px] absolute top-1/2 right-[25%] transform -translate-y-1/2 z-20 hidden lg:block drop-shadow-lg shadow-black"
+            // style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+            className="f-right w-[248px] h-[380px] absolute top-1/2 right-[25%] transform -translate-y-1/2 z-20 hidden lg:block drop-shadow-custom"
           />
           {/* Side Left Card */}
           <img
             src={herosl}
             alt="Side Left Card"
-            className="s-left w-[208px] h-[350px] absolute top-1/2 left-[10%] transform -translate-y-1/2 z-10 hidden lg:block drop-shadow-lg shadow-black"
+            // style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+            className="s-left w-[208px] h-[350px] absolute top-1/2 left-[10%] transform -translate-y-1/2 z-10 hidden lg:block drop-shadow-custom"
           />
           {/* Side Right Card */}
           <img
             src={herosr}
             alt="Side Right Card"
-            className="s-right w-[208px] h-[350px] absolute top-1/2 right-[10%] transform -translate-y-1/2 z-10 hidden lg:block drop-shadow-lg shadow-black"
+            // style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+            className="s-right w-[208px] h-[350px] absolute top-1/2 right-[10%] transform -translate-y-1/2 z-10 hidden lg:block drop-shadow-custom"
           />
         </div>
       </div>
