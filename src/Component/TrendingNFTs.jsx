@@ -97,7 +97,7 @@ export default function TrendingNFTs({
                 />
 
                 <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                  <button className="bg-red-500 text-white text-[12px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
+                  <button className="bg-[#fe2d2d] text-white text-[12px] px-[17px] py-[11px] text-sm cursor-pointer hover:opacity-70 transition duration-200 rounded-[8px] w-[56px] h-[36px] flex items-center justify-center">
                     Buy
                   </button>
                   <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">

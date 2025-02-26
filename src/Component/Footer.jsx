@@ -1,13 +1,12 @@
 import React from "react";
 import {
-  Mail,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Youtube,
-  Instagram,
-  Github,
-} from "lucide-react";
+  FaFacebookF,
+  FaTwitter,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaYoutube
+} from "react-icons/fa6";                           
 import { FaTelegramPlane } from "react-icons/fa";
 import mask from "../assets/footer.png";
 import logo from "../assets/flogo.png";
@@ -56,14 +55,14 @@ const Footer = () => {
           {/* Middle Section */}
           <div className="flex items-center justify-center">
             <div className="mx-auto">
-              <p className="mt-4 max-w-xs md:text-[20px] sm:text-[16px] text-[14px] tracking-wider text-white  xs:text-[16px] xs:mx-auto sx:mx-auto md:mx-[0px] ">
+              <p className="mt-4 font-roboto font-[500]  md:text-[20px] sm:text-[16px] text-[14px] tracking-wider text-white  xs:text-[16px] xs:mx-auto sx:mx-auto md:mx-[0px] leading-[36px]  max-w-[394px]">
                 NFT ALGO is the world's leading NFTs marketplace where you can
                 discover, sell and bid NFTs and get rich
               </p>
               <div className="flex flex-wrap gap-3 sm:gap-2 justify-center md:justify-start mt-4 text-white ">
-                {[Facebook, Twitter, Linkedin, Youtube, Instagram, Github, FaTiktok, FaTelegramPlane].map((Icon, index) => (
+                {[FaFacebookF, FaTwitter, FaLinkedin, FaYoutube, FaInstagram, FaGithub, FaTiktok, FaTelegramPlane].map((Icon, index) => (
                   <div key={index} className="bg-white text-orange-600 md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center rounded-lg">
-                    <Icon className="cursor-pointer" />
+                    <Icon className="cursor-pointer "size={22} />
                   </div>
                 ))}
               </div>
