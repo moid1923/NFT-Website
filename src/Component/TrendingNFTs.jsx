@@ -50,7 +50,10 @@ export default function TrendingNFTs({
                 className="border w-[140px] h-[42px] sm:w-[170px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal font-roboto"
               >
                 {selectedOption}
+                <span className="w-6 h-6 flex justify-center items-center">
                 <img src={tran} alt="Dropdown Icon" className="w-3 h-2 ml-1" />
+                </span>
+                
               </button>
               {isOpen && (
                 <div className="absolute w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-10 font-roboto">
@@ -97,7 +100,7 @@ export default function TrendingNFTs({
                 />
 
                 <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                  <button className="bg-[#fe2d2d] text-white text-[12px] px-[17px] py-[11px] text-sm cursor-pointer hover:opacity-70 transition duration-200 rounded-[8px] w-[56px] h-[36px] flex items-center justify-center">
+                  <button className="bg-gradient-custom text-white text-[12px] px-[17px] py-[11px] text-sm cursor-pointer hover:opacity-70 transition duration-200 rounded-[8px] w-[56px] h-[36px] flex items-center justify-center">
                     Buy
                   </button>
                   <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">

@@ -45,7 +45,8 @@ function FAQSection() {
             <AccordionItem
               key={index}
               uuid={index}
-              className="border  border-gray-300 rounded-2xl p-2  my-3 "
+              style={{ border: "2.8px solid #E7E7E7" }}
+              className=" rounded-2xl p-2  my-3 max-w-[1037px] w-full  mx-auto "
             >
               <AccordionItemHeading>
                 <AccordionItemState>
@@ -76,7 +77,7 @@ function FAQSection() {
                   )}
                 </AccordionItemState>
               </AccordionItemHeading>
-              <AccordionItemPanel className="font-roboto px-6 md:ps-20 py-4 text-[#808080] font-[400] text-sm sm:text-base bg-white-50 rounded-b-lg text-[14px] md:text-[18px]">
+              <AccordionItemPanel className="font-roboto px-6 md:ms-13 py-4 text-[#808080] font-[400] text-sm sm:text-base bg-white-50 rounded-b-lg text-[14px] md:text-[18px] max-w-[916px] ">
                 {faq.answer}
               </AccordionItemPanel>
             </AccordionItem>

@@ -20,3 +20,7 @@
  .font-oxanion{
   font-family: "Oxanium", serif;
  }
+
+ .bg-gradient-custom {
+  background: linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%);
+}
