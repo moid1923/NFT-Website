@@ -10,7 +10,7 @@ function Visibility() {
           <h1 className="md:text-[64px] text-[30px] leading-tight text-gray-800 sm:text-5xl font-apex  font-normal md:leading-[76px] tracking-[3%]">
             BOOST YOUR NFTs: ENHANCE VISIBILITY AND VALUE
           </h1>
-          <p className="mt-4 text-gray-700 text-[18px] sm:text-xl font-triodion opacity-70 ">
+          <p className="mt-4 text-[#6B6B6B] font-[300]   text-[18px] sm:text-xl font-roboto opacity-70 leading-[21px] ">
             The Boost feature is a premium service that allows NFT creators and
             collectors to elevate their listings on our marketplace. By boosting
             an NFT, you can ensure it appears prominently in search results,
@@ -23,9 +23,9 @@ function Visibility() {
             </span>
           </button>
         </div>
-        <div className="image-section lg:w-1/2 relative  ">
-        <div>
-          <img src={visibility} alt="" />
+        <div className="image-section relative max-w-[554px] w-full h-[611px lg:-mt-24  ">
+        <div className="">
+          <img src={visibility} alt="" className="w-[554px] h-[611px]" />
         </div>
           {/* <div className="images relative w-[498px] h-[611px]">
             <div className="image-1 w-[242px] h-[322px]  bg-cover absolute top-7 left-[80px] sm:top-7 sm:left-1 md:top-3 md:left-3 " style={{ backgroundImage: `url(${bg})` }}

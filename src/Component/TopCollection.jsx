@@ -5,6 +5,9 @@ import tc3 from "../assets/tc3.jfif";
 import tc4 from "../assets/tc4.jfif";
 import tc5 from "../assets/tc5.jfif";
 import tc6 from "../assets/tc6.jfif";
+import seller1 from "../assets/sell1.png";
+import seller2 from "../assets/sell2.png";
+import seller3 from "../assets/sell3.png";
 import tclogo from "../assets/tclogo.png";
 import { useNavigate } from "react-router-dom";
 
@@ -12,18 +15,21 @@ const collections = [
   {
     id: 1,
     images: [tc1, tc2, tc3, tc4, tc5, tc6],
+    logo: seller1,
     title: "WONDERFUL ARTWORK",
     creator: "Jacob Jones",
   },
   {
     id: 2,
     images: [tc1, tc2, tc3, tc4, tc5, tc6],
+    logo:seller2,
     title: "WONDERFUL ARTWORK",
     creator: "Jacob Jones",
   },
   {
     id: 3,
     images: [tc1, tc2, tc3, tc4, tc5, tc6],
+    logo : seller3,
     title: "WONDERFUL ARTWORK",
     creator: "Jacob Jones",
   },
@@ -63,20 +69,23 @@ const TopCollection = () => {
             {/* Image Grid */}
             <div className="grid grid-cols-4 grid-rows-2 gap-2 md:max-w-[397px] md:h-[198px]   w-full">
               <div className="col-span-2 row-span-2 ">
-                <img src={collection.images[0]} alt="" className="w-full h-full object-cover rounded-md" />
+                <img src={collection.images[0]} alt="" className="w-full h-full object-cover rounded-xl" />
               </div>
               <div className="col-span-2 row-span-2 ">
-                <img src={collection.images[1]} alt="" className="w-full h-full object-cover rounded-md" />
+                <img src={collection.images[1]} alt="" className="w-full h-full object-cover rounded-xl" />
               </div>
-              <img src={collection.images[2]} alt="" className="w-full h-full object-cover rounded-md" />
-              <img src={collection.images[3]} alt="" className="w-full h-full object-cover rounded-md" />
-              <img src={collection.images[4]} alt="" className="w-full h-full object-cover rounded-md" />
-              <img src={collection.images[5]} alt="" className="w-full h-full object-cover rounded-md" />
+              <img src={collection.images[2]} alt="" className="w-full h-full object-cover rounded-xl " />
+              <img src={collection.images[3]} alt="" className="w-full h-full object-cover rounded-xl" />
+              <img src={collection.images[4]} alt="" className="w-full h-full object-cover rounded-xl" />
+              <img src={collection.images[5]} alt="" className="w-full h-full object-cover rounded-xl" />
             </div>
 
             {/* Collection Info */}
-            <div className="text-left mt-4 flex items-center gap-3">
-              <img src={tclogo} alt="" className="w-10 h-10 object-cover rounded-full" />
+            <div className="text-left mt-4 flex items-center gap-3 relative">
+            <span className="absolute top-0 left-[55px] bg-[#7872ff] text-white text-xs font-bold px-2 py-1 rounded-full  w-[16px] h-[16px] flex justify-center items-center text-center  ">
+                  ✓
+                </span>
+              <img src={collection.logo} alt="" className="w-[68px] h-[68px] object-cover " />
               <div>
                 <p className="lg:text-[18px] md:text-[16px]text-[14px] leading-[21px] font-semibold">{collection.title}</p>
                 <span className="md:text-[14px] text-[12px] leading-[16px] text-gray-500">Created by {collection.creator}</span>

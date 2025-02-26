@@ -14,8 +14,8 @@ function HeroImages() {
     <div className="relative max-w-[1920px] w-full mx-auto xl:h-[630px] lg:h-[550px] md:h-[500px] h-[450px]">
       {/* Background Hands */}
       <div className="absolute hidden xl:block w-full h-full">
-        <img src={left1} alt="" className="absolute -left-40 top-1/2 transform -translate-y-1/2 left1" />
-        <img src={right1} alt="" className="absolute -right-40 top-1/2 transform -translate-y-1/2 right1" />
+        <img src={left1} alt="" className="absolute -left-40 top-1/2 transform -translate-y-1/2 left1 opacity-50" />
+        <img src={right1} alt="" className="absolute -right-40 top-1/2 transform -translate-y-1/2 right1 opacity-50" />
       </div>
 
       {/* Cards Section */}
@@ -25,31 +25,31 @@ function HeroImages() {
           <img
             src={mainc}
             alt="Main Card"
-            className="main-card w-[308px] h-[410px] z-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="main-card w-[308px] h-[410px] z-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-lg shadow-black"
           />
           {/* Front Left Card */}
           <img
             src={herofl}
             alt="Front Left Card"
-            className="f-left w-[248px] h-[380px] absolute top-1/2 left-[25%] transform -translate-y-1/2 z-20 hidden lg:block shadow-lg"
+            className="f-left w-[248px] h-[380px] absolute top-1/2 left-[25%] transform -translate-y-1/2 z-20 hidden lg:block drop-shadow-lg shadow-black"
           />
           {/* Front Right Card */}
           <img
             src={herofr}
             alt="Front Right Card"
-            className="f-right w-[248px] h-[380px] absolute top-1/2 right-[25%] transform -translate-y-1/2 z-20 hidden lg:block shadow-lg"
+            className="f-right w-[248px] h-[380px] absolute top-1/2 right-[25%] transform -translate-y-1/2 z-20 hidden lg:block drop-shadow-lg shadow-black"
           />
           {/* Side Left Card */}
           <img
             src={herosl}
             alt="Side Left Card"
-            className="s-left w-[208px] h-[350px] absolute top-1/2 left-[10%] transform -translate-y-1/2 z-10 hidden lg:block shadow-lg"
+            className="s-left w-[208px] h-[350px] absolute top-1/2 left-[10%] transform -translate-y-1/2 z-10 hidden lg:block drop-shadow-lg shadow-black"
           />
           {/* Side Right Card */}
           <img
             src={herosr}
             alt="Side Right Card"
-            className="s-right w-[208px] h-[350px] absolute top-1/2 right-[10%] transform -translate-y-1/2 z-10 hidden lg:block shadow-lg"
+            className="s-right w-[208px] h-[350px] absolute top-1/2 right-[10%] transform -translate-y-1/2 z-10 hidden lg:block drop-shadow-lg shadow-black"
           />
         </div>
       </div>

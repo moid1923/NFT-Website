@@ -61,7 +61,7 @@ export default function TopSellers() {
               </div>
               <div className="flex flex-col ">
                 <h3 className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[12px]  leading-tight text-[#2B2B2B] font-roboto font-bold">{seller.name}</h3>
-                <p className="lg:text-[14px] text-[10px] text-gray-500">{seller.price}</p>
+                <p className="lg:text-[17px] text-[10px] font-bold text-[#8B8B8B]">{seller.price}</p>
               </div>
             </div>
           ))}
