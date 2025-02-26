@@ -5,10 +5,10 @@ import { FaTwitter, FaDiscord, FaGithub ,FaChrome} from "react-icons/fa";
 function PixacioHero() {
   return (
     <div>
-      <div className="container max-w-[1320px] w-full mx-auto flex flex-col lg:flex-row gap-4">
+      <div className="container max-w-[1320px] w-full mx-auto flex flex-col lg:flex-row gap-4 my-10">
         <div className="image] flex items-center justify-center mx-auto">
            <div className='p-[10px] bg-white rounded-2xl max-w-[512px] '>
-           <img src={pixacio} alt="" className='rounded-xl object-cover w-[462px] h-[481px]' />
+           <img src={pixacio} alt="" className='rounded-xl object-cover w-[482px] h-[461px]' />
            </div>
         </div>
         <div className="max-w-[674px]  mx-auto xs:p-5 md:p-0">
