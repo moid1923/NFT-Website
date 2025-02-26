@@ -96,7 +96,7 @@ export default function FeaturedCollection() {
                   <img src={fclogo} alt="Logo" className="w-[53px] h-[53px] rounded-full" />
                   <div className="mt-2">
                   <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
-                  <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5">@Stella Nova</p>
+                  <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5 font-roboto font-[300]" >@Stella Nova</p>
                   </div>
                 </div>
 

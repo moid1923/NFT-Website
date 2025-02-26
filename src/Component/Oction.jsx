@@ -63,7 +63,7 @@ function Oction({
                 />
                 <div>
                 <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
-                <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5">@Stella Nova</p>
+                <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5 font-[300] font-roboto">@Stella Nova</p>
                 </div>
               </div>
 
