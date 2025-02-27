@@ -88,10 +88,10 @@ export default function FeaturedCollection() {
           {cards.map((card) => (
             <div key={card.id} className="pr-4"> 
               <div 
-                className="w-[308px] h-[411px] p-2 gap-6 rounded-2xl shadow-lg mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
+                className="max-w-[308px] w-full h-[411px] p-2 gap-7 rounded-2xl shadow-lg mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
                 style={{ backgroundImage: `url(${bg})` }}
               >
-                <div className="absolute w-[30px] h-[30px] rounded-full"></div>
+                
                 <div className="p-[12px] flex items-center space-x-3 ">
                   <img src={fclogo} alt="Logo" className="w-[53px] h-[53px] rounded-full" />
                   <div className="mt-2">
