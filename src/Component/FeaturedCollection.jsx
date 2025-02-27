@@ -86,9 +86,9 @@ export default function FeaturedCollection() {
         {/* Slick Carousel */}
         <Slider {...settings} className="relative">
           {cards.map((card) => (
-            <div key={card.id} className="pr-4"> 
+            <div key={card.id} className="pr-7"> 
               <div 
-                className="max-w-[308px] w-full h-[411px] p-2 gap-7 rounded-2xl shadow-lg mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
+                className="max-w-[308px] w-full h-[411px] p-2  rounded-2xl shadow-lg mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
                 style={{ backgroundImage: `url(${bg})` }}
               >
                 
