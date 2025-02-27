@@ -70,7 +70,9 @@ export default function RecentlySold() {
                     </span>
               </div>
               <div className=''>
-                        <button className='bg-red-500  w-[96px] h-[37px] text-white text-[12px] leading-[14px] tracking-[4%] text-center  px-5 py-2 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 uppercase '>Sold</button>
+                        <button
+                        style={{ background: "linear-gradient(318deg, #FD0000 26.88%, #BB5151 105.85%)" }}
+                         className=' w-[96px] h-[37px] text-white text-[12px] leading-[14px] tracking-[4%] text-center  px-5 py-2 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 uppercase '>Sold</button>
                     </div>
             </div>
               
