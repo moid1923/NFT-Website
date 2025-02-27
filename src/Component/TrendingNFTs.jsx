@@ -9,7 +9,7 @@ import nft7 from "../assets/nft7.jfif";
 import nft8 from "../assets/nft8.png";
 import hero from "../assets/fc-logo.jfif";
 import bg from "../assets/bgfeature.png";
-import tran from "../assets/tradnft.png";
+import tran from "../assets/drp.png";
 import flogo from '../assets/felogo.png'
 
 const nfts = [
@@ -51,7 +51,7 @@ export default function TrendingNFTs({
               >
                 {selectedOption}
                 <div className="w-6 h-6 flex justify-center items-center">
-                <img src={tran} alt="Dropdown Icon" className="w-3 h-2 " />
+                <img src={tran} alt="Dropdown Icon"  />
                 </div>
                 
               </button>

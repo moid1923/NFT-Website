@@ -260,8 +260,8 @@ function TopList({
                           Buy
                         </button>
                       ) : (
-                        <button className="bg-white text-[12px] w-[91px] h-[36px] px-[17px] py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200">
-                          In Stock <span className="ms-1">7</span>
+                        <button className="bg-white  w-[91px] h-[36px]  py-[11px] rounded-md text-sm cursor-pointer hover:opacity-70 transition duration-200 text-[#2B2B2B] font-roboto text-[12px] font-medium tracking-[0.48px] capitalize">
+                          In Stock <span className="text-[#808080] font-roboto text-[12px] font-medium tracking-[0.48px] capitalize ms-1">7</span>
                         </button>
                       )}
                       <span className="text-sm  w-[123px] h-[36px] bg-white px-3 py-[11px]  rounded-lg flex justify-center items-center gap-1 text-[#2B2B2B] font-roboto text-[12px] font-medium leading-normal tracking-[0.48px] capitalize">
@@ -279,10 +279,10 @@ function TopList({
                   {showAnimatedButton && ( // Conditionally show the animated button
                     <div className="animated-btn">
                       <p
-                        className="btn-auc bg-white opacity-70 text-black rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
+                        className="btn-auc w-[143px] h-[44px] bg-white opacity-80 text-black rounded-[8.26px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
                       transition-all duration-300 group-hover:top-[220px]"
                       >
-                        3:06:59:18
+                       <span className="text-[#2B2B2B] font-roboto text-[18.913px] font-medium tracking-[2.08px] capitalize">3:06:59:18</span> 
                       </p>
                       <p
                         className="btn-auc hidden bg-white text-black rounded-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-2 tracking-wider 
