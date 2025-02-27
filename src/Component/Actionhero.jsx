@@ -1,7 +1,7 @@
 import React from "react";
 import oction1 from "../assets/sold2.png";
 import oction2 from "../assets/rand2.png";
-import oction3 from "../assets/rand3.png";
+import oction3 from "../assets/auch.png";
 import oction4 from "../assets/sold8.png";
 
 function Actionhero() {
@@ -33,7 +33,7 @@ function Actionhero() {
         </div>
         <div className="flex items-end justify-center p-[10px] bg-white rounded-xl w-[292px] h-[182px]">
           <img
-            src={oction3}
+            src={oction4}
             alt="NFT"
             className="w-[272px] h-[162px] object-cover rounded-2xl"
           />
@@ -42,7 +42,7 @@ function Actionhero() {
         {/* Full-height image */}
         <div className="flex items-end justify-center p-[10px] bg-white rounded-xl w-[292px] h-[293px]">
           <img
-            src={oction4}
+            src={oction3}
             alt="NFT"
             className="w-[272px] h-[273px] object-cover rounded-2xl"
           />
