@@ -106,11 +106,11 @@ export default function FeaturedCollection() {
                     <button className="bg-gradient-custom text-white px-[17px]  text-[12px]   cursor-pointer font-roboto rounded-[8px] w-[56px] h-[36px]">
                       Buy
                     </button>
-                    <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
+                    <span className="text-sm font-bold w-[123px] font-roboto h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:
                       <img src={card.logo
                       } alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
-                      <span className="text-[#808080]">  142.02</span> 
+                      <span className="text-[#808080] font-roboto">  142.02</span> 
                     </span>
                   </div>
                 </div>

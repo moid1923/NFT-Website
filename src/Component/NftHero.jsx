@@ -1,5 +1,5 @@
 import React from "react";
-import hm from "../assets/NFTHero.png";
+import hm from "../assets/NFThero.png";
 function NftHero() {
   return (
     <div>
