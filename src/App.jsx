@@ -24,7 +24,7 @@ function App() {
        <Route path='/pixNFT' element={<PixNFT />} />
        <Route path='/tseller' element={<TSeller />} />
        <Route path='/jcollection' element={<JCollection />} />
-       {/* <Route path='/masterpiece' element={<MasterPiece />} /> */}
+       <Route path='/masterpiece' element={<MasterPiece />} />
       </Routes>
     </Router>
     </div>

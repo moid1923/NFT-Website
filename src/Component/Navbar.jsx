@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import { FaWallet, FaPaintBrush } from "react-icons/fa";
+import nni from '../assets/nni.jfif'
 import logo from "../assets/Group.svg";
 import MainBtn from "./MainBtn";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -14,12 +16,13 @@ function Navbar() {
   const [active, setActive] = useState("");
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      setActive("Home");
-    } else if (location.pathname.startsWith("/tseller")) {
+    if (location.pathname === "/masterpiece") {
       setActive("AI NFT GENERATION");
+    } else {
+      setActive("Home");
     }
   }, [location.pathname]);
+
 
   const toggleMenu = () => {
     setSideMenu((prev) => !prev);
@@ -52,7 +55,7 @@ function Navbar() {
               className={`cursor-pointer hover:text-red-500 text-[18px] py-3 px-2 transition duration-200 font-apex font-normal ${
                 active === "AI NFT GENERATION" ? "border-b-3 border-[#DE0308] text-[#DE0308]" : ""
               }`}
-              onClick={() => navigate("/tseller")}
+              onClick={() => navigate("/masterpiece")}
             >
               AI NFT GENERATION
             </li>
@@ -61,11 +64,26 @@ function Navbar() {
 
         {/* Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
-          <MainBtn />
-          <button className="leading-[25px] font-[500] border border-red-500 cursor-pointer font-roboto text-[22px] text-red-500 px-8 py-4 rounded-lg hover:bg-red-500 hover:text-white transition duration-200">
-            Create NFT
-          </button>
+          {active === "AI NFT GENERATION" ? (
+            <>
+              <div className="py-4 px-[25px] bg-[#E7E7E7]  cursor-pointer hover:bg-red-500 hover:text-white transition rounded-[15px]">
+                <FaWallet size={28} className="w-[26px] h-[26px]" />
+              </div>
+              <div className="py-4 px-[25px] bg-[#E7E7E7]  cursor-pointer hover:bg-red-500 hover:text-white transition rounded-[15px]">
+                <img src={nni} alt="" className="w-[26px] h-[26px] rounded-full" />
+              </div>
+            </>
+          ) : (
+            <>
+              <MainBtn />
+              <button className="leading-[25px] font-[500] border border-red-500 cursor-pointer font-roboto text-[22px] text-red-500 px-8 py-4 rounded-lg hover:bg-red-500 hover:text-white transition">
+                Create NFT
+              </button>
+            </>
+          )}
         </div>
+
+
 
         {/* Mobile Menu Button */}
         <button
@@ -109,7 +127,7 @@ function Navbar() {
                 Home
               </li>
               <li
-                onClick={() => navigate("/tseller")}
+                onClick={() => navigate("/masterpiece")}
                 className={`cursor-pointer hover:text-red-500 transition duration-200 ${
                   active === "AI NFT GENERATION" ? "border-b-2 border-red-500" : ""
                 }`}
