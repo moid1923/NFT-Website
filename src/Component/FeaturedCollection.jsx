@@ -103,10 +103,10 @@ export default function FeaturedCollection() {
                 <div className="relative max-w-[292px] h-[314px]">
                   <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                    <button className="bg-gradient-custom text-white px-[17px]  text-[12px]   cursor-pointer font-roboto rounded-[8px] w-[56px] h-[36px]">
+                    <button className="bg-gradient-custom font-roboto text-white px-[17px]  text-[12px]   cursor-pointer font-roboto rounded-[8px] w-[56px] h-[36px]">
                       Buy
                     </button>
-                    <span className="text-sm font-bold w-[123px] font-roboto h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
+                    <span className="text-sm font-medium w-[123px] font-roboto h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1 text-[#2B2B2B">
                       Price:
                       <img src={card.logo
                       } alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />

@@ -100,10 +100,10 @@ export default function TrendingNFTs({
                 />
 
                 <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                  <button className="bg-gradient-custom text-white text-[12px] px-[17px] py-[11px] text-sm cursor-pointer hover:opacity-70 transition duration-200 rounded-[8px] w-[56px] h-[36px] flex items-center justify-center">
+                  <button className="bg-gradient-custom font-roboto text-white text-[12px] px-[17px] py-[11px] text-sm cursor-pointer hover:opacity-70 transition duration-200 rounded-[8px] w-[56px] h-[36px] flex items-center justify-center">
                     Buy
                   </button>
-                  <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
+                  <span className="text-sm font-roboto font-medium text-[#2B2B2B] w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:
                       <img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
                       <span className="text-[12px] font-roboto font-medium text-[#808080] tracking-[0.48px] capitalize">  142.02</span> 

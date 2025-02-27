@@ -60,10 +60,12 @@ export default function RecentlySold() {
               />
 
               <div className="p-3 w-full flex justify-between  items-center absolute bottom-2 z-40">
-                <button className="bg-red-700 font-[500] text-white px-3 py-1 rounded-md text-[12px] w-[56px] h-[36px] cursor-pointer opacity-80">
+                <button
+                style={{ background: "linear-gradient(318deg, #FD0000 26.88%, #BB5151 105.85%)" }}
+                 className=" font-[500] text-white font-roboto px-3 py-1 rounded-md text-[12px] w-[56px] h-[36px] cursor-pointer opacity-80">
                   Buy
                 </button>
-                <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
+                <span className="text-sm font-roboto  w-[123px] font-medium text-[#2B2B2B] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:
                       <img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
                       <span className="text-[12px] font-roboto font-medium text-[#808080] tracking-[0.48px] capitalize">  142.02</span> 
@@ -72,7 +74,7 @@ export default function RecentlySold() {
               <div className=''>
                         <button
                         style={{ background: "linear-gradient(318deg, #FD0000 26.88%, #BB5151 105.85%)" }}
-                         className=' w-[96px] h-[37px] text-white text-[12px] leading-[14px] tracking-[4%] text-center  px-5 py-2 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 uppercase '>Sold</button>
+                         className=' w-[96px] h-[37px] text-white text-[12px] font-roboto leading-[14px] tracking-[4%] text-center  px-5 py-2 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 uppercase '>Sold</button>
                     </div>
             </div>
               
