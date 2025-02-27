@@ -218,10 +218,10 @@ function TopList({
             </div>
           ) : (
             <div className="flex items-center space-x-2 absolute -top-20 right-[280px] ">
-              <button className="p-2 border rounded-lg bg-white shadow-sm hover:bg-gray-100 transition hidden xl:block">
-                <FiRefreshCcw className="text-gray-600" />
+              <button className="p-2 border border-[#7D7D7D] rounded-lg bg-white shadow-sm hover:bg-gray-100 transition hidden xl:block w-[32px] h-[32px]">
+                <FiRefreshCcw className="text-[#2b2b2b]" />
               </button>
-              <p className="text-gray-500 hidden xl:block">Refreshed A While Ago</p>
+              <p className="text-[#7D7D7D] text-[12px] font-[500] font-roboto leading-normal hidden xl:block ms-[23px]">Refreshed A While Ago</p>
             </div>
           )}
 
