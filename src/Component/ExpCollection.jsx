@@ -28,7 +28,7 @@ const collections = [
   { image: ex10, title: "WONDERFUL ARTWORK", creator: "Grace Miller", logo: ex10 },
   { image: ex11, title: "WONDERFUL ARTWORK", creator: "Lucas Hill", logo: ex11 },
 ];
-const navLinks = ["Home", "About", "Services", "Portfolio", "Blog", "Contact", "FAQ"];
+const navLinks = ["Popular", "Trending", "Sports", "Art", "Fantasy", "Photography", "Space"];
 function ExpCollection() {
   
   const navigate = useNavigate(); // 🔹 Define navigate function
@@ -45,8 +45,8 @@ function ExpCollection() {
             {navLinks.map((link, index) => (
               <li key={index}>
                 <div
-                  className={`text-black px-4 py-2 rounded-lg transition-all ${
-                    link === "Home" ? " border-2 border-red-500" : "hover:bg-red-700 hover:text-white"
+                  className={`text-black px-4 py-2 rounded-lg transition-all font-roboto ${
+                    link === "Popular" ? " border-2 border-red-500" : "hover:bg-red-700 hover:text-white"
                   }`}
                 >
                   {link}
@@ -59,23 +59,24 @@ function ExpCollection() {
           {collections.map((item, index) => (
             <div key={index} className="card max-w-[417px] w-full h-[276px] cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
             onClick={handlePixacioClick}
+            style={{border: "2.8px solid #E7E7E7"}}
             >
               <div className=" flex items-center gap-4 mb-2 cursor-pointer">
                 <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-3xl object-cover cursor-pointer" />
-                <div>
-                  <p className="font-semibold text-lg">{item.title}</p>
-                  <div className="flex items-center justify-center ">
-                  <p className="text-gray-500 text-sm">Created by <span className="text-sm text-gray-500 font-semibold">{item.creator}</span> </p>
-                  <span className="w-5 h-5 bg-[#7872ff] flex items-center justify-center rounded-full ms-2">
-                    <img src={tick} alt="" className="w-4 h-4 rounded-full" />
+                <div className="flex flex-col justify-center">
+                  <p className="text-[#2B2B2B] font-roboto text-[18px] font-bold tracking-[0.09px] uppercase">{item.title}</p>
+                  <div className="flex items-center justify-center mr-8 ">
+                  <p className="text-[#8B8B8B] font-roboto text-[14px] font-normal tracking-[0.07px]">Created by <span className="text-[#8B8B8B] font-roboto text-[14px] font-bold tracking-[0.07px]">{item.creator}</span> </p>
+                  <span className="w-[13px] h-[13px] bg-[#7872ff] flex items-center justify-center rounded-full ms-2">
+                    <img src={tick} alt="" className="w-full h-full rounded-full" />
                     </span> 
                   </div>
                   
                 </div>
               </div>
-              <div className="relative h-[178px]">
-              <img src={item.image} alt={item.title} className="w-full h-[178px] object-cover rounded-xl" />
-              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 cursor-pointer rounded-md w-[93px] h-[30px] text-gray-500">Items <span className="text-black font-semibold">1.5k</span> </button>
+              <div className="relative  h-[178px]">
+              <img src={item.image} alt={item.title} className="max-w-[397px] w-full h-[178px] object-cover rounded-xl" />
+              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 cursor-pointer rounded-md w-[93px] h-[30px]  text-[#6B6B6B] font-roboto text-[12px] font-normal tracking-[0.06px]">Items <span className="text-black font-semibotext-[#2B2B2B] font-roboto text-[12px] font-bold tracking-[0.06px]">1.5k</span> </button>
               </div>
             </div>
           ))}
