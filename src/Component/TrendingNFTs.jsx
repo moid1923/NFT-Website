@@ -50,9 +50,9 @@ export default function TrendingNFTs({
                 className="border w-[140px] h-[42px] sm:w-[170px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal font-roboto"
               >
                 {selectedOption}
-                <span className="w-6 h-6 flex justify-center items-center">
-                <img src={tran} alt="Dropdown Icon" className="w-3 h-2 ml-1" />
-                </span>
+                <div className="w-6 h-6 flex justify-center items-center">
+                <img src={tran} alt="Dropdown Icon" className="w-3 h-2 " />
+                </div>
                 
               </button>
               {isOpen && (
