@@ -66,7 +66,7 @@ export default function RecentlySold() {
                 <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:
                       <img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
-                      <span className="text-[#808080]">  142.02</span> 
+                      <span className="text-[12px] font-roboto font-medium text-[#808080] tracking-[0.48px] capitalize">  142.02</span> 
                     </span>
               </div>
               <div className=''>

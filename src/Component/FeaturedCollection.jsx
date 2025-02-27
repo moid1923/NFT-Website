@@ -110,7 +110,7 @@ export default function FeaturedCollection() {
                       Price:
                       <img src={card.logo
                       } alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
-                      <span className="text-[#808080] font-roboto">  142.02</span> 
+                      <span className="text-[12px] font-roboto font-medium text-[#808080] tracking-[0.48px] capitalize">  142.02</span> 
                     </span>
                   </div>
                 </div>
