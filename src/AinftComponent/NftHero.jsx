@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import hm from "../assets/NFThero.png";
-
+import { useNavigate } from "react-router-dom";
 function NftHero() {
   const [supply, setSupply] = useState(10);
 
   const increment = () => setSupply(supply + 1);
   const decrement = () => setSupply(supply > 1 ? supply - 1 : 1);
+
+  const navigate = useNavigate(); // 🔹 Define navigate function
+
+  const handleCardClick = () => {
+    navigate("/card"); // 🔹 Navigate to  cardpage when clicked
+  };
 
   return (
     <div>
@@ -74,7 +80,9 @@ function NftHero() {
             </div>
           </div>
 
-          <button className="border bg-white border-[#E7E7E7] px-[30px] py-[15px] rounded-md flex items-center gap-2 text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]">
+          <button className="border bg-white border-[#E7E7E7] px-[30px] py-[15px] rounded-md flex items-center gap-2 text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]"
+          onClick={handleCardClick}>
+          
             Add Styles <FaPlus size={12} />
           </button>
         </div>

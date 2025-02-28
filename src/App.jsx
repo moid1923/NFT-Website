@@ -9,6 +9,7 @@ import PixNFT from './Pages/PixNFT';
 import TSeller from './Pages/TSeller';
 import JCollection from './Pages/JCollection';
 import MasterPiece from './Pages/MasterPiece';
+import CardPage from './Pages/CardPage';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
        <Route path='/tseller' element={<TSeller />} />
        <Route path='/jcollection' element={<JCollection />} />
        <Route path='/masterpiece' element={<MasterPiece />} />
+       <Route path='/card' element={<CardPage />} />
       </Routes>
     </Router>
     </div>
