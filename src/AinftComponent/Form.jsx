@@ -3,10 +3,10 @@ import formpic from "../assets/formpic.jfif";
 import add from "../assets/add.svg";
 function Form() {
   return (
-    <div className="max-w-[1320px] w-full mx-auto p-10 rounded-[15px] ">
-      <div className="flex gap-6 ">
+    <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10  rounded-[15px] ">
+      <div className="flex gap-6 flex-col lg:flex-row">
         <div
-          className="max-w-[296px] w-full h-[309px] p-5 rounded-[20px]"
+          className="max-w-[296px] w-full h-[309px] p-5 rounded-[20px] mx-auto"
           style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
         >
           <img
@@ -17,10 +17,15 @@ function Form() {
         </div>
 
         <form
-          className="space-y-[29px] max-w-[994px] w-full px-[88px] py-[35px] bg-white"
-          style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+          className="space-y-[29px] max-w-[994px] w-full sm:px-7 md:px-[88px] py-[35px]  sm:bg-white"
+          sm:style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
         >
-          <h2 className="text-center text-3xl font-bold mb-8">MINT YOUR NFT</h2>
+          <h2
+            className="
+text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal tracking-[1.6px] capitalize"
+          >
+            MINT YOUR NFT
+          </h2>
           <div>
             <label className="block mb-[15px] text-[#2B2B2B] font-roboto text-[20px] font-medium tracking-[0.8px] capitalize">
               Item Name*
@@ -29,7 +34,7 @@ function Form() {
               type="text"
               placeholder="Name your NFT"
               className="w-full p-3 border rounded-[15px] text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px]"
-              style={{border:"2.8px solid #E7E7E7" }}
+              style={{ border: "2.8px solid #E7E7E7" }}
             />
           </div>
           <div>
@@ -40,7 +45,7 @@ function Form() {
               type="text"
               placeholder="$ CGPT, for example"
               className="w-full p-3 border rounded-[15px] text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px]"
-              style={{border:"2.8px solid #E7E7E7" }}
+              style={{ border: "2.8px solid #E7E7E7" }}
             />
           </div>
           <div>
@@ -55,7 +60,7 @@ function Form() {
               placeholder="Provide a detailed description of your item"
               className="w-full p-3 border rounded-[15px] text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px]"
               rows="4"
-              style={{border:"2.8px solid #E7E7E7" }}
+              style={{ border: "2.8px solid #E7E7E7" }}
             ></textarea>
           </div>
           <div>
@@ -73,9 +78,11 @@ function Form() {
             <p className="opacity-80 mb-[15px] text-[#808080] font-roboto text-[16px] font-normal tracking-[0.64px] capitalize`">
               (this is the collection where your item will appear)
             </p>
-            <div className="flex w-full gap-4 items-center mt-2">
-              <div className="p-[15px] border rounded-[15px] text-center flex gap-3 items-center justify-start hover:bg-gray-100 max-w-[50%] w-full"
-              style={{border:"2.8px solid #E7E7E7" }}>
+            <div className="flex w-full gap-4 items-center mt-2 flex-col md:flex-row">
+              <div
+                className="p-[15px] border rounded-[15px] text-center flex gap-3 items-center justify-start hover:bg-gray-100 md:max-w-[50%] w-full"
+                style={{ border: "2.8px solid #E7E7E7" }}
+              >
                 <button className="w-[61px] h-[61px] rounded-[12px] bg-[#c1c1c1] flex items-center justify-center ">
                   <img src={add} alt="" className="w-[28px] h-[28px]" />
                 </button>
@@ -88,7 +95,10 @@ function Form() {
                   </p>
                 </div>
               </div>
-              <div className="p-[15px] border rounded-[15px] shadow-md flex items-center gap-3 max-w-[50%] w-full" style={{border:"2.8px solid #E7E7E7" }}>
+              <div
+                className="p-[15px] border rounded-[15px] shadow-md flex items-center gap-3 md:max-w-[50%] w-full"
+                style={{ border: "2.8px solid #E7E7E7" }}
+              >
                 <img
                   src={formpic}
                   alt="Artwork"
@@ -117,7 +127,10 @@ function Form() {
               inside your collection page and are also listed out inside your
               item page.
             </p>
-            <div className="px-[30px] py-[17px] border rounded-[15px] mb-3 flex justify-between items-center" style={{border:"2.8px solid #E7E7E7" }}>
+            <div
+              className="px-[30px] py-[17px] border rounded-[15px] mb-3 flex justify-between items-center"
+              style={{ border: "2.8px solid #E7E7E7" }}
+            >
               <span className="`text-[#2B2B2B] font-roboto text-[18px] font-medium tracking-[0.54px]`">
                 blue : fox
               </span>
