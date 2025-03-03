@@ -12,6 +12,7 @@ import CardPage from "./Pages/CardPage";
 import CardTwo from "./Pages/CardTwo";
 import MintNFTForm from "./Pages/MintNFTForm";
 import ChooseCollection from "./Pages/ChoseCollection";
+import CreateNewCollection from "./Pages/CreateNewCollection";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/aicard" element={<CardPage />} />
           <Route path="/aicardt" element={<MintNFTForm />} />
           <Route path="/aichoose" element={<ChooseCollection />} />
+          <Route path="/aicreate" element={<CreateNewCollection />} />
         </Routes>
       </Router>
     </div>

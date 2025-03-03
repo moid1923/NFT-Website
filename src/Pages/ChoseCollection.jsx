@@ -3,7 +3,7 @@ import chc1 from '../assets/chc1.jfif';
 import chc2 from '../assets/chc2.jfif';
 import chc3 from '../assets/chc3.jfif';
 import chc4 from '../assets/chc4.jfif';
-
+import Navbar from '../Component/Navbar'
 const collections = [
   { id: 1, title: 'Wonderful Artwork', items: '1.5k', img: chc1 },
   { id: 2, title: 'Wonderful Artwork', items: '1.5k', img: chc2 },
@@ -21,12 +21,13 @@ function ChoseCollection() {
   return (
     
     <div>
-      <div className='flex items-center justify-center max-w-[1320px]'>
+      <Navbar/>
+      <div className='flex  justify-center max-w-[1320px] mx-auto my-20'>
       <div>
-        <button className='bg-white p-[10px] text-[18px]'>Back</button>
+        <button className='w-[126px] h-16 bg-white rounded-[20px] shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] text-[#2b2b2b] text-xl font-normal font-roboto capitalize tracking-wide'>Back</button>
         </div>
-        <div className="w-full max-w-[1164px]  flex justify-center items-center min-h-screen bg-[#FFF7F7] px-4">
-        <div className="bg-white rounded-2xl shadow-lg p-10 max-w-[900px] w-full">
+        <div className="w-full max-w-[1164px]  flex justify-center    px-4">
+        <div className="bg-white rounded-2xl  p-10 w-full max-w-[1164px]">
           <h2 className="text-center text-[64px] font-apex font-bold mb-8 text-[#2B2B2B]">
             CHOOSE COLLECTION
           </h2>
@@ -34,8 +35,8 @@ function ChoseCollection() {
             {collections.map((collection) => (
               <div
                 key={collection.id}
-                className={`flex items-center justify-between p-4 border border-[#D9D9D9] rounded-lg transition cursor-pointer ${
-                  selected === collection.id ? 'bg-[#FFF0F0] shadow-md' : 'bg-white'
+                className={`max-w-[628px] w-full mx-auto flex items-center justify-between p-4 border border-[#D9D9D9] rounded-lg transition cursor-pointer 
+                  
                 }`}
                 onClick={() => handleSelect(collection.id)}
               >
@@ -55,8 +56,8 @@ function ChoseCollection() {
                 <button
                   className={`border border-[#D9D9D9] px-6 py-2 rounded-lg transition font-roboto capitalize text-lg ${
                     selected === collection.id
-                      ? 'bg-red-500 text-white border-red-500'
-                      : 'text-[#2B2B2B] hover:bg-red-500 hover:text-white'
+                      ? 'bg-gradient-custom text-white border-red-500'
+                      : 'text-[#2B2B2B] hover:bg-gradient-custom hover:text-white'
                   }`}
                 >
                   Select
@@ -67,7 +68,7 @@ function ChoseCollection() {
   
           <div className="mt-10 text-right">
             <button
-              className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-3 rounded-lg shadow-lg hover:opacity-90 transition text-lg"
+              className="bg-gradient-custom text-white px-8 py-3 rounded-lg shadow-lg hover:opacity-90 transition text-lg"
             >
               Next
             </button>

@@ -2,11 +2,14 @@ import React from "react";
 import formpic from "../assets/formpic.jfif";
 import add from "../assets/add.svg";
 import { useNavigate } from "react-router-dom";
-function Form() {
+function Form({ showAfterChoose = true }) {
   const navigate = useNavigate(); // 🔹 Define navigate function
 
   const handleChooseClick = () => {
     navigate("/aichoose"); // 🔹 Navigate to /Choose Collection Page when clicked
+  };
+  const handleCreateNewCollectionClick = () => {
+    navigate("/aicreate"); // 🔹 Navigate to /Choose Collection Page when clicked
   };
   return (
     <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10   ">
@@ -80,6 +83,8 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               style={{ border: "2.8px solid #E7E7E7" }}
             ></textarea>
           </div>
+          {showAfterChoose && (
+            <>
           <div>
             <div className="flex items-center justify-between mb-[5px]">
               <label className="block max-w-[50%] w-full text-[#2B2B2B] font-roboto text-[20px] font-medium tracking-[0.8px] capitalize ">
@@ -88,6 +93,7 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               <label
                 htmlFor=""
                 className="opacity-80 text-[#808080] text-right font-roboto text-[18px] font-normal tracking-[0.72px] underline capitalize`"
+                onClick={handleChooseClick}
               >
                 Choose From Existed
               </label>
@@ -99,15 +105,17 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               <div
                 className="p-[15px] border rounded-[15px] text-center flex gap-3 items-center justify-start hover:bg-gray-100 md:max-w-[50%] w-full"
                 style={{ border: "2.8px solid #E7E7E7" }}
+                onClick={handleCreateNewCollectionClick}
               >
                 <button className="w-[61px] h-[61px] rounded-[12px] bg-[#c1c1c1] flex items-center justify-center ">
                   <img src={add} alt="" className="w-[28px] h-[28px]" />
                 </button>
                 <div className="">
-                  <p className="`text-[#2B2B2B] text-left font-roboto text-[18px] font-medium tracking-[0.54px]`"
-                   onClick={handleChooseClick}>
+                  <label className="`text-[#2B2B2B] text-left font-roboto text-[18px] font-medium tracking-[0.54px]`"
+                  
+                  >
                     Create new collection
-                  </p>
+                  </label>
                   <p className="text-[#808080] text-left  font-roboto text-[14px] font-normal tracking-[0.42px] opacity-80">
                     type to create
                   </p>
@@ -172,6 +180,8 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               <span className="absolute h-[26px] w-[26px] bg-white rounded-full left-[4px] bottom-[4px] transition-transform duration-400 peer-checked:translate-x-[26px]"></span>
             </label>
           </div>
+          </>
+          )}
           <div className="flex justify-end">
             <button className="px-8 py-4 rounded-[8px] flex items-center bg-gradient-custom text-white text-center font-roboto text-[18px] font-medium capitalize hover:opacity-90">
               Mint NFT
