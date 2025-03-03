@@ -11,6 +11,7 @@ import MasterPiece from "./Pages/MasterPiece";
 import CardPage from "./Pages/CardPage";
 import CardTwo from "./Pages/CardTwo";
 import MintNFTForm from "./Pages/MintNFTForm";
+import ChooseCollection from "./Pages/ChoseCollection";
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
           <Route path="/tseller" element={<TSeller />} />
           <Route path="/jcollection" element={<JCollection />} />
           <Route path="/masterpiece" element={<MasterPiece />} />
-          <Route path="/card" element={<CardPage />} />
-          <Route path="/cardt" element={<MintNFTForm />} />
+          <Route path="/aicard" element={<CardPage />} />
+          <Route path="/aicardt" element={<MintNFTForm />} />
+          <Route path="/aichoose" element={<ChooseCollection />} />
         </Routes>
       </Router>
     </div>

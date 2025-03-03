@@ -12,7 +12,7 @@ function NftHero() {
   const navigate = useNavigate(); // 🔹 Define navigate function
 
   const handleCardClick = () => {
-    navigate("/card"); // 🔹 Navigate to  cardpage when clicked
+    navigate("/aicard"); // 🔹 Navigate to  cardpage when clicked
   };
 
   return (

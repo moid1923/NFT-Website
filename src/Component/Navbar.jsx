@@ -16,13 +16,12 @@ function Navbar() {
   const [active, setActive] = useState("");
 
   useEffect(() => {
-    if (location.pathname === "/masterpiece") {
+    if (location.pathname === "/masterpiece" || location.pathname.startsWith("/ai")) {
       setActive("AI NFT GENERATION");
     } else {
       setActive("Home");
     }
   }, [location.pathname]);
-
 
   const toggleMenu = () => {
     setSideMenu((prev) => !prev);
@@ -82,8 +81,6 @@ function Navbar() {
             </>
           )}
         </div>
-
-
 
         {/* Mobile Menu Button */}
         <button

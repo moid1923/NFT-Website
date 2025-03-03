@@ -11,7 +11,7 @@ export default function NFTGallery({ imagesPerPage = 4 }) {
   const navigate = useNavigate(); // 🔹 Define navigate function
 
   const handleCardtClick = () => {
-    navigate("/cardt"); // 🔹 Navigate to  cardpage when clicked
+    navigate("/aicardt"); // 🔹 Navigate to  cardpage when clicked
   };
 
   return (

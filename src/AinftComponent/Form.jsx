@@ -1,9 +1,27 @@
 import React from "react";
 import formpic from "../assets/formpic.jfif";
 import add from "../assets/add.svg";
+import { useNavigate } from "react-router-dom";
 function Form() {
+  const navigate = useNavigate(); // 🔹 Define navigate function
+
+  const handleChooseClick = () => {
+    navigate("/aichoose"); // 🔹 Navigate to /Choose Collection Page when clicked
+  };
   return (
-    <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10  rounded-[15px] ">
+    <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10   ">
+      <div className="flex gap-[200px] mb-[30px]">
+        <button
+          className="bg-white w-[128px] h-[64px] rounded-[20px] text-[#2B2B2B] font-roboto text-[20px] font-normal tracking-[0.8px] capitalize" 
+          style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+        >
+          Back
+        </button>
+        <button className="` w-[129px] h-[51px] p-[10px]  gap-[10px] shrink-0` bg-white rounded-[15px] text-[#808080]  font-roboto text-[16px] font-normal"
+        style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+        >Single NFT</button>
+      </div>
+
       <div className="flex gap-6 flex-col lg:flex-row">
         <div
           className="max-w-[296px] w-full h-[309px] p-5 rounded-[20px] mx-auto"
@@ -15,7 +33,6 @@ function Form() {
             className="object-cover rounded-[20px] max-w-[256px] max-h-[269px] w-full h-full"
           />
         </div>
-
         <form
           className="space-y-[29px] max-w-[994px] w-full sm:px-7 md:px-[88px] py-[35px]  sm:bg-white"
           sm:style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
@@ -87,7 +104,8 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
                   <img src={add} alt="" className="w-[28px] h-[28px]" />
                 </button>
                 <div className="">
-                  <p className="`text-[#2B2B2B] text-left font-roboto text-[18px] font-medium tracking-[0.54px]`">
+                  <p className="`text-[#2B2B2B] text-left font-roboto text-[18px] font-medium tracking-[0.54px]`"
+                   onClick={handleChooseClick}>
                     Create new collection
                   </p>
                   <p className="text-[#808080] text-left  font-roboto text-[14px] font-normal tracking-[0.42px] opacity-80">
