@@ -40,19 +40,19 @@ function PixacioHero() {
           {/* Social Media Icons */}
           <div className="flex items-center space-x-4 mt-6">
             <button className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
-              <FaChrome className="text-black" size={24} />
+              <FaChrome className="text-black" size={25} />
             </button>
             <button className="w-[116px] h-[41px] flex items-center justify-between gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
-              <FaTwitter className="text-black" size={24} />{" "}
+              <FaTwitter className="text-black" size={27} />{" "}
               <span className="bg-[#ffcccc] px-3 py-1 w-[44px] text-[7.45px] rounded-sm">
                 12.3k
               </span>
             </button>
             <button className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
-              <FaDiscord className="text-black" size={24} />
+              <FaDiscord className="text-black" size={25} />
             </button>
             <button className="w-[116px] h-[41px] flex items-center justify-between gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
-              <img src={joty} alt="" className="w-[25px] h-[18px]" />{" "}
+              <img src={joty} alt="" className="w-[23px] h-[23px]" />{" "}
               <span className="bg-[#ffcccc] px-3 py-1 w-[44px] text-[7.45px] rounded-sm">
                 12.3k
               </span>
