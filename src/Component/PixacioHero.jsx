@@ -22,18 +22,18 @@ function PixacioHero() {
           {/* Stats Section */}
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 ">
             <div className="p-3  bg-white rounded-lg flex justify-between items-center shadow-sm">
-              <span className="text-[#808080] text-[14px]">Items listed</span>
-              <span className=" text-[14px] text-[#808080]">3,027</span>
+              <span className="text-[#808080] text-sm font-normal font-roboto  tracking-wide">Items listed</span>
+              <span className=" text-right text-[#808080] text-sm font-bold font-roboto tracking-wide]">3,027</span>
             </div>
             <div className="p-3  bg-white rounded-lg flex justify-between items-center shadow-sm">
-              <span className="text-[#808080] text-[14px]">
+              <span className="text-[#808080] text-sm font-normal font-roboto tracking-wide">
                 Num of Sold Items
               </span>
-              <span className="text-[14px] text-[#808080]">120</span>
+              <span className="text-right text-[#808080] text-sm font-bold font-['Roboto'] tracking-wide">120</span>
             </div>
             <div className="p-3 bg-white rounded-lg flex justify-between items-center shadow-sm ">
-              <span className="text-[#808080] text-[14px]">Vol FRY</span>
-              <span className="text-[14px] text-[#808080]">18.5 FRY</span>
+              <span className="text-[#808080] text-sm font-normal font-roboto tracking-wide">Vol FRY</span>
+              <span className="text-right text-[#808080] text-sm font-bold font-['Roboto'] tracking-wide">18.5 FRY</span>
             </div>
           </div>
           <hr className="mt-10 text-red-500" />
