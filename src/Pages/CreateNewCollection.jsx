@@ -6,7 +6,7 @@ function CreateNewCollection() {
   return (
     <div>
       <Navbar/>
-      <Form showAfterChoose = {false}/>
+      <Form showAfterChoose = {false} btn='Continue' showButn = {true}/>
     </div>
   )
 }

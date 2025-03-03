@@ -2,7 +2,7 @@ import React from "react";
 import formpic from "../assets/formpic.jfif";
 import add from "../assets/add.svg";
 import { useNavigate } from "react-router-dom";
-function Form({ showAfterChoose = true }) {
+function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
   const navigate = useNavigate(); // 🔹 Define navigate function
 
   const handleChooseClick = () => {
@@ -11,6 +11,9 @@ function Form({ showAfterChoose = true }) {
   const handleCreateNewCollectionClick = () => {
     navigate("/aicreate"); // 🔹 Navigate to /Choose Collection Page when clicked
   };
+  const handleWillilamPage = ()=>{
+    navigate("/william")
+  }
   return (
     <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10   ">
       <div className="flex gap-[200px] mb-[30px]">
@@ -26,6 +29,7 @@ function Form({ showAfterChoose = true }) {
       </div>
 
       <div className="flex gap-6 flex-col lg:flex-row">
+        <div>
         <div
           className="max-w-[296px] w-full h-[309px] p-5 rounded-[20px] mx-auto"
           style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
@@ -35,6 +39,18 @@ function Form({ showAfterChoose = true }) {
             alt=""
             className="object-cover rounded-[20px] max-w-[256px] max-h-[269px] w-full h-full"
           />
+        </div>
+        {showButn && (
+        <div>
+        <button
+          className="bg-white w-[131px] h-[50px] rounded-[20px] text-[#2B2B2B] font-roboto text-base font-normal  capitalize tracking-wide mt-8" 
+          style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+          onClick={handleWillilamPage}
+        >
+          Choose file
+        </button>
+        </div>
+        )}
         </div>
         <form
           className="space-y-[29px] max-w-[994px] w-full sm:px-7 md:px-[88px] py-[35px]  sm:bg-white"
@@ -184,7 +200,7 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
           )}
           <div className="flex justify-end">
             <button className="px-8 py-4 rounded-[8px] flex items-center bg-gradient-custom text-white text-center font-roboto text-[18px] font-medium capitalize hover:opacity-90">
-              Mint NFT
+              {btn}
             </button>
           </div>
         </form>

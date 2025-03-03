@@ -70,29 +70,29 @@ export default function PixacioNFT() {
           />
         </div>
         <div className="space-y-4 max-w-[754px] w-full py-5">
-          <h1 className="text-5xl font-bold tracking-wide font-apex">
+          <h1 className="text-center text-[#2b2b2b] text-[64px] font-normal font-apex capitalize leading-[102px] tracking-[2.56px]">
             PIXACIO
           </h1>
-          <p className="text-gray-500 text-lg">
+          <p className="text-[#808080] text-xl font-normal font-roboto">
             Owned by{" "}
-            <span className="font-semibold text-black font-roboto">
+            <span className="text-[#2b2b2b] text-xl font-normal font-roboto">
               Stella Nova
             </span>
           </p>
-          <div className="bg-white rounded-lg shadow font-roboto max-w-[754px] w-full">
+          <div className="bg-white rounded-lg  font-roboto max-w-[754px] w-full shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)]">
             <div className="flex items-center space-x-2 text-gray-500 p-6">
               <FaClock />
-              <p>Sale ends 18 November 2023 at 8:47 am</p>
+              <p className="text-[#808080] text-base font-normal font-roboto">Sale ends 18 November 2023 at 8:47 am</p>
             </div>
             <hr className="bg-gray-100" />
             <div className="p-6">
-              <p className="text-gray-500 text-sm">Current Price</p>
-              <p className="text-3xl font-bold">5.001 FRY</p>
+              <p className="text-[#808080] text-xs font-normal font-roboto">Current Price</p>
+              <p className="text-black text-2xl font-medium font-roboto">5.001 FRY</p>
               <div className="flex gap-4 mt-4">
-                <button className="w-1/2 py-3 bg-white text-black rounded-lg font-semibold border border-gray-300">
+                <button className="w-1/2 py-3 bg-white text-black text-base font-medium font-roboto border-2 border-[#e7e7e7] rounded-lg">
                   Buy now
                 </button>
-                <button className="w-1/2 py-3 bg-gradient-to-r from-red-500 to-red-400 text-white rounded-lg font-semibold">
+                <button className="w-1/2 py-3 bg-gradient-custom text-white text-base font-medium font-roboto rounded-lg">
                   Make offer
                 </button>
               </div>
