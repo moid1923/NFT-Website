@@ -266,11 +266,7 @@ function TopList({
                       )}
                       <span className="text-sm  w-[123px] h-[36px] bg-white px-3 py-[11px]  rounded-lg flex justify-center items-center gap-1 text-[#2B2B2B] font-roboto text-[12px] font-medium leading-normal tracking-[0.48px] capitalize">
                         Price:
-                        <img
-                          src={flogo}
-                          alt=""
-                          className="w-[10px] h-[10px] bg-black rounded-full"
-                        />
+                        <span className="w-[15px] h-[15px] rounded-full bg-black flex items-center justify-center"><img src={flogo} alt="" className="w-[10px] h-[10px] bg-black rounded-full" /></span>
                         <span className="text-[#808080] font-roboto text-[12px] font-medium leading-normal tracking-[0.48px] capitalize">142.02</span>
                       </span>
                     </div>

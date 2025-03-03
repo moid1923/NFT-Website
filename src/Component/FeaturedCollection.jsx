@@ -36,7 +36,7 @@ export default function FeaturedCollection() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Number of cards visible at once (Desktop)
+    slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -70,47 +70,45 @@ export default function FeaturedCollection() {
 
   return (
     <div className="py-10 lg:my-10">
-      <div className="max-w-7xl mx-auto px-4 relative">
+      <div className="max-w-[1320px] w-full mx-auto px-4 relative">
         {/* Header */}
-        
         <div className="md:mb-[50px] ">
-        <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start font-normal leading-[76px] tracking-[4%] ">
-          Featured Collection
-        </h2>
-          <p className="text-[18px] sm:text-[22px] md:text-[18px] text-[#6B6B6B] opacity-70 mb-10  text-center md:text-left font-roboto font-[300]">
+          <h2 className="text-3xl xs:text-center font-apex md:text-[64px] xs:text-center text-bold md:text-start font-normal leading-[76px] tracking-[4%] ">
+            Featured Collection
+          </h2>
+          <p className="text-[18px] sm:text-[22px] md:text-[18px] text-[#6B6B6B] opacity-70 mb-10 text-center md:text-left font-roboto font-[300]">
             Explore our exclusive featured collection, showcasing innovative campaigns and creative
             <br /> storytelling from top brands around the world.
           </p>
         </div>
 
         {/* Slick Carousel */}
-        <Slider {...settings} className="relative">
+        <Slider {...settings} className="relative max-w-[1320px] w-full">
           {cards.map((card) => (
-            <div key={card.id} className="pr-7"> 
-              <div 
-                className="max-w-[308px] w-full h-[411px] p-2  rounded-2xl shadow-lg mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3"
+            <div key={card.id} className="px-[14px]">
+              <div
+                className="max-w-[308px] w-full h-[411px] p-2 box-border rounded-2xl mx-auto relative transform hover:scale-104 transition-transform duration-300 mt-3 shadow-[4px_4px_15px_rgba(0,0,0,0.20)]"
                 style={{ backgroundImage: `url(${bg})` }}
               >
-                
                 <div className="p-[12px] flex items-center space-x-3 ">
                   <img src={fclogo} alt="Logo" className="w-[53px] h-[53px] rounded-full" />
                   <div className="mt-2">
-                  <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
-                  <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5 font-roboto font-[300]" >@Stella Nova</p>
+                    <h3 className="text-[18px] font-apex font-[300] text-[#2b2b2b]">STELLA NOVA</h3>
+                    <p className="text-[11px] text-[#6B6B6B] tracking-wide leading-0.5 font-roboto font-[300]">@Stella Nova</p>
                   </div>
                 </div>
 
                 <div className="relative max-w-[292px] h-[314px]">
                   <img src={card.img} alt="NFT" className="w-full h-[100%] object-cover absolute rounded-2xl" />
                   <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
-                    <button className="bg-gradient-custom font-roboto text-white px-[17px]  text-[12px]   cursor-pointer font-roboto rounded-[8px] w-[56px] h-[36px]">
+                    <button className="bg-gradient-custom font-roboto text-white px-[17px] text-[12px] cursor-pointer font-roboto rounded-[8px] w-[56px] h-[36px]">
                       Buy
                     </button>
-                    <span className="text-sm font-medium w-[123px] font-roboto h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1 text-[#2B2B2B">
+                    <span className="text-sm font-medium w-[123px] font-roboto h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1 text-[#2B2B2B]">
                       Price:
-                      <img src={card.logo
-                      } alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
-                      <span className="text-[12px] font-roboto font-medium text-[#808080] tracking-[0.48px] capitalize">  142.02</span> 
+                      <span className="w-[15px] h-[15px] rounded-full bg-black flex items-center justify-center"><img src={card.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full" /></span>
+                      
+                      <span className="text-[12px] font-roboto font-medium text-[#808080] tracking-[0.48px] capitalize">142.02</span>
                     </span>
                   </div>
                 </div>

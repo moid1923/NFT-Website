@@ -80,7 +80,7 @@ function Oction({
                   </button>
                   <span className="text-sm font-bold w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:
-                      <img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full"  />
+                      <span className="w-[15px] h-[15px] rounded-full bg-black flex items-center justify-center"><img src={nft.logo} alt="" className="w-[10px] h-[10px] bg-black rounded-full" /></span>
                       <span className="text-[#808080]">  142.02</span> 
                     </span>
                 </div>
