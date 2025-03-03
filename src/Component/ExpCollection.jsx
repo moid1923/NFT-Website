@@ -76,7 +76,7 @@ function ExpCollection() {
               </div>
               <div className="relative  h-[178px]">
               <img src={item.image} alt={item.title} className="max-w-[397px] w-full h-[178px] object-cover rounded-xl" />
-              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#e7e7e7] p-1 cursor-pointer rounded-md w-[93px] h-[30px]  text-[#6B6B6B] font-roboto text-[12px] font-normal tracking-[0.06px]">Items <span className="text-black font-semibotext-[#2B2B2B] font-roboto text-[12px] font-bold tracking-[0.06px]">1.5k</span> </button>
+              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#E7E7E7] p-1 cursor-pointer rounded-[8px] w-[93px] h-[30px]  text-[#6B6B6B] font-roboto text-[12px] font-normal tracking-[0.06px]">Items <span className=" text-[#2B2B2B] font-roboto text-[12px] font-bold tracking-[0.06px]">1.5k</span> </button>
               </div>
             </div>
           ))}
