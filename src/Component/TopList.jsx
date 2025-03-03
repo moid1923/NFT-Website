@@ -209,12 +209,12 @@ function TopList({
               </h2>
             )}
            { showSearchBar ? (
-            <div className="absolute -top-20 right-[120px] w-[613px] h-[55px] bg-[#fff8f8] rounded-[15px] border-2 border-[#e7e7e7] hidden lg:block">
-              <Search className="absolute top-6 left-10 transform -translate-y-1/2 text-gray-400" />
+            <div className="absolute -top-20 right-[120px]  w-[613px] h-[55px] bg-[#fff8f8] rounded-[15px] border-2 border-[#e7e7e7] hidden lg:block">
+              <Search className="absolute top-6 left-6 transform -translate-y-1/2 text-gray-400" size={24} />
               <input
                 type="text"
                 placeholder="Search by name"
-                className="w-full pl-16 pr-4 py-2 text-[18px]  rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+                className="w-full pl-16 pr-4 py-3 text-[18px] text-[#808080] text-lg font-normal font-roboto tracking-wide rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
               />
             </div>
           ) : (
@@ -232,10 +232,10 @@ function TopList({
             {oction.slice(start, start + maxImages).map((nft) => (
               <div
                 key={nft.id}
-                className="group relative  w-full max-w-[308px] h-[410px] md:max-w-[280px] lg:max-w-[308px] p-4 sm:p-4 xl:ms-4 rounded-2xl shadow-lg overflow-hidden  hover:opacity-90 z-10"
+                className="group relative  w-full max-w-[308px] h-[410px] md:max-w-[280px] lg:max-w-[308px] p-2 sm:p-2 xl:ms-4 rounded-2xl shadow-lg overflow-hidden  hover:opacity-90 z-10"
                 style={{ backgroundImage: `url(${bg})` }}
               >
-                <div className="p-3 flex items-center space-x-3">
+                <div className="p-3 mb-1 flex items-center space-x-3">
                   <img
                     src={hero}
                     className="w-13 h-13 rounded-full"
@@ -247,7 +247,7 @@ function TopList({
                   </div>
                 </div>
 
-                <div className="relative w-full h-[80%]">
+                <div className="relative max-w-[292px] w-full h-[314px]">
                   <img
                     src={nft.img}
                     alt="NFT"
@@ -257,7 +257,7 @@ function TopList({
                     <div className="p-3 w-full flex justify-between items-center absolute bottom-0 z-40">
                       {showBuyButton ? (
                         <button
-                          className="bg-red-500 text-white text-[12px] w-[56px] h-[36px]  rounded-md text-sm cursor-pointer hover:bg-red-700 transition duration-200"
+                          className="bg-gradient-custom text-white text-[12px] w-[56px] h-[36px]  rounded-md text-sm cursor-pointer hover:bg-red-700 transition duration-200"
                           onClick={handlePixClick}
                         >
                           Buy
