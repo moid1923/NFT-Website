@@ -15,7 +15,7 @@ function PixacioHero() {
         </div>
         <div className="max-w-[674px] w-full  mx-auto xs:p-5 md:p-0">
           {/* Title */}
-          <h1 className="text-4xl font-bold tracking-wide font-apex md:text-[64px] leading-[102px]">
+          <h1 className="text-4xl  tracking-wide font-apex md:text-[64px] text-[#2b2b2b] text-[64px] font-normal  capitalize leading-[102px] tracking-[2.56px">
             PIXACIO
           </h1>
 
@@ -60,7 +60,7 @@ function PixacioHero() {
           </div>
 
           {/* Description Text */}
-          <p className="mt-6 text-[#908f8f] text-sm leading-relaxed font-roboto">
+          <p className="mt-6 text-[#808080] text-sm font-normal font-roboto tracking-wide">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             euismod vulputate ipsum, non molestie magna facilisis a. Cras
             tincidunt sem sed lorem dapibus laoreet. Lorem ipsum dolor sit amet
