@@ -62,7 +62,7 @@ function ExpCollection() {
             style={{border: "2.8px solid #E7E7E7"}}
             >
               <div className=" flex items-center gap-4 mb-2 cursor-pointer">
-                <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-3xl object-cover cursor-pointer" />
+                <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-[15px] object-cover cursor-pointer" />
                 <div className="flex flex-col justify-center">
                   <p className="text-[#2B2B2B] font-roboto text-[18px] font-bold tracking-[0.09px] uppercase">{item.title}</p>
                   <div className="flex items-center justify-center mr-8 ">
