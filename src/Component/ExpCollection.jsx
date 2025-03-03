@@ -45,7 +45,7 @@ function ExpCollection() {
             {navLinks.map((link, index) => (
               <li key={index}>
                 <div
-                  className={`text-black px-4 py-2 rounded-lg transition-all font-roboto ${
+                  className={`text-center text-black text-lg font-normal py-[14px] px-[25px] capitalize font-roboto ${
                     link === "Popular" ? " border-2 border-red-500" : "hover:bg-red-700 hover:text-white"
                   }`}
                 >
