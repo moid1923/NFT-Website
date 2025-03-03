@@ -67,8 +67,8 @@ function ExpCollection() {
                   <p className="text-[#2B2B2B] font-roboto text-[18px] font-bold tracking-[0.09px] uppercase">{item.title}</p>
                   <div className="flex items-center justify-center mr-8 ">
                   <p className="text-[#8B8B8B] font-roboto text-[14px] font-normal tracking-[0.07px]">Created by <span className="text-[#8B8B8B] font-roboto text-[14px] font-bold tracking-[0.07px]">{item.creator}</span> </p>
-                  <span className="w-[13px] h-[13px] bg-[#7872ff] flex items-center justify-center rounded-full ms-2">
-                    <img src={tick} alt="" className="w-full h-full rounded-full" />
+                  <span className="w-[16px] h-[16px] bg-[#7872ff] flex items-center justify-center rounded-full ms-2">
+                    <img src={tick} alt="" className="w-[13px] h-[13px] rounded-full" />
                     </span> 
                   </div>
                   
