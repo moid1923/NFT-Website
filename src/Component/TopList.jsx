@@ -209,12 +209,12 @@ function TopList({
               </h2>
             )}
            { showSearchBar ? (
-            <div className="absolute -top-20 right-[120px] max-w-[613px] w-full p-3 h-[55px] hidden lg:block">
-              <Search className="absolute top-8 left-10 transform -translate-y-1/2 text-gray-400" />
+            <div className="absolute -top-20 right-[120px] w-[613px] h-[55px] bg-[#fff8f8] rounded-[15px] border-2 border-[#e7e7e7] hidden lg:block">
+              <Search className="absolute top-6 left-10 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
                 placeholder="Search by name"
-                className="w-full pl-16 pr-4 py-2 text-[18px] border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+                className="w-full pl-16 pr-4 py-2 text-[18px]  rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
               />
             </div>
           ) : (

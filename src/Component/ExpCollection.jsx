@@ -57,7 +57,7 @@ function ExpCollection() {
         </nav>
         <div className=" grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
           {collections.map((item, index) => (
-            <div key={index} className="card max-w-[417px] w-full h-[276px] cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden p-[10px]"
+            <div key={index} className="card max-w-[417px] w-full h-[276px] cursor-pointer bg-[#fff8f8] shadow-lg rounded-xl overflow-hidden p-[10px]"
             onClick={handlePixacioClick}
             style={{border: "2.8px solid #E7E7E7"}}
             >
