@@ -60,9 +60,9 @@ export default function PixacioNFT() {
   const firstListing = listingsData[0];
 
   return (
-    <div className="max-w-[1320px] w-full mx-auto p-6">
+    <div className="max-w-[1320px] w-full mx-auto p-5 lg:p-0 ">
       <div className="flex flex-col lg:flex-row gap-x-4 gap-y-10 items-center justify-center ">
-        <div className="flex justify-center max-w-[546px] max-h-[610px] py-5 bg-white w-full items-center rounded-xl">
+        <div className="flex justify-center max-w-[546px] max-h-[610px] py-5 px-[16px] bg-white w-full items-center rounded-xl">
           <img
             src={pixacio}
             alt="Pixacio NFT"
@@ -70,7 +70,7 @@ export default function PixacioNFT() {
           />
         </div>
         <div className="space-y-4 max-w-[754px] w-full py-5">
-          <h1 className="text-center text-[#2b2b2b] text-[64px] font-normal font-apex capitalize leading-[102px] tracking-[2.56px]">
+          <h1 className="text-center lg:text-start text-[#2b2b2b] text-[64px] font-normal font-apex capitalize leading-[102px] tracking-[2.56px]">
             PIXACIO
           </h1>
           <p className="text-[#808080] text-xl font-normal font-roboto">
@@ -104,8 +104,8 @@ export default function PixacioNFT() {
               className="flex justify-between p-4 items-center cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <h3 className="text-xl font-semibold flex items-center gap-2">
-                <FaTag className="text-gray-600" /> Listings
+              <h3 className="flex gap-4">
+                <FaTag className="text-[#808080]  " size={28}/> <span className="text-[#808080] text-base font-normal font-roboto">Listings</span> 
               </h3>
               {isOpen ? (
                 <IoIosArrowUp className="text-gray-600 text-xl" />
@@ -122,23 +122,23 @@ export default function PixacioNFT() {
                   <table className="w-full text-left text-sm">
                     <thead>
                       <tr className="border-b  text-gray-600">
-                        <th className="py-2 px-3">Price</th>
-                        <th className="py-2 px-3">USD Price</th>
-                        <th className="py-2 px-3">Quantity</th>
-                        <th className="py-2 px-3">From</th>
-                        <th className="py-2 px-3"></th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">Price</th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">USD Price</th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">Quantity</th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">From</th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto"></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-b last:border-none hover:bg-gray-50">
-                        <td className="py-2 px-3 font-bold">
+                        <td className="py-2 px-3text-black text-sm font-medium font-roboto">
                           {firstListing.price}
                         </td>
-                        <td className="py-2 px-3 text-[#808080]">{firstListing.usdPrice}</td>
-                        <td className="py-2 px-3 text-[#808080]">{firstListing.quantity}</td>
-                        <td className="py-2 px-3 text-[#808080]">{firstListing.from}</td>
+                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">{firstListing.usdPrice}</td>
+                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">{firstListing.quantity}</td>
+                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">{firstListing.from}</td>
                         <td className="py-2 px-3 text-[#808080]">
-                          <button className="px-4 py-1 bg-red-500 text-white rounded-md hover:bg-red-600">
+                          <button className="px-4 py-1 bg-gradient-custom text-white rounded-md hover:bg-red-600 text-center  text-sm font-medium font-roboto capitalize">
                             Buy
                           </button>
                         </td>
@@ -152,7 +152,7 @@ export default function PixacioNFT() {
         </div>
       </div>
       <div className="w-full pt-4">
-        <div className="grid grid-cols-1 md:grid-cols-[546px_754px] gap-5 max-w-[1320px] w-full mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-[546px_754px] gap-5 max-w-[1320px] w-full mx-auto ">
           {/* Left Column */}
           <div className="flex flex-col gap-5  ">
             {/* Description Box */}
@@ -209,9 +209,9 @@ export default function PixacioNFT() {
           </div>
 
           {/* Right Column */}
-          <div className="flex flex-col gap-5 ">
+          <div className="flex flex-col gap-5  w-full max-w-[754px]">
             {/* Offers Box */}
-            <div className="bg-white rounded-lg shadow font-roboto">
+            <div className="bg-white rounded-lg shadow font-roboto ">
           <div
             className="flex justify-between items-center p-4 cursor-pointer"
             onClick={() => setIsOffersOpen(!isOffersOpen)}
