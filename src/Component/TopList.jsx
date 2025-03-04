@@ -161,7 +161,7 @@ function TopList({
 
         {/* Cards Grid */}
         <div className="max-w-[1920px] flex flex-col gap-1 items-center justify-between md:flex-row relative ">
-          <div className="w-[320px]  sm:block bg-white p-4 rounded-lg shadow-lg border self-start mx-auto ">
+          <div className="w-[320px]  sm:block bg-white p-4 rounded-lg shadow-lg border self-start mx-auto mb-10 ">
             <div
               className="flex  max-w-[292px] items-center justify-between cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
@@ -204,12 +204,12 @@ function TopList({
             }`}
           >
             {title && (
-              <h2 className="absolute -top-20 md:-top-20 xl:left-2 md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] mb-[50px]">
+              <h2 className="absolute -top-30 md:-top-30 xl:left-2 md:text-[64px] text-[30px] sm:text-[45px] text-center md:text-left font-apex font-normal leading-[76px] tracking-[4%] mb-[50px]">
                 {title}
               </h2>
             )}
            { showSearchBar ? (
-            <div className="absolute -top-20 right-[120px]  w-[613px] h-[55px] bg-[#fff8f8] rounded-[15px] border-2 border-[#e7e7e7] hidden lg:block">
+            <div className="absolute -top-20 lg:right-[120px] w-[320px]   lg:w-[613px] h-[55px] bg-[#fff8f8] rounded-[15px] border-2 border-[#e7e7e7] ">
               <Search className="absolute top-6 left-6 transform -translate-y-1/2 text-gray-400" size={24} />
               <input
                 type="text"
@@ -218,13 +218,9 @@ function TopList({
               />
             </div>
           ) : (
-            <div className="flex items-center space-x-2 absolute -top-20 right-[280px] ">
-              {/* <button className="p-2 border border-[#dddddd] rounded-lg bg-white shadow-sm hover:bg-gray-100 transition hidden xl:block w-[32px] h-[32px]">
-                <FiRefreshCcw className="text-[#2b2b2b]" />
-               
-              </button> */}
+            <div className="flex items-center space-x-2 absolute -top-12 xl:-top-20 xl:right-[280px] ">
                <img src={refresh} alt="" className="w-{32px} h-[32px" />
-              <p className="text-[#7d7d7d] text-xs font-medium font-roboto xl:block ms-[10px]">Refreshed A While Ago</p>
+              <p className="text-[#7d7d7d] text-xs font-medium font-roboto  ms-[10px]">Refreshed A While Ago</p>
             </div>
           )}
          

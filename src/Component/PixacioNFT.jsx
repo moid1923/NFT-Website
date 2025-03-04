@@ -205,7 +205,7 @@ export default function PixacioNFT() {
                       className="w-full p-2 rounded-md 0 text-center text-sm h-[74px] bg-[#f4f4f4] flex flex-col items-center justify-center gap-1"
                     >
                       <p className="text-[#808080] text-[10.31px] font-medium font-roboto">EDITION</p>
-                      <p className="text-[#2b2b2b] text-[10.31px] font-medium font-roboto">Founders edition 52%</p>
+                      <p className="text-[#2b2b2b] text-[10.31px] font-medium font-roboto">Founders edition <span className="text-[#808080] text-[10.31px] font-normal font-roboto">52%</span> </p>
                       <p className="text-[#808080] text-[10.31px] font-normal font-['Roboto']">Floor: 12.75 ALGO</p>
                     </div>
                   ))}
@@ -264,7 +264,7 @@ export default function PixacioNFT() {
           )}
         </div>
             {/* Details Box */}
-            <div className="max-w-[546px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)]">
+            <div className="max-w-[546px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
           <div
             className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
             onClick={() => setIsDetailsOpen(!isDetailsOpen)}
@@ -285,7 +285,7 @@ export default function PixacioNFT() {
           {isDetailsOpen && (
             <>
               
-              <div className="p-4 text-sm text-gray-700">
+              <div className="px-4 py-6 text-sm text-gray-700  ">
                 <p className="flex justify-between py-1">
                   <span className="text-[#808080] text-sm font-normal font-roboto">Contract Address</span>
                   <span className="text-[#808080] text-sm font-normal font-roboto">0x5848...1713</span>
@@ -313,7 +313,8 @@ export default function PixacioNFT() {
           </div>
         </div>
       </div>
-      <div className=" w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] mt-6">
+      {/* Activity box */}
+      <div className="max-w-[1320px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] mt-6">
         {/* Header Section with Expand/Collapse */}
         <div
           className="flex justify-between items-center cursor-pointer border-b border-[#e7e7e7] h-[63px] p-4"
@@ -326,20 +327,20 @@ export default function PixacioNFT() {
 
         {/* Content Section */}
         {isOpen && (
-          <div className="mt-2 p-4">
+          <div className=" p-4">
             {/* Filter Input */}
-            <div className="w-full p-3">
+            <div className="w-full px-[30px] py-[10px]">
               <input
                 type="text"
                 placeholder="Filter"
-                className="w-full p-2 border border-gray-300 rounded-md text-sm outline-none focus:ring-2 focus:ring-gray-400"
+                className="max-w-[1251] w-full h-[49px] ] p-4 rounded-lg border-2 border-[#e7e7e7]    text-sm outline-none focus:ring-2 focus:ring-gray-400"
               />
             </div>
 
             {/* Table Section */}
             <table className="w-full text-left text-sm mt-2 p-4">
               <thead>
-                <tr className="border-b bg-gray-100">
+                <tr className="border-b ">
                   <th className="py-2 px-3">Event</th>
                   <th className="py-2 px-3">Price</th>
                   <th className="py-2 px-3">From</th>
