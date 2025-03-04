@@ -22,14 +22,16 @@ const nfts = [
   { id: 7, img: nft7, logo: flogo },
   { id: 8, img: nft8, logo: flogo },
 ];
-
+const linkNames = ["All", "Generated", "Minted", "on Sale", "Auction", "Sold"];
 const options = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours"];
 
 export default function TrendingNFTs({
   title = "TRENDING NFT'S",
-  dropdownOptions = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours"],
+  dropdownOptions = options,
   showDropdown = true,
-  cards = nfts
+  cards = nfts,
+  showtitle = true,
+  shownavigate = false
 }) {
   
   const [isOpen, setIsOpen] = useState(false);
@@ -39,10 +41,27 @@ export default function TrendingNFTs({
     <div className="py-10 lg:my-10">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
+        
         <div className="flex justify-between items-center mb-6 flex-row md:mb-[50px]">
+          {shownavigate &&(
+            <nav className="p-4">
+            <ul className="flex space-x-6 flex-wrap">
+              {linkNames.map((link, index) => (
+                <li key={index}>
+                  <div className={`text-center text-black text-lg font-normal py-[14px] px-[25px] capitalize font-roboto ${link === "All" ? "border-2 border-red-500" : "hover:bg-red-700 hover:text-white"}`}>
+                    {link}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          )}
+        {showtitle &&(
           <h2 className="md:text-[64px] sm:text-[45px] text-[25px] font-apex font-normal md:leading-[76px] tracking-[4%] ">
-            {title}
-          </h2>
+          {title}
+        </h2>
+        )}
+          
           {/* Dropdown Button */}
           {showDropdown && (
               <div className="relative inline-block text-left">

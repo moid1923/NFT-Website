@@ -13,9 +13,9 @@ function PixacioHero({image = pixacio , title = "Pixacio" }) {
             className="rounded-xl object-cover w-[482px] h-[461px]"
           />
         </div>
-        <div className="max-w-[674px] w-full  mx-auto xs:p-5 md:p-0">
+        <div className="max-w-[704px] w-full  mx-auto xs:p-5 md:p-0">
           {/* Title */}
-          <h1 className="text-4xl  tracking-wide font-apex md:text-[64px] text-[#2b2b2b] text-[64px] font-normal  capitalize leading-[102px] tracking-[2.56px">
+          <h1 className="text-4xl   font-apex md:text-[50px] text-[#2b2b2b] lg:text-[64px] font-normal  capitalize leading-[102px] tracking-[2.56px]">
             {title}
           </h1>
 
