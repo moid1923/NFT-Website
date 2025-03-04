@@ -103,7 +103,7 @@ export default function PixacioNFT() {
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-md font-roboto">
+          <div className=" bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
             {/* Header Section */}
             <div
               className="flex justify-between p-4 items-center cursor-pointer"
@@ -161,7 +161,7 @@ export default function PixacioNFT() {
           {/* Left Column */}
           <div className="flex flex-col gap-5  ">
             {/* Description Box */}
-            <div className="border border-gray-300 rounded-lg shadow-sm bg-white h-[171px]">
+            <div className="bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] h-[171px]">
               <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
                 <img src={desicon} alt="" className="w-[28px] h-[28px]" />
@@ -185,7 +185,7 @@ export default function PixacioNFT() {
             </div>
 
             {/* Traits Box */}
-            <div className="border border-gray-300 rounded-lg shadow-sm bg-white h-[332px]">
+            <div className="bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] lg:h-[332px]">
               <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
                 <img src={traiticon} alt="" className="w-[28px] h-[28px]" />
@@ -216,7 +216,7 @@ export default function PixacioNFT() {
           {/* Right Column */}
           <div className="flex flex-col gap-5  w-full max-w-[754px]">
             {/* Offers Box */}
-            <div className="bg-white rounded-lg shadow font-roboto ">
+            <div className=" bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
           <div
             className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
             onClick={() => setIsOffersOpen(!isOffersOpen)}
@@ -264,7 +264,7 @@ export default function PixacioNFT() {
           )}
         </div>
             {/* Details Box */}
-            <div className="border border-gray-300 rounded-lg shadow-sm bg-white max-w-[546px] w-full">
+            <div className="max-w-[546px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)]">
           <div
             className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
             onClick={() => setIsDetailsOpen(!isDetailsOpen)}
@@ -313,7 +313,7 @@ export default function PixacioNFT() {
           </div>
         </div>
       </div>
-      <div className=" w-full bg-white shadow-md rounded-xl mt-6">
+      <div className=" w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] mt-6">
         {/* Header Section with Expand/Collapse */}
         <div
           className="flex justify-between items-center cursor-pointer border-b border-[#e7e7e7] h-[63px] p-4"
