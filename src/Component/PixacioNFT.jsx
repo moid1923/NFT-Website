@@ -321,7 +321,7 @@ export default function PixacioNFT() {
         >
           <h2 className="text-lg font-semibold flex gap-4 items-center p-4">
             <img src={item} alt="Item Icon" className="w-5 h-5" /> <span className="text-[#2b2b2b] text-base font-normal font-roboto ms-3">Item Activity</span> </h2>
-          {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+          {isOpen ? <ChevronUp size={28} /> : <ChevronDown size={28} />}
         </div>
 
         {/* Content Section */}

@@ -2,13 +2,13 @@ import React from "react";
 import pixacio from "../assets/pixaciohero.jfif";
 import joty from "../assets/joty.png";
 import { FaTwitter, FaDiscord, FaGithub, FaChrome } from "react-icons/fa";
-function PixacioHero() {
+function PixacioHero({image = pixacio , title = "Pixacio" }) {
   return (
     <div>
       <div className="container max-w-[1320px] w-full mx-auto flex flex-col lg:flex-row gap-4 my-10">
         <div className="p-[15px] bg-white rounded-2xl flex items-center justify-center mx-auto   max-w-[512px] max-h-[491px] h-full box-border">
           <img
-            src={pixacio}
+            src={image}
             alt=""
             className="rounded-xl object-cover w-[482px] h-[461px]"
           />
@@ -16,7 +16,7 @@ function PixacioHero() {
         <div className="max-w-[674px] w-full  mx-auto xs:p-5 md:p-0">
           {/* Title */}
           <h1 className="text-4xl  tracking-wide font-apex md:text-[64px] text-[#2b2b2b] text-[64px] font-normal  capitalize leading-[102px] tracking-[2.56px">
-            PIXACIO
+            {title}
           </h1>
 
           {/* Stats Section */}

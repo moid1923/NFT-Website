@@ -10,9 +10,8 @@ import ex8 from "../assets/EC8.png";
 import ex9 from "../assets/EC9.png";
 import ex10 from "../assets/EC10.png";
 import ex11 from "../assets/C11.png";
-import tick from '../assets/tick.png'
-import './expcoll.css'
-import pix1 from '../assets/pix1.jfif'
+import tick from "../assets/tick.png";
+import "./expcoll.css";
 import { useNavigate } from "react-router-dom";
 
 const collections = [
@@ -28,55 +27,63 @@ const collections = [
   { image: ex10, title: "WONDERFUL ARTWORK", creator: "Grace Miller", logo: ex10 },
   { image: ex11, title: "WONDERFUL ARTWORK", creator: "Lucas Hill", logo: ex11 },
 ];
-const navLinks = ["Popular", "Trending", "Sports", "Art", "Fantasy", "Photography", "Space"];
-function ExpCollection() {
-  
-  const navigate = useNavigate(); // 🔹 Define navigate function
+
+function ExpCollection({ cards = collections, navLinks = [], buttonText = "Items", navigateTo = "/pixacio" , value = "1.5k", showbutton = true }) {
+  const navigate = useNavigate();
 
   const handlePixacioClick = () => {
-    navigate("/pixacio"); // 🔹 Navigate to /pixacio when clicked
+    navigate(navigateTo);
   };
+
   return (
     <div>
       <div className="max-w-[1320px] w-full mx-auto md:mt-10">
-        <div className="md:text-[64px] font-apex sm:text-[45px] text-[30px] text-center md:text-left">EXPLORE COLLECTIONS</div>
-        <nav className="p-4">
-          <ul className="flex space-x-6 flex-wrap">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <div
-                  className={`text-center text-black text-lg font-normal py-[14px] px-[25px] capitalize font-roboto ${
-                    link === "Popular" ? " border-2 border-red-500" : "hover:bg-red-700 hover:text-white"
-                  }`}
-                >
-                  {link}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className=" grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
-          {collections.map((item, index) => (
-            <div key={index} className="card max-w-[417px] w-full h-[276px] cursor-pointer bg-[#fff8f8] shadow-lg rounded-xl overflow-hidden p-[10px]"
-            onClick={handlePixacioClick}
-            style={{border: "2.8px solid #E7E7E7"}}
-            >
-              <div className=" flex items-center gap-4 mb-2 cursor-pointer">
-                <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-[15px] object-cover cursor-pointer" />
-                <div className="flex flex-col justify-center">
-                  <p className="text-[#2B2B2B] font-roboto text-[18px] font-bold tracking-[0.09px] uppercase">{item.title}</p>
-                  <div className="flex items-center justify-center mr-8 ">
-                  <p className="text-[#8B8B8B] font-roboto text-[14px] font-normal tracking-[0.07px]">Created by <span className="text-[#8B8B8B] font-roboto text-[14px] font-bold tracking-[0.07px]">{item.creator}</span> </p>
-                  <span className="w-[16px] h-[16px] bg-[#7872ff] flex items-center justify-center rounded-full ms-2">
-                    <img src={tick} alt="" className="w-[13px] h-[13px] rounded-full" />
-                    </span> 
+        <div className="md:text-[64px] font-apex sm:text-[45px] text-[30px] text-center md:text-left">
+          EXPLORE COLLECTIONS
+        </div>
+        {navLinks.length > 0 && (
+          <nav className="p-4">
+            <ul className="flex space-x-6 flex-wrap">
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  <div className={`text-center text-black text-lg font-normal py-[14px] px-[25px] capitalize font-roboto ${link === "Popular" ? "border-2 border-red-500" : "hover:bg-red-700 hover:text-white"}`}>
+                    {link}
                   </div>
-                  
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+        <div className="grid lg:grid-cols-3 gap-6 mt-6 md:grid-cols-2 items-center justify-center">
+          {cards.map((item, index) => (
+            <div
+              key={index}
+              className="card max-w-[417px] w-full h-[276px] cursor-pointer bg-[#fff8f8] shadow-lg rounded-xl overflow-hidden p-[10px]"
+              onClick={handlePixacioClick}
+              style={{ border: "2.8px solid #E7E7E7" }}
+            >
+              <div className="flex items-center gap-4 mb-2">
+                <img src={item.logo} alt="Logo" className="w-[65px] h-[65px] rounded-[15px] object-cover" />
+                <div className="flex flex-col justify-center">
+                  <p className="text-[#2B2B2B] font-roboto text-[18px] font-bold uppercase">{item.title}</p>
+                  <div className="flex items-center">
+                    <p className="text-[#8B8B8B] text-[14px]">
+                      Created by <span className="font-bold">{item.creator}</span>
+                    </p>
+                    <span className="w-[16px] h-[16px] bg-[#7872ff] flex items-center justify-center rounded-full ms-2">
+                      <img src={tick} alt="" className="w-[13px] h-[13px]" />
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div className="relative  h-[178px]">
-              <img src={item.image} alt={item.title} className="max-w-[397px] w-full h-[178px] object-cover rounded-xl" />
-              <button className="absolute left-1/2  transform -translate-x-1/2 bottom-0  bg-[#E7E7E7] p-1 cursor-pointer rounded-[8px] w-[93px] h-[30px]  text-[#6B6B6B] font-roboto text-[12px] font-normal tracking-[0.06px]">Items <span className=" text-[#2B2B2B] font-roboto text-[12px] font-bold tracking-[0.06px]">1.5k</span> </button>
+              <div className="relative h-[178px]">
+                <img src={item.image} alt={item.title} className="w-full h-[178px] object-cover rounded-xl" />
+                {showbutton &&(
+                  <button className="absolute left-1/2 transform -translate-x-1/2 bottom-0 bg-[#E7E7E7] p-1 rounded-[8px] w-[93px] h-[30px] text-[#6B6B6B]">
+                  {buttonText} <span className="font-bold text-[#2B2B2B]">{value}</span>
+                </button>
+                )}
+                
               </div>
             </div>
           ))}

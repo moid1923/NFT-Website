@@ -29,6 +29,7 @@ export default function TrendingNFTs({
   title = "TRENDING NFT'S",
   dropdownOptions = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours"],
   showDropdown = true,
+  cards = nfts
 }) {
   
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +79,7 @@ export default function TrendingNFTs({
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-3 lg:gap-6">
-          {nfts.map((nft) => (
+          {cards.map((nft) => (
             <div
               key={nft.id}
               className=" max-w-[308px] w-full h-[411px] rounded-2xl p-2  gap-6 shadow-lg overflow-hidden mx-auto transform hover:scale-105 transition-transform duration-300"

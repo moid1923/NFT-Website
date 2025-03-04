@@ -14,6 +14,7 @@ import MintNFTForm from "./Pages/MintNFTForm";
 import ChooseCollection from "./Pages/ChoseCollection";
 import CreateNewCollection from "./Pages/CreateNewCollection";
 import William from "./Pages/William";
+import ArtWork from "./Pages/ArtWork";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
           <Route path="/aicardt" element={<MintNFTForm />} />
           <Route path="/aichoose" element={<ChooseCollection />} />
           <Route path="/aicreate" element={<CreateNewCollection />} />
-          <Route path="/william" element={<William />} />
+          <Route path="/aiwilliam" element={<William />} />
+          <Route path="/aiart" element={<ArtWork />} />
         </Routes>
       </Router>
     </div>

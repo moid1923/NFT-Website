@@ -12,7 +12,7 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
     navigate("/aicreate"); // 🔹 Navigate to /Choose Collection Page when clicked
   };
   const handleWillilamPage = ()=>{
-    navigate("/william")
+    navigate("/aiwilliam")
   }
   return (
     <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10   ">
