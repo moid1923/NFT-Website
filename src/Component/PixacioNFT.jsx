@@ -4,7 +4,11 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import pixacio from "../assets/pixNFT.jfif";
 import item from "../assets/item.png";
-
+import detailicon from '../assets/detainicon.png'
+import listingicon from '../assets/listingicon.png'
+import traiticon from '../assets/traiticon.png'
+import offericon from '../assets/offericon.png'
+import desicon from '../assets/desicon.png'
 export default function PixacioNFT() {
   const listingsData = [
     {
@@ -60,14 +64,15 @@ export default function PixacioNFT() {
   const firstListing = listingsData[0];
 
   return (
-    <div className="max-w-[1320px] w-full mx-auto p-5 lg:p-0 ">
+    <div className="max-w-[1320px] w-full mx-auto p-5 ">
       <div className="flex flex-col lg:flex-row gap-x-4 gap-y-10 items-center justify-center ">
-        <div className="flex justify-center max-w-[546px] max-h-[610px] py-5 px-[16px] bg-white w-full items-center rounded-xl">
+        <div className="flex justify-center max-w-[546px] max-h-[610px] py-5 px-[16px] bg-white w-full items-center rounded-xl  relative">
           <img
             src={pixacio}
             alt="Pixacio NFT"
             className="rounded-xl shadow-lg w-[514px] max-h-[572px]"
           />
+          <button className=" w-[47px] h-8 bg-white/10 rounded-[9.41px] border-2 border-[#eaeaea]/50 backdrop-blur-[31.70px] absolute bottom-6 right-5 text-white text-xs font-medium font-roboto capitalize tracking-wide">75</button>
         </div>
         <div className="space-y-4 max-w-[754px] w-full py-5">
           <h1 className="text-center lg:text-start text-[#2b2b2b] text-[64px] font-normal font-apex capitalize leading-[102px] tracking-[2.56px]">
@@ -105,7 +110,7 @@ export default function PixacioNFT() {
               onClick={() => setIsOpen(!isOpen)}
             >
               <h3 className="flex gap-4">
-                <FaTag className="text-[#808080]  " size={28}/> <span className="text-[#808080] text-base font-normal font-roboto">Listings</span> 
+              <img src={listingicon} alt="" className="w-[28px] h-[28px]" /> <span className="text-[#808080] text-base font-normal font-roboto">Listings</span> 
               </h3>
               {isOpen ? (
                 <IoIosArrowUp className="text-gray-600 text-xl" />
@@ -156,10 +161,10 @@ export default function PixacioNFT() {
           {/* Left Column */}
           <div className="flex flex-col gap-5  ">
             {/* Description Box */}
-            <div className="border border-gray-300 rounded-lg shadow-sm bg-white">
+            <div className="border border-gray-300 rounded-lg shadow-sm bg-white h-[171px]">
               <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
-                  <FaBars className="text-gray-600 text-lg" size={28} />
+                <img src={desicon} alt="" className="w-[28px] h-[28px]" />
                   <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                     Description
                   </span>
@@ -180,10 +185,10 @@ export default function PixacioNFT() {
             </div>
 
             {/* Traits Box */}
-            <div className="border border-gray-300 rounded-lg shadow-sm bg-white">
+            <div className="border border-gray-300 rounded-lg shadow-sm bg-white h-[332px]">
               <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
-                  <FaBars className="text-gray-600 text-lg" size={28} />
+                <img src={traiticon} alt="" className="w-[28px] h-[28px]" />
                   <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                     Traits
                   </span>
@@ -197,7 +202,7 @@ export default function PixacioNFT() {
                   .map((_, index) => (
                     <div
                       key={index}
-                      className="w-full p-2 rounded-md bg-gray-100 text-center text-sm"
+                      className="w-full p-2 rounded-md 0 text-center text-sm h-[74px] bg-[#f4f4f4] flex flex-col items-center justify-center gap-1"
                     >
                       <p className="text-[#808080] text-[10.31px] font-medium font-roboto">EDITION</p>
                       <p className="text-[#2b2b2b] text-[10.31px] font-medium font-roboto">Founders edition 52%</p>
@@ -217,7 +222,7 @@ export default function PixacioNFT() {
             onClick={() => setIsOffersOpen(!isOffersOpen)}
           >
             <div className="flex items-center gap-2">
-              <FaBars className="text-[#808080] text-lg" size={28} />
+            <img src={offericon} alt="" className="w-[28px] h-[28px]" />
               <span className="text-[#808080] text-base font-normal font-roboto ms-3 ">
                Offers
               </span>
@@ -265,7 +270,7 @@ export default function PixacioNFT() {
             onClick={() => setIsDetailsOpen(!isDetailsOpen)}
           >
             <div className="flex items-center gap-2">
-              <FaBars className="text-[#808080] text-lg" size={28} />
+              <img src={detailicon} alt="" className="w-[28px] h-[28px]" />
               <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                 Details
               </span>
