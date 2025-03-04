@@ -64,8 +64,8 @@ export default function PixacioNFT() {
   const firstListing = listingsData[0];
 
   return (
-    <div className="max-w-[1320px] w-full mx-auto p-5 ">
-      <div className="flex flex-col lg:flex-row gap-x-4 gap-y-10 items-center justify-center ">
+    <div className="max-w-[1320px] w-full mx-auto  ">
+      <div className="flex flex-col lg:flex-row gap-x-4 gap-y-10 items-center justify-center  ">
         <div className="flex justify-center max-w-[546px] max-h-[610px] py-5 px-[16px] bg-white w-full items-center rounded-xl  relative">
           <img
             src={pixacio}
