@@ -157,22 +157,22 @@ export default function PixacioNFT() {
           <div className="flex flex-col gap-5  ">
             {/* Description Box */}
             <div className="border border-gray-300 rounded-lg shadow-sm bg-white">
-              <div className="flex justify-between items-center p-4">
+              <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
-                  <FaBars className="text-gray-600 text-lg" />
-                  <span className="font-semibold text-gray-800 text-base">
+                  <FaBars className="text-gray-600 text-lg" size={28} />
+                  <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                     Description
                   </span>
                 </div>
                 <IoIosArrowUp className="text-gray-600 text-xl" />
               </div>
-              <hr />
+             
               <div className="p-4">
-                <p>
+                <p className="text-[#808080] text-base font-normal font-roboto">
                   By{" "}
-                  <span className="font-bold text-gray-900">Stella Nova</span>
+                  <span className="text-[#2b2b2b] text-base font-medium font-roboto">Stella Nova</span>
                 </p>
-                <p className="text-[#808080] text-sm mt-2">
+                <p className="text-[#808080] text-xs font-normal font-roboto mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor atque voluptates debitis illum totam dignissimos doloribus quis, mollitia recusandae?
                 </p>
@@ -181,16 +181,16 @@ export default function PixacioNFT() {
 
             {/* Traits Box */}
             <div className="border border-gray-300 rounded-lg shadow-sm bg-white">
-              <div className="flex justify-between items-center p-4">
+              <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
-                  <FaBars className="text-gray-600 text-lg" />
-                  <span className="font-semibold text-gray-800 text-base">
+                  <FaBars className="text-gray-600 text-lg" size={28} />
+                  <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                     Traits
                   </span>
                 </div>
                 <IoIosArrowDown className="text-gray-600 text-xl" />
               </div>
-              <hr />
+             
               <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {Array(9)
                   .fill("")
@@ -199,9 +199,9 @@ export default function PixacioNFT() {
                       key={index}
                       className="w-full p-2 rounded-md bg-gray-100 text-center text-sm"
                     >
-                      <p className="text-xs text-gray-500">EDITION</p>
-                      <p className="font-semibold">Founders edition 52%</p>
-                      <p className="text-xs">Floor: 12.75 ALGO</p>
+                      <p className="text-[#808080] text-[10.31px] font-medium font-roboto">EDITION</p>
+                      <p className="text-[#2b2b2b] text-[10.31px] font-medium font-roboto">Founders edition 52%</p>
+                      <p className="text-[#808080] text-[10.31px] font-normal font-['Roboto']">Floor: 12.75 ALGO</p>
                     </div>
                   ))}
               </div>
@@ -213,12 +213,12 @@ export default function PixacioNFT() {
             {/* Offers Box */}
             <div className="bg-white rounded-lg shadow font-roboto ">
           <div
-            className="flex justify-between items-center p-4 cursor-pointer"
+            className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
             onClick={() => setIsOffersOpen(!isOffersOpen)}
           >
             <div className="flex items-center gap-2">
-              <FaBars className="text-[#808080] text-lg" />
-              <span className="font-semibold text-[#808080] text-base">
+              <FaBars className="text-[#808080] text-lg" size={28} />
+              <span className="text-[#808080] text-base font-normal font-roboto ms-3 ">
                Offers
               </span>
             </div>
@@ -231,26 +231,25 @@ export default function PixacioNFT() {
 
           {isOffersOpen && (
             <>
-              <hr className="my-2" />
               <div className="w-full overflow-x-auto p-4">
                 <table className="w-full text-sm text-gray-600">
                   <thead>
                     <tr className="border-b">
-                      <th className="p-2 text-left">Price</th>
-                      <th className="p-2 text-left">USD Price</th>
-                      <th className="p-2 text-left">Quantity</th>
-                      <th className="p-2 text-left">Floor Difference</th>
-                      <th className="p-2 text-left">From</th>
+                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">Price</th>
+                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">USD Price</th>
+                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">Quantity</th>
+                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">Floor Difference</th>
+                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">From</th>
                     </tr>
                   </thead>
                   <tbody>
                     {listingsData.map((listing, index) => (
                       <tr key={index} className="border-b">
-                        <td className="p-2 font-bold">{listing.price}</td>
-                        <td className="p-2">{listing.usdPrice}</td>
-                        <td className="p-2">{listing.quantity}</td>
-                        <td className="p-2">{listing.floorDiff}</td>
-                        <td className="p-2">{listing.from}</td>
+                        <td className="p-2 text-black text-sm font-medium font-roboto">{listing.price}</td>
+                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.usdPrice}</td>
+                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.quantity}</td>
+                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.floorDiff}</td>
+                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.from}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -262,12 +261,12 @@ export default function PixacioNFT() {
             {/* Details Box */}
             <div className="border border-gray-300 rounded-lg shadow-sm bg-white max-w-[546px] w-full">
           <div
-            className="flex justify-between items-center p-4 cursor-pointer"
+            className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
             onClick={() => setIsDetailsOpen(!isDetailsOpen)}
           >
             <div className="flex items-center gap-2">
-              <FaBars className="text-[#808080] text-lg" />
-              <span className="font-semibold text-[#808080] text-base">
+              <FaBars className="text-[#808080] text-lg" size={28} />
+              <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                 Details
               </span>
             </div>
@@ -280,27 +279,27 @@ export default function PixacioNFT() {
 
           {isDetailsOpen && (
             <>
-              <hr />
+              
               <div className="p-4 text-sm text-gray-700">
                 <p className="flex justify-between py-1">
-                  <span>Contract Address</span>
-                  <span className="text-[#808080]">0x5848...1713</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">Contract Address</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">0x5848...1713</span>
                 </p>
                 <p className="flex justify-between py-1">
-                  <span>Token ID</span>
-                  <span className="text-[#808080]">7926</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">Token ID</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">7926</span>
                 </p>
                 <p className="flex justify-between py-1">
-                  <span>Token Standard</span>
-                  <span className="text-[#808080]">ERC-721</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">Token Standard</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">ERC-721</span>
                 </p>
                 <p className="flex justify-between py-1">
-                  <span>Chain</span>
-                  <span className="text-[#808080]">Algorand</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">Chain</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">Algorand</span>
                 </p>
                 <p className="flex justify-between py-1">
-                  <span>Creator Earnings</span>
-                  <span className="text-[#808080]">6.5%</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">Creator Earnings</span>
+                  <span className="text-[#808080] text-sm font-normal font-roboto">6.5%</span>
                 </p>
               </div>
             </>
@@ -309,21 +308,20 @@ export default function PixacioNFT() {
           </div>
         </div>
       </div>
-      <div className="p-4 w-full bg-white shadow-md rounded-xl mt-6">
+      <div className=" w-full bg-white shadow-md rounded-xl mt-6">
         {/* Header Section with Expand/Collapse */}
         <div
-          className="flex justify-between items-center cursor-pointer"
+          className="flex justify-between items-center cursor-pointer border-b border-[#e7e7e7] h-[63px] p-4"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <h2 className="text-lg font-semibold flex gap-4 items-center">
-            <img src={item} alt="Item Icon" className="w-5 h-5" /> Item Activity
-          </h2>
+          <h2 className="text-lg font-semibold flex gap-4 items-center p-4">
+            <img src={item} alt="Item Icon" className="w-5 h-5" /> <span className="text-[#2b2b2b] text-base font-normal font-roboto ms-3">Item Activity</span> </h2>
           {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
         </div>
 
         {/* Content Section */}
         {isOpen && (
-          <div className="mt-2 border-t">
+          <div className="mt-2 p-4">
             {/* Filter Input */}
             <div className="w-full p-3">
               <input
@@ -334,7 +332,7 @@ export default function PixacioNFT() {
             </div>
 
             {/* Table Section */}
-            <table className="w-full text-left text-sm mt-2">
+            <table className="w-full text-left text-sm mt-2 p-4">
               <thead>
                 <tr className="border-b bg-gray-100">
                   <th className="py-2 px-3">Event</th>
