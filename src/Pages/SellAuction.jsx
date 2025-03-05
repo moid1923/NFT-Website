@@ -6,7 +6,7 @@ function SellAuction() {
   return (
     <div>
       <Navbar/>
-      <SellMethod/>
+      <SellMethod showtick = {true} selectedMethod='Auction'/>
     </div>
   )
 }

@@ -15,7 +15,9 @@ function WilliamHero({showwillaim = true}) {
   const handleProfile = () => {
     navigate("/aiwilliam");
   };
-
+  const handleUpload = () => {
+    navigate("/upload");  //navigate to uploadimage
+  };
   return (
     <div>
       <section className="william-hero max-w-[1320px] w-full mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,9 +73,13 @@ function WilliamHero({showwillaim = true}) {
                 className="w-full h-full object-cover rounded-full border-4 border-white"
               />
             ) : (
-              <div className="w-full h-full bg-[#e7e7e7] flex items-center justify-center text-3xl font-bold text-[#2b2b2b] rounded-full border-4 border-white">
+            
+              <div className="w-full h-full bg-[#e7e7e7] flex items-center justify-center text-3xl font-bold text-[#2b2b2b] rounded-full border-4 border-white"
+              onClick={handleUpload}
+              >
                 +
               </div>
+              
             )}
           </div>
         </div>

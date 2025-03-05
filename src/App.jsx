@@ -17,6 +17,9 @@ import William from "./Pages/William";
 import ArtWork from "./Pages/ArtWork";
 import ProfileSetting from "./Pages/ProfileSetting";
 import FixedPrice from "./Pages/FixedPrice";
+import SellAuction from "./Pages/SellAuction";
+import UploadImage from "./ProfileComponent/UploadImage";
+import Boost from "./AinftComponent/Boost";
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
           <Route path="/aiart" element={<ArtWork />} />
           <Route path="/aiprsetting" element={<ProfileSetting />} />
           <Route path="/aipric" element={<FixedPrice />} />
+          <Route path="/aiauc" element={<SellAuction />} />
+          <Route path="/upload" element={<UploadImage />} />
+          <Route path="/boost" element={<Boost />} />
         </Routes>
       </Router>
     </div>

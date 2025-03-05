@@ -4,6 +4,7 @@ import chc2 from '../assets/chc2.jfif';
 import chc3 from '../assets/chc3.jfif';
 import chc4 from '../assets/chc4.jfif';
 import Navbar from '../Component/Navbar'
+import { useNavigate } from 'react-router-dom';
 const collections = [
   { id: 1, title: 'Wonderful Artwork', items: '1.5k', img: chc1 },
   { id: 2, title: 'Wonderful Artwork', items: '1.5k', img: chc2 },
@@ -17,6 +18,10 @@ function ChoseCollection() {
   const handleSelect = (id) => {
     setSelected(id);
   };
+  const navigate = useNavigate();
+  const handleBoost =()=>{
+    navigate('/boost')
+  }
 
   return (
     
@@ -44,7 +49,7 @@ function ChoseCollection() {
                   <img
                     src={collection.img}
                     alt={collection.title}
-                    className="w-12 h-12 rounded-full object-cover"
+                    className="w-[61px] h-[61px] rounded-xl object-cover"
                   />
                   <div>
                     <h3 className="text-[#2B2B2B] font-roboto font-medium text-lg capitalize">
@@ -69,6 +74,7 @@ function ChoseCollection() {
           <div className="mt-10 text-right">
             <button
               className="bg-gradient-custom text-white px-8 py-3 rounded-lg shadow-lg hover:opacity-90 transition text-lg"
+              onClick={handleBoost}
             >
               Next
             </button>

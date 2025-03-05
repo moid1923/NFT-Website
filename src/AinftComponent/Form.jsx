@@ -14,6 +14,9 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
   const handleWillilamPage = ()=>{
     navigate("/aiwilliam")
   }
+  const handleMint = ()=>{
+    navigate("/aiart")   //navigate to /aiart page
+  }
   return (
     <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10   ">
       <div className="flex gap-[200px] mb-[30px]">
@@ -199,7 +202,9 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
           </>
           )}
           <div className="flex justify-end">
-            <button className="px-8 py-4 rounded-[8px] flex items-center bg-gradient-custom text-white text-center font-roboto text-[18px] font-medium capitalize hover:opacity-90">
+            <button className="px-8 py-4 rounded-[8px] flex items-center bg-gradient-custom text-white text-center font-roboto text-[18px] font-medium capitalize hover:opacity-90"
+            onClick={handleMint}
+            >
               {btn}
             </button>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import fixprice from "../assets/lpfix.png";
 import auc from "../assets/lpauc.png";
 import sideimg from "../assets/lpimg.png";
@@ -6,8 +6,19 @@ import backicon from "../assets/back.png";
 import frylogo from "../assets/felogo.png";
 import inp from "../assets/input.png";
 import tick from '../assets/lptick.png'
+import { useNavigate } from "react-router-dom";
 
 function SellMethod({ showtick = true, selectedMethod = "Fixed Price" }) {
+    const [method, setMethod] = useState(selectedMethod);
+   const navigate = useNavigate();
+   const handleAuc = ()=>{
+    setMethod("Auction");
+    navigate("/aiauc")
+   }
+   const handlePrice = ()=>{
+    setMethod("Auction");
+    navigate("/aipric")
+   }
   return (
     <div className="max-w-[1320px] mx-auto p-2 md:p-6 h-auto min-h-screen overflow-y-auto">
       {/* Back Button */}
@@ -38,6 +49,7 @@ function SellMethod({ showtick = true, selectedMethod = "Fixed Price" }) {
           <div className="flex flex-col sm:flex-row gap-6 mb-6">
             <div
               className={`flex flex-col items-center gap-3 justify-center p-4 w-full sm:w-[207.87px] h-[217px] rounded-[14.05px] shadow-[2.8090615272521973px_2.8090615272521973px_10.533980369567871px_0px_rgba(0,0,0,0.20)] relative ${selectedMethod === "Fixed Price" ? "bg-[#f4f3f3]" : "bg-white"}`}
+              onClick={handlePrice}
             >
               <div className="bg-[#45adeb] w-[99px] h-[99px] rounded-full flex items-center justify-center">
                 <img
@@ -47,13 +59,14 @@ function SellMethod({ showtick = true, selectedMethod = "Fixed Price" }) {
                 />
               </div>
               <span className="text-[#2b2b2b] text-xl font-medium font-roboto capitalize tracking-wide">Fixed Price</span>
-              {selectedMethod === "Fixed Price" && showtick && (
+              {method === "Fixed Price" && showtick && (
                 <span><img src={tick} alt="" className="w-6 h-6 absolute right-2 top-2" /></span>
               )}
             </div>
 
             <div
               className={`flex flex-col items-center gap-3 justify-center p-4 w-full sm:w-[207.87px] h-[217px] rounded-[14.05px] shadow-[2.8090615272521973px_2.8090615272521973px_10.533980369567871px_0px_rgba(0,0,0,0.20)] relative ${selectedMethod === "Auction" ? "bg-[#f4f3f3]" : "bg-white"}`}
+              onClick={handleAuc}
             >
               <div className="bg-[#f7a940] w-[99px] h-[99px] rounded-full flex items-center justify-center">
                 <img
@@ -63,7 +76,7 @@ function SellMethod({ showtick = true, selectedMethod = "Fixed Price" }) {
                 />
               </div>
               <span className="text-[#2b2b2b] text-xl font-medium font-roboto capitalize tracking-wide">Auction</span>
-              {selectedMethod === "Auction" && showtick && (
+              {method === "Auction" && showtick && (
                 <span><img src={tick} alt="" className="w-6 h-6 absolute right-2 top-2" /></span>
               )}
             </div>

@@ -6,6 +6,9 @@ function PrForm() {
    const handleConnect = () => {
     navigate("/aipric");
   };
+  const handleProfile = () => {
+    navigate("/aiart");
+  };
 
   return (
     <div className="max-w-[1320px] mx-auto bg-transparent py-[100px] px-4">
@@ -72,7 +75,9 @@ function PrForm() {
 
         {/* Save Button */}
         <div className='max-w-[817px] w-full mx-auto text-center md:text-left'>
-          <button className="bg-gradient-custom px-8 py-4 rounded-lg w-[179px] text-center text-white text-lg font-medium font-roboto capitalize">
+          <button className="bg-gradient-custom px-8 py-4 rounded-lg w-[179px] text-center text-white text-lg font-medium font-roboto capitalize"
+          onClick={handleProfile}
+          >
             Save Changes
           </button>
         </div>
