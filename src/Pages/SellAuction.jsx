@@ -2,13 +2,13 @@ import React from 'react'
 import Navbar from '../Component/Navbar'
 import SellMethod from '../AinftComponent/SellMethod'
 
-function FixedPrice() {
+function SellAuction() {
   return (
-    <div className=' '>
+    <div>
       <Navbar/>
       <SellMethod/>
     </div>
   )
 }
 
-export default FixedPrice
+export default SellAuction
