@@ -16,6 +16,7 @@ import CreateNewCollection from "./Pages/CreateNewCollection";
 import William from "./Pages/William";
 import ArtWork from "./Pages/ArtWork";
 import ProfileSetting from "./Pages/ProfileSetting";
+import FixedPrice from "./Pages/FixedPrice";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/aiwilliam" element={<William />} />
           <Route path="/aiart" element={<ArtWork />} />
           <Route path="/aiprsetting" element={<ProfileSetting />} />
+          <Route path="/aipric" element={<FixedPrice />} />
         </Routes>
       </Router>
     </div>

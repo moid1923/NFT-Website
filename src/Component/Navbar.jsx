@@ -26,6 +26,10 @@ function Navbar() {
   const toggleMenu = () => {
     setSideMenu((prev) => !prev);
   };
+  const handleWilliam = () => {
+    navigate("/aiwilliam");
+  };
+
 
   return (
     <div className="relative w-full">
@@ -68,7 +72,9 @@ function Navbar() {
               <div className="py-4 px-[25px] bg-[#E7E7E7]  cursor-pointer hover:bg-red-500 hover:text-white transition rounded-[15px]">
                 <FaWallet size={28} className="w-[26px] h-[26px]" />
               </div>
-              <div className="py-4 px-[25px] bg-[#E7E7E7]  cursor-pointer hover:bg-red-500 hover:text-white transition rounded-[15px]">
+              <div className="py-4 px-[25px] bg-[#E7E7E7]  cursor-pointer hover:bg-red-500 hover:text-white transition rounded-[15px]"
+              onClick={handleWilliam}
+              >
                 <img src={nni} alt="" className="w-[26px] h-[26px] rounded-full" />
               </div>
             </>
