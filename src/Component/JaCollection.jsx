@@ -36,7 +36,7 @@ function JaCollection({ cards = [], title = "Collection", showtitle = true, show
       )}
       {showlink &&(
         <div className='flex items-center justify-between max-w-[1320px] w-full p-5'>
-          <div className="btn1 w-[140px] h-[49px] py-3.5 rounded-lg border-2 border-[#fd0000] justify-center items-center gap-2.5 inline-flex text-center text-[#fe0101] text-lg font-normal font-roboto capitalize">COllection</div>
+          <div className="btn1 w-[140px] h-[49px] py-3.5 rounded-lg border-2 border-[#fd0000] justify-center items-center gap-2.5 inline-flex text-center text-[#fe0101] text-lg font-normal font-roboto capitalize">Collection</div>
           <div className="btn1 w-[142px] h-[49px] py-3.5 rounded-lg border-2 border-[#fd0000]  justify-center  items-center gap-2.5 inline-flex text-center text-[#fe0101] text-lg font-normal font-roboto capitalize"
           onClick={handleArtPage}
           >Newest
