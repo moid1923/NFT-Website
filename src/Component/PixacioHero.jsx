@@ -6,7 +6,7 @@ function PixacioHero({image = pixacio , title = "Pixacio" }) {
   return (
     <div>
       <div className="container max-w-[1320px] w-full mx-auto flex flex-col lg:flex-row gap-4 my-10">
-        <div className="p-[15px] bg-white rounded-2xl flex items-center justify-center mx-auto   max-w-[512px] max-h-[491px] h-full box-border">
+        <div className="p-[15px] bg-white rounded-2xl flex items-center justify-center mx-auto   max-w-[512px] w-full max-h-[491px] h-full box-border">
           <img
             src={image}
             alt=""
