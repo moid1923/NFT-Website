@@ -18,6 +18,7 @@ import bgtsell from '../assets/bgtsell.png'
 import shadow from '../assets/Ellipse.png'
 import LandingAuc from '../Component/LandingAuc'
 import randbg from '../assets/randbg.png'
+
 function LnadingPage() {
   return (
     <div className='bg-gradient-to-b from-[#fff0f0] to-white max-w-[100%] overflow-x-hidden overflow-y-hidden relative'>
@@ -45,7 +46,7 @@ function LnadingPage() {
     <Visibility/>
     <FAQSection/>
     <Footer/>
-    
+  
     </div>
   )
 }

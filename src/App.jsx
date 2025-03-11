@@ -20,6 +20,8 @@ import FixedPrice from "./Pages/FixedPrice";
 import SellAuction from "./Pages/SellAuction";
 import UploadImage from "./ProfileComponent/UploadImage";
 import Boost from "./AinftComponent/Boost";
+import BidPlacement from "./Component/BidPlacement";
+import BidModal from "./Pages/BidModal";
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
           <Route path="/aiauc" element={<SellAuction />} />
           <Route path="/upload" element={<UploadImage />} />
           <Route path="/boost" element={<Boost />} />
+          <Route path="/bidplacement" element={<BidModal />} />
+
         </Routes>
       </Router>
     </div>
