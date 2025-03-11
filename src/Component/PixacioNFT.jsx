@@ -74,10 +74,11 @@ export default function PixacioNFT() {
           />
           <button className=" w-[47px] h-8 bg-white/10 rounded-[9.41px] border-2 border-[#eaeaea]/50 backdrop-blur-[31.70px] absolute bottom-6 right-5 text-white text-xs font-medium font-roboto capitalize tracking-wide">75</button>
         </div>
-        <div className="space-y-4 max-w-[754px] w-full py-5">
+        <div className="space-y-4 max-w-[754px]  w-full py-5">
           <h1 className="text-center lg:text-start text-[#2b2b2b] text-[64px] font-normal font-apex capitalize leading-[102px] tracking-[2.56px]">
             PIXACIO
           </h1>
+          <div className="h-[213px">
           <p className="text-[#808080] text-xl font-normal font-roboto">
             Owned by{" "}
             <span className="text-[#2b2b2b] text-xl font-normal font-roboto">
@@ -94,15 +95,17 @@ export default function PixacioNFT() {
               <p className="text-[#808080] text-xs font-normal font-roboto">Current Price</p>
               <p className="text-black text-2xl font-medium font-roboto">5.001 FRY</p>
               <div className="flex gap-4 mt-4">
-                <button className="w-1/2 py-3 bg-white text-black text-base font-medium font-roboto border-2 border-[#e7e7e7] rounded-lg">
+                <button className="w-[343px] h-11 bg-white rounded-lg border-[2.80px] border-[#e7e7e7]">
                   Buy now
                 </button>
-                <button className="w-1/2 py-3 bg-gradient-custom text-white text-base font-medium font-roboto rounded-lg">
+                <button className="w-[343px] h-11 bg-gradient-to-tl from-[#fd0000] to-[#ff9191] rounded-lg">
                   Make offer
                 </button>
               </div>
             </div>
           </div>
+          </div>
+          
           <div className=" bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
             {/* Header Section */}
             <div
