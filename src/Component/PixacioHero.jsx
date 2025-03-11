@@ -39,19 +39,19 @@ function PixacioHero({image = pixacio , title = "Pixacio" }) {
           <hr className="mt-10 text-red-500" />
           {/* Social Media Icons */}
           <div className="flex items-center space-x-4 mt-6">
-            <button className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
+            <button className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition  shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] border-[0.78px] border-gray-200">
               <FaChrome className="text-black" size={25} />
             </button>
-            <button className="w-[116px] h-[41px] flex items-center justify-between gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
+            <button className="w-[116px] h-[41px] flex items-center justify-between gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition  shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] border-[0.78px] border-gray-200">
               <FaTwitter className="text-black" size={27} />{" "}
               <span className="bg-[#ffcccc] px-3 py-1 w-[44px] text-[7.45px] rounded-sm">
                 12.3k
               </span>
             </button>
-            <button className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
+            <button className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition  shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] border-[0.78px] border-gray-200">
               <FaDiscord className="text-black" size={25} />
             </button>
-            <button className="w-[116px] h-[41px] flex items-center justify-between gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition">
+            <button className="w-[116px] h-[41px] flex items-center justify-between gap-2 bg-white px-3 py-2 rounded-lg text-sm hover:bg-gray-300 transition shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] border-[0.78px] border-gray-200">
               <img src={joty} alt="" className="w-[23px] h-[23px]" />{" "}
               <span className="bg-[#ffcccc] px-3 py-1 w-[44px] text-[7.45px] rounded-sm">
                 12.3k
