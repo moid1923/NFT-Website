@@ -4,11 +4,11 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import pixacio from "../assets/pixNFT.jfif";
 import item from "../assets/item.png";
-import detailicon from '../assets/detainicon.png'
-import listingicon from '../assets/listingicon.png'
-import traiticon from '../assets/traiticon.png'
-import offericon from '../assets/offericon.png'
-import desicon from '../assets/desicon.png'
+import detailicon from "../assets/detainicon.png";
+import listingicon from "../assets/listingicon.png";
+import traiticon from "../assets/traiticon.png";
+import offericon from "../assets/offericon.png";
+import desicon from "../assets/desicon.png";
 export default function PixacioNFT() {
   const listingsData = [
     {
@@ -72,40 +72,48 @@ export default function PixacioNFT() {
             alt="Pixacio NFT"
             className="rounded-xl shadow-lg w-[514px] max-h-[572px]"
           />
-          <button className=" w-[47px] h-8 bg-white/10 rounded-[9.41px] border-2 border-[#eaeaea]/50 backdrop-blur-[31.70px] absolute bottom-6 right-5 text-white text-xs font-medium font-roboto capitalize tracking-wide">75</button>
+          <button className=" w-[47px] h-8 bg-white/10 rounded-[9.41px] border-2 border-[#eaeaea]/50 backdrop-blur-[31.70px] absolute bottom-6 right-5 text-white text-xs font-medium font-roboto capitalize tracking-wide">
+            75
+          </button>
         </div>
         <div className="space-y-4 max-w-[754px]  w-full py-5">
           <h1 className="text-center lg:text-start text-[#2b2b2b] text-[64px] font-normal font-apex capitalize leading-[102px] tracking-[2.56px]">
             PIXACIO
           </h1>
           <div className="h-[213px">
-          <p className="text-[#808080] text-xl font-normal font-roboto">
-            Owned by{" "}
-            <span className="text-[#2b2b2b] text-xl font-normal font-roboto">
-              Stella Nova
-            </span>
-          </p>
-          <div className="bg-white rounded-lg  font-roboto max-w-[754px] w-full shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)]">
-            <div className="flex items-center space-x-2 text-gray-500 p-6">
-              <FaClock />
-              <p className="text-[#808080] text-base font-normal font-roboto">Sale ends 18 November 2023 at 8:47 am</p>
-            </div>
-            <hr className="bg-gray-100" />
-            <div className="p-6">
-              <p className="text-[#808080] text-xs font-normal font-roboto">Current Price</p>
-              <p className="text-black text-2xl font-medium font-roboto">5.001 FRY</p>
-              <div className="flex gap-4 mt-4">
-                <button className="w-[343px] h-11 bg-white rounded-lg border-[2.80px] border-[#e7e7e7]">
-                  Buy now
-                </button>
-                <button className="w-[343px] h-11 bg-gradient-to-tl from-[#fd0000] to-[#ff9191] rounded-lg">
-                  Make offer
-                </button>
+            <p className="text-[#808080] text-xl font-normal font-roboto">
+              Owned by{" "}
+              <span className="text-[#2b2b2b] text-xl font-normal font-roboto">
+                Stella Nova
+              </span>
+            </p>
+            <div className="bg-white rounded-lg  font-roboto max-w-[754px] w-full shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)]">
+              <div className="flex items-center space-x-2 text-gray-500 p-6">
+                <FaClock />
+                <p className="text-[#808080] text-base font-normal font-roboto">
+                  Sale ends 18 November 2023 at 8:47 am
+                </p>
+              </div>
+              <hr className="bg-gray-100" />
+              <div className="p-6">
+                <p className="text-[#808080] text-xs font-normal font-roboto">
+                  Current Price
+                </p>
+                <p className="text-black text-2xl font-medium font-roboto">
+                  5.001 FRY
+                </p>
+                <div className="flex gap-4 mt-4">
+                  <button className="w-[343px] h-11 bg-white rounded-lg border-[2.80px] border-[#e7e7e7]">
+                    Buy now
+                  </button>
+                  <button className="w-[343px] h-11 bg-gradient-to-tl from-[#fd0000] to-[#ff9191] rounded-lg">
+                    Make offer
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          </div>
-          
+
           <div className=" bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
             {/* Header Section */}
             <div
@@ -113,7 +121,10 @@ export default function PixacioNFT() {
               onClick={() => setIsOpen(!isOpen)}
             >
               <h3 className="flex gap-4">
-              <img src={listingicon} alt="" className="w-[28px] h-[28px]" /> <span className="text-[#808080] text-base font-normal font-roboto">Listings</span> 
+                <img src={listingicon} alt="" className="w-[28px] h-[28px]" />{" "}
+                <span className="text-[#808080] text-base font-normal font-roboto">
+                  Listings
+                </span>
               </h3>
               {isOpen ? (
                 <IoIosArrowUp className="text-gray-600 text-xl" />
@@ -126,27 +137,44 @@ export default function PixacioNFT() {
             {isOpen && (
               <>
                 <hr className="bg-gray-100" />
-                <div className="p-4">
+                <div className="py-4 px-5">
                   <table className="w-full text-left text-sm">
-                    <thead>
-                      <tr className="border-b  text-gray-600">
-                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">Price</th>
-                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">USD Price</th>
-                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">Quantity</th>
-                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">From</th>
+                    <thead className="border-b">
+                      <tr className=" text-gray-600">
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">
+                          Price
+                        </th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">
+                          USD Price
+                        </th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">
+                          Quantity
+                        </th>
+                        <th className="py-2 px-3 text-black text-sm font-normal font-roboto">
+                          From
+                        </th>
                         <th className="py-2 px-3 text-black text-sm font-normal font-roboto"></th>
                       </tr>
                     </thead>
-                    <tbody>
+                    
+                    <tbody className="mt-3">
                       <tr className="border-b last:border-none hover:bg-gray-50">
-                        <td className="py-2 px-3text-black text-sm font-medium font-roboto">
+                        <td className="py-2 px-3 text-black text-sm font-medium font-roboto">
                           {firstListing.price}
                         </td>
-                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">{firstListing.usdPrice}</td>
-                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">{firstListing.quantity}</td>
-                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">{firstListing.from}</td>
+                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">
+                          {firstListing.usdPrice}
+                        </td>
+                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">
+                          {firstListing.quantity}
+                        </td>
+                        <td className="py-2 px-3 text-[#808080] text-sm font-normal font-roboto">
+                          {firstListing.from}
+                        </td>
                         <td className="py-2 px-3 text-[#808080]">
-                          <button className="px-4 py-1 bg-gradient-custom text-white rounded-md hover:bg-red-600 text-center  text-sm font-medium font-roboto capitalize">
+                          <button
+                            className=" text-white rounded-md hover:bg-red-600 text-center  text-sm font-medium font-roboto capitalize px-[15px] py-2 bg-gradient-to-tl from-[#fd0000] to-[#ff9191]  outline-[1.80px] outline-offset-[-1.80px] outline-[#fd0000] inline-flex justify-end items-center gap-2.5"
+                          >
                             Buy
                           </button>
                         </td>
@@ -167,22 +195,26 @@ export default function PixacioNFT() {
             <div className="bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] h-[171px]">
               <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
-                <img src={desicon} alt="" className="w-[28px] h-[28px]" />
+                  <img src={desicon} alt="" className="w-[28px] h-[28px]" />
                   <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                     Description
                   </span>
                 </div>
                 <IoIosArrowUp className="text-gray-600 text-xl" />
               </div>
-             
+
               <div className="p-4">
                 <p className="text-[#808080] text-base font-normal font-roboto">
                   By{" "}
-                  <span className="text-[#2b2b2b] text-base font-medium font-roboto">Stella Nova</span>
+                  <span className="text-[#2b2b2b] text-base font-medium font-roboto">
+                    Stella Nova
+                  </span>
                 </p>
                 <p className="text-[#808080] text-xs font-normal font-roboto mt-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor atque voluptates debitis illum totam dignissimos doloribus quis, mollitia recusandae?
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                  dolor atque voluptates debitis illum totam dignissimos
+                  doloribus quis, mollitia recusandae?
                 </p>
               </div>
             </div>
@@ -191,14 +223,14 @@ export default function PixacioNFT() {
             <div className="bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] lg:h-[332px]">
               <div className="flex justify-between items-center p-4 border-b border-[#e7e7e7] h-[63px]">
                 <div className="flex items-center gap-2">
-                <img src={traiticon} alt="" className="w-[28px] h-[28px]" />
+                  <img src={traiticon} alt="" className="w-[28px] h-[28px]" />
                   <span className="text-[#808080] text-base font-normal font-roboto ms-3">
                     Traits
                   </span>
                 </div>
                 <IoIosArrowDown className="text-gray-600 text-xl" />
               </div>
-             
+
               <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {Array(9)
                   .fill("")
@@ -207,9 +239,18 @@ export default function PixacioNFT() {
                       key={index}
                       className="w-full p-2 rounded-md 0 text-center text-sm h-[74px] bg-[#f4f4f4] flex flex-col items-center justify-center gap-1"
                     >
-                      <p className="text-[#808080] text-[10.31px] font-medium font-roboto">EDITION</p>
-                      <p className="text-[#2b2b2b] text-[10.31px] font-medium font-roboto">Founders edition <span className="text-[#808080] text-[10.31px] font-normal font-roboto">52%</span> </p>
-                      <p className="text-[#808080] text-[10.31px] font-normal font-['Roboto']">Floor: 12.75 ALGO</p>
+                      <p className="text-[#808080] text-[10.31px] font-medium font-roboto">
+                        EDITION
+                      </p>
+                      <p className="text-[#2b2b2b] text-[10.31px] font-medium font-roboto">
+                        Founders edition{" "}
+                        <span className="text-[#808080] text-[10.31px] font-normal font-roboto">
+                          52%
+                        </span>{" "}
+                      </p>
+                      <p className="text-[#808080] text-[10.31px] font-normal font-['Roboto']">
+                        Floor: 12.75 ALGO
+                      </p>
                     </div>
                   ))}
               </div>
@@ -220,99 +261,138 @@ export default function PixacioNFT() {
           <div className="flex flex-col gap-5  w-full max-w-[754px]">
             {/* Offers Box */}
             <div className=" bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
-          <div
-            className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
-            onClick={() => setIsOffersOpen(!isOffersOpen)}
-          >
-            <div className="flex items-center gap-2">
-            <img src={offericon} alt="" className="w-[28px] h-[28px]" />
-              <span className="text-[#808080] text-base font-normal font-roboto ms-3 ">
-               Offers
-              </span>
-            </div>
-            {isOffersOpen ? (
-              <IoIosArrowUp className="text-[#808080] text-xl" />
-            ) : (
-              <IoIosArrowDown className="text-[#808080] text-xl" />
-            )}
-          </div>
-
-          {isOffersOpen && (
-            <>
-              <div className="w-full overflow-x-auto p-4">
-                <table className="w-full text-sm text-gray-600">
-                  <thead>
-                    <tr className="border-b">
-                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">Price</th>
-                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">USD Price</th>
-                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">Quantity</th>
-                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">Floor Difference</th>
-                      <th className="p-2 text-left text-black text-sm font-normal font-roboto">From</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {listingsData.map((listing, index) => (
-                      <tr key={index} className="border-b">
-                        <td className="p-2 text-black text-sm font-medium font-roboto">{listing.price}</td>
-                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.usdPrice}</td>
-                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.quantity}</td>
-                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.floorDiff}</td>
-                        <td className="p-2 text-[#808080] text-sm font-normal font-roboto">{listing.from}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <div
+                className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
+                onClick={() => setIsOffersOpen(!isOffersOpen)}
+              >
+                <div className="flex items-center gap-2">
+                  <img src={offericon} alt="" className="w-[28px] h-[28px]" />
+                  <span className="text-[#808080] text-base font-normal font-roboto ms-3 ">
+                    Offers
+                  </span>
+                </div>
+                {isOffersOpen ? (
+                  <IoIosArrowUp className="text-[#808080] text-xl" />
+                ) : (
+                  <IoIosArrowDown className="text-[#808080] text-xl" />
+                )}
               </div>
-            </>
-          )}
-        </div>
+
+              {isOffersOpen && (
+                <>
+                  <div className="w-full overflow-x-auto p-4">
+                    <table className="w-full text-sm text-gray-600">
+                      <thead>
+                        <tr className="border-b">
+                          <th className="p-2 text-left text-black text-sm font-normal font-roboto">
+                            Price
+                          </th>
+                          <th className="p-2 text-left text-black text-sm font-normal font-roboto">
+                            USD Price
+                          </th>
+                          <th className="p-2 text-left text-black text-sm font-normal font-roboto">
+                            Quantity
+                          </th>
+                          <th className="p-2 text-left text-black text-sm font-normal font-roboto">
+                            Floor Difference
+                          </th>
+                          <th className="p-2 text-left text-black text-sm font-normal font-roboto">
+                            From
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {listingsData.map((listing, index) => (
+                          <tr key={index} className="border-b">
+                            <td className="p-2 text-black text-sm font-medium font-roboto">
+                              {listing.price}
+                            </td>
+                            <td className="p-2 text-[#808080] text-sm font-normal font-roboto">
+                              {listing.usdPrice}
+                            </td>
+                            <td className="p-2 text-[#808080] text-sm font-normal font-roboto">
+                              {listing.quantity}
+                            </td>
+                            <td className="p-2 text-[#808080] text-sm font-normal font-roboto">
+                              {listing.floorDiff}
+                            </td>
+                            <td className="p-2 text-[#808080] text-sm font-normal font-roboto">
+                              {listing.from}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </>
+              )}
+            </div>
             {/* Details Box */}
             <div className="max-w-[546px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
-          <div
-            className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
-            onClick={() => setIsDetailsOpen(!isDetailsOpen)}
-          >
-            <div className="flex items-center gap-2">
-              <img src={detailicon} alt="" className="w-[28px] h-[28px]" />
-              <span className="text-[#808080] text-base font-normal font-roboto ms-3">
-                Details
-              </span>
-            </div>
-            {isDetailsOpen ? (
-              <IoIosArrowUp className="text-[#808080] text-xl" />
-            ) : (
-              <IoIosArrowDown className="text-[#808080] text-xl" />
-            )}
-          </div>
-
-          {isDetailsOpen && (
-            <>
-              
-              <div className="px-4 py-6 text-sm text-gray-700  ">
-                <p className="flex justify-between py-1">
-                  <span className="text-[#808080] text-sm font-normal font-roboto">Contract Address</span>
-                  <span className="text-[#808080] text-sm font-normal font-roboto">0x5848...1713</span>
-                </p>
-                <p className="flex justify-between py-1">
-                  <span className="text-[#808080] text-sm font-normal font-roboto">Token ID</span>
-                  <span className="text-[#808080] text-sm font-normal font-roboto">7926</span>
-                </p>
-                <p className="flex justify-between py-1">
-                  <span className="text-[#808080] text-sm font-normal font-roboto">Token Standard</span>
-                  <span className="text-[#808080] text-sm font-normal font-roboto">ERC-721</span>
-                </p>
-                <p className="flex justify-between py-1">
-                  <span className="text-[#808080] text-sm font-normal font-roboto">Chain</span>
-                  <span className="text-[#808080] text-sm font-normal font-roboto">Algorand</span>
-                </p>
-                <p className="flex justify-between py-1">
-                  <span className="text-[#808080] text-sm font-normal font-roboto">Creator Earnings</span>
-                  <span className="text-[#808080] text-sm font-normal font-roboto">6.5%</span>
-                </p>
+              <div
+                className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
+                onClick={() => setIsDetailsOpen(!isDetailsOpen)}
+              >
+                <div className="flex items-center gap-2">
+                  <img src={detailicon} alt="" className="w-[28px] h-[28px]" />
+                  <span className="text-[#808080] text-base font-normal font-roboto ms-3">
+                    Details
+                  </span>
+                </div>
+                {isDetailsOpen ? (
+                  <IoIosArrowUp className="text-[#808080] text-xl" />
+                ) : (
+                  <IoIosArrowDown className="text-[#808080] text-xl" />
+                )}
               </div>
-            </>
-          )}
-        </div>
+
+              {isDetailsOpen && (
+                <>
+                  <div className="px-4 py-6 text-sm text-gray-700  ">
+                    <p className="flex justify-between py-1">
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        Contract Address
+                      </span>
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        0x5848...1713
+                      </span>
+                    </p>
+                    <p className="flex justify-between py-1">
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        Token ID
+                      </span>
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        7926
+                      </span>
+                    </p>
+                    <p className="flex justify-between py-1">
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        Token Standard
+                      </span>
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        ERC-721
+                      </span>
+                    </p>
+                    <p className="flex justify-between py-1">
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        Chain
+                      </span>
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        Algorand
+                      </span>
+                    </p>
+                    <p className="flex justify-between py-1">
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        Creator Earnings
+                      </span>
+                      <span className="text-[#808080] text-sm font-normal font-roboto">
+                        6.5%
+                      </span>
+                    </p>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -324,7 +404,11 @@ export default function PixacioNFT() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <h2 className="text-lg font-semibold flex gap-4 items-center p-4">
-            <img src={item} alt="Item Icon" className="w-5 h-5" /> <span className="text-[#2b2b2b] text-base font-normal font-roboto ms-3">Item Activity</span> </h2>
+            <img src={item} alt="Item Icon" className="w-5 h-5" />{" "}
+            <span className="text-[#2b2b2b] text-base font-normal font-roboto ms-3">
+              Item Activity
+            </span>{" "}
+          </h2>
           {isOpen ? <ChevronUp size={28} /> : <ChevronDown size={28} />}
         </div>
 
@@ -360,7 +444,9 @@ export default function PixacioNFT() {
                     <td className="py-2 px-3 text-[#808080]">{item.event}</td>
                     <td className="py-2 px-3 font-bold">{item.price}</td>
                     <td className="py-2 px- text-[#808080]">{item.from}</td>
-                    <td className="py-2 px-3 text-[#808080]">{item.to || "-"}</td>
+                    <td className="py-2 px-3 text-[#808080]">
+                      {item.to || "-"}
+                    </td>
                     <td className="py-2 px-3 text-[#808080]">{item.date}</td>
                   </tr>
                 ))}
