@@ -71,7 +71,7 @@ export default function PixacioNFT() {
           <img
             src={pixacio}
             alt="Pixacio NFT"
-            className="rounded-xl shadow-lg w-[514px] max-h-[572px]"
+            className="rounded-xl shadow-lg w-[514px] max-h-[572px] object-cover"
           />
           <button className=" w-[47px] h-8 bg-white/10 rounded-[9.41px] border-2 border-[#eaeaea]/50 backdrop-blur-[31.70px] absolute bottom-6 right-5 text-white text-xs font-medium font-roboto capitalize tracking-wide">
             75
