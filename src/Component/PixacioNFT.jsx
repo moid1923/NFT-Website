@@ -95,7 +95,7 @@ export default function PixacioNFT() {
                   Sale ends 18 November 2023 at 8:47 am
                 </p>
               </div>
-              <hr className="bg-gray-100" />
+              <hr className="text-[#e7e7e7]" />
               <div className="p-6">
                 <p className="text-[#808080] text-xs font-normal font-roboto">
                   Current Price
@@ -137,10 +137,10 @@ export default function PixacioNFT() {
             {/* Listings Table */}
             {isOpen && (
               <>
-                <hr className="bg-gray-100" />
+                <hr className="text-[#e7e7e7]" />
                 <div className="py-4 px-5">
                   <table className="w-full text-left text-sm">
-                    <thead className="border-b">
+                    <thead className="border-b border-[#e7e7e7]">
                       <tr className=" text-gray-600">
                         <th className="py-2 px-3 text-black text-sm font-normal font-roboto">
                           Price
@@ -159,7 +159,7 @@ export default function PixacioNFT() {
                     </thead>
 
                     <tbody className="mt-3">
-                      <tr className="border-b last:border-none hover:bg-gray-50">
+                      <tr className="border-b border-[#e7e7e7] last:border-none hover:bg-gray-50">
                         <td className="py-2 px-3 text-black text-sm font-medium font-roboto">
                           {firstListing.price}
                         </td>
@@ -429,7 +429,7 @@ export default function PixacioNFT() {
             {/* Table Section */}
             <table className="w-full text-left text-sm mt-2 p-4">
               <thead>
-                <tr className="border-b ">
+                <tr className="border-b border-[#e7e7e7]">
                   <th className="py-2 px-3 font-roboto">Event</th>
                   <th className="py-2 px-3 font-roboto">Price</th>
                   <th className="py-2 px-3 font-roboto">From</th>
@@ -441,7 +441,7 @@ export default function PixacioNFT() {
                 {data.map((item, index) => (
                   <tr
                     key={index}
-                    className="border-b last:border-none hover:bg-gray-50"
+                    className="border-b border-[#e7e7e7] last:border-none hover:bg-gray-50"
                   >
                     <td className="py-2 px-3 text-[#808080]  font-roboto">{item.event}</td>
                     <td className="py-2 px-3 font-bold font-roboto">{item.price}</td>
