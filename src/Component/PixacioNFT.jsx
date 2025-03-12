@@ -9,7 +9,7 @@ import listingicon from "../assets/listingicon.png";
 import traiticon from "../assets/traiticon.png";
 import offericon from "../assets/offericon.png";
 import desicon from "../assets/desicon.png";
-import time from '../assets/time.png'
+import time from "../assets/time.png";
 export default function PixacioNFT() {
   const listingsData = [
     {
@@ -157,7 +157,7 @@ export default function PixacioNFT() {
                         <th className="py-2 px-3 text-black text-sm font-normal font-roboto"></th>
                       </tr>
                     </thead>
-                    
+
                     <tbody className="mt-3">
                       <tr className="border-b last:border-none hover:bg-gray-50">
                         <td className="py-2 px-3 text-black text-sm font-medium font-roboto">
@@ -173,9 +173,7 @@ export default function PixacioNFT() {
                           {firstListing.from}
                         </td>
                         <td className="py-2 px-3 text-[#808080]">
-                          <button
-                            className=" text-white rounded-md hover:bg-red-600 text-center  text-sm font-medium font-roboto capitalize px-[15px] py-2 bg-gradient-custom  outline-[1.80px] outline-offset-[-1.80px] outline-[#fd0000] inline-flex justify-end items-center "
-                          >
+                          <button className=" text-white rounded-md hover:bg-red-600 text-center  text-sm font-medium font-roboto capitalize px-[15px] py-2 bg-gradient-custom  outline-[1.80px] outline-offset-[-1.80px] outline-[#fd0000] inline-flex justify-end items-center ">
                             Buy
                           </button>
                         </td>
@@ -417,12 +415,15 @@ export default function PixacioNFT() {
         {isOpen && (
           <div className=" p-4">
             {/* Filter Input */}
-            <div className="w-full px-[30px] py-[10px]">
+            <div className="relative w-full px-[30px] py-[10px]">
               <input
                 type="text"
                 placeholder="Filter"
-                className="max-w-[1251] w-full h-[49px] ] p-4 rounded-lg border-2 border-[#e7e7e7]    text-sm outline-none focus:ring-2 focus:ring-gray-400"
+                className="w-full max-w-[1251px] h-[49px] p-4 pr-10 rounded-lg border-2 border-[#e7e7e7] text-sm outline-none focus:ring-2 focus:ring-gray-400"
               />
+              <div className="absolute inset-y-0 right-10 flex items-center pr-3 pointer-events-none">
+                <ChevronDown size={20} className="text-gray-500" />
+              </div>
             </div>
 
             {/* Table Section */}
