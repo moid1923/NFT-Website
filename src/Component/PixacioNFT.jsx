@@ -329,7 +329,7 @@ export default function PixacioNFT() {
               )}
             </div>
             {/* Details Box */}
-            <div className="max-w-[546px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
+            <div className="max-w-[546px] h-[247px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] ">
               <div
                 className="flex justify-between items-center p-4 cursor-pointer border-b border-[#e7e7e7] h-[63px]"
                 onClick={() => setIsDetailsOpen(!isDetailsOpen)}
