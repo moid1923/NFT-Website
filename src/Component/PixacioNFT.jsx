@@ -95,7 +95,7 @@ export default function PixacioNFT() {
                   Sale ends 18 November 2023 at 8:47 am
                 </p>
               </div>
-              <hr className="text-[#e7e7e7]" />
+              <hr className="text-[#e7e7e7] h-[2px]" />
               <div className="p-6">
                 <p className="text-[#808080] text-xs font-normal font-roboto">
                   Current Price
@@ -137,7 +137,7 @@ export default function PixacioNFT() {
             {/* Listings Table */}
             {isOpen && (
               <>
-                <hr className="text-[#e7e7e7]" />
+                <hr className="text-[#e7e7e7] h-[2px]" />
                 <div className="py-4 px-5">
                   <table className="w-full text-left text-sm">
                     <thead className="border-b border-[#e7e7e7]">
