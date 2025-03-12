@@ -23,7 +23,7 @@ function JaCollection({ cards = [], title = "Collection", showtitle = true, show
     { id: 8, image: col8 },
     { id: 9, image: col9 },
     { id: 10, image: col10 },
-  ];
+  ]; 
   const navigate = useNavigate();
   const handleArtPage = () => {
     navigate(navigateTo);
@@ -32,7 +32,7 @@ function JaCollection({ cards = [], title = "Collection", showtitle = true, show
   return (
     <div className=" min-h-screen max-w-[1320px] w-full mx-auto my-[80px] lg:my-[155px]">
       {showtitle && (
-        <h1 className="text-4xl font-bold mb-8 text-[#2B2B2B] md:text-[50px] lg:text-[64px] leading-[76px] font-apex text-center lg:text-left">{title}</h1>
+        <h1 className="text-4xl  mb-8  md:text-[50px] lg:text-[64px] l font-apex text-center lg:text-left text-[#2B2B2B] font-apex text-[64px] font-bold leading-normal tracking-[2.56px] capitalize">{title}</h1>
       )}
       {showlink &&(
         <div className='flex items-center justify-between max-w-[1320px] w-full p-5'>
