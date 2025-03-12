@@ -9,6 +9,7 @@ import listingicon from "../assets/listingicon.png";
 import traiticon from "../assets/traiticon.png";
 import offericon from "../assets/offericon.png";
 import desicon from "../assets/desicon.png";
+import time from '../assets/time.png'
 export default function PixacioNFT() {
   const listingsData = [
     {
@@ -89,7 +90,7 @@ export default function PixacioNFT() {
             </p>
             <div className="bg-white rounded-lg  font-roboto max-w-[754px] w-full shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)]">
               <div className="flex items-center space-x-2 text-gray-500 p-6">
-                <FaClock />
+                <img src={time} alt="" />
                 <p className="text-[#808080] text-base font-normal font-roboto">
                   Sale ends 18 November 2023 at 8:47 am
                 </p>
