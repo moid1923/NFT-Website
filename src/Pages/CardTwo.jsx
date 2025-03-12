@@ -6,7 +6,7 @@ function CardTwo() {
   return (
     <div>
       <Navbar/>
-      <NFTGallery imagesPerPage={10}/>
+      <NFTGallery imagesPerPage={10} nfttype='Multiple NFT'/>
     </div>
   )
 }

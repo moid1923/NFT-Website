@@ -10,11 +10,19 @@ function NftHero() {
   const decrement = () => setSupply(supply > 1 ? supply - 1 : 1);
 
   const navigate = useNavigate(); // 🔹 Define navigate function
+  const handlestyle = ()=>{
+    navigate("/style")
+  }
+  
+  const handleSelectChange = (event) => {
+    const selectedValue = event.target.value;
 
-  const handleCardClick = () => {
-    navigate("/aicard"); // 🔹 Navigate to  cardpage when clicked
+    if (selectedValue === "Single NFT") {
+      navigate("/aicard");
+    } else if (selectedValue === "Multiple NFTs") {
+      navigate("/aicardtwo");
+    }
   };
-
   return (
     <div>
       <div className="max-w-[1320px] w-full mx-auto mt-[85px]">
@@ -44,8 +52,10 @@ function NftHero() {
 
         {/* Dropdown, Number Input, and Add Styles */}
         <div className="max-w-[715px] w-full mx-auto flex flex-wrap items-center justify-between gap-4">
-          <select className="bg-white border border-[#E7E7E7] px-[30px] py-[15px] appearance-none rounded-md text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]">
-            <option>Single NFT </option>
+          <select className="bg-white border border-[#E7E7E7] px-[30px] py-[15px] appearance-none rounded-md text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]"
+           onClick={handleSelectChange}>
+            <option className="" >Select Option </option>
+            <option className="" >Single NFT </option>
             <option>Multiple NFTs</option>
           </select>
 
@@ -81,7 +91,8 @@ function NftHero() {
           </div>
 
           <button className="border bg-white border-[#E7E7E7] px-[30px] py-[15px] rounded-md flex items-center gap-2 text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]"
-          onClick={handleCardClick}>
+          onClick={handlestyle}
+          >
           
             Add Styles <FaPlus size={12} />
           </button>

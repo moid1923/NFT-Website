@@ -6,7 +6,7 @@ import ai4 from "../assets/ai4.jfif";
 import { useNavigate } from "react-router-dom";
 const images = [ai1, ai2, ai3, ai4, ai1, ai2, ai3, ai4, ai2, ai3];
 
-export default function NFTGallery({ imagesPerPage = 4 }) {
+export default function NFTGallery({ imagesPerPage = 4 , nfttype = "Single Nft" }) {
   const displayedImages = images.slice(0, imagesPerPage);
   const navigate = useNavigate(); // 🔹 Define navigate function
 
@@ -26,7 +26,7 @@ export default function NFTGallery({ imagesPerPage = 4 }) {
           <button
             className="text-[#808080] font-roboto text-[22px] font-medium leading-normal capitalize"
           >
-            Single NFT
+            {nfttype}
           </button>
         </div>
         <div className="flex gap-6 items-center justify-center flex-col sm:flex-row text-center">
