@@ -42,7 +42,7 @@ export default function PixacioNFT() {
   const data = [
     {
       event: "List",
-      price: "0.008 ETH",
+      price: "0.008 FRY",
       from: "264963",
       to: "",
       date: "1 day ago",
@@ -56,7 +56,7 @@ export default function PixacioNFT() {
     },
     {
       event: "Sale",
-      price: "0.008 ETH",
+      price: "0.008 FRY",
       from: "264963",
       to: "234873",
       date: "2 mo ago",
@@ -419,7 +419,7 @@ export default function PixacioNFT() {
               <input
                 type="text"
                 placeholder="Filter"
-                className="w-full max-w-[1251px] h-[49px] p-4 pr-10 rounded-lg border-2 border-[#e7e7e7] text-sm outline-none focus:ring-2 focus:ring-gray-400"
+                className="w-full max-w-[1251px] h-[49px] p-4 pr-10 rounded-lg border-2 border-[#e7e7e7] text-sm outline-none focus:ring-2 focus:ring-gray-400 font-roboto"
               />
               <div className="absolute inset-y-0 right-10 flex items-center pr-3 pointer-events-none">
                 <ChevronDown size={20} className="text-gray-500" />
@@ -430,11 +430,11 @@ export default function PixacioNFT() {
             <table className="w-full text-left text-sm mt-2 p-4">
               <thead>
                 <tr className="border-b ">
-                  <th className="py-2 px-3">Event</th>
-                  <th className="py-2 px-3">Price</th>
-                  <th className="py-2 px-3">From</th>
-                  <th className="py-2 px-3 ">To</th>
-                  <th className="py-2 px-3">Date</th>
+                  <th className="py-2 px-3 font-roboto">Event</th>
+                  <th className="py-2 px-3 font-roboto">Price</th>
+                  <th className="py-2 px-3 font-roboto">From</th>
+                  <th className="py-2 px-3 font-roboto">To</th>
+                  <th className="py-2 px-3 font-roboto">Date</th>
                 </tr>
               </thead>
               <tbody>
@@ -443,10 +443,10 @@ export default function PixacioNFT() {
                     key={index}
                     className="border-b last:border-none hover:bg-gray-50"
                   >
-                    <td className="py-2 px-3 text-[#808080]">{item.event}</td>
-                    <td className="py-2 px-3 font-bold">{item.price}</td>
-                    <td className="py-2 px- text-[#808080]">{item.from}</td>
-                    <td className="py-2 px-3 text-[#808080]">
+                    <td className="py-2 px-3 text-[#808080]  font-roboto">{item.event}</td>
+                    <td className="py-2 px-3 font-bold font-roboto">{item.price}</td>
+                    <td className="py-2 px- text-[#808080] font-roboto">{item.from}</td>
+                    <td className="py-2 px-3 text-[#808080] font-roboto">
                       {item.to || "-"}
                     </td>
                     <td className="py-2 px-3 text-[#808080]">{item.date}</td>
