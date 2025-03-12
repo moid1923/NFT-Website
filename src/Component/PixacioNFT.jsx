@@ -396,7 +396,7 @@ export default function PixacioNFT() {
         </div>
       </div>
       {/* Activity box */}
-      <div className="max-w-[1320px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] mt-6">
+      <div className="max-w-[1320px] h-[346px] w-full bg-white rounded-lg shadow-[4px_4px_15px_0px_rgba(0,0,0,0.20)] mt-6">
         {/* Header Section with Expand/Collapse */}
         <div
           className="flex justify-between items-center cursor-pointer border-b border-[#e7e7e7] h-[63px] p-4"
