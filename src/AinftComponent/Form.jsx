@@ -17,6 +17,9 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
   const handleMint = ()=>{
     navigate("/aiart")   //navigate to /aiart page
   }
+  const handletraits = ()=>{
+    navigate("/trait")   //navigate to /aiart page
+  }
   return (
     <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10   ">
       <div className="flex gap-[200px] mb-[30px]">
@@ -183,7 +186,8 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
             </div>
             <hr className="my-[25px] text-[#E7E7E7] bg-[#E7E7E7]" />
             <div className="bg-[#E7E7E7] px-[30px] py-[18px] w-[195px] h-[58px] rounded-[15px] flex gap-3">
-              <button className="text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px] ">
+              <button className="text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px] "
+              onClick={handletraits}>
                 Add Traits
               </button>
               <img src={add} alt="" className="w-[28px] h-[28px]" />

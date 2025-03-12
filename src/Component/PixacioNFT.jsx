@@ -173,7 +173,7 @@ export default function PixacioNFT() {
                         </td>
                         <td className="py-2 px-3 text-[#808080]">
                           <button
-                            className=" text-white rounded-md hover:bg-red-600 text-center  text-sm font-medium font-roboto capitalize px-[15px] py-2 bg-gradient-to-tl from-[#fd0000] to-[#ff9191]  outline-[1.80px] outline-offset-[-1.80px] outline-[#fd0000] inline-flex justify-end items-center gap-2.5"
+                            className=" text-white rounded-md hover:bg-red-600 text-center  text-sm font-medium font-roboto capitalize px-[15px] py-2 bg-gradient-custom  outline-[1.80px] outline-offset-[-1.80px] outline-[#fd0000] inline-flex justify-end items-center "
                           >
                             Buy
                           </button>
@@ -283,7 +283,7 @@ export default function PixacioNFT() {
                   <div className="w-full overflow-x-auto p-4">
                     <table className="w-full text-sm text-gray-600">
                       <thead>
-                        <tr className="border-b">
+                        <tr className="border-b border-[#e7e7e7]">
                           <th className="p-2 text-left text-black text-sm font-normal font-roboto">
                             Price
                           </th>
@@ -303,7 +303,7 @@ export default function PixacioNFT() {
                       </thead>
                       <tbody>
                         {listingsData.map((listing, index) => (
-                          <tr key={index} className="border-b">
+                          <tr key={index} className="border-b border-[#e7e7e7]">
                             <td className="p-2 text-black text-sm font-medium font-roboto">
                               {listing.price}
                             </td>

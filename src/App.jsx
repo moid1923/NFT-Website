@@ -23,6 +23,8 @@ import Boost from "./AinftComponent/Boost";
 
 import BidModal from "./Pages/BidModal";
 import StyleC from "./Pages/StyleC";
+import GenerateNFTModal from "./AinftComponent/GenerateNFTModal";
+import AddTraitsModal from "./AinftComponent/AddTraitsModal";
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
           <Route path="/bidplacement" element={<BidModal />} />
           <Route path="/aicardtwo" element={<CardTwo />} />
           <Route path="/style" element={<StyleC />} />
+          <Route path="/generate"  element={<GenerateNFTModal />} />
+          <Route path="/trait"  element={<AddTraitsModal />} />
         </Routes>
       </Router>
     </div>

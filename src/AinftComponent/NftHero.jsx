@@ -13,7 +13,9 @@ function NftHero() {
   const handlestyle = ()=>{
     navigate("/style")
   }
-  
+  const handleGenerate = ()=>{
+    navigate("/generate")
+  }
   const handleSelectChange = (event) => {
     const selectedValue = event.target.value;
 
@@ -45,7 +47,8 @@ function NftHero() {
             placeholder="Fantasy Creature holding a sword..."
             className="w-[80%] h-full pl-5 pr-20 py-3 border-none focus:outline-none text-[12px] sm:text-[14px] font-roboto"
           />
-          <button className="absolute right-4 bg-[#FE0101] text-white px-4 sm:px-6 py-2 rounded-lg font-medium hover:bg-red-600 shadow-lg transition text-[14px] sm:text-[18px]">
+          <button className="absolute right-4 bg-[#FE0101] text-white px-4 sm:px-6 py-2 rounded-lg font-medium hover:bg-red-600 shadow-lg transition text-[14px] sm:text-[18px]"
+          onClick={handleGenerate}>
             Generate 🚀
           </button>
         </div>
