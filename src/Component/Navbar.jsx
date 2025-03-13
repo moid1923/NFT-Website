@@ -6,7 +6,7 @@ import nni from '../assets/nni.jfif'
 import logo from "../assets/Group.svg";
 import MainBtn from "./MainBtn";
 import { useNavigate, useLocation } from "react-router-dom";
-
+import navicon from '../assets/navi.png'
 function Navbar() {
   const [sideMenu, setSideMenu] = useState(false);
   const location = useLocation();
@@ -70,7 +70,7 @@ function Navbar() {
           {active === "AI NFT GENERATION" ? (
             <>
               <div className="py-4 px-[25px] bg-[#E7E7E7]  cursor-pointer hover:bg-red-500 hover:text-white transition rounded-[15px]">
-                <FaWallet size={28} className="w-[26px] h-[26px]" />
+               <img src={navicon} alt="" className="w-[26px] h-[26px]" />
               </div>
               <div className="py-4 px-[25px] bg-[#E7E7E7]  cursor-pointer hover:bg-red-500 hover:text-white transition rounded-[15px]"
               onClick={handleWilliam}
