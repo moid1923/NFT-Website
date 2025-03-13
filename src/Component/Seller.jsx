@@ -30,10 +30,10 @@ export default function Seller() {
     <div className="max-w-[1320px] mx-auto p-4">
       {/* Table Header */}
       <div className="flex justify-between items-center mb-6 font-roboto">
-        <div className="bg-white p-4 flex justify-between items-center w-[133px] h-[48px] font-roboto rounded-md shadow-lg">Category
-            <IoIosArrowDown className="text-[#808080] text-xl" />
+        <div className="bg-white p-4 flex justify-between items-center w-[133px] h-[48px] font-roboto rounded-md shadow-lg text-[#2B2B2B] font-roboto text-sm font-semibold leading-none tracking-[0.42px]">Category
+            <IoIosArrowDown className="text-[#2B2B2B] text-xl" size={28} />
         </div>
-        <div className="bg-white p-4 w-[115px] h-[48px] font-roboto text-[14px] font-[600] rounded-md shadow-lg">Last 30 Days</div>
+        <div className="bg-white py-4 px-[15px] w-[120px] h-[48px]   rounded-lg shadow-lg text-[#2B2B2B] font-roboto text-sm font-semibold leading-normal tracking-[0.42px] text-center">Last 30 Days</div>
       </div>
       <div className="w-full shadow-md rounded-lg overflow-hidden">
         <div className=" text-gray-700 font-semibold text-sm px-3 py-4 grid grid-cols-6 my-4 bg-transparent border-b-gray-500">
