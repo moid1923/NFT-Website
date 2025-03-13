@@ -11,7 +11,7 @@ import col9 from '../assets/col9.jfif';
 import col10 from '../assets/c0l10.png';
 import ar from '../assets/ar.png'
 import { useNavigate } from 'react-router-dom';
-function JaCollection({ cards = [], title = "Collection", showtitle = true, showlink = false , navigateTo = ('/aiart') }) {
+function JaCollection({ cards = [], title = "Collections", showtitle = true, showlink = false , navigateTo = ('/aiart') }) {
   const collections = cards.length > 0 ? cards : [
     { id: 1, image: col1 },
     { id: 2, image: col2 },
@@ -32,7 +32,8 @@ function JaCollection({ cards = [], title = "Collection", showtitle = true, show
   return (
     <div className=" min-h-screen max-w-[1320px] w-full mx-auto my-[80px] lg:my-[155px]">
       {showtitle && (
-        <h1 className="text-4xl  mb-8  md:text-[50px] lg:text-[64px]  font-apex text-center lg:text-left text-[#2B2B2B] font-apex text-[64px] font-bold leading-normal tracking-[2.56px] capitalize">{title}</h1>
+        <h1 className="text-4xl  mb-8  md:text-[50px] lg:text-[64px]  font-apex text-center lg:text-left  font-apex text-[64px] font-bold leading-normal tracking-[2.56px] capitalize text-black 
+">{title}</h1>
       )}
       {showlink &&(
         <div className='flex items-center justify-between max-w-[1320px] w-full p-5'>
@@ -46,7 +47,7 @@ function JaCollection({ cards = [], title = "Collection", showtitle = true, show
       )}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6  max-w-[1320px] w-full mx-auto ">
         {collections.map((item) => (
-          <div key={item.id} className="max-w-[417px] w-full h-[285px] mx-auto bg-[#fff9f9] rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col justify-center gap-5">
+          <div key={item.id} className="max-w-[417px] w-full h-[285px] mx-auto bg-[#fff9f9] rounded-2xl shadow-lg overflow-hidden p-4 flex flex-col justify-center gap-5 border-[2.8px] border-solid border-[#E7E7E7]">
             <div className="">
               <h2 className="text-lg font-bold text-[#2B2B2B] font-roboto leading-[21px]">WONDERFUL ARTWORK</h2>
               <p className=" text-sm text-[#8B8B8B]">Items <span className='text-[#2B2B2B] font-roboto font-bold '>1.5k</span> </p>
