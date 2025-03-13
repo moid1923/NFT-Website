@@ -16,18 +16,19 @@ export default function NFTGallery({ imagesPerPage = 4 , nfttype = "Single Nft" 
 
   return (
     <div className="min-h-[600px] max-w-[1320px] w-full mx-auto p-10">
-      <div className="flex items-center justify-between mb-[75px] flex-col sm:flex-row px-10 gap-6">
+      <div className="flex items-center justify-between mb-[75px] flex-col sm:flex-row  gap-6">
         <div className="flex gap-6 items-center justify-center flex-col sm:flex-row text-center">
+        <button
+            className="text-[#808080] rounded-md font-roboto text-[22px] font-medium leading-normal capitalize py-4 px-8 border-[2.8px] border-solid border-[#E7E7E7]"
+          >
+            {nfttype}
+          </button>
           <p
             className="text-[#808080] font-roboto text-[22px] font-normal leading-normal capitalize"
           >
             {imagesPerPage}/{imagesPerPage} Generated
           </p>
-          <button
-            className="text-[#808080] font-roboto text-[22px] font-medium leading-normal capitalize"
-          >
-            {nfttype}
-          </button>
+         
         </div>
         <div className="flex gap-6 items-center justify-center flex-col sm:flex-row text-center">
           <p className="text-[#808080] font-roboto text-[16px] font-normal leading-normal">
