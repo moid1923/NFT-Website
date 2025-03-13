@@ -95,7 +95,7 @@ function NftHero() {
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-2  ">
             <span
-              className=" me-5 text-[18px] text-[#808080] font-roboto font-normal leading-normal tracking-[0.54px]
+              className=" me-5 text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]
 "
             >
               Supply
@@ -112,13 +112,13 @@ function NftHero() {
                   onClick={increment}
                   className="w-7 h-7 bg-white border border-[#E7E7E7] flex items-center justify-center"
                 >
-                  <FaChevronUp size={10} />
+                  <FaChevronUp className="text-[#2B2B2B] w-[15px] h-[9px]" />
                 </button>
                 <button
                   onClick={decrement}
                   className="w-7 h-7 bg-white border border-[#E7E7E7] flex items-center justify-center"
                 >
-                  <FaChevronDown size={10} />
+                  <FaChevronDown  className="text-[#2B2B2B] w-[15px] h-[9px]"/>
                 </button>
               </div>
             </div>
@@ -127,7 +127,7 @@ function NftHero() {
             className=" bg-white  px-[30px] py-[15px] rounded-[15px] flex items-center justify-center gap-2 text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]  border-[3px] border-solid border-[#E7E7E7] w-[198px] h-[58px]"
             onClick={handlestyle}
           >
-            Add Styles <FaPlus size={12} />
+            Add Styles <FaPlus size={16}  className="text-black ms-2"/>
           </button>
         </div>
       </div>
