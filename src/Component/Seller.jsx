@@ -35,15 +35,15 @@ export default function Seller() {
         </div>
         <div className="bg-white py-4 px-[15px] w-[120px] h-[48px]   rounded-lg shadow-lg text-[#2B2B2B] font-roboto text-sm font-semibold leading-normal tracking-[0.42px] text-center">Last 30 Days</div>
       </div>
-      <div className="w-full shadow-md rounded-lg overflow-hidden">
-        <div className=" text-gray-700 font-semibold text-sm px-3 py-4 grid grid-cols-6 my-4 bg-transparent border-b-gray-500">
+      <div className="w-full  rounded-lg overflow-hidden">
+        <div className=" max-w-[1320px] w-full font-semibold text-sm px-3 py-4 grid grid-cols-6 my-4 bg-transparent border-[2.8px] border-[#E7E7E7]">
 
-          <span className="font-bold text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto">Collections</span>
-          <span className="font-bold text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto">Volume</span>
-          <span className="font-bold text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto">Followers</span>
-          <span className="font-bold text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto">24%</span>
-          <span className="font-bold text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto">Floor Price</span>
-          <span className="font-bold text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto">items</span>
+          <span className="text-left sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto text-[#2B2B2B] font-roboto  font-semibold leading-normal tracking-[0.11px] [font-variant-numeric:lining-nums_proportional-nums]">Collections</span>
+          <span className="text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto text-[#2B2B2B] font-roboto  font-semibold leading-normal tracking-[0.11px] [font-variant-numeric:lining-nums_proportional-nums]">Volume</span>
+          <span className="text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto text-[#2B2B2B] font-roboto  font-semibold leading-normal tracking-[0.11px] [font-variant-numeric:lining-nums_proportional-nums] ">Followers</span>
+          <span className="text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto text-[#2B2B2B] font-roboto  font-semibold leading-normal tracking-[0.11px] [font-variant-numeric:lining-nums_proportional-nums]">24%</span>
+          <span className="text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto text-[#2B2B2B] font-roboto  font-semibold leading-normal tracking-[0.11px] [font-variant-numeric:lining-nums_proportional-nums]">Floor Price</span>
+          <span className="text-right sm:text-center md:text-left text-[12px] sm:text-base lg:text-[22xpx] font-roboto text-[#2B2B2B] font-roboto  font-semibold leading-normal tracking-[0.11px] [font-variant-numeric:lining-nums_proportional-nums]">items</span>
         </div>
 
         {/* Table Rows */}
@@ -51,7 +51,7 @@ export default function Seller() {
           {sellers.map((seller, index) => (
             <div
               key={seller.id}
-              className="grid grid-cols-6 my-4 items-center bg-white shadow-lg  border-none rounded-lg text-gray-800 text-sm px-6 py-4  hover:bg-gray-50"
+              className="grid grid-cols-6 my-4 items-center bg-transparent shadow-lg  border-[2.8px] border-[#E7E7E7] rounded-lg text-gray-800 text-sm px-6 py-4  hover:bg-gray-50"
             >
              
               <div className="flex items-center space-x-3">
