@@ -29,7 +29,8 @@ const Style = ({ isOpen = true, onClose, onSelect }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    
+      <div className=" inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 max-h-[893px] h-full">
       <div className="bg-white rounded-2xl shadow-lg max-w-[504px] w-full p-6 relative">
         {/* Close Button */}
         <button
@@ -83,6 +84,8 @@ const Style = ({ isOpen = true, onClose, onSelect }) => {
         </div>
       </div>
     </div>
+  
+    
   );
 };
 

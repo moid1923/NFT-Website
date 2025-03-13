@@ -76,23 +76,31 @@ function NftHero() {
 
         {/* Dropdown, Number Input, and Add Styles */}
         <div className="max-w-[715px] w-full mx-auto flex flex-wrap items-center justify-between gap-4">
-          <select
-            className="bg-white border border-[#E7E7E7] px-[30px] py-[15px] appearance-none rounded-md text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]"
-            onClick={handleSelectChange}
-          >
-            <option className="">Select Option </option>
-            <option className="">Single NFT </option>
-            <option>Multiple NFTs</option>
-          </select>
+       
+          <div className="relative w-full max-w-[201px] h-[58px]">
+            <select
+              className="bg-white border border-[#E7E7E7] px-[30px] py-[15px] appearance-none rounded-md text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px] w-full  border-[3px] border-solid border-[#E7E7E7] "
+              onClick={handleSelectChange}
+            >
+              <option className="text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]">Select Option</option>
+              <option className="text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]">Single NFT</option>
+              <option className="text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]">Multiple NFTs</option>
+            </select>
 
-          <div className="flex flex-col sm:flex-row items-center gap-2 ">
+            {/* Dropdown Icon */}
+            <FaChevronDown
+              size={16}
+              className="absolute top-1/2 right-4 transform -translate-y-1/2 text-[#808080] pointer-events-none"
+            />
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-2  ">
             <span
               className=" me-5 text-[18px] text-[#808080] font-roboto font-normal leading-normal tracking-[0.54px]
 "
             >
               Supply
             </span>
-            <div className="w-[139px] h-[58px] bg-white flex justify-evenly items-center border border-[#E7E7E7] rounded-lg shadow-sm">
+            <div className="w-[139px] h-[58px] bg-white flex justify-evenly items-center border-[3px] border-solid border-[#E7E7E7] rounded-lg shadow-sm">
               <input
                 type="number"
                 value={supply}
@@ -115,9 +123,8 @@ function NftHero() {
               </div>
             </div>
           </div>
-
           <button
-            className="border bg-white border-[#E7E7E7] px-[30px] py-[15px] rounded-md flex items-center gap-2 text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]"
+            className=" bg-white  px-[30px] py-[15px] rounded-[15px] flex items-center justify-center gap-2 text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]  border-[3px] border-solid border-[#E7E7E7] w-[198px] h-[58px]"
             onClick={handlestyle}
           >
             Add Styles <FaPlus size={12} />
