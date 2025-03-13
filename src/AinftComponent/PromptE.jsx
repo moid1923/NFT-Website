@@ -61,9 +61,9 @@ function PromptE() {
         {promptData.map((prompt, index) => (
           <div
             key={index}
-            className="max-w-[577px] lg:h-[262px] w-full h-auto overflow-hidden rounded-2xl shadow-lg p-[15px] bg-white flex flex-col lg:flex-row mx-auto gap-6"
+            className="max-w-[577px] lg:h-[262px] w-full h-auto overflow-hidden rounded-2xl shadow-lg p-[15px] bg-white flex flex-col lg:flex-row mx-auto gap-6 "
           >
-            <div className="w-full lg:max-w-[310px] h-[232px] relative">
+            <div className="w-full lg:w-[310px] h-[232px] relative">
               <img
                 src={prompt.img}
                 alt={prompt.title}
@@ -78,7 +78,7 @@ function PromptE() {
               </button>
             </div>
 
-            <div className="p-5 lg:max-w-[242px] w-full">
+            <div className="p-2 lg:w-[208px]  ">
               <h2 className="text-[#2B2B2B] font-apex text-[22px] font-normal leading-normal">
                 {prompt.title}
               </h2>
