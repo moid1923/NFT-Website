@@ -58,16 +58,16 @@ function NftHero() {
       </p>
       <div className="p-6 rounded-lg flex flex-col gap-4">
         {/* Prompt Input and Generate Button */}
-        <div className="relative w-full max-w-[1002px] h-[70px] mx-auto bg-white rounded-md flex items-center shadow-lg px-4">
+        <div className="relative w-full max-w-[1002px] h-[70px] mx-auto bg-white rounded-md flex items-center shadow-lg px-4 border-[3px] border-solid border-[#E7E7E7]">
           <input
             type="text"
             placeholder="Fantasy Creature holding a sword..."
             className="w-[80%] h-full pl-5 pr-20 py-3 border-none focus:outline-none  sm:text-[14px] font-roboto text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px]"
           />
           <button
-            className="absolute w-[119px] h-[50px] right-4 bg-[#FE0101] text-white py-2 rounded-lg 
+            className="absolute w-[119px] h-[50px] right-4 bg-[#FE0101] text-white py-2 rounded-[15px] 
   hover:bg-red-600 shadow-lg transition sm:text-[18px] text-center font-roboto 
-  text-[18px] font-bold leading-normal flex items-center justify-center gap-2"
+  text-[18px] font-bold leading-normal flex items-center justify-center gap-2 "
             onClick={handleGenerate}
           >
             Generate <img src={generate} alt="" className="w-5 h-5" />
