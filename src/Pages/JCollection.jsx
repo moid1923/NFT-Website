@@ -17,7 +17,7 @@ function JCollection() {
                 <div className='font-apex font-bold text-[32px] sm:text-[40px] md:text-[45px] lg:text-[64px] text-center text-[#2B2B2B]   leading-normal tracking-[2.56px] capitalize
 '>COLLECTION</div>
             </div>
-            <div className="img -mt-6 sm:-mt-10 md:-mt-16 lg:-mt-23 xs:p-4 sm-p-2 md:p-0">
+            <div className="img -mt-6 sm:-mt-10 md:-mt-16 lg:-mt-22 xs:p-4 sm-p-2 md:p-0">
                 <img src={js} alt="" />
             </div>
         </div>
