@@ -2,6 +2,7 @@ import React from "react";
 import formpic from "../assets/formpic.jfif";
 import add from "../assets/add.svg";
 import back from '../assets/back.png'
+import edit from '../assets/edit.png'
 import { useNavigate } from "react-router-dom";
 function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
   const navigate = useNavigate(); // 🔹 Define navigate function
@@ -23,7 +24,7 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
   }
   return (
     <div className="max-w-[1320px] w-full mx-auto p-4 sm:py-6 md:py-10 md:px-0 ">
-      <div className="flex gap-[200px] mb-[30px] px-6 lg:px-0">
+      <div className="flex gap-x-[200px] gap-y-5 mb-[30px] px-6 lg:px-0 flex-col sm:flex-row">
         <button
           className="bg-white w-[128px] h-[64px] rounded-[20px] text-[#2B2B2B] font-roboto text-[20px] font-normal tracking-[0.8px] capitalize flex items-center justify-center gap-2" 
           style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
@@ -31,7 +32,7 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
           <img src={back} alt="" />
           Back
         </button>
-        <button className="` w-[129px] h-[51px] p-[10px]  gap-[10px] shrink-0` bg-white rounded-[15px] text-[#808080]  font-roboto text-[16px] font-normal border-[2.8px] border-solid border-[#E7E7E7]"
+        <button className="w-[129px] h-[51px] p-[10px]  gap-[10px] shrink-0 bg-white rounded-[15px] text-[#808080]  font-roboto text-[16px] font-normal border-[2.8px] border-solid border-[#E7E7E7]"
        
         >Single NFT</button>
       </div>
@@ -63,7 +64,7 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
         )}
         </div>
         <form
-          className="space-y-[29px] max-w-[994px] w-full sm:px-7 md:px-[88px] py-[35px]  sm:bg-white"
+          className="space-y-[29px] max-w-[994px] w-full sm:px-7 md:px-[88px] py-[32px]  sm:bg-white"
           sm:style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
         >
           <h2
@@ -135,7 +136,7 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               </label>
             </div>
             <p className="opacity-80 mb-[15px] text-[#808080] font-roboto text-[16px] font-normal tracking-[0.64px] capitalize`">
-              (this is the collection where your item will appear)
+              (This is the collection where your item will appear)
             </p>
             <div className="flex w-full gap-4 items-center mt-2 flex-col md:flex-row">
               <div
@@ -143,7 +144,7 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
                 style={{ border: "2.8px solid #E7E7E7" }}
                 onClick={handleCreateNewCollectionClick}
               >
-                <button className="w-[61px] h-[61px] rounded-[12px] bg-[#c1c1c1] flex items-center justify-center ">
+                <button className="w-[61px] h-[61px] rounded-[12px] bg-[#E7E7E7] flex items-center justify-center ">
                   <img src={add} alt="" className="w-[28px] h-[28px]" />
                 </button>
                 <div className="">
@@ -190,13 +191,18 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               item page.
             </p>
             <div
-              className="px-[30px] py-[17px] border rounded-[15px] mb-3 flex justify-between items-center"
+              className="px-[30px] py-[17px] border rounded-[15px] mb-3 flex justify-between items-center  bg-[#E7E7E7]"
               style={{ border: "2.8px solid #E7E7E7" }}
             >
               <span className="`text-[#2B2B2B] font-roboto text-[18px] font-medium tracking-[0.54px]`">
                 blue : fox
               </span>
-              <button className="ml-2 text-red-500">✖</button>
+              <div className="flex gap-3">
+              <img src={edit} alt="" />
+              <button className="ml-2 text-black">✖</button>
+              
+              </div>
+              
             </div>
             <hr className="my-[25px] text-[#E7E7E7] bg-[#E7E7E7]" />
             <div className="bg-[#E7E7E7] px-[30px] py-[18px] w-[195px] h-[58px] rounded-[15px] flex gap-3">
