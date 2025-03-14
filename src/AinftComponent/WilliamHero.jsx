@@ -23,7 +23,7 @@ function WilliamHero({showwillaim = true}) {
       <section className="william-hero max-w-[1320px] w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="top-btn max-w-[236px] w-full flex gap-4 items-center p-2 rounded-[10px] border-2 border-[#e7e7e7] my-[55px]">
           <button
-            className={`w-[70px] h-[34px] text-center text-sm font-medium font-roboto capitalize px-[10px] py-[5px] rounded-[8px] ${
+            className={`w-[90px] h-[34px] text-center text-sm font-medium font-roboto capitalize px-[10px] py-[5px] rounded-[8px] ${
               location.pathname === "/aiwilliam" || location.pathname === "/aiart"
                 ? "bg-gradient-custom text-white"
                 : ""
