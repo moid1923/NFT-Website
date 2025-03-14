@@ -33,7 +33,7 @@ function ArtWork() {
   return (
     <div>
       <Navbar/>
-      <WilliamHero/>
+      <WilliamHero />
       <PixacioHero image={art} title='WONDERFUL ARTWORK'/>
       <TrendingNFTs cards={nfts} dropdownOptions={newOptions} showDropdown = {true} title='Abdul Mueed' showtitle = {false} shownavigate = {true}/>
     </div> 

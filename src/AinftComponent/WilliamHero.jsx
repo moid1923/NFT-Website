@@ -54,7 +54,7 @@ function WilliamHero({showwillaim = true}) {
               location.pathname === "/aiwilliam" || location.pathname === "/aiart"  ? `url(${william})` : "",
           }}
         >
-          {location.pathname === "/aiwilliam" && (
+          {location.pathname === "/aiwilliam" || location.pathname === "/aiart"  && (
             <button className="absolute top-3 right-3 w-[103px] h-[53px] bg-gradient-custom text-center text-white text-lg font-semibold font-roboto capitalize px-[25px] py-[16px] rounded-[8px] flex items-center justify-center">
               Follow
             </button>
