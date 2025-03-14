@@ -1,6 +1,7 @@
 import React from "react";
 import formpic from "../assets/formpic.jfif";
 import add from "../assets/add.svg";
+import back from '../assets/back.png'
 import { useNavigate } from "react-router-dom";
 function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
   const navigate = useNavigate(); // 🔹 Define navigate function
@@ -21,23 +22,24 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
     navigate("/trait")   //navigate to /aiart page
   }
   return (
-    <div className="max-w-[1320px] w-full mx-auto p-4 sm:p-6 md:p-10   ">
-      <div className="flex gap-[200px] mb-[30px]">
+    <div className="max-w-[1320px] w-full mx-auto p-4 sm:py-6 md:py-10 md:px-0 ">
+      <div className="flex gap-[200px] mb-[30px] px-6 lg:px-0">
         <button
-          className="bg-white w-[128px] h-[64px] rounded-[20px] text-[#2B2B2B] font-roboto text-[20px] font-normal tracking-[0.8px] capitalize" 
+          className="bg-white w-[128px] h-[64px] rounded-[20px] text-[#2B2B2B] font-roboto text-[20px] font-normal tracking-[0.8px] capitalize flex items-center justify-center gap-2" 
           style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
         >
+          <img src={back} alt="" />
           Back
         </button>
-        <button className="` w-[129px] h-[51px] p-[10px]  gap-[10px] shrink-0` bg-white rounded-[15px] text-[#808080]  font-roboto text-[16px] font-normal"
-        style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
+        <button className="` w-[129px] h-[51px] p-[10px]  gap-[10px] shrink-0` bg-white rounded-[15px] text-[#808080]  font-roboto text-[16px] font-normal border-[2.8px] border-solid border-[#E7E7E7]"
+       
         >Single NFT</button>
       </div>
 
       <div className="flex gap-6 flex-col lg:flex-row">
         <div>
         <div
-          className="max-w-[296px] w-full h-[309px] p-5 rounded-[20px] mx-auto"
+          className="max-w-[296px] w-full h-[309px] p-5 rounded-[20px] mx-auto relative"
           style={{ boxShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.20)" }}
         >
           <img
@@ -45,6 +47,8 @@ function Form({ showAfterChoose = true,btn = "Mint NFT" , showButn = false }) {
             alt=""
             className="object-cover rounded-[20px] max-w-[256px] max-h-[269px] w-full h-full"
           />
+          <p className="text-white font-apex text-[20px] font-normal leading-normal tracking-[0.8px] capitaliz 
+ absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">Selected</p>
         </div>
         {showButn && (
         <div>
@@ -83,12 +87,21 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
             <label className="block mb-[15px] text-[#2B2B2B] font-roboto text-[20px] font-medium tracking-[0.8px] capitalize">
               Token Symbol*
             </label>
-            <input
-              type="text"
-              placeholder="$ CGPT, for example"
-              className="w-full p-3 border rounded-[15px] text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px]"
-              style={{ border: "2.8px solid #E7E7E7" }}
-            />
+            
+            <div className="relative">
+    {/* 🔹 Styled Dollar Sign */}
+    <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#2B2B2B] font-roboto text-[18px] font-normal tracking-[0.54px]
+">
+      $
+    </span>
+
+    <input
+      type="text"
+      placeholder="CGPT, for example"
+      className="w-full p-3 pl-8 border rounded-[15px] text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px]"
+      style={{ border: "2.8px solid #E7E7E7" }}
+    />
+  </div>
           </div>
           <div>
             <label className="block mb-[15px] text-[#2B2B2B] font-roboto text-[20px] font-medium tracking-[0.8px] capitalize">
@@ -100,7 +113,8 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
             </p>
             <textarea
               placeholder="Provide a detailed description of your item"
-              className="w-full p-3 border rounded-[15px] text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px]"
+              className=" p-3 border rounded-[15px] text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px]
+ h-[158px] max-w-[817px] w-full"
               rows="4"
               style={{ border: "2.8px solid #E7E7E7" }}
             ></textarea>
