@@ -205,7 +205,7 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               
             </div>
             <hr className="my-[25px] text-[#E7E7E7] bg-[#E7E7E7]" />
-            <div className="bg-[#E7E7E7] px-[30px] py-[18px] w-[195px] h-[58px] rounded-[15px] flex gap-3">
+            <div className="bg-white px-[30px] py-[18px] w-[195px] h-[58px] rounded-[15px] flex gap-3 border-[2.8px] border-solid border-[#E7E7E7] justify-center items-center">
               <button className="text-[#808080] font-roboto text-[18px] font-normal tracking-[0.54px] "
               onClick={handletraits}>
                 Add Traits
@@ -213,20 +213,20 @@ text-[#2B2B2B] text-center font-apex text-[40px] font-normal leading-normal trac
               <img src={add} alt="" className="w-[28px] h-[28px]" />
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col  justify-start gap-3">
             <label className="block text-[#2B2B2B] font-roboto text-[20px] font-medium tracking-[0.8px] capitalize">
               Royalties
             </label>
-            <label className="relative inline-block w-[60px] h-[34px]">
+            <label className="relative inline-block w-[59px] h-[28px] ">
               <input type="checkbox" className="hidden peer" />
               <span className="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-[#ccc] rounded-[34px] transition-all duration-400 peer-checked:bg-[#2196F3] peer-focus:ring peer-focus:ring-blue-300"></span>
-              <span className="absolute h-[26px] w-[26px] bg-white rounded-full left-[4px] bottom-[4px] transition-transform duration-400 peer-checked:translate-x-[26px]"></span>
+              <span className="absolute h-[22px] w-[22px] bg-white rounded-full left-[4px] bottom-[4px] transition-transform duration-400 peer-checked:translate-x-[26px]"></span>
             </label>
           </div>
           </>
           )}
           <div className="flex justify-end">
-            <button className="px-8 py-4 rounded-[8px] flex items-center bg-gradient-custom text-white text-center font-roboto text-[18px] font-medium capitalize hover:opacity-90"
+            <button className="px-8 py-4 rounded-[8px] flex items-center bg-gradient-custom text-white text-center font-roboto text-[18px] font-medium capitalize hover:opacity-90 w-[139px] h-[53px]"
             onClick={handleMint}
             >
               {btn}
