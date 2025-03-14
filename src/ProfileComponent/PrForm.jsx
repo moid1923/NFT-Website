@@ -51,7 +51,7 @@ function PrForm() {
           <input
             type="url"
             placeholder="http://"
-            className="w-full h-[58px] p-3 border rounded-lg text-[#808080] focus:outline-none"
+            className="w-full h-[58px] p-3 border rounded-lg text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px] focus:outline-none"
           />
         </div>
 
@@ -62,7 +62,7 @@ function PrForm() {
               <input
                 type="text"
                 placeholder="@username"
-                className="w-full h-full p-[10px] border rounded-lg text-[#808080] focus:outline-none"
+                className="w-full h-full p-[10px] border rounded-lg text-[#808080] font-roboto text-[18px] font-normal leading-normal tracking-[0.54px] focus:outline-none"
               />
               <button className="bg-gradient-custom text-white px-6 py-2 rounded-lg absolute right-2 top-[50%] transform translate-x-0 -translate-y-[50%]"
               onClick={handleConnect}

@@ -83,37 +83,47 @@ function WilliamHero({showwillaim = true}) {
             )}
           </div>
         </div>
-{showwillaim && (
+        {showwillaim ? (
   <div className="text-center mt-12">
-  <h1 className="text-[#2b2b2b] text-[40px] font-normal font-apex capitalize tracking-wider">
-    WILLIAM AKARANA
-  </h1>
-  <div className="flex justify-center gap-4 mt-4 text-[#2b2b2b] text-sm">
-    <span className="text-[#808080] text-base font-normal font-roboto capitalize">
-      <strong className="text-[#2b2b2b] text-xl font-bold font-roboto capitalize">
-        99
-      </strong>{" "}
-      Followers
-    </span>
-    <span className="text-[#808080] text-base font-normal font-roboto capitalize">
-      <strong className="text-[#2b2b2b] text-xl font-bold font-roboto capitalize">
-        26
-      </strong>{" "}
-      Following
-    </span>
-    <span className="text-[#808080] text-base font-normal font-roboto capitalize">
-      <strong className="text-[#2b2b2b] text-xl font-bold font-roboto capitalize">
-        12
-      </strong>{" "}
-      Items
-    </span>
+    <h1 className="text-[#2b2b2b] text-[40px] font-normal font-apex capitalize tracking-wider">
+      WILLIAM AKARANA
+    </h1>
+    <div className="flex justify-center gap-4 mt-4 text-[#2b2b2b] text-sm">
+      <span className="text-[#808080] text-base font-normal font-roboto capitalize">
+        <strong className="text-[#2b2b2b] text-xl font-bold font-roboto capitalize">
+          99
+        </strong>{" "}
+        Followers
+      </span>
+      <span className="text-[#808080] text-base font-normal font-roboto capitalize">
+        <strong className="text-[#2b2b2b] text-xl font-bold font-roboto capitalize">
+          26
+        </strong>{" "}
+        Following
+      </span>
+      <span className="text-[#808080] text-base font-normal font-roboto capitalize">
+        <strong className="text-[#2b2b2b] text-xl font-bold font-roboto capitalize">
+          12
+        </strong>{" "}
+        Items
+      </span>
+    </div>
+    <button className="h-[53px] px-[25px] py-4 bg-white rounded-[15px] border-2 border-[#e7e7e7] justify-end items-center gap-2.5 inline-flex text-center text-[#2b2b2b] text-lg font-normal font-roboto capitalize mt-[30px]">
+      <img src={flogo} alt="" className="w-[20px] h-[21px]" />
+      10.89 FRY
+    </button>
   </div>
-  <button className="h-[53px] px-[25px] py-4 bg-white rounded-[15px] border-2 border-[#e7e7e7] justify-end items-center gap-2.5 inline-flex text-center text-[#2b2b2b] text-lg font-normal font-roboto capitalize mt-[30px]">
-    <img src={flogo} alt="" className="w-[20px] h-[21px]" />
-    10.89 FRY
-  </button>
-</div>
+) : (
+  // ✅ Show Upload Image Button when `showwillaim` is false
+  <div className="flex items-center justify-center"><button
+  className="w-[127px] h-[34px] font-roboto bg-white border-[1.4px] border-[#E7E7E7] text-[14px] leading-[100%] tracking-[0%] text-center capitalize font-normal font-roboto  mt-[30px] rounded-lg "
+  onClick={handleUpload} // Call upload function
+>
+  Upload Image
+</button></div>
+  
 )}
+
         
       </section>
     </div>
