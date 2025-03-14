@@ -4,7 +4,7 @@ import ai2 from "../assets/ai2.jfif";
 import ai3 from "../assets/ai3.jfif";
 import ai4 from "../assets/ai4.jfif";
 import { useNavigate } from "react-router-dom";
-const images = [ai1, ai2, ai3, ai4, ai1, ai2, ai3, ai4, ai2, ai3];
+const images = [ai4, ai3, ai2, ai1, ai1, ai2, ai3, ai4, ai2, ai3];
 
 export default function NFTGallery({ imagesPerPage = 4 , nfttype = "Single Nft" }) {
   const displayedImages = images.slice(0, imagesPerPage);
@@ -24,7 +24,8 @@ export default function NFTGallery({ imagesPerPage = 4 , nfttype = "Single Nft" 
             {nfttype}
           </button>
           <p
-            className="text-[#808080] font-roboto text-[22px] font-normal leading-normal capitalize"
+            className="text-[#808080] text-center font-roboto text-[22px] font-normal leading-normal capitalize
+"
           >
             {imagesPerPage}/{imagesPerPage} Generated
           </p>
