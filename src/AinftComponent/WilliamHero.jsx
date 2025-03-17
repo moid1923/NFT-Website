@@ -74,7 +74,7 @@ function WilliamHero({showwillaim = true}) {
               />
             ) : (
             
-              <div className="w-full h-full bg-[#e7e7e7] flex items-center justify-center text-3xl font-bold text-[#2b2b2b] rounded-full border-4 border-white"
+              <div className="w-full h-full bg-[#e7e7e7] flex items-center justify-center text-3xl font-bold text-[#2b2b2b] rounded-full border-4 border-dotted border-gray-300"
               onClick={handleUpload}
               >
                 +
@@ -116,7 +116,7 @@ function WilliamHero({showwillaim = true}) {
 ) : (
   // ✅ Show Upload Image Button when `showwillaim` is false
   <div className="flex items-center justify-center"><button
-  className="w-[127px] h-[34px] font-roboto bg-white border-[1.4px] border-[#E7E7E7] text-[14px] leading-[100%] tracking-[0%] text-center capitalize font-normal font-roboto  mt-[30px] rounded-lg "
+  className="w-[127px] h-[34px] font-roboto bg-white border-[1.4px] border-[#E7E7E7] text-[14px] leading-[100%] tracking-[0%] text-center capitalize font-normal font-roboto  mt-[0px] rounded-lg "
   onClick={handleUpload} // Call upload function
 >
   Upload Image
