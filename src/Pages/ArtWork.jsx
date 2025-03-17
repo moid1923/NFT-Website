@@ -47,7 +47,7 @@ function ArtWork() {
   showtitle={false} 
   shownavigate={true} 
   buybtn='Boost' 
-  dropdownWidth="170px"
+  dropdownWidth="142px"
 />    </div> 
   )
 }
