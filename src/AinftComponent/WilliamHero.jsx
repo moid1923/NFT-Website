@@ -46,7 +46,7 @@ function WilliamHero({showwillaim = true}) {
 
         {/* Hero Image Section */}
         <div
-          className={`hero-image relative max-w-[1320px] w-full h-[305px] shrink z-20 rounded-lg overflow-hidden ${
+          className={`hero-image relative max-w-[1320px] w-full h-[305px] shrink z-20 rounded-lg  ${
             location.pathname === "/aiprsetting" ? "bg-[#d9d9d9]" : "bg-cover"
           }`}
           style={{
@@ -65,7 +65,7 @@ function WilliamHero({showwillaim = true}) {
             </button>
           )}
 
-          <div className="absolute top-[96%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[100px] h-[100px] rounded-full z-50 shadow-lg">
+          <div className="absolute top-[97%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[100px] h-[100px] rounded-full z-50 shadow-lg overflow-visible">
             {location.pathname === "/aiwilliam" || location.pathname === "/aiart"  ? (
               <img
                 src={willaimh}
