@@ -12,7 +12,7 @@ import bg from "../assets/bgfeature.png";
 import tran from "../assets/drp.png";
 import flogo from '../assets/felogo.png'
 
-const nfts = [
+const defaultNfts = [
   { id: 1, img: nft1, logo: flogo },
   { id: 2, img: nft2, logo: flogo },
   { id: 3, img: nft3, logo: flogo },
@@ -21,6 +21,10 @@ const nfts = [
   { id: 6, img: nft6, logo: flogo },
   { id: 7, img: nft7, logo: flogo },
   { id: 8, img: nft8, logo: flogo },
+  { id: 9, img: nft1, logo: flogo }, // Placeholder for future use
+  { id: 10, img: nft2, logo: flogo },
+  { id: 11, img: nft3, logo: flogo },
+  { id: 12, img: nft4, logo: flogo },
 ];
 const linkNames = ["All", "Generated", "Minted", "on Sale", "Auction", "Sold"];
 const options = ["Last 30 Minutes", "Last One Hour", "Last 7 Hours", "Last Hours"];
@@ -29,13 +33,15 @@ export default function TrendingNFTs({
   title = "TRENDING NFT'S",
   dropdownOptions = options,
   showDropdown = true,
-  cards = nfts,
+  cards = defaultNfts.slice(0, 8), // Default 8 images, but expandable
   showtitle = true,
-  shownavigate = false
+  shownavigate = false,
+  buybtn = "Buy",
+  dropdownWidth = "213px"
 }) {
   
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [selectedOption, setSelectedOption] = useState(dropdownOptions[0]); 
 
   return (
     <div className="py-10 lg:my-10">
@@ -68,6 +74,8 @@ export default function TrendingNFTs({
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="border w-[140px] h-[42px] sm:w-[170px] md:w-[213px] md:h-[52px] border-red-500 text-red-500 px-2 md:px-[25px] py-[14px] rounded-lg flex justify-between items-center text-md sm:text-base cursor-pointer text-[14px] md:text-[18px] font-normal font-roboto"
+                style={{ width: dropdownWidth || "213px" }}
+                
               >
                 {selectedOption}
                 <div className="w-6 h-6 flex justify-center items-center">
@@ -121,7 +129,7 @@ export default function TrendingNFTs({
 
                 <div className="p-3 w-full flex justify-between items-center absolute bottom-2 z-40">
                   <button className="bg-gradient-custom font-roboto text-white text-[12px] px-[17px] py-[11px] text-sm cursor-pointer hover:opacity-70 transition duration-200 rounded-[8px] w-[56px] h-[36px] flex items-center justify-center">
-                    Buy
+                   {buybtn}
                   </button>
                   <span className="text-sm font-roboto font-medium text-[#2B2B2B] w-[123px] h-[36px] bg-white px-3 py-[11px] text-[12px] rounded-lg flex justify-center items-center gap-1">
                       Price:

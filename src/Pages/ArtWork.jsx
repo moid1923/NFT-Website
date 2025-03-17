@@ -27,6 +27,10 @@ const nfts = [
   { id: 6, img: nft6, logo: flogo },
   { id: 7, img: nft7, logo: flogo },
   { id: 8, img: nft8, logo: flogo },
+  { id: 1, img: nft1, logo: flogo },
+  { id: 2, img: nft2, logo: flogo },
+  { id: 3, img: nft3, logo: flogo },
+  { id: 4, img: nft4, logo: flogo },
 ];
 function ArtWork() {
   const newOptions = ["Newest", "Oldest"]; 
@@ -35,8 +39,16 @@ function ArtWork() {
       <Navbar/>
       <WilliamHero />
       <PixacioHero image={art} title='WONDERFUL ARTWORK'/>
-      <TrendingNFTs cards={nfts} dropdownOptions={newOptions} showDropdown = {true} title='Abdul Mueed' showtitle = {false} shownavigate = {true}/>
-    </div> 
+      <TrendingNFTs  
+  cards={nfts.slice(0, 12)} 
+  dropdownOptions={newOptions} // Only "Newest" and "Oldest"
+  showDropdown={true} 
+  title='Abdul Mueed' 
+  showtitle={false} 
+  shownavigate={true} 
+  buybtn='Boost' 
+  dropdownWidth="170px"
+/>    </div> 
   )
 }
 
