@@ -45,7 +45,7 @@ export default function TrendingNFTs({
 
   return (
     <div className="py-10 lg:my-10">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-[1320px] w-full mx-auto">
         {/* Header */}
         
         <div className="flex justify-between items-center mb-6 flex-row md:mb-[50px]">
