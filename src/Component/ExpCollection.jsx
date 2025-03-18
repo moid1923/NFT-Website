@@ -79,8 +79,8 @@ function ExpCollection({ cards = collections, navLinks = [], buttonText = "Items
               <div className="relative h-[178px]">
                 <img src={item.image} alt={item.title} className="w-full h-[178px] object-cover rounded-xl" />
                 {showbutton &&(
-                  <button className="absolute left-1/2 transform -translate-x-1/2 bottom-0 bg-[#E7E7E7] p-1 rounded-[8px] w-[93px] h-[30px] text-[#6B6B6B]">
-                  {buttonText} <span className="font-bold text-[#2B2B2B]">{value}</span>
+                  <button className="absolute left-1/2 transform -translate-x-1/2 bottom-0 bg-[#E7E7E7] p-1 rounded-[8px] w-[93px] h-[30px] text-[#6B6B6B] font-roboto text-[12px] font-normal leading-none tracking-[0.06px]">
+                  {buttonText} <span className="text-[#2B2B2B] font-roboto text-[12px] font-bold leading-none tracking-[0.06px]">{value}</span>
                 </button>
                 )}
                 
